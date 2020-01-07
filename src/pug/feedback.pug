@@ -1,0 +1,35 @@
+//-
+	Feedback page markup for the UaPay website project
+	Version: 1.0
+	Created: 10.12.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: UaPay
+	Website: https://uapay.ua/
+
+extends layouts/_layout.pug
+
+block meta-data
+	+meta-data(
+	'', 
+	'.', 
+	'https://uapay.ua/feedback'
+	)
+
+block header
+	+header('black-header')
+
+block mobile-menu
+	+mobile-menu('mobile-menu-black')
+
+block main-content
+	.inner-page-wrapper.feedback-page
+		.intro-block.black-intro-block
+			.container.main-container
+				h3 Порядок роботи з веб-сайтами
+		.feedback-page-content
+			.container.main-container
+				form(action="/php/mailer.php" method="POST")
+					input(type="text" name="fio" placeholder="Укажите ФИО" required)
+					input(type="text" name="email" placeholder="Укажите e-mail" required)
+					input(type="submit" value="Отправить")

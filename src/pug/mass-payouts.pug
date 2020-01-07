@@ -1,0 +1,88 @@
+//-
+	Mass payouts page markup for the UaPay website project
+	Version: 1.0
+	Created: 10.12.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: UaPay
+	Website: https://uapay.ua/
+
+extends layouts/_layout.pug
+
+block meta-data
+	+meta-data(
+	'Website title', 
+	'Website description', 
+	'https://uapay.ua/'
+	)
+
+block header
+	+header('red-header')
+
+block mobile-menu
+	+mobile-menu('mobile-menu-red')
+	
+block main-content
+	.inner-page-wrapper.mass-payouts-page
+		.intro-block.red-intro-block
+			.container.main-container
+				h1 Масові платежі
+		.mass-payouts-content
+			.first-block
+				.container
+					.animatedParent.animateOnce
+						p.intro-text.animated.growIn
+							b Разработан для тех, кому нужно выплачивать вознаграждение или выдавать займы на банковские карты любому количеству получателей. Все выплаты происходят в режиме онлайн.
+					.flex-block
+						.flex-item.animatedParent.animateOnce
+							figure.animated.rotateIn
+								img(src="../assets/images/mass-payouts/settings.png", alt="Image")
+							h5.animated.fadeIn Автоматизация
+							p.animated.fadeIn Загружайте готовый файл в вашем кабинете или делайте выплаты использую наше API
+						.flex-item.animatedParent.animateOnce
+							figure.animated.rotateIn
+								img(src="../assets/images/mass-payouts/profile.png", alt="Image")
+							h5.animated.fadeIn Личный кабинет
+							p.animated.fadeIn Смотрите в режиме онлайн историю платежей, данные получателя, состояние счета, а также статусы по каждой операции
+						.flex-item.animatedParent.animateOnce
+							figure.animated.rotateIn
+								img(src="../assets/images/mass-payouts/prices.png", alt="Image")
+							h5.animated.fadeIn Гибкие тарифы
+							p.animated.fadeIn Предлагаем уникальные тарифы которые будут комфортными для вашей бизнес модели
+					h4.text-center Идеально подходит
+					.preferences-block
+						.preference-col
+							.preference-item
+								figure
+									img(src="../assets/images/mass-payouts/money.png", alt="Image", style="width: 48px; height: 48px;")
+								h3 Микрофинансовым организациям
+								p для выдачи займов
+						.preference-col
+							.preference-item
+								figure
+									img(src="../assets/images/mass-payouts/cleaning.png", alt="Image", style="width: 48px; height: 48px;")
+								h3 Клининговым компаниям
+								p для оплаты выполненных работ
+						.preference-col
+							.preference-item
+								figure
+									img(src="../assets/images/mass-payouts/marketing.png", alt="Image", style="width: 48px; height: 48px;")
+								h3 Маркетинговым и рекламным агентствам
+								p для оплаты вознаграждений
+						.preference-col
+							.preference-item
+								figure
+									img(src="../assets/images/mass-payouts/taxi.png", alt="Image", style="width: 48px; height: 48px;")
+								h3 Службам такси
+								p для оплаты работ водителями и сотрудникам
+							p.other и другим...
+			.second-block
+				.container
+					h4 Эксклюзивный тариф
+					ul
+						li Дисконт на оборот
+						li Электронный документооборот
+						li Оперативное зачисление
+						li Выделенный аккаунт менеджер
+			block developers-block
+				+developers

@@ -1,9 +1,11 @@
 //-
-	Home page layout for HTML template
-	version: 1.0
-	created: 28.11.2018
-	author: Serhii Tiutin
-	website: https://website.com
+	Home page markup for the UaPay website project
+	Version: 1.0
+	Created: 10.12.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: UaPay
+	Website: https://uapay.ua/
 
 extends layouts/_layout.pug
 
@@ -11,8 +13,17 @@ block meta-data
 	+meta-data(
 	'Website title', 
 	'Website description', 
-	'https://website.com/'
+	'https://uapay.ua/'
 	)
 
+block header
+	+header('red-header')
+
+block mobile-menu
+	+mobile-menu('mobile-menu-red')
+
 block main-content
-	h1 #{$i18n.homePage.homePageText}
+	+trust
+	+partners('extra-padding')
+	+preferences('red-background')
+	+developers('black-background')

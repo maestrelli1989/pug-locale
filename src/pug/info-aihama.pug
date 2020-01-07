@@ -1,0 +1,75 @@
+//-
+	AIHAMA info page markup for the UaPay website project
+	Version: 1.0
+	Created: 10.12.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: UaPay
+	Website: https://uapay.ua/
+
+extends layouts/_layout.pug
+
+block meta-data
+	+meta-data(
+	'Website title', 
+	'Website description', 
+	'https://uapay.ua/info-aihama'
+	)
+
+block header
+	+header('black-header')
+
+block mobile-menu
+	+mobile-menu('mobile-menu-black')
+
+block main-content
+	.inner-page-wrapper.aihama-info-page
+		.intro-block.black-intro-block
+			.container.main-container
+				h3 Інформація про фінансову установу.
+					br
+					| ТОВ 
+					q АЙГАМА
+		.aihama-info-page-content
+			.container.main-container.animatedParent.animateOnce(data-sequence='500')
+				.content-line.animated.fadeIn(data-id='1')
+					.flex-left
+						p
+							b Повне найменування юридичної особи
+					.flex-right
+						p ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ 
+							q АЙГАМА
+							|  (ТОВ 
+							q АЙГАМА
+							| )
+				.content-line.animated.fadeIn(data-id='2')
+					.flex-left
+						p
+							b Ідентифікаційний код юридичної особи
+					.flex-right
+						p 35624403
+				.content-line.animated.fadeIn(data-id='3')
+					.flex-left
+						p
+							b Місцезнаходження юридичної особи
+					.flex-right
+						p 04205, м. Київ, пр. Оболонський, буд. 35
+				.content-line.animated.fadeIn(data-id='4')
+					.flex-left
+						p
+							b Оператор платіжної інфраструктури
+					.flex-right
+						p У відповідності до Повідомлення Національного банку України від 19.12.2016р. за № 57-0009/102595 ТОВ 
+							q АЙГАМА
+							|  внесено до Реєстру платіжних систем, учасників платіжних систем та операторів послуг платіжної інфраструктури у якості Оператора послуг платіжної інфраструктури, що має право надавати наступні послуги:
+						ul
+							li Кліринг;
+							li Процесинг;
+							li Операційні, інформаційні та інші технологічні функції щодо переказу коштів.
+						p ТОВ 
+							q АЙГАМА
+							|  у якості Оператора послуг платіжної інфраструктури надає вищевказані послуги на користь наступних юридичних осіб: ТОВ 
+							q ФК ЮАПЕЙ
+							|  (код за ЄДРПОУ 39407959), що є Платіжною організацією Внутрішньодержавної платіжної системи переказу коштів 
+							q ЮАПЕЙ
+							| .

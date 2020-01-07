@@ -1,0 +1,108 @@
+//-
+	UaPay checkout page markup for the UaPay website project
+	Version: 1.0
+	Created: 10.12.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: UaPay
+	Website: https://uapay.ua/
+
+extends layouts/_layout.pug
+
+block meta-data
+	+meta-data(
+	'Інтернет-еквайринг від UAPAY: приймайте платежі на вашому сайті', 
+	'Підключіть еквайринг і приймайте онлайн-платежі у вашому інтернет-магазині або на будь-якому іншому сайті!', 
+	'https://uapay.ua/uapay-checkout'
+	)
+
+block header
+	+header('red-header')
+
+block mobile-menu
+	+mobile-menu('mobile-menu-red')
+
+block main-content
+	.inner-page-wrapper.uapay-checkout-page
+		.intro-block.red-intro-block
+			.container.main-container
+				h1 UAPAY Checkout
+		.uapay-checkout-content
+			.first-block
+				.container
+					.flex-block.animatedParent.animateOnce(data-sequence='500')
+						.flex-left.animated.fadeIn(data-id='1')
+							p Додає вашому онлайн-бізнесу додаткову цінність за рахунок комплекса рішень, націлених на автоматизацію платежів за товари та послуги банківськими картами, а також доставку куплених товарів вашим покупцям в Україні.
+							p В основі UAPAY Checkout лежать складні технологічні і бізнес-процеси, які побудовані на принципах прозорості, безпеки і простоти користування як для вас, так і для ваших покупців.
+							p Ми підтримуємо роботу c банківськими картами міжнародних платіжних систем VISA і MasterCard, а також Національної платіжної системи ПРОСТІР.
+							include includes/components/_developers-btn.pug
+						.flex-right.animated.fadeIn(data-id='2')
+							img(src="../assets/images/svg/checkout.svg", alt="Image")
+			.second-block
+				.container.animatedParent.animateOnce(data-sequence='500')
+					h4.animated.fadeIn(data-id='1') Можливості
+					.flex-block
+						.flex-left
+							.flex-item.animated.fadeIn(data-id='2')
+								img(src="../assets/images/uapay-checkout/safe.png", alt="Image")
+								h3 Захист від шахрайських платежів
+								p Система забезпечує безпеку платежів та захист від шахрайських дій. Наша система використовує унікальні алгоритми, які дозволяють детектувати і заблокувати сумнівні транзакції. Алгоритми і правила постійно поліпшуються, дозволяючи тримати рівень безпеки на належному рівні і при цьому не погіршуючи конверсію платежів.
+							.flex-item.animated.fadeIn(data-id='3')
+								img(src="../assets/images/uapay-checkout/qr.png", alt="Image")
+								h3 QR-платежі
+								p Можливість генерування платіжних QR-кодів дозволяє встановити точки прийому платежів за рамками POS-терміналів. В платіжний QR-код можна закласти реквізити отримувача платежу, готову суму до оплати, або надати можливість платнику внести бажану суму до оплати. Технологія оптимально підходить для різних офлайн-закладів, для організаторів заходів і магазинів з фізичними точками продажу. Не вимагає інтеграції.
+							.flex-item.animated.fadeIn(data-id='4')
+								img(src="../assets/images/uapay-checkout/paperless.png", alt="Image")
+								h3 Електронний документообіг
+								p Договори, акти, додаткові угоди та інші документи можна підписувати зі застосуванням кваліфікованого електронного підпису (КЕП). Це істотно скорочує час підписання стандартного договору і виключає будь-які додаткові витрати на папір, чорнило і логістику паперових примірників. А головне, КЕП має повну юридичну силу та підвищену безпеку.
+							.flex-item.animated.fadeIn(data-id='5')
+								img(src="../assets/images/uapay-checkout/delivery.png", alt="Image")
+								h3 Служби доставки
+								p Готові рішення, інтегровані зі службами доставки (Нова Пошта, Justin та інші), позбавляють від необхідності окремої інтеграції API служби доставки, призначеної для відстеження статусу доставки в онлайн-режимі. Ми це вже зробили за вас. Крім того, покупець може відразу оплатити і товар, і його доставку, а ми розподілимо платежі відповідно до заздалегідь заданої пропорції.
+						.flex-right
+							.flex-item.animated.fadeIn(data-id='2')
+								img(src="../assets/images/uapay-checkout/subscription.png", alt="Image")
+								h3 Платежі за передплатою
+								p Регулярні або рекурентні платежі дозволяють здійснювати трансакції в зазначений платником період. Система автоматично буде списувати вказану суму з банківської карти і після кожної успішної операції платник отримає повідомлення про платіж, з чеком про оплату з цифровим підписом.
+							.flex-item.animated.fadeIn(data-id='3')
+								img(src="../assets/images/uapay-checkout/escrow.png", alt="Image")
+								h3 Ескроу-платежі
+								p Тепер обидві сторони угоди захищені від шахрайства завдяки ескроу-платежам (англ. Escrow). Технологія гарантує успішність операції при виконанні всіх умов угоди обома сторонами. Покупець впевнений в поверненні коштів у разі невдалої угоди, а продавець — в отриманні коштів при успішному завершенні операції. 
+							.flex-item.animated.fadeIn(data-id='4')
+								img(src="../assets/images/uapay-checkout/cart.png", alt="Image")
+								h3 Мультикошик
+								p Ідеальне рішення для маркетплейсов та інших платформ, які потребують автоматичного розрахунку одразу з декількома постачальниками товарів і послуг. Перерахування коштів здійснюється на наступний день, за вказаними реквізитами одержувачів, в особистому кабінеті або по API. Якщо реквізити вказані невірно або некоректно, ми негайно повідомимо Вас про це.
+							.flex-item.animated.fadeIn(data-id='5')
+								img(src="../assets/images/uapay-checkout/comfort.png", alt="Image")
+								h3 Комфортне підключення
+								p Ми розуміємо, наскільки важливо оперативно підключити систему платежів, і тому розробили максимально доступний API і готові платіжні CMS-модулі, які можна встановити і активувати. Але ми пішли ще далі, реалізувавши послугу «інтегруй за мене». Тепер вам не доведеться витрачати час на вивчення технічної документації, наша команда зробить все за вас.
+			.third-block
+				.container.animatedParent.animateOnce(data-sequence='500')
+					h4.animated.fadeIn(data-id='1') Тарифи
+					.flex-block.animatedParent.animateOnce(data-sequence='500')
+						.flex-left.animated.fadeIn(data-id='1')
+							h2 Швидкий старт
+							p Ідеально підходить для тих, хто хоче підключити оплату онлайн, без зайвих дій і витрати часу
+							.bonus
+								.percent-value 2,45%
+								.percent-description
+									.line-top + 1 грн
+									.line-bottom за успішну транзакцію
+							ul
+								li Включення за 1 день
+								li Help centre 
+								li API, CMS 
+								li
+									q Інтегруй за мене
+							a.btn-white(href="javascript:void(0);") Подключиться сейчас
+						.flex-right.animated.fadeIn(data-id='2')
+							h2 Enterprise
+							p Рішення для крупних компаній з унікальными бізнес-моделями
+							ul
+								li Ексклюзивний тариф
+								li Дисконт на оборот
+								li Комплексні рішення
+								li Виділений акаунт-менеджер
+							a.btn-ghost-white(href="javascript:void(0);") Связаться с менеджером
+			block developers-block
+				+developers

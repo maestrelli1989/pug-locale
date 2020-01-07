@@ -52,7 +52,9 @@ gulp.task('watch', ['pugI18n', 'sass', 'babel', 'browser-sync'], () => {
 	gulp.watch('src/pug/**/*.pug', ['pugI18n']);
 	gulp.watch('src/sass/**/*.sass', ['sass']);
 	gulp.watch('src/js/**/*.js', ['babel']);
-	gulp.watch('app/*.html', browserSync.reload);
+	gulp.watch('app/ua/*.html', browserSync.reload);
+	gulp.watch('app/ru/*.html', browserSync.reload);
+	gulp.watch('app/en/*.html', browserSync.reload);
 	gulp.watch('app/js/*.js', browserSync.reload);
 });
 

@@ -1,8 +1,7 @@
 {
-    "homePage": {
-      "homePageText": "Головна"
-    },
-    "aboutUsPage": {
-        "aboutUsText": "Про нас"
-    }
+	"legalInfo": {
+		"pageHeadline": "Правова інформація",
+		"metaTitle": "Правова інформація — UAPAY",
+		"metaDescription": "Тут ви знайдете всю необхідну правову інформацію про компанію UAPAY."
+	}
 }

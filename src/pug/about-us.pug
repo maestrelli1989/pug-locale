@@ -1,9 +1,11 @@
 //-
-	Home page layout for HTML template
-	version: 1.0
-	created: 28.11.2018
-	author: Serhii Tiutin
-	website: https://website.com
+	About us page markup for the UaPay website project
+	Version: 1.0
+	Created: 10.12.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: UaPay
+	Website: https://uapay.ua/
 
 extends layouts/_layout.pug
 
@@ -11,8 +13,42 @@ block meta-data
 	+meta-data(
 	'Website title', 
 	'Website description', 
-	'https://website.com/'
+	'https://uapay.ua/about-us'
 	)
 
+block header
+	+header('red-header')
+
+block mobile-menu
+	+mobile-menu('mobile-menu-red')
+
 block main-content
-	h1 #{$i18n.aboutUsPage.aboutUsText}
+	.inner-page-wrapper.about-us-page
+		.intro-block.red-intro-block
+			.container.main-container
+				h1 Про нас
+		.about-us-content
+			.first-block
+				.container.main-container
+					.flex-block.animatedParent.animateOnce(data-sequence='500')
+						.flex-left.animated.fadeIn(data-id='1')
+							p
+								b UAPAY - это национальный платежный сервис, предоставляющий финансово-технические решения для любого типа онлайн бизнеса. Наша команда професионалов поможет вам вам автоматизировать платежи и ускорить бизнес-процессы.
+							p Компания, основанная в 2013 году, предлагает выгодные тарифы и гарантию надежности. Мы заботимся о безопасности и скорости онлайн расчетов, поэтому стараемся применять новейшие технологии которые обеспечивают требуемый уровень проведения платежей.
+							p Высокий уровень сервиса, прозрачность и надежность транзакций, оперативная и квалифицированная работа службы поддержки, – все это позволило завоевать доверие наших клиентов и закрепить за собой имидж честной и стабильной компании.
+						.flex-right.animated.fadeIn(data-id='2')
+							img(src="../assets/images/svg/uapay.svg", alt="Image", style="width: 340px")
+			block preferences-block
+				+preferences('black-background')
+			block trust-block
+				+trust
+			block partners-block
+				+partners
+			.last-block
+				.container.main-container.animatedParent.animateOnce(data-sequence='500')
+					h5.animated.fadeIn(data-id='1') Про нас пишуть
+					.media-block.animatedParent.animateOnce(data-sequence='500')
+						img(class="animated fadeIn", data-id='1', src="../assets/images/about-us/media/ain.png", alt="Logo")
+						img(class="animated fadeIn", data-id='2', src="../assets/images/about-us/media/minfin.png", alt="Logo")
+						img(class="animated fadeIn", data-id='3', src="../assets/images/about-us/media/mind.png", alt="Logo")
+						img(class="animated fadeIn", data-id='4', src="../assets/images/about-us/media/interfax.png", alt="Logo")

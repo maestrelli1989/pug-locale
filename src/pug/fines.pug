@@ -1,0 +1,36 @@
+//-
+	Fines page markup for the UaPay website project
+	Version: 1.0
+	Created: 10.12.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: UaPay
+	Website: https://uapay.ua/
+
+extends layouts/_layout.pug
+
+block meta-data
+	+meta-data(
+	'Оплата штрафів за порушення ПДР онлайн — UAPAY', 
+	'Легко сплачуйте штрафи поліції за порушення правил дорожнього руху на сайті UAPAY.', 
+	'https://uapay.ua/fines'
+	)
+
+block header
+	+header('red-header')
+
+block mobile-menu
+	+mobile-menu('mobile-menu-red')
+
+block main-content
+	.inner-page-wrapper.fines-page
+		.intro-block.red-intro-block
+			.container.main-container
+				h1 Штрафи UAPAY
+		.fines-content
+			.first-block
+				.container.main-container
+					h6 Hello
+			.last-block
+				.container.main-container
+					img(src="../assets/images/fines/how-to.png", alt="How to")

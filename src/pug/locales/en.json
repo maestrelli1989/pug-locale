@@ -1,8 +1,7 @@
 {
-    "homePage": {
-      "homePageText": "Home Page"
-    },
-    "aboutUsPage": {
-        "aboutUsText": "About Us"
-    }
+	"legalInfo": {
+		"pageHeadline": "Legal information",
+		"metaTitle": "Legal information — UAPAY",
+		"metaDescription": "Here you will find all the legal information about UAPAY."
+	}
 }

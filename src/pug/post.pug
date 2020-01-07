@@ -1,0 +1,105 @@
+//-
+	Post page markup for the UaPay website project
+	Version: 1.0
+	Created: 10.12.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: UaPay
+	Website: https://uapay.ua/
+
+extends layouts/_layout.pug
+
+block meta-data
+	+meta-data(
+	'Website title', 
+	'Website description', 
+	'https://uapay.ua/'
+	)
+
+block header
+	+header('red-header')
+
+block mobile-menu
+	+mobile-menu('mobile-menu-red')
+
+block main-content
+	.inner-page-wrapper.post-page
+		.intro-block.red-intro-block
+			.container.main-container
+				h1 Lorem ipsum dolor sit amet consectetur adipisicing elit
+		.post-page-content.animatedParent.animateOnce(data-sequence='1000')
+			.container.main-container.animated.fadeIn(data-id='1')
+				p Lorem, ipsum dolor sit amet consectetur adipisicing elit
+					|
+					sup 1
+					| . Cum itaque ipsa laboriosam laudantium voluptate necessitatibus culpa iste molestiae fugit veritatis voluptatem temporibus et quibusdam quia sit quam, in sequi accusantium.
+				h6 Lorem ipsum dolor, sit amet consectetur adipisicing elit
+				p Vero optio velit porro 
+					|
+					small ipsam rerum illum 
+					| adipisci fugit reiciendis aliquam voluptatum corporis 
+					|
+					a(href="javascript:void(0);") doloremque nihil
+					|   veniam, amet suscipit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam porro aperiam excepturi, quibusdam rem repellat tempore rerum. Nam tempore voluptatum porro distinctio velit, laboriosam itaque in accusamus exercitationem ea mollitia!
+				figure
+					img(src="../assets/images/post-img-placeholder.jpg", alt="Post image")
+					figcaption Figcaption example
+				p Quas impedit numquam iusto:
+				ul
+					li lorem ipsum, dolor sit;
+					li amet consectetur adipisicing elit;
+					li suscipit, maiores at;
+					li quidem, voluptas libero praesentium;
+					li ut dolor saepe, ea voluptates porro.
+				p Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+					|
+					b Corporis, tempore. 
+					| Odit nobis cumque iusto 
+					|
+					i distinctio 
+					| animi earum eos repellat, ex 
+					|
+					strong voluptatem 
+					| vel ea fugiat ipsa beatae, 
+					|
+					em praesentium 
+					| velit quae iure.
+				h6 Lorem ipsum dolor sit amet consectetur adipisicing elit
+				p Quis error aut omnis in 
+					|
+					del accusantium
+					|  
+					ins neque mollitia
+					| , quia nesciunt, dolore ullam sapiente inventore asperiores odit explicabo provident nam:
+					|
+					var E = mc
+						sup 2
+					|.
+				hr
+				p Maiores, perspiciatis fugiat:
+				ol
+					li lorem ipsum dolor sit amet;
+					li consectetur adipisicing elit;
+					li exercitationem perferendis;
+					li neque nihil accusantium libero;
+					li illo atque corrupti soluta mollitia.
+				p Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+					|
+					q Quos, magnam facere, nam aut ipsam iste aliquid reprehenderit doloremque sed illo dolorem veritatis? Voluptatibus eius nam temporibus error sunt minus inventore.
+				dl
+					dt Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					dd Asperiores impedit repudiandae explicabo iste distinctio sed sequi, perspiciatis nihil atque dolores incidunt itaque est iusto velit enim odio eligendi quam.
+					dt Deserunt excepturi, sit corrupti reiciendis optio, alias neque molestias, veritatis nobis velit qui magni beatae!
+					dd Deleniti necessitatibus nemo ipsam repellendus nobis quibusdam.
+					dt Expedita et odit quod laboriosam minima!
+					dd Expedita dolore, ab commodi doloribus aut repudiandae, consequuntur, magni qui quasi modi veritatis quae quidem deleniti.
+				p Lorem ipsum dolor sit amet consectetur adipisicing elit. In temporibus quae vitae 
+					|
+					abbr(title="Lorem ipsum dolor sit amet") LIDSA
+					|  illo enim eligendi molestias rerum qui perspiciatis dignissimos magnam quo nulla, ullam praesentium esse iusto! Similique, nihil perspiciatis!
+				p
+					code Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia error placeat, quod amet architecto ducimus earum quos, consequuntur ipsam sed eius aliquam nisi sequi labore impedit sint, rem consequatur.
+				p
+					kbd Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos delectus fugit harum cumque vero porro at doloremque omnis eum veniam. Expedita sapiente nihil ad odio optio laboriosam dignissimos quas unde!
+				p
+					samp Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias laboriosam aliquam sunt deleniti? Sunt eligendi dolorum laborum, numquam id quia? Voluptatibus hic eum harum provident quasi debitis perferendis fugit?
