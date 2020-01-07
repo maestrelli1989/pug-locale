@@ -1,0 +1,156 @@
+/**
+	Button styles for Ukrposhta website project
+	Version: 1.0
+	Created: 22.07.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Website: https://ukrposhta.ua/
+	*/
+
+.btn-red
+	background-color: $corporate-red
+	color: $corporate-white
+	font-size: 16px
+	font-family: $primary-bold
+	font-weight: $bold-weight
+	line-height: 20px
+	text-transform: uppercase
+	text-align: center
+	transition: $primary-transition
+	display: block
+	border-radius: $primary-radius
+	border: 0
+	padding: 14px 20px
+	&:active,
+	&:focus
+		outline: none
+		text-decoration: none
+	&:hover
+		background-color: $corporate-accent-red
+		color: $corporate-white
+		cursor: pointer
+		text-decoration: none
+	&:disabled,
+	&.disabled
+		background-color: $corporate-gainsboro
+		color: $corporate-gray
+		pointer-events: none
+
+.btn-ghost-white
+	background-color: transparent
+	color: $corporate-white
+	font-size: 16px
+	font-family: $primary-bold
+	font-weight: $bold-weight
+	line-height: 20px
+	text-transform: uppercase
+	text-align: center
+	transition: $primary-transition
+	display: block
+	border-radius: $primary-radius
+	border: 2px solid $corporate-white
+	padding: 12px 20px
+	&:active,
+	&:focus
+		outline: none
+		text-decoration: none
+	&:hover
+		background-color: $corporate-white
+		color: $corporate-red
+		cursor: pointer
+		text-decoration: none
+	&:disabled,
+	&.disabled
+		background-color: $corporate-gainsboro
+		color: $corporate-gray
+		pointer-events: none
+
+.btn-white
+	background-color: $corporate-white
+	color: $corporate-red
+	font-size: 16px
+	font-family: $primary-bold
+	font-weight: $bold-weight
+	line-height: 20px
+	text-transform: uppercase
+	text-align: center
+	transition: $primary-transition
+	display: block
+	border-radius: $primary-radius
+	border: 0
+	padding: 14px 20px
+	&:active,
+	&:focus
+		outline: none
+		text-decoration: none
+	&:hover
+		background-color: $corporate-white
+		color: $corporate-accent-red
+		cursor: pointer
+		text-decoration: none
+	&:disabled,
+	&.disabled
+		background-color: $corporate-gainsboro
+		color: $corporate-gray
+		pointer-events: none
+
+.btn-black
+	background-color: $corporate-black
+	color: $corporate-white
+	font-size: 16px
+	font-family: $primary-bold
+	font-weight: $bold-weight
+	line-height: 20px
+	text-transform: uppercase
+	text-align: center
+	transition: $primary-transition
+	display: block
+	border-radius: $primary-radius
+	border: 0
+	padding: 14px 20px
+	&:active,
+	&:focus
+		outline: none
+		text-decoration: none
+	&:hover
+		background-color: $corporate-accent-black
+		color: $corporate-white
+		cursor: pointer
+		text-decoration: none
+	&:disabled,
+	&.disabled
+		background-color: $corporate-gainsboro
+		color: $corporate-gray
+		pointer-events: none
+
+.action-btn
+	display: flex
+	flex-direction: row
+	align-items: center
+	justify-content: flex-start
+	line-height: 40px
+	padding: 0px 0px 80px
+	width: auto
+	width: fit-content
+	max-width: initial
+	span
+		color: $corporate-red
+		font-family: $primary-bold
+		font-size: 20px
+		font-weight: $bold-weight
+		line-height: 20px
+		transition: $primary-transition
+		padding: 0px 20px 0px 0px
+	svg
+		#rounded-1
+			transition: $tertiary-transition
+		#rounded-2
+			transition: $secondary-transition
+	&:hover
+		span
+			color: $corporate-accent-red
+		svg
+			#rounded-1
+				stroke: $corporate-accent-red
+			#rounded-2
+				fill: $corporate-accent-red

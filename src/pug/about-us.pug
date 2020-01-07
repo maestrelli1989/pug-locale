@@ -1,0 +1,18 @@
+//-
+	Home page layout for HTML template
+	version: 1.0
+	created: 28.11.2018
+	author: Serhii Tiutin
+	website: https://website.com
+
+extends layouts/_layout.pug
+
+block meta-data
+	+meta-data(
+	'Website title', 
+	'Website description', 
+	'https://website.com/'
+	)
+
+block main-content
+	h1 #{$i18n.aboutUsPage.aboutUsText}

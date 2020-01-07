@@ -1,0 +1,146 @@
+/**
+	Footer styles for the UaPay website project
+	Version: 1.0
+	Created: 10.12.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: UaPay
+	Website: https://uapay.ua/
+	*/
+
+.footer
+	background-color: $corporate-black
+	padding: 0px 0px 25px
+	.container
+		.top-footer-block
+			border-bottom: 1px solid $corporate-white
+			padding: 30px 0px 0px
+			display: flex
+			flex-direction: column
+			background-image: url(../images/svg/footer.svg)
+			background-repeat: no-repeat
+			background-size: contain
+			background-position: top right
+			h2
+				color: $corporate-white
+				padding: 60px 0px 40px
+		.bottom-footer-block
+			.pre-menu-block
+				align-items: center
+				padding: 40px 0px 0px
+				.pre-menu-col
+					.site-logo-link
+						display: block
+						line-height: 40px
+						height: 40px
+					.address
+						font-size: 14px
+						line-height: 24px
+						font-weight: $bold-weight
+						color: $corporate-red
+			.footer-menu
+				padding: 40px 0px 0px
+				.footer-menu-col
+					.footer-menu-title
+						font-size: 14px
+						line-height: 24px
+						font-weight: $bold-weight
+						text-transform: uppercase
+						color: $corporate-white
+						padding: 0px 0px 20px
+					.footer-menu-link
+						font-size: 14px
+						line-height: 24px
+						font-weight: $bold-weight
+						text-transform: uppercase
+						color: $corporate-gray
+						transition: $primary-transition
+						text-decoration: none
+						padding: 0px 0px 15px
+						display: block
+						&:hover
+							color: $corporate-white
+							text-decoration: none
+			.footer-menu-mobile
+				display: none
+				padding: 0px 0px 10px
+				.accordion
+					padding: 25px 0px 0px
+					[data-toggle="collapse"]
+						.fas
+							font-size: 1.5em
+							&:before
+								content: "\f106"
+						&.collapsed
+							.fas
+								font-size: 1.5em
+								&:before
+									content: "\f107"
+					.accordion-headline
+						width: 100%
+						display: flex
+						flex-direction: row
+						justify-content: space-between
+						padding: 10px 0px
+						text-decoration: none
+						span
+							font-size: 14px
+							line-height: 24px
+							text-transform: uppercase
+							font-weight: $bold-weight
+							color: $corporate-white
+						i
+							color: $corporate-white
+							line-height: 24px
+							transition: $primary-transition
+					.links-wrapper
+						li
+							a
+								font-size: 14px
+								line-height: 24px
+								font-weight: $bold-weight
+								text-transform: uppercase
+								color: $corporate-gray
+								transition: $primary-transition
+								text-decoration: none
+								padding: 0px 0px 15px
+								display: block
+								&:hover
+									color: $corporate-white
+									text-decoration: none
+							&:first-child
+								a
+									padding-top: 10px
+							&:last-child
+								a
+									padding: 0px 0px 10px
+
+.copyright-block
+	background-color: $corporate-accent-black
+	padding: 10px 0px
+	.container
+		.copyright-block-content
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			.flex-left
+				p
+					font-size: 14px
+					line-height: 20px
+					font-weight: $medium-weight
+					color: $corporate-dim-gray
+			.flex-right
+				a
+					font-size: 14px
+					line-height: 20px
+					font-weight: $medium-weight
+					color: $corporate-dim-gray
+					text-decoration: none
+					transition: $primary-transition
+					&:first-child,
+					&:nth-child(2)
+						padding-right: 20px
+					&:hover
+						text-decoration: none
+						color: $corporate-white

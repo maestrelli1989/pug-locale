@@ -1,0 +1,27 @@
+.developers-block
+    padding: 90px 0px 70px
+    .container
+        max-width: 1000px
+        padding: 0px
+        .flex-block
+            display: flex
+            flex-direction: row
+            .flex-left
+                width: 100%
+                max-width: 520px
+            .flex-right
+                width: 100%
+                max-width: 480px
+                h4
+                    text-transform: uppercase
+                & > p
+                    color: $corporate-dim-gray
+    &.gray-background
+        background-color: $corporate-gainsboro
+    &.black-background
+        background-color: $corporate-black
+        .container
+            .flex-block
+                .flex-right
+                    h4
+                        color: $corporate-white

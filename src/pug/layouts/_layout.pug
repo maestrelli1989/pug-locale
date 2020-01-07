@@ -1,0 +1,135 @@
+//-
+	Main layout for the UaPay website project
+	Version: 1.0
+	Created: 10.12.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: UaPay
+	Website: https://uapay.ua/
+
+include ../mixins/_mixins
+doctype html
+html(lang='uk')
+	head
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+		//- Meta data mixin
+		block meta-data
+		//- Favicons
+		include ../includes/_favicons
+		//- Font Awesome
+		link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.3.1/css/all.css")
+		//- Bootstrap
+		link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
+		//- Main CSS file
+		link(rel="stylesheet", href="../assets/css/main.min.css")
+		//- Animate.css
+		link(rel="stylesheet", href="../assets/css/animations.css")
+		//- Additional style sheets
+		block extra-css
+	body
+		block header
+		block mobile-menu
+		#main
+			block main-content
+		footer.footer
+			.container
+				.top-footer-block.animatedParent.animateOnce(data-sequence='500')
+					h2.animated.fadeIn(data-id='1') Автоматизуйте ваші
+						br
+						| платежі вже сьогодні
+					include ../includes/components/_start-now-btn.pug
+				.bottom-footer-block
+					.row.pre-menu-block.animatedParent.animateOnce(data-sequence='500')
+						.col-xl-3.col-lg-3.col-md-2.col-sm-6.pre-menu-col.animated.fadeIn(data-id='1')
+							a(href="/", class="site-logo-link")
+								img(src="../assets/images/logo/site-logo.png", alt="Logo")
+						.col-xl-6.col-lg-6.col-md-8.col-sm-12.pre-menu-col.animated.fadeIn(data-id='1')
+							p.address 04205, Оболонський проспект, 35, Київ, Україна
+						.col-xl-3.col-lg-3.col-md-2.col-sm-6.pre-menu-col.animated.fadeIn(data-id='1')
+							a(href="/", class="site-logo-link")
+								img(src="../assets/images/logo/site-logo.png", alt="Logo")
+					.row.footer-menu
+						.col-xl-3.col-lg-6.col-md-6.footer-menu-col.animatedParent.animateOnce(data-sequence='200')
+							p.footer-menu-title.animated.fadeIn(data-id='1') Бізнесу
+							a(href="uapay-checkout", class="footer-menu-link animated fadeIn", data-id='2') UAPAY Checkout
+							a(href="mass-payouts", class="footer-menu-link animated fadeIn", data-id='3') Масові платежі
+							a(href="industry-solutions", class="footer-menu-link animated fadeIn", data-id='4') Галузеві рішення
+						.col-xl-3.col-lg-6.col-md-6.footer-menu-col.animatedParent.animateOnce(data-sequence='200')
+							p.footer-menu-title.animated.fadeIn(data-id='1') Користувачу
+							a(href="fines", class="footer-menu-link animated fadeIn", data-id='2') Штрафи UAPAY
+							a(href="javascript:void(0);", class="footer-menu-link animated fadeIn", data-id='5') Безпечна угода
+						.col-xl-3.col-lg-6.col-md-6.footer-menu-col.animatedParent.animateOnce(data-sequence='200')
+							p.footer-menu-title.animated.fadeIn(data-id='1') Розробникам
+							a(href="javascript:void(0);", class="footer-menu-link animated fadeIn", data-id='2') API
+							a(href="javascript:void(0);", class="footer-menu-link animated fadeIn", data-id='3') Модулі CMS
+						.col-xl-3.col-lg-6.col-md-6.footer-menu-col.animatedParent.animateOnce(data-sequence='200')
+							p.footer-menu-title.animated.fadeIn(data-id='1') Компанія
+							a(href="about-us", class="footer-menu-link animated fadeIn", data-id='2') Про нас
+							a(href="news", class="footer-menu-link animated fadeIn", data-id='3') Новини
+							a(href="javascript:void(0);", class="footer-menu-link animated fadeIn", data-id='4') FAQ
+							a(href="javascript:void(0);", class="footer-menu-link animated fadeIn", data-id='5') Партнерство
+							a(href="legal-info", class="footer-menu-link animated fadeIn", data-id='6') Правова інформація
+					.footer-menu-mobile
+						.accordion.animatedParent.animateOnce(data-sequence='200')#mobile-footer-accordion
+							.mobile-footer-accordion-item.animated.fadeIn(data-id='1')
+								#mobile-footer-heading1
+									a(class="accordion-headline collapsed", href="javascript:void(0);", role="button", data-toggle="collapse", data-target="#mobile-footer-collapse1", aria-expanded="false", aria-controls="mobile-footer-collapse1")
+										span Бізнесу
+										i.fas
+								.collapse#mobile-footer-collapse1(aria-labelledby="mobile-footer-heading1", data-parent="#mobile-footer-accordion")
+									ul.links-wrapper
+										li: a(href="uapay-checkout") UAPAY Checkout
+										li: a(href="mass-payouts") Масові платежі
+										li: a(href="industry-solutions") Галузеві рішення
+							.mobile-footer-accordion-item.animated.fadeIn(data-id='2')
+								#mobile-footer-heading2
+									a(class="accordion-headline collapsed", href="javascript:void(0);", role="button", data-toggle="collapse", data-target="#mobile-footer-collapse2", aria-expanded="false", aria-controls="mobile-footer-collapse2")
+										span Користувачу
+										i.fas
+								.collapse#mobile-footer-collapse2(aria-labelledby="mobile-footer-heading2", data-parent="#mobile-footer-accordion")
+									ul.links-wrapper
+										li: a(href="fines") Штрафи UAPAY
+										li: a(href="javascript:void(0);") Безпечна угода
+							.mobile-footer-accordion-item.animated.fadeIn(data-id='3')
+								#mobile-footer-heading3
+									a(class="accordion-headline collapsed", href="javascript:void(0);", role="button", data-toggle="collapse", data-target="#mobile-footer-collapse3", aria-expanded="false", aria-controls="mobile-footer-collapse3")
+										span Розробникам
+										i.fas
+								.collapse#mobile-footer-collapse3(aria-labelledby="mobile-footer-heading3", data-parent="#mobile-footer-accordion")
+									ul.links-wrapper
+										li: a(href="javascript:void(0);") API
+										li: a(href="javascript:void(0);") Модулі CMS
+							.mobile-footer-accordion-item.animated.fadeIn(data-id='4')
+								#mobile-footer-heading4
+									a(class="accordion-headline collapsed", href="javascript:void(0);", role="button", data-toggle="collapse", data-target="#mobile-footer-collapse4", aria-expanded="false", aria-controls="mobile-footer-collapse4")
+										span Компанія
+										i.fas
+								.collapse#mobile-footer-collapse4(aria-labelledby="mobile-footer-heading4", data-parent="#mobile-footer-accordion")
+									ul.links-wrapper
+										li: a(href="about-us") Про нас
+										li: a(href="news") Новини
+										li: a(href="javascript:void(0);") FAQ
+										li: a(href="javascript:void(0);") Партнерство
+										li: a(href="legal-info") Правова інформація
+		footer.copyright-block
+			.container
+				.copyright-block-content
+					.flex-left
+						p &copy; Copyright 2020, UAPAY
+					.flex-right
+						a(href="terms-of-use") Умови надання сервісу
+						a(href="cookies-policy") Політика роботи з cookies
+						a(href="privacy-policy") Робота з персональними даними
+		//- jQuery
+		script(src="https://code.jquery.com/jquery-3.3.1.min.js")
+		//- Popper
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js")
+		//- Bootstrap
+		script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js")
+		script(src="../assets/js/css3-animate-it.js")
+		//- Main Javascript / jQuery scripts
+		script(src="../assets/js/common.js")
+		//- Additional Javascript / jQuery scripts
+		block extra-js

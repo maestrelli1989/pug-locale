@@ -1,0 +1,383 @@
+/**
+	Media queries for the UaPay website project
+	Version: 1.0
+	Created: 10.12.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: UaPay
+	Website: https://uapay.ua/
+	*/
+
+@media screen and (max-width: 1200px)
+	
+	.main-container
+		max-width: 960px
+		padding: 0px 15px
+
+	.news-page
+		.news-page-content
+			.main-container
+				.news-list
+					margin-right: 0px
+					margin-left: 0px
+					.news-item
+						max-width: 270px
+
+	.footer
+		.container
+			.bottom-footer-block
+				.pre-menu-block
+					.pre-menu-col
+						&:last-child
+							text-align: right
+
+@media screen and (max-width: 992px)
+
+	h1
+		font-size: 42px
+		line-height: 54px
+
+	.main-container
+		max-width: 720px
+
+	.header
+		height: 72px
+		.container
+			.header-flex
+				.header-flex-left
+					.menu
+						display: none
+
+	.burger
+		display: block
+
+	.copyright-block
+		.container
+			.copyright-block-content
+				flex-direction: column
+				.flex-left
+					order: 2
+					p
+						line-height: 40px
+				.flex-right
+					order: 1
+					a
+						line-height: 40px
+
+	.about-us-page
+		.about-us-content
+			.first-block
+				padding: 60px 0px 80px
+
+	.news-page
+		.news-page-content
+			padding: 60px 0px 80px
+			.main-container
+				.news-list
+					.news-item
+						max-width: 300px
+
+	.post-page
+		.post-page-content
+			padding: 60px 0px 80px
+
+	.legal-page
+		.legal-page-content
+			.main-container
+				.special-link
+					padding: 20px
+					span
+						font-size: 18px
+						line-height: 24px
+
+	.aihama-info-page
+		.aihama-info-page-content
+			padding: 60px 0px 80px
+			.main-container
+				.content-line
+					flex-direction: column
+					padding-bottom: 30px
+					.flex-left
+						max-width: 100%
+						padding: 0px 0px 10px
+					.flex-right
+						max-width: 100%
+						padding: 0px
+
+	.financial-report-page
+		.financial-report-content
+			padding: 60px 0px 80px
+
+	.text-page
+		.text-page-content
+			padding: 60px 0px 80px
+
+@media screen and (max-width: 767px)
+	
+	h1
+		font-size: 32px
+		line-height: 42px
+
+	h2
+		font-size: 28px
+		line-height: 36px
+	
+	h3
+		font-size: 26px
+		line-height: 34px
+
+	h4
+		font-size: 24px
+		line-height: 32px
+
+	h5
+		font-size: 20px
+		line-height: 28px
+
+	h6
+		font-size: 16px
+		line-height: 24px
+
+	p
+		font-size: 16px
+		line-height: 24px
+
+	.inner-page-wrapper
+		ul
+			> li
+				font-size: 16px
+				line-height: 24px
+				padding-bottom: 5px
+		ol
+			> li
+				font-size: 16px
+				line-height: 24px
+				padding-bottom: 5px
+		dl
+			dt
+				font-size: 16px
+				line-height: 24px
+				padding-bottom: 5px
+			dd
+				font-size: 16px
+				line-height: 24px
+				padding-bottom: 5px
+
+	.action-btn
+		padding-bottom: 60px
+
+	.main-container
+		max-width: 540px
+
+	.header
+		.container
+			.header-flex
+				.header-flex-right
+					.feedback-link
+						display: none
+					.btn-ghost-white
+						display: none
+
+	.mobile-menu
+		padding: 0px 20px
+		.mobile-menu-row
+			display: none
+		.accordion-wrapper
+			display: block
+
+	.footer
+		.container
+			.top-footer-block
+				padding-top: 0px
+				background-position: center right
+			.bottom-footer-block
+				.footer-menu
+					display: none
+				.footer-menu-mobile
+					display: block
+				.pre-menu-block
+					.pre-menu-col
+						&:first-child
+							order: 1
+							flex: 0 0 50%
+							max-width: 50%
+						&:nth-child(2)
+							order: 3
+						&:last-child
+							order: 2
+							flex: 0 0 50%
+							max-width: 50%
+						.address
+							padding-top: 12px
+
+	.copyright-block
+		.container
+			.copyright-block-content
+				justify-content: center
+				.flex-left
+					p
+						line-height: 37px
+				.flex-right
+					a
+						display: block
+						text-align: center
+						line-height: 37px
+						&:first-child,
+						&:nth-child(2)
+							padding: 0px
+
+	.inner-page-wrapper
+		.red-intro-block
+			padding-bottom: 0px
+		.black-intro-block
+			padding: 0px
+			.container
+				p
+					font-size: 32px
+					line-height: 42px
+					padding: 40px 0px 0px
+
+	.preferences-block
+		padding: 60px 0px
+		.main-container
+			.flex-block
+				justify-content: center
+				.flex-item
+					padding-bottom: 40px
+					&:last-child
+						padding-bottom: 0px
+	.trust-block
+		padding: 30px 0px 20px
+		.main-container
+			.flex-block
+				.flex-item
+					margin-bottom: 20px
+
+	.partners-block
+		padding: 40px 0px 20px
+		.main-container
+			.flex-block
+				flex-direction: column
+				.flex-left
+					order: 2
+					max-width: 100%
+					text-align: center
+				.flex-right
+					order: 1
+					max-width: 100%
+
+	.about-us-page
+		.about-us-content
+			.first-block
+				padding: 40px 0px 20px
+				.main-container
+					.flex-block
+						flex-direction: column
+						.flex-left
+							max-width: 100%
+						.flex-right
+							max-width: 100%
+							text-align: center
+			.last-block
+				padding: 0px 0px 60px
+				.main-container
+					.media-block
+						padding-top: 30px
+						justify-content: center
+						img
+							margin: 0px 15px 15px
+	.news-page
+		.news-page-content
+			padding: 40px 0px 60px
+			.main-container
+				.news-list
+					.news-item
+						max-width: 100%
+						margin-bottom: 40px
+						padding-left: 10px
+						padding-right: 10px
+						margin-left: 0px
+						margin-right: 0px
+						.news-description
+							max-height: 115px
+
+	.post-page
+		.post-page-content
+			padding: 40px 0px 60px
+
+	.legal-page
+		.legal-page-content
+			.main-container
+				.special-link
+					span
+						padding-right: 15px
+			&.black-page-content
+				padding-bottom: 0px
+
+	.aihama-info-page
+		.aihama-info-page-content
+			padding: 40px 0px 60px
+
+	.financial-report-page
+		.financial-report-content
+			padding: 40px 0px 60px
+
+	.text-page
+		.text-page-content
+			padding: 40px 0px 60px
+
+@media screen and (max-width: 576px)
+	
+	.header
+		height: 60px
+
+	.mobile-menu
+		top: 60px
+
+	.footer
+		.container
+			.top-footer-block
+				.flex-left
+					h2
+						padding-bottom: 20px
+
+	.trust-block
+		.main-container
+			.flex-block
+				justify-content: space-around
+				.flex-item
+					max-width: 120px
+					height: auto
+
+	.abous-us-page
+		.about-us-page-content
+			.last-block
+				.main-container
+					.media-block
+						padding: 30px 0px 0px
+						flex-direction: column
+						img
+							margin-bottom: 30px
+							&:last-child
+								margin-bottom: 0px
+
+	.news-page
+		.news-page-content
+			.main-container
+				.news-list
+					.news-item
+						padding-left: 0px
+						padding-right: 0px
+						margin-bottom: 30px
+						.news-description
+							padding-top: 10px
+							max-height: 105px
+
+	.legal-page
+		.legal-page-content
+			.main-container
+				.special-link
+					flex-direction: column
+					align-items: flex-start
+					span
+						padding: 0px 0px 15px 0px

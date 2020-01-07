@@ -1,0 +1,41 @@
+.legal-page
+	.legal-page-content
+		padding: 80px 0px 120px
+		.main-container
+			.special-link
+				width: 100%
+				border-radius: $quinary-radius
+				background-color: #343333
+				padding: 40px
+				margin: 0px auto 20px
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				align-items: center
+				&:last-of-type
+					margin: 0px auto
+				&:after
+					display: none
+				span
+					color: $corporate-white
+					font-size: 24px
+					line-height: 36px
+					font-family: $primary-bold
+					font-weight: $bold-weight
+					transition: $primary-transition
+					q
+						color: $corporate-white
+						font-style: normal
+						font-family: $primary-bold
+				svg
+					#arrow-right
+						transition: $primary-transition
+				&:hover
+					span
+						opacity: 0.8
+					svg
+						#arrow-right
+							opacity: 0.8
+		&.black-page-content
+			background-color: $corporate-black
+			padding: 0px 0px 60px

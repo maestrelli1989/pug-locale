@@ -1,0 +1,52 @@
+/**
+	News page styles for the UaPay website project
+	Version: 1.0
+	Created: 10.12.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: UaPay
+	Website: https://uapay.ua/
+	*/	
+
+.news-page
+	.news-page-content
+		padding: 80px 0px 120px
+		.main-container
+			.news-list
+				display: flex
+				flex-direction: row
+				justify-content: flex-start
+				align-items: flex-start
+				flex-wrap: wrap
+				margin-left: -20px
+				margin-right: -20px
+				.news-item
+					width: 100%
+					max-width: 220px
+					margin: 0px 20px 60px
+					padding: 0px
+					text-decoration: none
+					position: static
+					&:after
+						display: none
+					.news-date
+						font-size: 12px
+						line-height: 20px
+						color: $corporate-red
+						display: block
+						padding: 0px 0px 10px
+					h6
+						line-height: 24px
+						font-weight: $medium-weight
+						overflow: hidden
+						display: -webkit-box
+						-webkit-line-clamp: 2
+						max-height: 48px
+						padding: 0px
+					p
+						padding: 20px 0px 0px 0px
+						color: $corporate-dim-gray
+						overflow: hidden
+						display: -webkit-box
+						-webkit-line-clamp: 2
+						max-height: 110px
