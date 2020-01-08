@@ -37,11 +37,8 @@ $(() => {
 	const fourthBlock = $("#fourth-block");
 	const fifthTrigger = $("#fifth-trigger");
 	const fifthBlock = $("#fifth-block");
-
+	
 	const hamburger = $(".burger");
-	const mobileMenu = $(".mobile-menu");
-	const hideMobileMenu = $(".hide-menu");
-	const mobileMenuActive = $(".mobile-menu-active");
 
 	/*
 		Toggle effect at the Header sub menu

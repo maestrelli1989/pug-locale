@@ -24,41 +24,41 @@ mixin header(className)
 					a(href="/", class="site-logo-link")
 						img(src="../assets/images/logo/site-logo.png", alt="Logo")
 					.menu
-						.menu-item
-							.menu-trigger#business-trigger Бізнесу
+						.menu-item.animatedParent.animateOnce(data-sequence='100')
+							.menu-trigger#business-trigger #{$i18n.headerMenu.col1Title}
 							.sub-menu-wrapper#business-sub-menu
 								.triangle
-								.sub-menu.business-sub-menu
-									a(href="uapay-checkout") UAPAY Checkout
-									a(href="mass-payouts") Масові платежі
-									a(href="industry-solutions") Галузеві рішення
-						.menu-item
-							.menu-trigger#user-trigger Користувачу
+								.sub-menu.business-sub-menu.animatedParent.animateOnce(data-sequence='100')
+									a.animated.fadeIn(data-id='1', href="uapay-checkout") #{$i18n.headerMenu.col1Link1}
+									a.animated.fadeIn(data-id='1', href="mass-payouts") #{$i18n.headerMenu.col1Link2}
+									a.animated.fadeIn(data-id='1', href="industry-solutions") #{$i18n.headerMenu.col1Link3}
+						.menu-item.animatedParent.animateOnce(data-sequence='100')
+							.menu-trigger#user-trigger #{$i18n.headerMenu.col2Title}
 							.sub-menu-wrapper#user-sub-menu
 								.triangle
-								.sub-menu.user-sub-menu
-									a(href="fines") Штрафи UAPAY
-									a(href="javascript:void(0);") Безпечна угода
-						.menu-item
-							.menu-trigger#company-trigger Компанія
+								.sub-menu.user-sub-menu.animatedParent.animateOnce(data-sequence='100')
+									a.animated.fadeIn(data-id='1', href="fines") #{$i18n.headerMenu.col2Link1}
+									a.animated.fadeIn(data-id='1', href="javascript:void(0);") #{$i18n.headerMenu.col2Link2}
+						.menu-item.animatedParent.animateOnce(data-sequence='100')
+							.menu-trigger#company-trigger #{$i18n.headerMenu.col3Title}
 							.sub-menu-wrapper#company-sub-menu
 								.triangle
-								.sub-menu.company-sub-menu
-									a(href="about-us") Про нас
-									a(href="news") Новини
-									a(href="javascript:void(0);") FAQ
-									a(href="javascript:void(0);") Партнерство
-									a(href="legal-info") Правова інформація
-						.menu-item
-							.menu-trigger#developers-trigger Розробникам
+								.sub-menu.company-sub-menu.animatedParent.animateOnce(data-sequence='100')
+									a.animated.fadeIn(data-id='1', href="about-us") #{$i18n.headerMenu.col3Link1}
+									a.animated.fadeIn(data-id='1', href="news") #{$i18n.headerMenu.col3Link2}
+									a.animated.fadeIn(data-id='1', href="javascript:void(0);") #{$i18n.headerMenu.col3Link3}
+									a.animated.fadeIn(data-id='1', href="javascript:void(0);") #{$i18n.headerMenu.col3Link4}
+									a.animated.fadeIn(data-id='1', href="legal-info") #{$i18n.headerMenu.col3Link5}
+						.menu-item.animatedParent.animateOnce(data-sequence='100')
+							.menu-trigger#developers-trigger #{$i18n.headerMenu.col4Title}
 							.sub-menu-wrapper#developers-sub-menu
 								.triangle
-								.sub-menu.developers-sub-menu
-									a(href="javascript:void(0);") API
-									a(href="javascript:void(0);") Модулі CMS
+								.sub-menu.developers-sub-menu.animatedParent.animateOnce(data-sequence='100')
+									a.animated.fadeIn(data-id='1', href="javascript:void(0);") #{$i18n.headerMenu.col4Link1}
+									a.animated.fadeIn(data-id='1', href="javascript:void(0);") #{$i18n.headerMenu.col4Link2}
 				.header-flex-right
-					a.feedback-link(href="feedback") Зворотний зв'язок
-					a.btn-ghost-white(href="javascript:void(0);") Особистий кабінет
+					a.feedback-link(href="feedback") #{$i18n.headerMenu.feedback}
+					a.btn-ghost-white(href="javascript:void(0);") #{$i18n.headerMenu.userAccount}
 					.burger
 						.burger-box
 							.burger-inner
@@ -69,69 +69,69 @@ mixin mobile-menu(className)
 	.mobile-menu(class=className)
 		.mobile-menu-row
 			.mobile-menu-col
-				.mobile-menu-trigger Бізнесу
-				a(class="mobile-menu-link", href="uapay-checkout") UAPAY Checkout
-				a(class="mobile-menu-link", href="mass-payouts") Масові платежі
-				a(class="mobile-menu-link", href="industry-solutions") Галузеві рішення
+				.mobile-menu-trigger #{$i18n.headerMenu.col1Title}
+				a(class="mobile-menu-link", href="uapay-checkout") #{$i18n.headerMenu.col1Link1}
+				a(class="mobile-menu-link", href="mass-payouts") #{$i18n.headerMenu.col1Link2}
+				a(class="mobile-menu-link", href="industry-solutions") #{$i18n.headerMenu.col1Link3}
 			.mobile-menu-col
-				.mobile-menu-trigger Користувачу
-				a(class="mobile-menu-link", href="fines") Штрафи UAPAY
-				a(class="mobile-menu-link", href="javascript:void(0);") Безпечна угода
+				.mobile-menu-trigger #{$i18n.headerMenu.col2Title}
+				a(class="mobile-menu-link", href="fines") #{$i18n.headerMenu.col2Link1}
+				a(class="mobile-menu-link", href="javascript:void(0);") #{$i18n.headerMenu.col2Link2}
 			.mobile-menu-col
-				.mobile-menu-trigger Розробникам
-				a(class="mobile-menu-link", href="javascript:void(0);") API
-				a(class="mobile-menu-link", href="javascript:void(0);") Модулі CMS
+				.mobile-menu-trigger #{$i18n.headerMenu.col3Title}
+				a(class="mobile-menu-link", href="about-us") #{$i18n.headerMenu.col3Link1}
+				a(class="mobile-menu-link", href="news") #{$i18n.headerMenu.col3Link2}
+				a(class="mobile-menu-link", href="javascript:void(0);") #{$i18n.headerMenu.col3Link3}
+				a(class="mobile-menu-link", href="javascript:void(0);") #{$i18n.headerMenu.col3Link4}
+				a(class="mobile-menu-link", href="legal-info") #{$i18n.headerMenu.col3Link5}
 			.mobile-menu-col
-				.mobile-menu-trigger Компанія
-				a(class="mobile-menu-link", href="about-us") Про нас
-				a(class="mobile-menu-link", href="news") Новини
-				a(class="mobile-menu-link", href="javascript:void(0);") FAQ
-				a(class="mobile-menu-link", href="javascript:void(0);") Партнерство
-				a(class="mobile-menu-link", href="legal-info") Правова інформація
+				.mobile-menu-trigger #{$i18n.headerMenu.col4Title}
+				a(class="mobile-menu-link", href="javascript:void(0);") #{$i18n.headerMenu.col4Link1}
+				a(class="mobile-menu-link", href="javascript:void(0);") #{$i18n.headerMenu.col4Link2}
 		.accordion-wrapper
 			.accordion#mobile-menu-accordion
 				.mobile-menu-accordion-item
 					#mobile-menu-heading1
 						a(class="accordion-headline collapsed", href="javascript:void(0);", role="button", data-toggle="collapse", data-target="#mobile-menu-collapse1", aria-expanded="false", aria-controls="mobile-menu-collapse1")
-							span Бізнесу
+							span #{$i18n.headerMenu.col1Title}
 							i.fas
 					.collapse#mobile-menu-collapse1(aria-labelledby="mobile-menu-heading1", data-parent="#mobile-menu-accordion")
 						ul.links-wrapper
-							li: a(href="uapay-checkout") UAPAY Checkout
-							li: a(href="mass-payouts") Масові платежі
-							li: a(href="industry-solutions") Галузеві рішення
+							li: a(href="uapay-checkout") #{$i18n.headerMenu.col1Link1}
+							li: a(href="mass-payouts") #{$i18n.headerMenu.col1Link2}
+							li: a(href="industry-solutions") #{$i18n.headerMenu.col1Link3}
 				.mobile-menu-accordion-item
 					#mobile-menu-heading2
 						a(class="accordion-headline collapsed", href="javascript:void(0);", role="button", data-toggle="collapse", data-target="#mobile-menu-collapse2", aria-expanded="false", aria-controls="mobile-menu-collapse2")
-							span Користувачу
+							span #{$i18n.headerMenu.col2Title}
 							i.fas
 					.collapse#mobile-menu-collapse2(aria-labelledby="mobile-menu-heading2", data-parent="#mobile-menu-accordion")
 						ul.links-wrapper
-							li: a(href="fines") Штрафи UAPAY
-							li: a(href="javascript:void(0);") Безпечна угода
+							li: a(href="fines") #{$i18n.headerMenu.col2Link1}
+							li: a(href="javascript:void(0);") #{$i18n.headerMenu.col2Link2}
 				.mobile-menu-accordion-item
 					#mobile-menu-heading3
 						a(class="accordion-headline collapsed", href="javascript:void(0);", role="button", data-toggle="collapse", data-target="#mobile-menu-collapse3", aria-expanded="false", aria-controls="mobile-menu-collapse3")
-							span Розробникам
+							span #{$i18n.headerMenu.col3Title}
 							i.fas
 					.collapse#mobile-menu-collapse3(aria-labelledby="mobile-menu-heading3", data-parent="#mobile-menu-accordion")
 						ul.links-wrapper
-							li: a(href="javascript:void(0);") API
-							li: a(href="javascript:void(0);") Модулі CMS
+							li: a(href="about-us") #{$i18n.headerMenu.col3Link1}
+							li: a(href="news") #{$i18n.headerMenu.col3Link2}
+							li: a(href="javascript:void(0);") #{$i18n.headerMenu.col3Link3}
+							li: a(href="javascript:void(0);") #{$i18n.headerMenu.col3Link4}
+							li: a(href="legal-info") #{$i18n.headerMenu.col3Link5}
 				.mobile-menu-accordion-item
 					#mobile-menu-heading4
 						a(class="accordion-headline collapsed", href="javascript:void(0);", role="button", data-toggle="collapse", data-target="#mobile-menu-collapse4", aria-expanded="false", aria-controls="mobile-menu-collapse4")
-							span Компанія
+							span #{$i18n.headerMenu.col4Title}
 							i.fas
 					.collapse#mobile-menu-collapse4(aria-labelledby="mobile-menu-heading4", data-parent="#mobile-menu-accordion")
 						ul.links-wrapper
-							li: a(href="about-us") Про нас
-							li: a(href="news") Новини
-							li: a(href="javascript:void(0);") FAQ
-							li: a(href="javascript:void(0);") Партнерство
-							li: a(href="legal-info") Правова інформація
-			a.btn-ghost-white(href="javascript:void(0);") Особистий кабінет
-			a.feedback-link(href="feedback") Зворотний зв'язок
+							li: a(href="javascript:void(0);") #{$i18n.headerMenu.col4Link1}
+							li: a(href="javascript:void(0);") #{$i18n.headerMenu.col4Link2}
+			a.btn-ghost-white(href="javascript:void(0);") #{$i18n.headerMenu.userAccount}
+			a.feedback-link(href="feedback") #{$i18n.headerMenu.feedback}
 
 //- Preferences block mixin
 
@@ -142,40 +142,40 @@ mixin preferences(className)
 				.flex-item.animated.fadeIn(data-id='1')
 					figure
 						img(src="../assets/images/about-us/pci-dss.png", alt="Image")
-					p.title PCI DSS Level 1
-					p.desc 100% відповідність стандартам безпеки платежів
+					p.title #{$i18n.preferencesBlock.preference1Title}
+					p.desc #{$i18n.preferencesBlock.preference1Desc}
 				.flex-item.animated.fadeIn(data-id='2')
 					figure
 						img(src="../assets/images/about-us/gdpr.png", alt="Image")
-					p.title GDPR Compliant
-					p.desc Робота з персональними даними чітко регламентована
+					p.title #{$i18n.preferencesBlock.preference2Title}
+					p.desc #{$i18n.preferencesBlock.preference2Desc}
 				.flex-item.animated.fadeIn(data-id='3')
 					figure
 						img(src="../assets/images/about-us/ukraine.png", alt="Image")
-					p.title ВПС
-					p.desc Статус внутрішньодержавної платіжної системи
+					p.title #{$i18n.preferencesBlock.preference3Title}
+					p.desc #{$i18n.preferencesBlock.preference3Desc}
 				.flex-item.animated.fadeIn(data-id='4')
 					figure
 						img(src="../assets/images/about-us/paperless.png", alt="Image")
-					p.title Paperless
-					p.desc Максимальна підтримка електронного документообігу
+					p.title #{$i18n.preferencesBlock.preference4Title}
+					p.desc #{$i18n.preferencesBlock.preference4Desc}
 				.flex-item.animated.fadeIn(data-id='5')
 					figure
 						img(src="../assets/images/about-us/structure.png", alt="Image")
-					p.title ОПІ
-					p.desc Ліцензія оператора платіжної інфраструктури
+					p.title #{$i18n.preferencesBlock.preference5Title}
+					p.desc #{$i18n.preferencesBlock.preference5Desc}
 				.flex-item.animated.fadeIn(data-id='6')
 					figure
 						img(src="../assets/images/about-us/licence.png", alt="Image")
-					p.title Ліцензія НБУ
-					p.desc Переказ коштів у національній валюті, без без відкриття рахунків
+					p.title #{$i18n.preferencesBlock.preference6Title}
+					p.desc #{$i18n.preferencesBlock.preference6Desc}
 
 //- Trust block mixin
 
 mixin trust
 	.trust-block
 		.container.main-container.animatedParent.animateOnce(data-sequence='100')
-			h4.animated.fadeIn(data-id='1') Нам довіряють
+			h4.animated.fadeIn(data-id='1') #{$i18n.trustBlock.blockHeadline}
 			.flex-block.animatedParent.animateOnce(data-sequence='100')
 				.flex-item.animated.fadeIn(data-id='1')
 					include ../includes/svg/about-us/_1.pug
@@ -215,8 +215,8 @@ mixin developers(className)
 				.flex-left.animated.fadeIn(data-id='1')
 					img(src="../assets/images/svg/api-cms.svg", alt="Image")
 				.flex-right.animated.fadeIn(data-id='2')
-					h4 Розробникам
-					p Ми надаємо універсальний платіжний API і готові модулі для CMS-систем, які дозволять дуже швидко і просто підключити оплату на сайті.
+					h4 #{$i18n.developersBlock.blockHeadline}
+					p #{$i18n.developersBlock.blockContent}
 					include ../includes/components/_developers-btn.pug
 
 //- Partners block mixin
@@ -228,6 +228,6 @@ mixin partners(className)
 				.flex-left.animated.fadeIn(data-id='1')
 					img(src="../assets/images/svg/percent.svg", alt="Image")
 				.flex-right.animated.fadeIn(data-id='2')
-					h4 Партнерам
-					p Ми завжди відкриті до співпраці з новими партнерами і до надання якісного сервісу широкому спектру клієнтів. Тому для всіх, хто пов'язаний з онлайн-бізнесом, наша партнерська програма дає можливість заробляти на рекомендаціях і підключених клієнтах.
+					h4 #{$i18n.partnersBlock.blockHeadline}
+					p #{$i18n.partnersBlock.blockContent}
 					include ../includes/components/_partnership-btn.pug

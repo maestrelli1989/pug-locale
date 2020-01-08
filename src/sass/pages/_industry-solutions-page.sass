@@ -21,6 +21,28 @@
 			.container
 				max-width: 1000px
 				padding: 70px 0px 0px
+				.connect-btn
+					color: $corporate-red
+					font-family: $primary-medium
+					font-weight: $medium-weight
+					font-size: 16px
+					line-height: 24px
+					position: relative
+					text-decoration: none
+					transition: $primary-transition
+					padding: 5px 0px 0px 35px
+					display: inline-block
+					&:after
+						position: absolute
+						display: inline-block
+						content: "\f105"
+						top: 6px
+						right: -15px
+						font-weight: 900
+						font-family: "Font Awesome 5 Free"
+					&:hover
+						text-decoration: none
+						color: $corporate-accent-red
 				.solution-item
 					display: flex
 					flex-direction: column

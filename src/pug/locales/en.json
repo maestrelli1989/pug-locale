@@ -1,7 +1,212 @@
 {
+	"headerMenu": {
+		"col1Title": "Business",
+		"col1Link1": "UAPAY Checkout",
+		"col1Link2": "Bulk payments",
+		"col1Link3": "Business solutions",
+		"col2Title": "Customers",
+		"col2Link1": "Fines",
+		"col2Link2": "",
+		"col3Title": "Company",
+		"col3Link1": "About us",
+		"col3Link2": "News",
+		"col3Link3": "FAQ",
+		"col3Link4": "Partnership",
+		"col3Link5": "Legal information",
+		"col4Title": "Developers",
+		"col4Link1": "API",
+		"col4Link2": "CMS modules",
+		"feedback": "Feedback",
+		"userAccount": "User account"
+	},
+	"footerMenu": {
+		"col1Title": "Business",
+		"col1Link1": "UAPAY Checkout",
+		"col1Link2": "Bulk payments",
+		"col1Link3": "Business solutions",
+		"col2Title": "Customers",
+		"col2Link1": "Fines",
+		"col2Link2": "",
+		"col3Title": "Developers",
+		"col3Link1": "API",
+		"col3Link2": "CMS modules",
+		"col4Title": "Company",
+		"col4Link1": "About us",
+		"col4Link2": "News",
+		"col4Link3": "FAQ",
+		"col4Link4": "Partnership",
+		"col4Link5": "Legal information"
+	},
+	"bottomFooter": {
+		"link1": "Terms of Service",
+		"link2": "Cookies Policy",
+		"link3": "Privacy Policy"
+	},
+	"preferencesBlock": {
+		"preference1Title": "PCI DSS",
+		"preference1Desc": "100% compliance with payment security standards",
+		"preference2Title": "GDPR Compliant",
+		"preference2Desc": "Work with personal data is clearly regulated",
+		"preference3Title": "IPS",
+		"preference3Desc": "Status of the internal payment system",
+		"preference4Title": "Paperless company",
+		"preference4Desc": "Maximum support for electronic document management",
+		"preference5Title": "",
+		"preference5Desc": "",
+		"preference6Title": "",
+		"preference6Desc": ""
+	},
+	"trustBlock": {
+		"blockHeadline": ""
+	},
+	"partnersBlock": {
+		"blockHeadline": "For partners",
+		"blockContent": "We are always open for cooperation with new partners and for providing quality service to a wide range of customers. Therefore, our affiliate program gives the opportunity to earn on recommendations and connected clients for everyone associated with online business."
+	},
+	"developersBlock": {
+		"blockHeadline": "To developers",
+		"blockContent": "We provide a universal payment API and ready-made modules for CMS-systems, which will allow you to connect payment on the site quickly and easily."
+	},
+	"buttonComponents": {
+		"developersBtn": "Details"
+	},
+	"industrySolutions": {
+		"pageHeadline": "",
+		"metaTitle": "Business Solutions — UAPAY",
+		"metaDescription": "Modern fintech solutions for rapid business development!",
+		"canonical": "https://uapay.ua/en/industry-solutions",
+		"connect": "Connect",
+		
+		"block1Headline": "Marketplaces",
+		"block1Desc1": "Instant divide of payment by different recipients when paying for an order from several suppliers. You will receive a detailed report on the payments based on the results of the calculations.",
+		"block1SubHeadline1": "For marketplace",
+		"block1Desc2": "The ability to focus on expanding the range and quality of customer service, saving time on payments to suppliers.",
+		"block1SubHeadline2": "For the merchant",
+		"block1Desc3": "The fastest time for receiving money for goods sold on the marketplaces, what minimizes the cash gap.",
+
+		"block2Headline": "Online retail",
+		"block2Desc1": "Add extra value to your online store by accepting credit cards online, making instant returns if the product is not in stock or doesn’t fit, and providing a guarantee of product delivery.",
+		"block2SubHeadline1": "For the merchant",
+		"block2Desc2": "Our product \"Plug-n-Pay\" will allow you to start accepting payments in 1 day. No paperwork, no loss of time and money!",
+		"block2SubHeadline2": "For buyer",
+		"block2Desc3": "The guarantee of the safety of money and the protection of personal data is provided by the security standards PCI DSS 3.1, GDPR requirements and the financial license of the NBU.",
+
+		"block3Headline": "Travel organizations",
+		"block3Desc1": "Our range of payment services will allow you to reduce operating costs of calculations with partners and receiving payments from travelers.",
+		"block3SubHeadline1": "For travel agency",
+		"block3Desc2": "Now you can send invoices via email, Viber, WhatsApp or any other messenger immediately after talking with a tourist.",
+		"block3SubHeadline2": "For the traveler",
+		"block3Desc3": "The ability to pay for a ticket right from your mobile phone, saving time on finding a terminal or typing a card number for money transfer. An additional degree of protection for the payment page will increase tourist loyalty.",
+
+		"block4Headline": "Taxi services",
+		"block4Desc1": "Automate payments for your taxi fleet, accepting payments from passengers and instantly paying your drivers by transferring to a bank card.",
+		"block4SubHeadline1": "For passenger",
+		"block4Desc2": "Thanks to our card storage technology, a passenger can once add a card in his e-cabinet and then pay for trips without unnecessary actions.",
+		"block4SubHeadline2": "For the driver",
+		"block4Desc3": "The ability to receive rewards for the trip at any convenient time and to any bank card registered in the driver’s cabinet.",
+
+		"block5Headline": "Microloans",
+		"block5Desc1": "You will be able to give out loans to bank cards and accept refunds remotely, significantly reducing the costs of servicing physical points and speeding up the customer service process.",
+		"block5SubHeadline1": "For organization",
+		"block5Desc2": "The availability of a personal account simplifies the process of payments monitoring, as well as giving out a loan to both one borrower and many at once.",
+		"block5SubHeadline2": "For borrower",
+		"block5Desc3": "Instant money transfer to a bank card allows you to use the funds for your needs immediately and to repay a microloan without delays and additional fees."
+	},
+	"bulkPayments": {
+		"pageHeadline": "Bulk payments",
+		"metaTitle": "Bulk Payment System — UAPAY",
+		"metaDescription": "Mass payments to multiple accounts or cards in a few clicks!",
+		"canonical": "https://uapay.ua/en/mass-payouts",
+		"pageIntro": "Created for those who need to pay fees or give out loans on bank cards of any number of recipients. All payments go online.",
+		"block1Title1": "Automation",
+		"block1Desc1": "Upload a pre-made file in your account or make payments using our API",
+		"block1Title2": "Dashboard",
+		"block1Desc2": "See online payment history, payee data, account status, and statuses for each transaction",
+		"block1Title3": "Flexible rates",
+		"block1Desc3": "We offer unique rates that will be comfortable for your business model",
+		"perfectBlockHeadline": "Perfect for",
+		"perfectBlockItem1Title": "Microfinance institutions",
+		"perfectBlockItem1Desc": "for loans",
+		"perfectBlockItem2Title": "Cleaning companies",
+		"perfectBlockItem2Desc": "to pay for work",
+		"perfectBlockItem3Title": "Marketing and advertising agencies",
+		"perfectBlockItem3Desc": "for remuneration",
+		"perfectBlockItem4Title": "Taxi services",
+		"perfectBlockItem4Desc": "for paying drivers and employees",
+		"perfectBlockOutro": "And others",
+		"tariffBlockHeadline": "Exclusive rate",
+		"tariffItem1": "Discount for money turnover",
+		"tariffItem2": "Electronic document management",
+		"tariffItem3": "Fast deposit of funds",
+		"tariffItem4": "Individual Account Manager"
+	},
+	"aboutUs": {
+		"pageHeadline": "About us",
+		"metaTitle": "About Us — UAPAY",
+		"metaDescription": "UAPAY enables businesses to be more flexible, save time and costs. Find out how.",
+		"canonical": "https://uapay.ua/en/about-us",
+		"introLine1": "UAPAY is a national payment service that provides financial and technical solutions for any type of online business. Our team of professionals will help you automate payments and speed up business processes.",
+		"introLine2": "The company, founded in 2013, offers competitive rates and guarantees reliability. We care about the security and speed of online payment, so we try to use the latest technologies that provide the required level of payments.",
+		"introLine3": "A high level of service, transparency and reliability of transactions, prompt and qualified work of a support service - all this allowed us to gain the trust of our customers and secure the image of an honest and stable company.",
+		"finalBlockHeadline": ""
+	},
+	"page404": {
+		"p1": "The page you want to go to is not found.",
+		"p2": "The address you entered may be incorrect or the page has been deleted..."
+	},
 	"legalInfo": {
 		"pageHeadline": "Legal information",
 		"metaTitle": "Legal information — UAPAY",
-		"metaDescription": "Here you will find all the legal information about UAPAY."
+		"metaDescription": "Here you will find all the legal information about UAPAY.",
+		"canonical": "https://uapay.ua/en/legal-info",
+		"link1": "Terms of service",
+		"link2": "Terms of money transfers",
+		"link3": "Information about the financial institution. LLC «FC UAPAY»",
+		"link4": "Financial statements. LLC «FC UAPAY»",
+		"link5": "Information about the financial institution. LLC «IGAMA»",
+		"link6": "EU / EEA Privacy policy",
+		"link7": "Conditions of work with websites",
+		"link8": "Cookies policy"
+	},
+	"cookiesPolicy": {
+		"pageHeadline": "Cookies policy",
+		"metaTitle": "Cookie policy — UAPAY",
+		"metaDescription": "Here is a description of the UAPAY cookie policy.",
+		"canonical": "https://uapay.ua/en/cookies-policy"
+	},
+	"modusOperandi": {
+		"pageHeadline": "Conditions of work with websites",
+		"metaTitle": "General Website Requirements — UAPAY",
+		"metaDescription": "Please see the requirements and policy of collaboration between UAPAY and websites.",
+		"canonical": "https://uapay.ua/en/cookies-policy",
+		"p1": "The site must have an SSL security certificate.",
+		"p2": "There must be symbols of the IPS VISA and MasterCard.",
+		"p3": "It should be clear what payment is accepted for, what is sold on the merchant's website.",
+		"p4": "The site must be functioning, filled with content and working internal links.",
+		"p5": "The must be publicly available and not ask for a login/password to enter.",
+		"p6": "If there is a personal account, test access must be provide. The personal accounts should be hosted on the same domain as the main site.",
+		"p7": "Goods/Services should not contradict the current legislation of Ukraine.",
+		"p8": "The site recommended to contain:",
+		"li1": "full company name;",
+		"li2": "legal and actual addresses;",
+		"li3": "phone and email address of the organization selling the goods or services;",
+		"li4": "customer support phone and email;",
+		"li5": "public offer agreement;",
+		"li6": "terms and conditions of return and exchange;",
+		"li7": "cookie policy;",
+		"li8": "privacy policy.",
+		"p9": "Goods / services should be described in details: the description should include the characteristics of the goods and services offered, their consumer properties and price.",
+		"p10": "Prices must be indicated in the national currency of Ukraine - hryvnia.",
+		"p11": "All pages that are related to the sale of goods or services on the website of the online store must be under a single domain name.",
+		"p12": "There must be Information about the payment procedure and delivery.",
+		"p13": "If any requirements will not be complied within 30 days from the date of signing the service contract, the payment provider may unilaterally disable payment acceptance.",
+		"p14": "",
+		"li9": "",
+		"li10": "",
+		"li11": "",
+		"li12": ""
+	},
+	"financialStatements": {
+		"pageHeadline": "Financial statements"
 	}
 }

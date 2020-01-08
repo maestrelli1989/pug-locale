@@ -10,11 +10,9 @@
 extends layouts/_layout.pug
 
 block meta-data
-	+meta-data(
-	'Загальні вимоги до сайту — UAPAY', 
-	'Будь ласка, ознайомтеся з вимогами та політикою UAPAY щодо співпраці з веб-сайтами.', 
-	'https://uapay.ua/website-modus-operandi'
-	)
+	title #{$i18n.modusOperandi.metaTitle}
+	meta(name="description", content="#{$i18n.modusOperandi.metaDescription}")
+	link(rel="canonical", href="#{$i18n.modusOperandi.canonical}")
 
 block header
 	+header('black-header')
@@ -26,34 +24,34 @@ block main-content
 	.inner-page-wrapper.text-page
 		.intro-block.black-intro-block
 			.container.main-container
-				h3 Порядок роботи з веб-сайтами
+				h3 #{$i18n.modusOperandi.pageHeadline}
 		.text-page-content
 			.container.main-container
-				p Сайт повинен мати SSL-сертифікат безпеки.
-				p Повинна бути символіка МПС VISA і MasterCard.
-				p Повинно бути зрозуміло, за що приймається платіж, що продається на сайті торговця.
-				p Сайт повинен бути робочим, заповненим контентом, робочими внутрішніми посиланнями.
-				p Сайт повинен бути викладений в публічний доступ і не запитувати логін / пароль для входу.
-				p За наявності особистого кабінету потрібно надати тестовий доступ. Особистий кабінет повинен розташовуватися на тому ж домені, що і основний сайт.
-				p Товари / Послуги, що продаються, не повинні суперечити чинному законодавству України;
-				p На сайті рекомендовано вказати:
+				p #{$i18n.modusOperandi.p1}
+				p #{$i18n.modusOperandi.p2}
+				p #{$i18n.modusOperandi.p3}
+				p #{$i18n.modusOperandi.p4}
+				p #{$i18n.modusOperandi.p5}
+				p #{$i18n.modusOperandi.p6}
+				p #{$i18n.modusOperandi.p7}
+				p #{$i18n.modusOperandi.p8}
 				ul
-					li повне фірмове найменування організації;
-					li юридична та фактична адреси;
-					li телефон і адресу електронної пошти організації, що здійснює продаж товарів і послуг;
-					li телефон і адресу електронної пошти служби підтримки клієнтів;
-					li договір публічної оферти;
-					li правила та умови повернення та обміну товарів;
-					li cookie policy;
-					li політику конфіденційності.
-				p Товари / послуги повинні бути докладно описані: опис має включати характеристики пропонованих товарів і послуг, їх споживчі властивості і ціну.
-				p Ціни повинні бути вказані в національній валюті України – гривні.
-				p Всі сторінки, які пов'язані з реалізацією товарів, робіт, послуг на сайті інтернет-магазину, повинні перебувати під єдиним доменним ім'ям.
-				p Повинна бути вказана інформація про порядок оплати, доставки товару.
-				p При невиконанні будь-яких вимог протягом 30 днів з моменту підписання договору на обслуговування, прийом платежів може бути відключений в односторонньому порядку провайдером платежів.
-				p Правилами міжнародних платіжних систем VISA і MasterCard заборонена онлайн-торгівля:
+					li #{$i18n.modusOperandi.li1}
+					li #{$i18n.modusOperandi.li2}
+					li #{$i18n.modusOperandi.li3}
+					li #{$i18n.modusOperandi.li4}
+					li #{$i18n.modusOperandi.li5}
+					li #{$i18n.modusOperandi.li6}
+					li #{$i18n.modusOperandi.li7}
+					li #{$i18n.modusOperandi.li8}
+				p #{$i18n.modusOperandi.p9}
+				p #{$i18n.modusOperandi.p10}
+				p #{$i18n.modusOperandi.p11}
+				p #{$i18n.modusOperandi.p12}
+				p #{$i18n.modusOperandi.p13}
+				p #{$i18n.modusOperandi.p14}
 				ul.pb0
-					li порнографією;
-					li тютюновими виробами;
-					li лікарськими препаратами за рецептом;
-					li товарами, що порушують авторське право і / або інтелектуальну власність.
+					li #{$i18n.modusOperandi.li9}
+					li #{$i18n.modusOperandi.li10}
+					li #{$i18n.modusOperandi.li11}
+					li #{$i18n.modusOperandi.li12}

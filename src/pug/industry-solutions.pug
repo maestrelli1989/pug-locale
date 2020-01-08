@@ -10,11 +10,9 @@
 extends layouts/_layout.pug
 
 block meta-data
-	+meta-data(
-	'Website title',
-	'Website description', 
-	'https://uapay.ua/'
-	)
+	title #{$i18n.industrySolutions.metaTitle}
+	meta(name="description", content="#{$i18n.industrySolutions.metaDescription}")
+	link(rel="canonical", href="#{$i18n.industrySolutions.canonical}")
 
 block header
 	+header('red-header')
@@ -26,91 +24,96 @@ block main-content
 	.inner-page-wrapper.industry-solutions-page
 		.intro-block.red-intro-block
 			.container.main-container
-				h1 Отраслевые решения
+				h1 #{$i18n.industrySolutions.pageHeadline}
 				.scroll-menu
 					ul
-						li#first-trigger Маркетплейсы
-						li#second-trigger Онлайн-ритейл
-						li#third-trigger Туризм
-						li#fourth-trigger Сервисы такси
-						li#fifth-trigger Микрокредиты
+						li#first-trigger #{$i18n.industrySolutions.block1Headline}
+						li#second-trigger #{$i18n.industrySolutions.block2Headline}
+						li#third-trigger #{$i18n.industrySolutions.block3Headline}
+						li#fourth-trigger #{$i18n.industrySolutions.block4Headline}
+						li#fifth-trigger #{$i18n.industrySolutions.block5Headline}
 		.industry-solutions-content
 			.first-block
 				.container
-					.solution-item#first-block
+					.solution-item.animatedParent#first-block
 						.top-half
 							.flex-left
-								h4.animated.fadeInLeft.delay-1s.slower Маркетплейсы
+								h4 #{$i18n.industrySolutions.block1Headline}
 							.flex-right
-								p.animated.fadeInRight.delay-1s.slower Мгновенное разделение платежа по разным получателям при оплате заказа от нескольких поставщиков. По итогам проведения расчетов, вы получите подробный отчет о проведенных платежах.
+								p #{$i18n.industrySolutions.block1Desc1}
 						.bottom-half
 							.flex-left
 								include includes/svg/industry-solutions/_marketplaces.pug
 							.flex-right
-								dl.animated.fadeInRight.delay-1s.slower
-									dt Для маркетплейса
-									dd Возможность сфокусироваться на расширении ассортимента и качестве обслуживания клиентов, экономия времени на расчете с поставщиками.
-									dt Для торговца
-									dd Максимально быстрые сроки получения денежных средств, за проданный товар на маркетплейсе, минимизируют кассовый разрыв.
-					.solution-item#second-block
+								dl
+									dt #{$i18n.industrySolutions.block1SubHeadline1}
+									dd #{$i18n.industrySolutions.block1Desc2}
+									dt #{$i18n.industrySolutions.block1SubHeadline2}
+									dd #{$i18n.industrySolutions.block1Desc3}
+								a.connect-btn.animated.pulse.infinite(href="https://account.uapay.ua/auth/register") #{$i18n.industrySolutions.connect}
+					.solution-item.animatedParent#second-block
 						.top-half
 							.flex-left
-								h4.animated.fadeInLeft.delay-1s.slower Онлайн-ритейл
+								h4 #{$i18n.industrySolutions.block2Headline}
 							.flex-right
-								p.animated.fadeInRight.delay-1s.slower Добавьте дополнительную ценность вашему интернет магазину, принимая к оплате банковские карты онлайн, делая моментальные возвраты если товара нет на складе или он не подошел, и обеспечивая гарантию доставки товара.
+								p #{$i18n.industrySolutions.block2Desc1}
 						.bottom-half
 							.flex-left
 								include includes/svg/industry-solutions/_online-retail.pug
 							.flex-right
-								dl.animated.fadeInRight.delay-1s.slower
-									dt Для торговца
-									dd Наша разработка "Plug-n-Pay" позволит вам, начать принимать платежи за 1 день. Никакой бумажной волокиты, потери времени и денег!
-									dt Для покупателя
-									dd Гарантия сохранности денег и защиты персональных данных, обеспечена стандартами безопасности PCI DSS 3.1, требованиями GDPR и финансовой лицензией НБУ.
-					.solution-item#third-block
+								dl
+									dt #{$i18n.industrySolutions.block2SubHeadline1}
+									dd #{$i18n.industrySolutions.block2Desc2}
+									dt #{$i18n.industrySolutions.block2SubHeadline2}
+									dd #{$i18n.industrySolutions.block2Desc3}
+								a.connect-btn.animated.pulse.infinite(href="https://account.uapay.ua/auth/register") #{$i18n.industrySolutions.connect}
+					.solution-item.animatedParent#third-block
 						.top-half
 							.flex-left
-								h4.animated.fadeInLeft.delay-1s.slower Туризм
+								h4 #{$i18n.industrySolutions.block3Headline}
 							.flex-right
-								p.animated.fadeInRight.delay-1s.slower Наш комплекс платежных услуг, позволит вам сократить операционные издержки, при расчетах с партнерами, и приеме платежей от путешественников.
+								p #{$i18n.industrySolutions.block3Desc1}
 						.bottom-half
 							.flex-left
 								include includes/svg/industry-solutions/_tourism.pug
 							.flex-right
-								dl.animated.fadeInRight.delay-1s.slower
-									dt Для турагентства
-									dd Теперь вы сможете выставить счет на оплату, и отправить по почте, Viber,  Whatsapp или через любой другой мессенджер, сразу после звонка. Или, пока турист ознакамливается с деталями тура, у вас в офисе.
-									dt Для путешественника
-									dd Возможность оплатить путевку сразу с мобильного, экономя время на поиски терминала или ввода номера карты для перевода денег. Дополнительная степень защиты платежной страницы, увеличит лояльность туриста.
-					.solution-item#fourth-block
+								dl
+									dt #{$i18n.industrySolutions.block3SubHeadline1}
+									dd #{$i18n.industrySolutions.block3Desc2}
+									dt #{$i18n.industrySolutions.block3SubHeadline2}
+									dd #{$i18n.industrySolutions.block3Desc3}
+								a.connect-btn.animated.pulse.infinite(href="https://account.uapay.ua/auth/register") #{$i18n.industrySolutions.connect}
+					.solution-item.animatedParent#fourth-block
 						.top-half
 							.flex-left
-								h4.animated.fadeInLeft.delay-1s.slower Сервисы такси
+								h4 #{$i18n.industrySolutions.block4Headline}
 							.flex-right
-								p.animated.fadeInRight.delay-1s.slower Автоматизируйте платежи для вашего таксопарка, принимая платежи от пассажиров и моментально рассчитываясь с вашими водителями, на банковскую карту.
+								p #{$i18n.industrySolutions.block4Desc1}
 						.bottom-half
 							.flex-left
 								include includes/svg/industry-solutions/_taxi.pug
 							.flex-right
-								dl.animated.fadeInRight.delay-1s.slower
-									dt Для пассажира
-									dd С нашей технологией хранения карт, пассажир сможет один раз добавить карту в кабинет пассажира и оплачивать поездки без лишних действий.
-									dt Для водителя
-									dd Возможность получать вознаграждения за поездку, в любое удобное время, и на любую свою привязанную банковскую карту в кабинете водителя.
-					.solution-item#fifth-block
+								dl
+									dt #{$i18n.industrySolutions.block4SubHeadline1}
+									dd #{$i18n.industrySolutions.block4Desc2}
+									dt #{$i18n.industrySolutions.block4SubHeadline2}
+									dd #{$i18n.industrySolutions.block4Desc3}
+								a.connect-btn.animated.pulse.infinite(href="https://account.uapay.ua/auth/register") #{$i18n.industrySolutions.connect}
+					.solution-item.animatedParent#fifth-block
 						.top-half
 							.flex-left
-								h4.animated.fadeInLeft.delay-1s.slower Микрокредиты
+								h4 #{$i18n.industrySolutions.block5Headline}
 							.flex-right
-								p.animated.fadeInRight.delay-1s.slower Выдавать займы на банковские карты и принимать погашения дистанционно, существенно сократят ваши издержки на обслуживании физических точек и позволят ускорить процесс обслуживания клиентов.
+								p #{$i18n.industrySolutions.block5Desc1}
 						.bottom-half
 							.flex-left
 								include includes/svg/industry-solutions/_money.pug
 							.flex-right
-								dl.animated.fadeInRight.delay-1s.slower
-									dt Для организации
-									dd Наличие личного кабинета, упрощает процесс мониторинга за платежами, а также выдачу займа, как одному заемщику так и сотням сразу.
-									dt Для заемщика
-									dd Моментальное зачисление на банковскую карту, позволяет сразу же воспользоваться средствами для своих нужд, и осуществить его погашение, без просрочек и дополнительных комиссий.
+								dl
+									dt #{$i18n.industrySolutions.block5SubHeadline1}
+									dd #{$i18n.industrySolutions.block5Desc2}
+									dt #{$i18n.industrySolutions.block5SubHeadline2}
+									dd #{$i18n.industrySolutions.block5Desc3}
+								a.connect-btn.animated.pulse.infinite(href="https://account.uapay.ua/auth/register") #{$i18n.industrySolutions.connect}
 			block developers-block
 				+developers

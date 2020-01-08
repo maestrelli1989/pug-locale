@@ -10,11 +10,9 @@
 extends layouts/_layout.pug
 
 block meta-data
-	+meta-data(
-	'Правова інформація — UAPAY', 
-	'Тут ви знайдете всю необхідну правову інформацію про компанію UAPAY.', 
-	'https://uapay.ua/legal-info'
-	)
+	title #{$i18n.legalInfo.metaTitle}
+	meta(name="description", content="#{$i18n.legalInfo.metaDescription}")
+	link(rel="canonical", href="#{$i18n.legalInfo.canonical}")
 
 block header
 	+header('black-header')
@@ -30,29 +28,26 @@ block main-content
 		.legal-page-content.black-page-content
 			.container.main-container.animatedParent.animateOnce(data-sequence='200')
 				a.special-link.animated.fadeIn(href="terms-of-use", data-id='1')
-					span Умови надання сервісу
+					span #{$i18n.legalInfo.link1}
 					include includes/svg/_arrow-right.pug
 				a.special-link.animated.fadeIn(href="transfer-supply-conditions", data-id='2')
-					span Умови надання переказів
+					span #{$i18n.legalInfo.link2}
 					include includes/svg/_arrow-right.pug
 				a.special-link.animated.fadeIn(href="info-uapay", data-id='3')
-					span Інформація про фінансову установу. ТОВ 
-						q ФК ЮАПЕЙ
+					span #{$i18n.legalInfo.link3}
 					include includes/svg/_arrow-right.pug
 				a.special-link.animated.fadeIn(href="financial-statements", data-id='4')
-					span Фінансова звітність. ТОВ 
-						q ФК ЮАПЕЙ
+					span #{$i18n.legalInfo.link4}
 					include includes/svg/_arrow-right.pug
 				a.special-link.animated.fadeIn(href="info-aihama", data-id='5')
-					span Інформація про фінансову установу. ТОВ 
-						q АЙГАМА
+					span #{$i18n.legalInfo.link5}
 					include includes/svg/_arrow-right.pug
 				a.special-link.animated.fadeIn(href="privacy-policy", data-id='6')
-					span EU / EEA Політика конфіденційності
+					span #{$i18n.legalInfo.link6}
 					include includes/svg/_arrow-right.pug
 				a.special-link.animated.fadeIn(href="website-modus-operandi", data-id='7')
-					span Порядок роботи з веб-сайтами
+					span #{$i18n.legalInfo.link7}
 					include includes/svg/_arrow-right.pug
 				a.special-link.animated.fadeIn(href="cookies-policy", data-id='8')
-					span Політика роботи з cookies
+					span #{$i18n.legalInfo.link8}
 					include includes/svg/_arrow-right.pug

@@ -10,11 +10,9 @@
 extends layouts/_layout.pug
 
 block meta-data
-	+meta-data(
-	'Політика роботи з cookies — UAPAY', 
-	'Тут описана політика взаємодії UAPAY з файлами cookie.', 
-	'https://uapay.ua/cookies-policy'
-	)
+	title #{$i18n.cookiesPolicy.metaTitle}
+	meta(name="description", content="#{$i18n.cookiesPolicy.metaDescription}")
+	link(rel="canonical", href="#{$i18n.cookiesPolicy.canonical}")
 
 block header
 	+header('black-header')
@@ -26,7 +24,7 @@ block main-content
 	.inner-page-wrapper.text-page
 		.intro-block.black-intro-block
 			.container.main-container
-				p Політика роботи з cookies
+				h3 #{$i18n.cookiesPolicy.pageHeadline}
 		.text-page-content
 			.container.main-container
 				h6.text-center.pt0 Last updated: December 13, 2019

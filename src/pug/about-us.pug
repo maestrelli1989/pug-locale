@@ -10,11 +10,9 @@
 extends layouts/_layout.pug
 
 block meta-data
-	+meta-data(
-	'Website title', 
-	'Website description', 
-	'https://uapay.ua/about-us'
-	)
+	title #{$i18n.aboutUs.metaTitle}
+	meta(name="description", content="#{$i18n.aboutUs.metaDescription}")
+	link(rel="canonical", href="#{$i18n.aboutUs.canonical}")
 
 block header
 	+header('red-header')
@@ -26,16 +24,16 @@ block main-content
 	.inner-page-wrapper.about-us-page
 		.intro-block.red-intro-block
 			.container.main-container
-				h1 Про нас
+				h1 #{$i18n.aboutUs.pageHeadline}
 		.about-us-content
 			.first-block
 				.container.main-container
 					.flex-block.animatedParent.animateOnce(data-sequence='500')
 						.flex-left.animated.fadeIn(data-id='1')
 							p
-								b UAPAY - это национальный платежный сервис, предоставляющий финансово-технические решения для любого типа онлайн бизнеса. Наша команда професионалов поможет вам вам автоматизировать платежи и ускорить бизнес-процессы.
-							p Компания, основанная в 2013 году, предлагает выгодные тарифы и гарантию надежности. Мы заботимся о безопасности и скорости онлайн расчетов, поэтому стараемся применять новейшие технологии которые обеспечивают требуемый уровень проведения платежей.
-							p Высокий уровень сервиса, прозрачность и надежность транзакций, оперативная и квалифицированная работа службы поддержки, – все это позволило завоевать доверие наших клиентов и закрепить за собой имидж честной и стабильной компании.
+								b #{$i18n.aboutUs.introLine1}
+							p #{$i18n.aboutUs.introLine2}
+							p #{$i18n.aboutUs.introLine3}
 						.flex-right.animated.fadeIn(data-id='2')
 							img(src="../assets/images/svg/uapay.svg", alt="Image", style="width: 340px")
 			block preferences-block
@@ -46,7 +44,7 @@ block main-content
 				+partners
 			.last-block
 				.container.main-container.animatedParent.animateOnce(data-sequence='500')
-					h5.animated.fadeIn(data-id='1') Про нас пишуть
+					h5.animated.fadeIn(data-id='1') #{$i18n.aboutUs.finalBlockHeadline}
 					.media-block.animatedParent.animateOnce(data-sequence='500')
 						img(class="animated fadeIn", data-id='1', src="../assets/images/about-us/media/ain.png", alt="Logo")
 						img(class="animated fadeIn", data-id='2', src="../assets/images/about-us/media/minfin.png", alt="Logo")
