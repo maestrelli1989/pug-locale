@@ -68,7 +68,9 @@
 		"blockContent": "We provide a universal payment API and ready-made modules for CMS-systems, which will allow you to connect payment on the site quickly and easily."
 	},
 	"buttonComponents": {
-		"developersBtn": "Details"
+		"developersBtn": "Details",
+		"joinNowBtn": "Join now",
+		"managerBtn": "Contact manager"
 	},
 	"industrySolutions": {
 		"pageHeadline": "",

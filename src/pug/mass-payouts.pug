@@ -75,12 +75,12 @@ block main-content
 								p #{$i18n.bulkPayments.perfectBlockItem4Desc}
 							p.other #{$i18n.bulkPayments.perfectBlockOutro}
 			.second-block
-				.container.main-container
-					h4 #{$i18n.bulkPayments.tariffBlockHeadline}
+				.container.main-container.animatedParent.animateOnce(data-sequence='500')
+					h4.animated.fadeIn(data-id='1') #{$i18n.bulkPayments.tariffBlockHeadline}
 					ul
-						li #{$i18n.bulkPayments.tariffItem1}
-						li #{$i18n.bulkPayments.tariffItem2}
-						li #{$i18n.bulkPayments.tariffItem3}
-						li #{$i18n.bulkPayments.tariffItem4}
+						li.animated.fadeIn(data-id='2') #{$i18n.bulkPayments.tariffItem1}
+						li.animated.fadeIn(data-id='3') #{$i18n.bulkPayments.tariffItem2}
+						li.animated.fadeIn(data-id='4') #{$i18n.bulkPayments.tariffItem3}
+						li.animated.fadeIn(data-id='5') #{$i18n.bulkPayments.tariffItem4}
 			block developers-block
 				+developers

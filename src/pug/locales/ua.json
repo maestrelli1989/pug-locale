@@ -68,7 +68,9 @@
 		"blockContent": "Ми надаємо універсальний платіжний API і готові модулі для CMS-систем, які дозволять дуже швидко і просто підключити оплату на сайті."
 	},
 	"buttonComponents": {
-		"developersBtn": "Докладніше"
+		"developersBtn": "Докладніше",
+		"joinNowBtn": "Підключитися зараз",
+		"managerBtn": "Зв'язатися з менеджером"
 	},
 	"industrySolutions": {
 		"pageHeadline": "Галузеві рішення",

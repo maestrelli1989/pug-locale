@@ -18,6 +18,7 @@
 					opacity: 0.8
 	.industry-solutions-content
 		.first-block
+			padding: 50px 0px 0px
 			.main-container
 				.connect-btn
 					color: $corporate-red
@@ -43,25 +44,17 @@
 						color: $corporate-accent-red
 				.solution-item
 					display: flex
-					flex-direction: column
+					flex-direction: row
 					justify-content: space-between
 					align-items: flex-start
 					padding: 30px 0px 70px
-					.top-half,
-					.bottom-half
-						display: flex
-						flex-direction: row
-						width: 100%
-						max-width: 1000px
-					.top-half
-						padding-bottom: 50px
 					.flex-left
 						width: 100%
 						max-width: 390px
 						h4
 							padding: 0px
 							text-transform: uppercase
-							margin-bottom: 50px
+							margin-bottom: 80px
 						svg
 							.marketplace-1, .marketplace-2, .marketplace-3, .online-retail-1, .online-retail-2, .online-retail-3, .tourism-1, .tourism-2, .tourism-3, .taxi-1, .taxi-2, .taxi-3, .money-1, .money-2, .money-3
 								transition: $quarternary-transition
@@ -74,6 +67,8 @@
 					.flex-right
 						width: 100%
 						max-width: 610px
+						p
+							padding-bottom: 40px
 						dl
 							padding: 0px
 					&:last-child
