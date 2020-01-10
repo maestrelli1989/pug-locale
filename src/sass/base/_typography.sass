@@ -128,7 +128,7 @@ samp
 	color: $corporate-dark-gray	
 
 .inner-page-wrapper
-	a:not(.btn-white):not(.btn-ghost-white):not(.btn-black):not(.btn-red):not(.special-link):not(.action-btn):not(.news-item):not(.page-link):not(.financial-report-link):not(.connect-btn):not(.download-file-link)
+	a:not(.btn-white):not(.btn-ghost-white):not(.btn-gainsboro):not(.btn-black):not(.btn-red):not(.special-link):not(.action-btn):not(.news-item):not(.page-link):not(.financial-report-link):not(.connect-btn):not(.download-file-link)
 		font-size: 16px
 		font-family: $primary-regular
 		font-weight: $regular-weight
@@ -243,3 +243,43 @@ samp
 			font-size: 16px
 			line-height: 28px
 			padding-bottom: 10px
+
+input[type=text]:focus:-webkit-input-placeholder,
+input[type=password]:focus:-webkit-input-placeholder,
+input[type=email]:focus:-webkit-input-placeholder,
+input[type=number]:focus:-webkit-input-placeholder,
+input[type=search]:focus:-webkit-input-placeholder,
+textarea:focus:-webkit-input-placeholder
+	color: transparent!important
+
+input[type=text]:focus::-webkit-input-placeholder,
+input[type=password]:focus::-webkit-input-placeholder,
+input[type=email]:focus::-webkit-input-placeholder,
+input[type=number]:focus::-webkit-input-placeholder,
+input[type=search]:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder
+	color: transparent!important
+
+input[type=text]:focus:-moz-placeholder,
+input[type=password]:focus:-moz-placeholder,
+input[type=email]:focus:-moz-placeholder,
+input[type=number]:focus:-moz-placeholder,
+input[type=search]:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder
+	color: transparent!important
+
+input[type=text]:focus::-moz-placeholder,
+input[type=password]:focus::-moz-placeholder,
+input[type=email]:focus::-moz-placeholder,
+input[type=number]:focus::-moz-placeholder,
+input[type=search]:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder
+	color: transparent!important
+
+input[type=text]:focus:-ms-input-placeholder,
+input[type=password]:focus:-ms-input-placeholder,
+input[type=email]:focus:-ms-input-placeholder,
+input[type=number]:focus:-ms-input-placeholder,
+input[type=search]:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder
+	color: transparent!important

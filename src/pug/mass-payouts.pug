@@ -31,56 +31,57 @@ block main-content
 					.animatedParent.animateOnce
 						p.intro-text.animated.growIn
 							b #{$i18n.bulkPayments.pageIntro}
-					.flex-block
+					.flex-block.animatedParent.animateOnce(data-sequence='200')
 						.flex-item.animatedParent.animateOnce
-							figure.animated.rotateIn.slower
+							figure.animated.rotateIn.slower(data-id='1')
 								img(src="../assets/images/mass-payouts/settings.png", alt="Image")
-							h5.animated #{$i18n.bulkPayments.block1Title1}
-							p.animated.fadeIn #{$i18n.bulkPayments.block1Desc1}
-						.flex-item.animatedParent.animateOnce
-							figure.animated.rotateIn.slower
+							h5.animated.fadeInDownShort(data-id='2') #{$i18n.bulkPayments.block1Title1}
+							p.animated.fadeInDownShort(data-id='3') #{$i18n.bulkPayments.block1Desc1}
+						.flex-item
+							figure.animated.rotateIn.slower(data-id='1')
 								img(src="../assets/images/mass-payouts/profile.png", alt="Image")
-							h5.animated.fadeIn #{$i18n.bulkPayments.block1Title2}
-							p.animated.fadeIn #{$i18n.bulkPayments.block1Desc2}
-						.flex-item.animatedParent.animateOnce
-							figure.animated.rotateIn.slower
+							h5.animated.fadeInDownShort(data-id='2') #{$i18n.bulkPayments.block1Title2}
+							p.animated.fadeInDownShort(data-id='3') #{$i18n.bulkPayments.block1Desc2}
+						.flex-item
+							figure.animated.rotateIn.slower(data-id='1')
 								img(src="../assets/images/mass-payouts/prices.png", alt="Image")
-							h5.animated.fadeIn #{$i18n.bulkPayments.block1Title3}
-							p.animated.fadeIn #{$i18n.bulkPayments.block1Desc3}
+							h5.animated.fadeInDownShort(data-id='2') #{$i18n.bulkPayments.block1Title3}
+							p.animated.fadeInDownShort(data-id='3') #{$i18n.bulkPayments.block1Desc3}
 					h4.text-center #{$i18n.bulkPayments.perfectBlockHeadline}
-					.preferences-block
-						.preference-col
+					.preferences-block.animatedParent.animateOnce(data-sequence='200')
+						.preference-col.animated.fadeIn(data-id='1')
 							.preference-item
-								figure
+								figure.animated.fadeInDownShort(data-id='2')
 									img(src="../assets/images/mass-payouts/money.png", alt="Image", style="width: 48px; height: 48px;")
-								h3 #{$i18n.bulkPayments.perfectBlockItem1Title}
-								p #{$i18n.bulkPayments.perfectBlockItem1Desc}
-						.preference-col
+								h3.animated.fadeInDownShort(data-id='3') #{$i18n.bulkPayments.perfectBlockItem1Title}
+								p.animated.fadeInDownShort(data-id='4') #{$i18n.bulkPayments.perfectBlockItem1Desc}
+						.preference-col.animated.fadeIn(data-id='5')
 							.preference-item
-								figure
+								figure.animated.fadeInDownShort(data-id='6')
 									img(src="../assets/images/mass-payouts/cleaning.png", alt="Image", style="width: 48px; height: 48px;")
-								h3 #{$i18n.bulkPayments.perfectBlockItem2Title}
-								p #{$i18n.bulkPayments.perfectBlockItem2Desc}
-						.preference-col
+								h3.animated.fadeInDownShort(data-id='7') #{$i18n.bulkPayments.perfectBlockItem2Title}
+								p.animated.fadeInDownShort(data-id='8') #{$i18n.bulkPayments.perfectBlockItem2Desc}
+						.preference-col.animated.fadeIn(data-id='9')
 							.preference-item
-								figure
+								figure.animated.fadeInDownShort(data-id='10')
 									img(src="../assets/images/mass-payouts/marketing.png", alt="Image", style="width: 48px; height: 48px;")
-								h3 #{$i18n.bulkPayments.perfectBlockItem3Title}
-								p #{$i18n.bulkPayments.perfectBlockItem3Desc}
-						.preference-col
+								h3.animated.fadeInDownShort(data-id='11') #{$i18n.bulkPayments.perfectBlockItem3Title}
+								p.animated.fadeInDownShort(data-id='12') #{$i18n.bulkPayments.perfectBlockItem3Desc}
+						.preference-col.animated.fadeIn(data-id='13')
 							.preference-item
-								figure
+								figure.animated.fadeInDownShort(data-id='14')
 									img(src="../assets/images/mass-payouts/taxi.png", alt="Image", style="width: 48px; height: 48px;")
-								h3 #{$i18n.bulkPayments.perfectBlockItem4Title}
-								p #{$i18n.bulkPayments.perfectBlockItem4Desc}
-							p.other #{$i18n.bulkPayments.perfectBlockOutro}
+								h3.animated.fadeInDownShort(data-id='15') #{$i18n.bulkPayments.perfectBlockItem4Title}
+								p.animated.fadeInDownShort(data-id='16') #{$i18n.bulkPayments.perfectBlockItem4Desc}
+							p.other.animated.fadeInDownShort(data-id='17') #{$i18n.bulkPayments.perfectBlockOutro}
 			.second-block
-				.container.main-container.animatedParent.animateOnce(data-sequence='500')
+				.container.main-container.animatedParent.animateOnce(data-sequence='200')
 					h4.animated.fadeIn(data-id='1') #{$i18n.bulkPayments.tariffBlockHeadline}
 					ul
 						li.animated.fadeIn(data-id='2') #{$i18n.bulkPayments.tariffItem1}
 						li.animated.fadeIn(data-id='3') #{$i18n.bulkPayments.tariffItem2}
 						li.animated.fadeIn(data-id='4') #{$i18n.bulkPayments.tariffItem3}
 						li.animated.fadeIn(data-id='5') #{$i18n.bulkPayments.tariffItem4}
+					a.btn-white.animated.fadeIn(data-id='6', href="https://business.uapay.ua/about/contacts/", target="_blank") #{$i18n.uapayCheckout.tariffsRightBlockBtn}
 			block developers-block
 				+developers

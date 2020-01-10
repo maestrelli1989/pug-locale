@@ -11,7 +11,7 @@ extends layouts/_layout.pug
 
 block meta-data
 	+meta-data(
-	'', 
+	'.', 
 	'.', 
 	'https://uapay.ua/feedback'
 	)
@@ -21,15 +21,51 @@ block header
 
 block mobile-menu
 	+mobile-menu('mobile-menu-black')
+	
+block extra-js
+	script(src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js")
+	script.
+		$('#phone').inputmask("+38 (099) 999 99 99");
 
 block main-content
 	.inner-page-wrapper.feedback-page
-		.intro-block.black-intro-block
-			.container.main-container
-				h3 Порядок роботи з веб-сайтами
 		.feedback-page-content
 			.container.main-container
-				form(action="/php/mailer.php" method="POST")
-					input(type="text" name="fio" placeholder="Укажите ФИО" required)
-					input(type="text" name="email" placeholder="Укажите e-mail" required)
-					input(type="submit" value="Отправить")
+				.flex-block
+					.flex-left
+						h1 Свяжитесь с нами!
+						p Если у вас возникли вопросы, пожалуйста, заполните следующую контактную форму
+					.flex-right
+						form(action="" method="POST")
+							.form-row
+								.form-group.col-md-6
+									label(for="first-name") Имя*
+									input(type="text", name="firstName", class="form-control", id="first-name", placeholder="***", required)
+								.form-group.col-md-6
+									label(for="last-name") Фамилия*
+									input(type="text", name="lastName", class="form-control", id="last-name", placeholder="***", required)
+							.form-row
+								.form-group.col-md-6
+									label(for="email") Email*
+									input(type="email", name="email", class="form-control", id="email", placeholder="***", required)
+								.form-group.col-md-6
+									label(for="phone") Телефон*
+									input(type="text", name="phone", class="form-control", id="phone", placeholder="***", required)
+							.form-row
+								.form-group.col-md-6
+									label(for="website") Вебсайт*
+									input(type="text", name="website", class="form-control", id="website", placeholder="***", required)
+								.form-group.col-md-6
+									label(for="turnover") Оборот в месяц*
+									select(name="turnover", class="form-control", id="turnover", required)
+										option(value="one") One
+										option(value="two") Two
+										option(value="three") Three
+										option(value="four") Four
+										option(value="five") Five
+							.form-row
+								.form-group.col-md-12
+									label(for="message") Сообщение*
+									textarea(name="message", class="form-control", id="message", placeholder="***", cols="30", rows="1")
+							.form-row
+								input(type="submit" value="Отправить")

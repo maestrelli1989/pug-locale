@@ -69,8 +69,55 @@
 	},
 	"buttonComponents": {
 		"developersBtn": "Details",
-		"joinNowBtn": "Join now",
-		"managerBtn": "Contact manager"
+		"joinNowBtn": "Join now"
+	},
+	"uapayCheckout": {
+		"pageHeadline": "UAPAY Checkout",
+		"metaTitle": "UAPAY Internet Acquiring: Accept Payments on Your Website",
+		"metaDescription": "Set up acquiring and accept online payments at your online store or at any other website!",
+		"canonical": "https://uapay.ua/en/uapay-checkout",
+
+		"introPart1": "Adds value to your online business through the usage of a range of solutions aimed at automating payments for goods and services using bank cards, as well as the delivery of purchased goods to your customers in Ukraine.",
+		"introPart2": "UAPAY Checkout is based on complex technological and business processes that are built on the principles of transparency, security and ease of use for both you and your customers.",
+		"introPart3": "We support work with cards of international payment systems Visa and MasterCard, as well as the national payment system PROSTIR.",
+
+		"secondBlockTitle": "",
+		"item1Title": "Fraud Protection",
+		"item1Content": "The system provides payment security and protection against fraud. Our system uses unique algorithms that allow you to identify the doubtfulness of the transaction and do not allow them to happen. Algorithms and rules are constantly being improved, allowing you to keep the security degree at the proper level without affecting the conversion of payments.",
+		"item2Title": "QR payments",
+		"item2Content": "The ability to generate payment QR codes allows you to set payment acceptance points outside the framework of POS terminals. In the QR code you can keep the details of the payee, the amount to be paid, or provide the payer with the opportunity to make the desired amount to be paid. The technology is optimally suited for various offline establishments, for event organizers and stores with physical points of sale. No integration required.",
+		"item3Title": "E-doc management",
+		"item3Content": "Contracts, acts, additional agreements and other documents can be signed using a qualified electronic signature. This significantly reduces the time of signing a standard contract and eliminates any additional costs for paper, ink and logistics of paper copies. And most importantly, qualified electronic signature has full legal force and increased security.",
+		"item4Title": "Delivery services",
+		"item4Content": "Ready-made solutions integrated with delivery services (Nova Poshta, Justin and others) eliminate the need for separate integration of the delivery service API, designed to track delivery status online. We have already done this for you. In addition, the buyer can immediately pay for both the goods and thier delivery, and we will distribute the payments in accordance with a determined proportion.",
+		"item5Title": "Subscription Payments",
+		"item5Content": "Regular or recurring payments allow you to make transactions in the period indicated by the payer. The system will automatically charge a certain amount from a card and after each successful transaction the payer will receive a notification of payment with a payment receipt with a digital signature.",
+		"item6Title": "Escrow payments",
+		"item6Content": "Now both parties of transaction are protected from fraud thanks to escrow payments. The technology guarantees the success of the operation when all conditions of the transaction are met by both parties. The buyer is confident in the refund in the matter of a failed transaction, and the seller - in the getting of funds after successful completion of the transaction.",
+		"item7Title": "Multi-basket",
+		"item7Content": "A perfect solution for marketplaces and other platforms that need automatic calculation with several suppliers of goods and services. Transfer of funds is carried out the next day according to the specified details of the recipients in your account or by API. If the requisites are incorrect, we will notify you immediately.",
+		"item8Title": "Comfortable connection",
+		"item8Content": "We understand how important it is to quickly connect a payment system, and for this we have developed the most affordable API and ready-made payment CMS modules that can be installed and activated. We also offer “Integrate for me” service. Now you do not have to spend time studying technical documentation, our team will do everything for you.",
+
+		"tariffsTitle": "Tariffs",
+		"tariffsLeftBlockTitle": "Fast start",
+		"tariffsLeftBlockMainDesc": "Ideal for those who want to connect the option of online payment without unnecessary actions and waste of time",
+		"bonusItem1": "2,45%",
+		"bonusItem2": "+ 1 UAH",
+		"bonusItem3": "simple tariff",
+		"tariffsLeftBlockli1": "1 day integration",
+		"tariffsLeftBlockli2": "Help centre",
+		"tariffsLeftBlockli3": "API, CMS ",
+		"tariffsLeftBlockli4": "\"Integrate for me\"",
+		"tariffsLeftBlockBtn": "Connect now",
+		"tariffsRightBlockTitle": "Enterprise",
+		"tariffsRightBlockMainDesc": "Solutions for large companies with unique business models",
+		"tariffsRightBlockLi1": "Exclusive rate",
+		"tariffsRightBlockLi2": "Discount on turnover",
+		"tariffsRightBlockLi3": "Complex solutions",
+		"tariffsRightBlockLi4": "Separate account manager",
+		"tariffsRightBlockBtn": "Contact manager"
+
 	},
 	"industrySolutions": {
 		"pageHeadline": "",
@@ -152,6 +199,9 @@
 		"introLine3": "A high level of service, transparency and reliability of transactions, prompt and qualified work of a support service - all this allowed us to gain the trust of our customers and secure the image of an honest and stable company.",
 		"finalBlockHeadline": ""
 	},
+	"news": {
+		"pageHeadline": "News"
+	},
 	"page404": {
 		"p1": "The page you want to go to is not found.",
 		"p2": "The address you entered may be incorrect or the page has been deleted..."
@@ -175,6 +225,9 @@
 		"metaTitle": "Cookie policy — UAPAY",
 		"metaDescription": "Here is a description of the UAPAY cookie policy.",
 		"canonical": "https://uapay.ua/en/cookies-policy"
+	},
+	"privacyPolicy": {
+		"pageHeadline": "EU / EEA Privacy policy"
 	},
 	"modusOperandi": {
 		"pageHeadline": "Conditions of work with websites",
@@ -210,5 +263,17 @@
 	},
 	"financialStatements": {
 		"pageHeadline": "Financial statements"
+	},
+	"termsOfUse": {
+		"pageHeadline": "Terms of service"
+	},
+	"transferSupplyConditions": {
+		"pageHeadline": "Terms of money transfers"
+	},
+	"infoIgama": {
+		"pageHeadline": "Information about the financial institution. LLC «IGAMA»"
+	},
+	"infoUapay": {
+		"pageHeadline": "Information about the financial institution. LLC «FC UAPAY»"
 	}
 }

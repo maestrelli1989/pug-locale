@@ -26,13 +26,10 @@ block main-content
 	.inner-page-wrapper.aihama-info-page
 		.intro-block.black-intro-block
 			.container.main-container
-				h3 Інформація про фінансову установу.
-					br
-					| ТОВ 
-					q АЙГАМА
+				h3 #{$i18n.infoIgama.pageHeadline}
 		.aihama-info-page-content
-			.container.main-container.animatedParent.animateOnce(data-sequence='500')
-				.content-line.animated.fadeIn(data-id='1')
+			.container.main-container.animatedParent.animateOnce(data-sequence='200')
+				.content-line.animated.fadeInDownShort(data-id='1')
 					.flex-left
 						p
 							b Повне найменування юридичної особи
@@ -42,19 +39,19 @@ block main-content
 							|  (ТОВ 
 							q АЙГАМА
 							| )
-				.content-line.animated.fadeIn(data-id='2')
+				.content-line.animated.fadeInDownShort(data-id='2')
 					.flex-left
 						p
 							b Ідентифікаційний код юридичної особи
 					.flex-right
 						p 35624403
-				.content-line.animated.fadeIn(data-id='3')
+				.content-line.animated.fadeInDownShort(data-id='3')
 					.flex-left
 						p
 							b Місцезнаходження юридичної особи
 					.flex-right
 						p 04205, м. Київ, пр. Оболонський, буд. 35
-				.content-line.animated.fadeIn(data-id='4')
+				.content-line.animated.fadeInDownShort(data-id='4')
 					.flex-left
 						p
 							b Оператор платіжної інфраструктури
@@ -63,9 +60,9 @@ block main-content
 							q АЙГАМА
 							|  внесено до Реєстру платіжних систем, учасників платіжних систем та операторів послуг платіжної інфраструктури у якості Оператора послуг платіжної інфраструктури, що має право надавати наступні послуги:
 						ul
-							li Кліринг;
-							li Процесинг;
-							li Операційні, інформаційні та інші технологічні функції щодо переказу коштів.
+							li кліринг;
+							li процесинг;
+							li операційні, інформаційні та інші технологічні функції щодо переказу коштів.
 						p ТОВ 
 							q АЙГАМА
 							|  у якості Оператора послуг платіжної інфраструктури надає вищевказані послуги на користь наступних юридичних осіб: ТОВ 

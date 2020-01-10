@@ -58,7 +58,7 @@ mixin header(className)
 									a.animated.fadeIn(data-id='1', href="javascript:void(0);") #{$i18n.headerMenu.col4Link2}
 				.header-flex-right
 					a.feedback-link(href="feedback") #{$i18n.headerMenu.feedback}
-					a.btn-ghost-white(href="javascript:void(0);") #{$i18n.headerMenu.userAccount}
+					a.btn-ghost-white(href="https://account.uapay.ua/auth/register", target="_blank") #{$i18n.headerMenu.userAccount}
 					.burger
 						.burger-box
 							.burger-inner
@@ -130,7 +130,7 @@ mixin mobile-menu(className)
 						ul.links-wrapper
 							li: a(href="javascript:void(0);") #{$i18n.headerMenu.col4Link1}
 							li: a(href="javascript:void(0);") #{$i18n.headerMenu.col4Link2}
-			a.btn-ghost-white(href="javascript:void(0);") #{$i18n.headerMenu.userAccount}
+			a.btn-ghost-white(href="https://account.uapay.ua/auth/register", target="_blank") #{$i18n.headerMenu.userAccount}
 			a.feedback-link(href="feedback") #{$i18n.headerMenu.feedback}
 
 //- Preferences block mixin
@@ -212,9 +212,9 @@ mixin developers(className)
 	.developers-block(class=className)
 		.container.main-container
 			.flex-block.animatedParent.animateOnce(data-sequence='500')
-				.flex-left.animated.fadeIn(data-id='1')
+				.flex-left.animated.fadeInLeftShort(data-id='1')
 					img(src="../assets/images/svg/api-cms.svg", alt="Image")
-				.flex-right.animated.fadeIn(data-id='2')
+				.flex-right.animated.fadeInRightShort(data-id='1')
 					h4 #{$i18n.developersBlock.blockHeadline}
 					p #{$i18n.developersBlock.blockContent}
 					include ../includes/components/_developers-btn.pug
@@ -225,9 +225,9 @@ mixin partners(className)
 	.partners-block(class=className)
 		.container.main-container
 			.flex-block.animatedParent.animateOnce(data-sequence='500')
-				.flex-left.animated.fadeIn(data-id='1')
+				.flex-left.animated.fadeInLeftShort(data-id='1')
 					img(src="../assets/images/svg/percent.svg", alt="Image")
-				.flex-right.animated.fadeIn(data-id='2')
+				.flex-right.animated.fadeInRightShort(data-id='1')
 					h4 #{$i18n.partnersBlock.blockHeadline}
 					p #{$i18n.partnersBlock.blockContent}
 					include ../includes/components/_partnership-btn.pug

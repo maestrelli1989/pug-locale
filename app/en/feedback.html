@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title></title>
+    <title>.</title>
     <meta name="description" content="."/>
     <link rel="canonical" href="https://uapay.ua/feedback"/>
     <link rel="shortcut icon" href="../assets/images/favicons/favicon.ico">
@@ -66,7 +66,7 @@
               </div>
             </div>
           </div>
-          <div class="header-flex-right"><a class="feedback-link" href="feedback">Feedback</a><a class="btn-ghost-white" href="javascript:void(0);">User account</a>
+          <div class="header-flex-right"><a class="feedback-link" href="feedback">Feedback</a><a class="btn-ghost-white" href="https://account.uapay.ua/auth/register" target="_blank">User account</a>
             <div class="burger">
               <div class="burger-box">
                 <div class="burger-inner"></div>
@@ -133,29 +133,74 @@
               </ul>
             </div>
           </div>
-        </div><a class="btn-ghost-white" href="javascript:void(0);">User account</a><a class="feedback-link" href="feedback">Feedback</a>
+        </div><a class="btn-ghost-white" href="https://account.uapay.ua/auth/register" target="_blank">User account</a><a class="feedback-link" href="feedback">Feedback</a>
       </div>
     </div>
     <div id="main">
       <div class="inner-page-wrapper feedback-page">
-        <div class="intro-block black-intro-block">
-          <div class="container main-container">
-            <h3>Порядок роботи з веб-сайтами</h3>
-          </div>
-        </div>
         <div class="feedback-page-content">
           <div class="container main-container">
-            <form action="/php/mailer.php" method="POST">
-              <input type="text" name="fio" placeholder="Укажите ФИО" required>
-              <input type="text" name="email" placeholder="Укажите e-mail" required>
-              <input type="submit" value="Отправить">
-            </form>
+            <div class="flex-block">
+              <div class="flex-left">
+                <h1>Свяжитесь с нами!</h1>
+                <p>Если у вас возникли вопросы, пожалуйста, заполните следующую контактную форму</p>
+              </div>
+              <div class="flex-right">
+                <form action="" method="POST">
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="first-name">Имя*</label>
+                      <input class="form-control" type="text" name="firstName" id="first-name" placeholder="***" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="last-name">Фамилия*</label>
+                      <input class="form-control" type="text" name="lastName" id="last-name" placeholder="***" required>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="email">Email*</label>
+                      <input class="form-control" type="email" name="email" id="email" placeholder="***" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="phone">Телефон*</label>
+                      <input class="form-control" type="text" name="phone" id="phone" placeholder="***" required>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="website">Вебсайт*</label>
+                      <input class="form-control" type="text" name="website" id="website" placeholder="***" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="turnover">Оборот в месяц*</label>
+                      <select class="form-control" name="turnover" id="turnover" required>
+                        <option value="one">One</option>
+                        <option value="two">Two</option>
+                        <option value="three">Three</option>
+                        <option value="four">Four</option>
+                        <option value="five">Five</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="form-group col-md-12">
+                      <label for="message">Сообщение*</label>
+                      <textarea class="form-control" name="message" id="message" placeholder="***" cols="30" rows="1"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <input type="submit" value="Отправить">
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
     <footer class="footer">
-      <div class="container">
+      <div class="container main-container">
         <div class="top-footer-block animatedParent animateOnce" data-sequence="500">
           <h2 class="animated fadeIn" data-id="1">Автоматизуйте ваші<br>платежі вже сьогодні</h2><a class="action-btn animated fadeIn" href="javascript:void(0);" data-id="1"><span>Почати зараз</span><i class="animatedParent">
               <svg class="animated pulse infinite slower" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -173,16 +218,16 @@
           </div>
           <div class="row footer-menu">
             <div class="col-xl-3 col-lg-6 col-md-6 footer-menu-col animatedParent animateOnce" data-sequence="200">
-              <p class="footer-menu-title animated fadeIn" data-id="1">Business</p><a class="footer-menu-link animated fadeIn" href="uapay-checkout" data-id="2">UAPAY Checkout</a><a class="footer-menu-link animated fadeIn" href="mass-payouts" data-id="3">Bulk payments</a><a class="footer-menu-link animated fadeIn" href="industry-solutions" data-id="4">Business solutions</a>
+              <p class="footer-menu-title animated fadeInDownShort" data-id="1">Business</p><a class="footer-menu-link animated fadeInDownShort" href="uapay-checkout" data-id="2">UAPAY Checkout</a><a class="footer-menu-link animated fadeInDownShort" href="mass-payouts" data-id="3">Bulk payments</a><a class="footer-menu-link animated fadeInDownShort" href="industry-solutions" data-id="4">Business solutions</a>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6 footer-menu-col animatedParent animateOnce" data-sequence="200">
-              <p class="footer-menu-title animated fadeIn" data-id="1">Customers</p><a class="footer-menu-link animated fadeIn" href="fines" data-id="2">Fines</a><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="5"></a>
+              <p class="footer-menu-title animated fadeInDownShort" data-id="1">Customers</p><a class="footer-menu-link animated fadeInDownShort" href="fines" data-id="2">Fines</a><a class="footer-menu-link animated fadeInDownShort" href="javascript:void(0);" data-id="5"></a>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6 footer-menu-col animatedParent animateOnce" data-sequence="200">
-              <p class="footer-menu-title animated fadeIn" data-id="1">Developers</p><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="2">API</a><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="3">CMS modules</a>
+              <p class="footer-menu-title animated fadeInDownShort" data-id="1">Developers</p><a class="footer-menu-link animated fadeInDownShort" href="javascript:void(0);" data-id="2">API</a><a class="footer-menu-link animated fadeInDownShort" href="javascript:void(0);" data-id="3">CMS modules</a>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6 footer-menu-col animatedParent animateOnce" data-sequence="200">
-              <p class="footer-menu-title animated fadeIn" data-id="1">Company</p><a class="footer-menu-link animated fadeIn" href="about-us" data-id="2">About us</a><a class="footer-menu-link animated fadeIn" href="news" data-id="3">News</a><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="4">FAQ</a><a class="footer-menu-link animated fadeIn" href="javascript:void(0);" data-id="5">Partnership</a><a class="footer-menu-link animated fadeIn" href="legal-info" data-id="6">Legal information</a>
+              <p class="footer-menu-title animated fadeInDownShort" data-id="1">Company</p><a class="footer-menu-link animated fadeInDownShort" href="about-us" data-id="2">About us</a><a class="footer-menu-link animated fadeInDownShort" href="news" data-id="3">News</a><a class="footer-menu-link animated fadeInDownShort" href="javascript:void(0);" data-id="4">FAQ</a><a class="footer-menu-link animated fadeInDownShort" href="javascript:void(0);" data-id="5">Partnership</a><a class="footer-menu-link animated fadeInDownShort" href="legal-info" data-id="6">Legal information</a>
             </div>
           </div>
           <div class="footer-menu-mobile">
@@ -247,5 +292,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="../assets/js/css3-animate-it.js"></script>
     <script src="../assets/js/common.js"></script>
+    <script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+    <script>
+      $('#phone').inputmask("+38 (099) 999 99 99");
+      
+    </script>
   </body>
 </html>
