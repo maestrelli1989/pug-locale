@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Оплата штрафів за порушення ПДР онлайн — UAPAY</title>
-    <meta name="description" content="Легко сплачуйте штрафи поліції за порушення правил дорожнього руху на сайті UAPAY."/>
-    <link rel="canonical" href="https://uapay.ua/fines"/>
+    <title>Pay Traffic Fines Online — UAPAY</title>
+    <meta name="description" content="#{$i18n.fines.metaDescription}">
+    <link rel="canonical" href="#{$i18n.fines.canonical}">
     <link rel="shortcut icon" href="../assets/images/favicons/favicon.ico">
     <link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../assets/images/favicons/apple-icon-60x60.png">
@@ -140,22 +140,119 @@
       <div class="inner-page-wrapper fines-page">
         <div class="intro-block red-intro-block">
           <div class="container main-container">
-            <h1>Штрафи UAPAY</h1>
+            <h1>Fines</h1>
           </div>
         </div>
         <div class="fines-content">
           <div class="first-block">
             <div class="container main-container">
-              <h6>Hello</h6>
+              <div class="flex-block">
+                <div class="flex-left">
+                  <h3>Оплата штрафів за порушення ПДР</h3>
+                  <p>Оплатіть штраф за порушення ПДР онлайн за допогою банківської карти VISA, MasterCard або ПРОСТІР</p>
+                </div>
+                <div class="flex-right">
+                  <form action="" method="POST">
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="serie">Серія протокола*</label>
+                        <input class="form-control" type="text" name="serie" id="serie" placeholder="***" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="number">Номер протокола*</label>
+                        <input class="form-control" type="text" name="number" id="number" placeholder="***" required>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-12">
+                        <label for="full-name">ПІБ (з постанови)*</label>
+                        <input class="form-control" type="text" name="fullName" id="full-name" placeholder="***" required>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-12">
+                        <label for="phone">Телефон*</label>
+                        <input class="form-control" type="text" name="phone" id="phone" placeholder="***" required>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                      <input type="submit" value="Продовжити">
+                    </div>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
           <div class="last-block">
             <div class="container main-container">
+              <div class="flex-block animatedParent animateOnce" data-sequence="200">
+                <div class="flex-item"><img class="animated fadeInDownShort" src="../assets/images/fines/online.png" alt="Image" data-id="1">
+                  <h5 class="animated fadeInDownShort" data-id="2">Онлайн оплата</h5>
+                  <p class="animated fadeInDownShort" data-id="3">Онлайн зарахування коштів на рахунок казначейства</p>
+                </div>
+                <div class="flex-item"><img class="animated fadeInDownShort" src="../assets/images/fines/bill.png" alt="Image" data-id="1">
+                  <h5 class="animated fadeInDownShort" data-id="2">Електронний чек</h5>
+                  <p class="animated fadeInDownShort" data-id="3">Електронний чек відразу після успішної оплати</p>
+                </div>
+                <div class="flex-item"><img class="animated fadeInDownShort" src="../assets/images/fines/safe.png" alt="Image" data-id="1">
+                  <h5 class="animated fadeInDownShort" data-id="2">Безпечні платежі</h5>
+                  <p class="animated fadeInDownShort" data-id="3">Платежі захіщені стандартами PCI DSS Level 1</p>
+                </div>
+              </div>
               <div class="steps-block-desktop">
-                <div class="img-wrapper"><img src="../assets/images/fines/how-to.svg" alt="How to">
-                  <div class="num-1">1</div>
-                  <div class="num-2">2</div>
-                  <div class="num-3">3</div>
+                <div class="img-wrapper animatedParent animateOnce" data-sequence="200">
+                  <h3>Як оплатити штраф за порушення ПДР?</h3><img class="animated fadeIn" src="../assets/images/fines/how-to.svg" alt="How to" data-id="1">
+                  <div class="num-wrapper num-wrapper-1">
+                    <div class="num animated fadeIn" data-id="2">1</div>
+                    <p class="animated fadeIn" data-id="3">Вкажіть номер, серію протокола, ПІБ та номер телефону</p>
+                  </div>
+                  <div class="num-wrapper num-wrapper-2">
+                    <div class="num animated fadeIn" data-id="4">2</div>
+                    <p class="animated fadeIn" data-id="5">Вкажіть сумму до оплати</p>
+                  </div>
+                  <div class="num-wrapper num-wrapper-3">
+                    <div class="num animated fadeIn" data-id="6">3</div>
+                    <p class="animated fadeIn" data-id="7">Введіть реквізити банківської карти та підтвердіть оплату</p>
+                    <p class="desc animated fadeIn" data-id="8">Грошові кошти перераховуються на рахунок казначейства у режимі онлайн, а у підтверждення ви отримуєте чек на електронну адресу</p>
+                  </div>
+                </div>
+              </div>
+              <div class="steps-block-tablet">
+                <h3>Як оплатити штраф за порушення ПДР?</h3>
+                <div class="img-wrapper"><img src="../assets/images/fines/how-to-tablet.svg" alt="How to">
+                  <div class="num-wrapper num-wrapper-1">
+                    <div class="num">1</div>
+                    <p>Вкажіть номер, серію протокола, ПІБ та номер телефону</p>
+                  </div>
+                  <div class="num-wrapper num-wrapper-2">
+                    <div class="num">2</div>
+                    <p>Вкажіть сумму до оплати</p>
+                  </div>
+                  <div class="num-wrapper num-wrapper-3">
+                    <div class="num">3</div>
+                    <p>Введіть реквізити банківської карти та підтвердіть оплату</p>
+                    <p class="desc">Грошові кошти перераховуються на рахунок казначейства у режимі онлайн, а у підтверждення ви отримуєте чек на електронну адресу</p>
+                  </div>
+                </div>
+              </div>
+              <div class="steps-block-mobile">
+                <h3>Як оплатити штраф за порушення ПДР?</h3>
+                <div class="img-wrapper"><img src="../assets/images/fines/how-to-mobile.png" alt="How to">
+                  <div class="num-wrapper num-wrapper-1">
+                    <div class="num">1</div>
+                    <p>Вкажіть номер, серію протокола, ПІБ та номер телефону</p>
+                  </div>
+                  <div class="num-wrapper num-wrapper-2">
+                    <div class="num">2</div>
+                    <p>Вкажіть сумму до оплати</p>
+                  </div>
+                  <div class="num-wrapper num-wrapper-3">
+                    <div class="num">3</div>
+                    <div class="flex-block">
+                      <p>Введіть реквізити банківської карти та підтвердіть оплату</p>
+                      <p class="desc">Грошові кошти перераховуються на рахунок казначейства у режимі онлайн, а у підтверждення ви отримуєте чек на електронну адресу</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -178,7 +275,11 @@
             <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 pre-menu-col animated fadeIn" data-id="1">
               <p class="address">04205, Оболонський проспект, 35, Київ, Україна</p>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-2 col-sm-6 pre-menu-col animated fadeIn" data-id="1"><a class="site-logo-link" href="/"><img src="../assets/images/logo/site-logo.png" alt="Logo"></a></div>
+            <div class="col-xl-3 col-lg-3 col-md-2 col-sm-6 pre-menu-col animated fadeIn" data-id="1">
+              <div class="languages"> <span class="current-lang">UA</span>
+                <div class="lang-items"><a href="javascript:void(0);" onclick="switchToUaLocale()">UA</a><a href="javascript:void(0);" onclick="switchToRuLocale()">RU</a><a href="javascript:void(0);" onclick="switchToEnLocale()">EN</a></div>
+              </div>
+            </div>
           </div>
           <div class="row footer-menu">
             <div class="col-xl-3 col-lg-6 col-md-6 footer-menu-col animatedParent animateOnce" data-sequence="200">
@@ -256,5 +357,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="../assets/js/css3-animate-it.js"></script>
     <script src="../assets/js/common.js"></script>
+    <script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+    <script>
+      $('#phone').inputmask("+38 (099) 999 99 99");
+      
+    </script>
   </body>
 </html>
