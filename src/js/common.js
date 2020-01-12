@@ -136,6 +136,7 @@ $(() => {
 
 	$(hamburger).click(() => {
 		$(".mobile-menu").toggleClass("mobile-menu-active");
+		$(".home-page .first-screen .transparent-header").toggleClass("red-header")
 	});
 
 });
@@ -182,16 +183,16 @@ $(document).ready(function() {
 	$('.content-wrapper').hide();
 	$('.content-wrapper:first').show();
 		
-	$('#tabs span').click(function(){
+	$('#tabs span').click(function() {
 		var t = $(this).attr('id');
-	  if($(this).hasClass('inactive')){ //this is the start of our condition 
-		$('#tabs span').addClass('inactive');           
-		$(this).removeClass('inactive');
-		
-		$('.content-wrapper').hide();
-		$('#'+ t + 'C').fadeIn('slow');
-	 }
+		if($(this).hasClass('inactive')){
+			$('#tabs span').addClass('inactive');           
+			$(this).removeClass('inactive');
+			
+			$('.content-wrapper').hide();
+			$('#'+ t + 'C').fadeIn('slow');
+		}
 	});
-	
-	});
+
+});
 	

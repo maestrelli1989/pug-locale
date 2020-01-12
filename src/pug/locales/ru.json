@@ -78,7 +78,31 @@
 
 		"bannerHeadline": "Национальный платежный сервис",
 		"bannerSubHeadline": "Увеличивайте продажи вашего онлайн бизнеса и лояльность клиентов, с нашими решениями и экспертизой в финансовых технологиях",
-		"bannerBtn": "Подключиться сейчас"
+		"bannerBtn": "Подключиться сейчас",
+
+		"detailLink": "Подробнее",
+		"finesLink": "Погасить штраф",
+		"payLink": "Оплатить сделку",
+		"createLink": "Создать сделку",
+
+		"forBusinessBlockHeadline": "Для бизнеса",
+		"forBusinessBlockDesc": "Наша команда разработала решения, которые подойдут для любого типа онлайн-бизнеса и благодаря которым вы сможете сфокусироваться на главной задаче вашего дела.",
+		"forBusinessItem1Title": "UAPAY Checkout",
+		"forBusinessItem1Desc": "Автоматизируйте процессы оплат и доставки для вашего онлайн-бизнеса",
+		"forBusinessItem2Title": "Массовые выплаты",
+		"forBusinessItem2Desc": "Совершайте прямые выплаты любому количеству получателей на их банковские карты",
+
+		"industrySolutionsBlockHeadline": "Отраслевые решения",
+
+		"forCustomersBlockHeadline": "Пользователю",
+		"forCustomersBlockDesc": "Осуществляйте платежи и переводы онлайн в любое удобное для вас время ",
+		"forCustomersItem1Title": "Штрафы",
+		"forCustomersItem1Desc": "UAPAY Погашайте штрафы ПДД онлайн по номеру постановления и не только",
+		"forCustomersItem2Title": "Безопасная сделка",
+		"forCustomersItem2Desc": "Максимальная защита для тех, кто покупает или продает через доски объявлений",
+
+		"newsBlockHeadline": "Последние новости",
+		"newsBlockLink": "Больше новостей"
 
 	},
 	"uapayCheckout": {

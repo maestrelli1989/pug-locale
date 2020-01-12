@@ -21,7 +21,7 @@ block main-content
 	.home-page
 		.first-screen
 			block home-page-header
-				+header('red-header')
+				+header('transparent-header')
 			.container.main-container
 				h1 #{$i18n.homePage.bannerHeadline}
 				p #{$i18n.homePage.bannerSubHeadline}
@@ -31,27 +31,27 @@ block main-content
 			.container.main-container
 				.block-top-half
 					.flex-left
-						h4 Для бизнеса
+						h4 #{$i18n.homePage.forBusinessBlockHeadline}
 					.flex-right
-						p Наша команда разработала решения, которые подойдут для любого типа онлайн бизнеса и с помощью которых, вы сможете сфокусироваться на главном
+						p #{$i18n.homePage.forBusinessBlockDesc}
 				.block-bottom-half.animatedParent.animateOnce(data-sequence='200')
 					.flex-left.animated.fadeIn(data-id='1')
-						.headline.animated.fadeInDownShort(data-id='2') UAPAY Checkout
-						p.animated.fadeInDownShort(data-id='3') Автоматизируйте процессы оплат и доставки для вашего онлайн бизнеса
-						.btn-wrapper.animated.fadeInDownShort(data-id='4'): a.connect-btn(href="uapay-checkout") Подробнее
+						.headline.animated.fadeInDownShort(data-id='2') #{$i18n.homePage.forBusinessItem1Title}
+						p.animated.fadeInDownShort(data-id='3') #{$i18n.homePage.forBusinessItem1Desc}
+						.btn-wrapper.animated.fadeInDownShort(data-id='4'): a.connect-btn(href="uapay-checkout") #{$i18n.homePage.detailLink}
 					.flex-right.animated.fadeIn(data-id='1')
-						.headline.animated.fadeInDownShort(data-id='2') Массовые выплаты
-						p.animated.fadeInDownShort(data-id='3') Совершайте прямые выплаты любому количеству получателей, на банковские карты
-						.btn-wrapper.animated.fadeInDownShort(data-id='4'): a.connect-btn(href="mass-payouts") Подробнее
+						.headline.animated.fadeInDownShort(data-id='2') #{$i18n.homePage.forBusinessItem2Title}
+						p.animated.fadeInDownShort(data-id='3') #{$i18n.homePage.forBusinessItem2Desc}
+						.btn-wrapper.animated.fadeInDownShort(data-id='4'): a.connect-btn(href="mass-payouts") #{$i18n.homePage.detailLink}
 		.solutions-block
 			.container.main-container
 				.block-top-half
 					.flex-left
-						h5 Отраслевые решения
+						h5 #{$i18n.homePage.industrySolutionsBlockHeadline}
 					.flex-right
 						hr
-				.block-bottom-half
-					.flex-left
+				.block-bottom-half.animatedParent.animateOnce(data-sequence='200')
+					.flex-left.animated.fadeIn(data-id='1')
 						.content-wrapper#tab1C
 							include includes/svg/home-page/_marketplaces.pug
 						.content-wrapper#tab2C
@@ -64,12 +64,28 @@ block main-content
 							include includes/svg/home-page/_money.pug
 					.flex-right
 						#tabs
-							span#tab1 Маркетплейсы
-							span#tab2 Онлайн-ритейл
-							span#tab3 Туризм
-							span#tab4 Сервисы такси
-							span#tab5 Микрокредиты
-						a.connect-btn(href="industry-solutions") Подробнее
+							span#tab1.animated.fadeInDownShort(data-id='2') #{$i18n.industrySolutions.block1Headline}
+							span#tab2.animated.fadeInDownShort(data-id='3') #{$i18n.industrySolutions.block2Headline}
+							span#tab3.animated.fadeInDownShort(data-id='4') #{$i18n.industrySolutions.block3Headline}
+							span#tab4.animated.fadeInDownShort(data-id='5') #{$i18n.industrySolutions.block4Headline}
+							span#tab5.animated.fadeInDownShort(data-id='6') #{$i18n.industrySolutions.block5Headline}
+						a.connect-btn.animated.fadeInDownShort(data-id='7', href="industry-solutions") #{$i18n.homePage.detailLink}
+				.block-bottom-half-mobile
+					.svg-wrapper
+						include includes/svg/home-page/_marketplaces.pug
+						.text #{$i18n.industrySolutions.block1Headline}
+					.svg-wrapper
+						include includes/svg/home-page/_online-retail.pug
+						.text #{$i18n.industrySolutions.block2Headline}
+					.svg-wrapper
+						include includes/svg/home-page/_tourism.pug
+						.text #{$i18n.industrySolutions.block3Headline}
+					.svg-wrapper
+						include includes/svg/home-page/_taxi.pug
+						.text #{$i18n.industrySolutions.block4Headline}
+					.svg-wrapper
+						include includes/svg/home-page/_money.pug
+						.text #{$i18n.industrySolutions.block5Headline}
 		+trust
 		+partners('extra-padding')
 		+preferences('red-background')
@@ -77,39 +93,39 @@ block main-content
 			.container.main-container
 				.block-top-half
 					.flex-left
-						h4 Пользователю
+						h4 #{$i18n.homePage.forCustomersBlockHeadline}
 					.flex-right
-						p Осуществляйте платежи и переводы онлайн в любое удобное для вас время
+						p #{$i18n.homePage.forCustomersBlockDesc}
 				.block-bottom-half.animatedParent.animateOnce(data-sequence='200')
 					.flex-left.animated.fadeIn(data-id='1')
-						.headline.animated.fadeInDownShort(data-id='2') Штрафы UAPAY
-						p.animated.fadeInDownShort(data-id='3') Погашайте штрафы ПДД онлайн по номеру постановления и не только
-						.btn-wrapper.animated.fadeInDownShort(data-id='4'): a.connect-btn(href="javascript:void(0);") Погасить штраф
+						.headline.animated.fadeInDownShort(data-id='2') #{$i18n.homePage.forCustomersItem1Title}
+						p.animated.fadeInDownShort(data-id='3') #{$i18n.homePage.forCustomersItem1Desc}
+						.btn-wrapper.animated.fadeInDownShort(data-id='4'): a.connect-btn(href="javascript:void(0);") #{$i18n.homePage.finesLink}
 					.flex-right.animated.fadeIn(data-id='1')
-						.headline.animated.fadeInDownShort(data-id='2') Безопасная сделка
-						p.animated.fadeInDownShort(data-id='3') Максимальная защита для тех, кто покупает или продает через доски объявлений
-						.btn-wrapper.animated.fadeInDownShort(data-id='4'): a.connect-btn(href="javascript:void(0);") Оплатить сделку
-						.btn-wrapper.animated.fadeInDownShort(data-id='5'): a.connect-btn(href="javascript:void(0);") Создать сделку
+						.headline.animated.fadeInDownShort(data-id='2') #{$i18n.homePage.forCustomersItem2Title}
+						p.animated.fadeInDownShort(data-id='3') #{$i18n.homePage.forCustomersItem2Desc}
+						.btn-wrapper.animated.fadeInDownShort(data-id='4'): a.connect-btn(href="https://escrowbox.uapay.ua/ads", target="_blank") #{$i18n.homePage.payLink}
+						.btn-wrapper.animated.fadeInDownShort(data-id='5'): a.connect-btn(href="https://escrowbox.uapay.ua/ad", target="_blank") #{$i18n.homePage.createLink}
 		+developers('black-background')
 		.news-block
 			.container.main-container
-				h4 Последние новости
+				h4 #{$i18n.homePage.newsBlockHeadline}
 				.news-list.row.animatedParent.animateOnce(data-sequence='200')
-					a.news-item.col-xl-3.col-lg-4.col-md-6.col-sm-6.col-xs-12.animated.fadeIn(href="post", data-id='1')
+					a.news-item.col-xl-3.col-lg-6.col-md-6.col-sm-6.col-xs-12.animated.fadeIn(href="post", data-id='1')
 						span.news-date 12 грудня 2019
 						h6.news-title Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quasi, veritatis corporis obcaecati culpa, officia rerum ducimus aliquam voluptates dicta id, exercitationem modi. Accusamus possimus recusandae impedit fugit. Ut, quidem!
 						p.news-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsa neque inventore necessitatibus sed itaque veritatis fuga natus corrupti, officia similique recusandae quisquam ipsam id? Iure deleniti ea vel dolore.
-					a.news-item.col-xl-3.col-lg-4.col-md-6.col-sm-6.col-xs-12.animated.fadeIn(href="post", data-id='2')
+					a.news-item.col-xl-3.col-lg-6.col-md-6.col-sm-6.col-xs-12.animated.fadeIn(href="post", data-id='2')
 						span.news-date 12 грудня 2019
 						h6.news-title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla officiis totam nostrum enim necessitatibus? Deleniti veniam odio amet facilis. Error suscipit odio iste quia facilis ea dolorum sequi, at sunt!
 						p.news-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat recusandae vel dolore enim, eveniet qui nesciunt? Tenetur, nostrum voluptatum nulla blanditiis numquam ullam fugit quae expedita voluptatem dignissimos autem provident!
-					a.news-item.col-xl-3.col-lg-4.col-md-6.col-sm-6.col-xs-12.animated.fadeIn(href="post", data-id='3')
+					a.news-item.col-xl-3.col-lg-6.col-md-6.col-sm-6.col-xs-12.animated.fadeIn(href="post", data-id='3')
 						span.news-date 12 грудня 2019
 						h6.news-title Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi possimus ad quasi culpa exercitationem necessitatibus voluptatem fugiat ratione nulla, nesciunt at, neque eum sunt, asperiores iusto ducimus. Libero, cum earum.
 						p.news-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque non dolorem, laborum, incidunt molestiae omnis molestias cum quisquam voluptatum dolores deleniti quibusdam ipsum illum eius placeat ad architecto! Neque?
-					a.news-item.col-xl-3.col-lg-4.col-md-6.col-sm-6.col-xs-12.animated.fadeIn(href="post", data-id='4')
+					a.news-item.col-xl-3.col-lg-6.col-md-6.col-sm-6.col-xs-12.animated.fadeIn(href="post", data-id='4')
 						span.news-date 12 грудня 2019
 						h6.news-title Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae eligendi dolorum! Aperiam sit vitae soluta voluptates dignissimos, explicabo animi autem, recusandae ipsam, perspiciatis consectetur labore vel dolore. Natus, eligendi!
 						p.news-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolore repudiandae recusandae quia, consequuntur eaque amet voluptas in qui vitae deleniti, fuga minima. Perferendis, nisi dolorem officia quo voluptatibus vel.
 				.btn-wrapper
-					a.more-news-btn(href="news") Больше новостей
+					a.more-news-btn(href="news") #{$i18n.homePage.newsBlockLink}

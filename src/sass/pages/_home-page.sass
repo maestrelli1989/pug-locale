@@ -15,8 +15,6 @@
 		background-position: top center
 		background-size: 100% 100%
 		background-color: $corporate-red
-		.red-header
-			background: transparent
 		.main-container
 			h1
 				color: $corporate-white
@@ -154,6 +152,7 @@
 							padding: 0px 0px 20px
 							&:hover
 								color: $corporate-red
+								cursor: pointer
 					.connect-btn
 						color: $corporate-red
 						font-family: $primary-medium
@@ -176,6 +175,34 @@
 						&:hover
 							text-decoration: none
 							color: $corporate-accent-red
+			.block-bottom-half-mobile
+				display: none
+				flex-direction: row
+				align-items: flex-start
+				justify-content: space-between
+				width: 100%
+				overflow-x: auto
+				.svg-wrapper
+					position: relative
+					width: 320px
+					height: 320px
+					margin: 0px 15px
+					svg
+						width: 320px
+						height: 320px
+					.text
+						position: absolute
+						bottom: 30px
+						left: 30px
+						font-family: $primary-bold
+						font-weight: $bold-weight
+						font-size: 24px
+						line-height: 32px
+						color: $corporate-white
+						transition: $primary-transition
+					&:hover
+						.text
+							color: $corporate-red
 	.user-block
 		background-color: $corporate-gainsboro
 		padding: 100px 0px

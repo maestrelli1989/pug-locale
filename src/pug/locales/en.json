@@ -6,7 +6,7 @@
 		"col1Link3": "Business solutions",
 		"col2Title": "Customers",
 		"col2Link1": "Fines",
-		"col2Link2": "",
+		"col2Link2": "Safe deal",
 		"col3Title": "Company",
 		"col3Link1": "About us",
 		"col3Link2": "News",
@@ -26,7 +26,7 @@
 		"col1Link3": "Business solutions",
 		"col2Title": "Customers",
 		"col2Link1": "Fines",
-		"col2Link2": "",
+		"col2Link2": "Safe deal",
 		"col3Title": "Developers",
 		"col3Link1": "API",
 		"col3Link2": "CMS modules",
@@ -78,7 +78,32 @@
 
 		"bannerHeadline": "National Payment Service",
 		"bannerSubHeadline": "Increase your online business sales and customer loyalty with our solutions and expertise in financial technology",
-		"bannerBtn": "Start now"
+		"bannerBtn": "Start now",
+
+		"detailLink": "Details",
+		"finesLink": "Pay traffic fines",
+		"payLink": "Pay the deal",
+		"createLink": "Create a deal",
+
+		"forBusinessBlockHeadline": "For business",
+		"forBusinessBlockDesc": "Our team has developed solutions that are suitable for any type of online business with which you can focus on the main",
+		"forBusinessItem1Title": "UAPAY Checkout",
+		"forBusinessItem1Desc": "Automate payment and delivery processes for your online business",
+		"forBusinessItem2Title": "Mass payments",
+		"forBusinessItem2Desc": "Make direct payments to any number of recipients on their bank cards",
+
+		"industrySolutionsBlockHeadline": "Industry solutions",
+
+		"forCustomersBlockHeadline": "Fot customers",
+		"forCustomersBlockDesc": "Make payments and transfers online at any time convenient for you",
+		"forCustomersItem1Title": "Traffic fines UAPAY",
+		"forCustomersItem1Desc": "Pay traffic fines online by order number and more",
+		"forCustomersItem2Title": "Safe deal",
+		"forCustomersItem2Desc": "Maximum protection for those who buy or sell through bulletin board.",
+
+		"newsBlockHeadline": "News",
+		"newsBlockLink": "More news"
+
 	},
 	"uapayCheckout": {
 		"pageHeadline": "UAPAY Checkout",
