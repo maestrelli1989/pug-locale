@@ -29,48 +29,48 @@ block main-content
 			.first-block
 				.container.main-container
 					.flex-block.animatedParent.animateOnce(data-sequence='500')
-						.flex-left.animated.fadeInLeftShort(data-id='1')
+						.flex-left.animated.fadeIn(data-id='1')
 							p #{$i18n.uapayCheckout.introPart1}
 							p #{$i18n.uapayCheckout.introPart2}
 							p #{$i18n.uapayCheckout.introPart3}
 							include includes/components/_join-now-btn.pug
-						.flex-right.animated.fadeInRightShort(data-id='1')
+						.flex-right.animated.fadeIn(data-id='1')
 							img(src="../assets/images/svg/checkout.svg", alt="Image")
 			.second-block
 				.container.main-container.animatedParent.animateOnce(data-sequence='200')
 					h4.animated.fadeIn(data-id='1') #{$i18n.uapayCheckout.secondBlockTitle}
 					.flex-block
 						.flex-left
-							.flex-item.animated.fadeInLeftShort(data-id='2')
+							.flex-item.animated.fadeIn(data-id='2')
 								img.animated.fadeInDownShort(data-id='3')(src="../assets/images/uapay-checkout/safe.png", alt="Image", style="width: 48px; height: 48px;")
 								h3.animated.fadeInDownShort(data-id='4') #{$i18n.uapayCheckout.item1Title}
 								p.animated.fadeInDownShort(data-id='5') #{$i18n.uapayCheckout.item1Content}
-							.flex-item.animated.fadeInLeftShort(data-id='6')
+							.flex-item.animated.fadeIn(data-id='6')
 								img.animated.fadeInDownShort(data-id='7')(src="../assets/images/uapay-checkout/qr.png", alt="Image", style="width: 48px; height: 48px;")
 								h3.animated.fadeInDownShort(data-id='8') #{$i18n.uapayCheckout.item2Title}
 								p.animated.fadeInDownShort(data-id='9') #{$i18n.uapayCheckout.item2Content}
-							.flex-item.animated.fadeInLeftShort(data-id='10')
+							.flex-item.animated.fadeIn(data-id='10')
 								img.animated.fadeInDownShort(data-id='11')(src="../assets/images/uapay-checkout/paperless.png", alt="Image", style="width: 48px; height: 48px;")
 								h3.animated.fadeInDownShort(data-id='12') #{$i18n.uapayCheckout.item3Title}
 								p.animated.fadeInDownShort(data-id='13') #{$i18n.uapayCheckout.item3Content}
-							.flex-item.animated.fadeInLeftShort(data-id='14')
+							.flex-item.animated.fadeIn(data-id='14')
 								img.animated.fadeInDownShort(data-id='15')(src="../assets/images/uapay-checkout/delivery.png", alt="Image", style="width: 48px; height: 48px;")
 								h3.animated.fadeInDownShort(data-id='16') #{$i18n.uapayCheckout.item4Title}
 								p.animated.fadeInDownShort(data-id='17') #{$i18n.uapayCheckout.item4Content}
 						.flex-right
-							.flex-item.animated.fadeInRightShort(data-id='2')
+							.flex-item.animated.fadeIn(data-id='2')
 								img.animated.fadeInDownShort(data-id='3')(src="../assets/images/uapay-checkout/subscription.png", alt="Image", style="width: 48px; height: 48px;")
 								h3.animated.fadeInDownShort(data-id='4') #{$i18n.uapayCheckout.item5Title}
 								p.animated.fadeInDownShort(data-id='5') #{$i18n.uapayCheckout.item5Content}
-							.flex-item.animated.fadeInRightShort(data-id='6')
+							.flex-item.animated.fadeIn(data-id='6')
 								img.animated.fadeInDownShort(data-id='7')(src="../assets/images/uapay-checkout/escrow.png", alt="Image", style="width: 48px; height: 48px;")
 								h3.animated.fadeInDownShort(data-id='8') #{$i18n.uapayCheckout.item6Title}
 								p.animated.fadeInDownShort(data-id='9') #{$i18n.uapayCheckout.item6Content}
-							.flex-item.animated.fadeInRightShort(data-id='10')
+							.flex-item.animated.fadeIn(data-id='10')
 								img.animated.fadeInDownShort(data-id='11')(src="../assets/images/uapay-checkout/cart.png", alt="Image", style="width: 48px; height: 48px;")
 								h3.animated.fadeInDownShort(data-id='12') #{$i18n.uapayCheckout.item7Title}
 								p.animated.fadeInDownShort(data-id='13') #{$i18n.uapayCheckout.item7Content}
-							.flex-item.animated.fadeInRightShort(data-id='14')
+							.flex-item.animated.fadeIn(data-id='14')
 								img.animated.fadeInDownShort(data-id='15')(src="../assets/images/uapay-checkout/comfort.png", alt="Image", style="width: 48px; height: 48px;")
 								h3.animated.fadeInDownShort(data-id='16') #{$i18n.uapayCheckout.item8Title}
 								p.animated.fadeInDownShort(data-id='17') #{$i18n.uapayCheckout.item8Content}
@@ -78,7 +78,7 @@ block main-content
 				.container.main-container.animatedParent.animateOnce(data-sequence='200')
 					h4.animated.fadeIn(data-id='1') #{$i18n.uapayCheckout.tariffsTitle}
 					.flex-block
-						.flex-left.animated.fadeInLeftShort(data-id='2')
+						.flex-left.animated.fadeIn(data-id='2')
 							h2.animated.fadeIn(data-id='3') #{$i18n.uapayCheckout.tariffsLeftBlockTitle}
 							p.animated.fadeIn(data-id='4') #{$i18n.uapayCheckout.tariffsLeftBlockMainDesc}
 							.bonus.animated.fadeIn(data-id='4')
@@ -92,7 +92,7 @@ block main-content
 								li.animated.fadeIn(data-id='7') #{$i18n.uapayCheckout.tariffsLeftBlockli3}
 								li.animated.fadeIn(data-id='8') #{$i18n.uapayCheckout.tariffsLeftBlockli4}
 							a.btn-white.animated.fadeIn(data-id='9', href="https://account.uapay.ua/auth/register", target="_blank") #{$i18n.uapayCheckout.tariffsLeftBlockBtn}
-						.flex-right.animated.fadeInRightShort(data-id='2')
+						.flex-right.animated.fadeIn(data-id='2')
 							h2.animated.fadeIn(data-id='3') #{$i18n.uapayCheckout.tariffsRightBlockTitle}
 							p.animated.fadeIn(data-id='4') #{$i18n.uapayCheckout.tariffsRightBlockMainDesc}
 							ul

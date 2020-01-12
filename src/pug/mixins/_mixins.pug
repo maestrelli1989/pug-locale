@@ -212,9 +212,9 @@ mixin developers(className)
 	.developers-block(class=className)
 		.container.main-container
 			.flex-block.animatedParent.animateOnce(data-sequence='500')
-				.flex-left.animated.fadeInLeftShort(data-id='1')
+				.flex-left.animated.fadeIn(data-id='1')
 					img(src="../assets/images/svg/api-cms.svg", alt="Image")
-				.flex-right.animated.fadeInRightShort(data-id='1')
+				.flex-right.animated.fadeIn(data-id='1')
 					h4 #{$i18n.developersBlock.blockHeadline}
 					p #{$i18n.developersBlock.blockContent}
 					include ../includes/components/_developers-btn.pug
@@ -225,9 +225,9 @@ mixin partners(className)
 	.partners-block(class=className)
 		.container.main-container
 			.flex-block.animatedParent.animateOnce(data-sequence='500')
-				.flex-left.animated.fadeInLeftShort(data-id='1')
+				.flex-left.animated.fadeIn(data-id='1')
 					img(src="../assets/images/svg/percent.svg", alt="Image")
-				.flex-right.animated.fadeInRightShort(data-id='1')
+				.flex-right.animated.fadeIn(data-id='1')
 					h4 #{$i18n.partnersBlock.blockHeadline}
 					p #{$i18n.partnersBlock.blockContent}
 					include ../includes/components/_partnership-btn.pug

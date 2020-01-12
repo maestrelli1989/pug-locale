@@ -16,14 +16,13 @@ block meta-data
 	'https://uapay.ua/404'
 	)
 
-block header
-	+header('red-header')
-
 block mobile-menu
 	+mobile-menu('mobile-menu-red')
 
 block main-content
 	.page-404
+		block header-404
+			+header('red-header')
 		.container.main-container
 			.page-404-content
 				h1 404

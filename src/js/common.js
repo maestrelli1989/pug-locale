@@ -139,3 +139,59 @@ $(() => {
 	});
 
 });
+
+
+jQuery(document).ready(function($) {
+	$(".languages").click(function() {
+		$(".languages .lang-items").show();
+	})
+	$(".languages .lang-items").mouseleave(function() {
+		$(".languages .lang-items").hide(); 
+	});
+	$(".languages a").click(function() {
+		$(".languages a").removeClass('sel');
+		$(this).addClass('sel');
+		var selectedValue = $(this).text();
+		var showLang = selectedValue.substring(0, 2);
+		$('.languages .current-lang').html(showLang);
+		$('.languages .current-lang').attr("title", selectedValue);
+	})
+});
+
+function switchToUaLocale() {
+	let path = window.location.pathname;
+	let ua_path = path.replace("/ru/", "/ua/").replace("/en/", "/ua/"); 
+	window.location.replace(ua_path);
+}
+
+function switchToRuLocale() {
+	let path = window.location.pathname;
+	let ru_path = path.replace("/ua/", "/ru/").replace("/en/", "/ru/");
+	window.location.replace(ru_path);
+}
+
+function switchToEnLocale() {
+	let path = window.location.pathname;
+	let en_path = path.replace("/ua/", "/en/").replace("/ru/", "/en/"); 
+	window.location.replace(en_path);
+}
+
+$(document).ready(function() {    
+
+	$('#tabs span:not(:first)').addClass('inactive');
+	$('.content-wrapper').hide();
+	$('.content-wrapper:first').show();
+		
+	$('#tabs span').click(function(){
+		var t = $(this).attr('id');
+	  if($(this).hasClass('inactive')){ //this is the start of our condition 
+		$('#tabs span').addClass('inactive');           
+		$(this).removeClass('inactive');
+		
+		$('.content-wrapper').hide();
+		$('#'+ t + 'C').fadeIn('slow');
+	 }
+	});
+	
+	});
+	

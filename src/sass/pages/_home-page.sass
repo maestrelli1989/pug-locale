@@ -6,4 +6,316 @@
 	Modified by: Serhii Tiutin
 	Owner: UaPay
 	Website: https://uapay.ua/
-	*/	
+	*/
+
+.home-page
+	.first-screen
+		background-image: url(../../assets/images/home-page/first-screen-background.svg)
+		background-repeat: no-repeat
+		background-position: top center
+		background-size: 100% 100%
+		background-color: $corporate-red
+		.red-header
+			background: transparent
+		.main-container
+			h1
+				color: $corporate-white
+				max-width: 740px
+				padding-top: 120px
+			p
+				color: $corporate-white
+				max-width: 480px
+				padding-bottom: 40px
+			.btn-wrapper
+				display: flex
+				.btn-white
+					display: inline-block
+	.business-block
+		background-color: $corporate-red
+		padding: 100px 0px
+		.main-container
+			.block-top-half
+				display: flex
+				flex-direction: row
+				align-items: flex-start
+				justify-content: space-between
+				padding: 0px 0px 60px
+				.flex-left
+					width: 100%
+					max-width: 390px
+					h4
+						padding: 0px
+						color: $corporate-white
+						text-transform: uppercase
+				.flex-right
+					width: 100%
+					max-width: 610px
+					p
+						color: $corporate-white
+			.block-bottom-half
+				display: flex
+				flex-direction: row
+				align-items: stretch
+				justify-content: space-between
+				.flex-left, .flex-right
+					width: 100%
+					max-width: 480px
+					border-radius: $quinary-radius
+					background-color: $corporate-white
+					padding: 40px
+					background-position: bottom right
+					background-repeat: no-repeat
+					background-size: 240px 240px
+					transition: $primary-transition
+					&:hover
+						box-shadow: $primary-box-shadow
+					.headline
+						font-family: $primary-bold
+						font-weight: $bold-weight
+						font-size: 48px
+						line-height: 56px
+						color: $corporate-black
+						padding: 0px 0px 15px
+					p
+						line-height: 24px
+					.btn-wrapper
+						.connect-btn
+							color: $corporate-red
+							font-family: $primary-medium
+							font-weight: $medium-weight
+							font-size: 16px
+							line-height: 24px
+							position: relative
+							text-decoration: none
+							transition: $primary-transition
+							padding: 5px 0px 0px 0px
+							display: inline-block
+							&:after
+								position: absolute
+								display: inline-block
+								content: "\f105"
+								top: 6px
+								right: -15px
+								font-weight: 900
+								font-family: "Font Awesome 5 Free"
+							&:hover
+								text-decoration: none
+								color: $corporate-accent-red
+				.flex-left
+					background-image: url(../../assets/images/home-page/checkout.png)
+				.flex-right
+					background-image: url(../../assets/images/home-page/mass-payouts.png)
+					.btn-wrapper
+						&:first-child
+							padding-bottom: 10px
+	.solutions-block
+		background-color: $corporate-gainsboro
+		padding: 100px 0px 120px
+		.main-container
+			.block-top-half
+				display: flex
+				flex-direction: row
+				align-items: flex-start
+				justify-content: space-between
+				padding: 20px 0px 40px
+				.flex-left
+					width: 100%
+					max-width: 390px
+					h5
+						padding: 0px
+						text-transform: uppercase
+				.flex-right
+					width: 100%
+					max-width: 610px
+			.block-bottom-half
+				display: flex
+				flex-direction: row
+				align-items: flex-start
+				justify-content: space-between
+				.flex-left
+					width: 100%
+					max-width: 390px
+					svg
+						width: 350px
+						height: 350px
+				.flex-right
+					width: 100%
+					max-width: 610px
+					padding-left: 133px
+					#tabs
+						span
+							display: block
+							font-family: $primary-bold
+							font-weight: $bold-weight
+							font-size: 34px
+							line-height: 44px
+							transition: $primary-transition
+							color: #d3d6e0
+							padding: 0px 0px 20px
+							&:hover
+								color: $corporate-red
+					.connect-btn
+						color: $corporate-red
+						font-family: $primary-medium
+						font-weight: $medium-weight
+						font-size: 16px
+						line-height: 24px
+						position: relative
+						text-decoration: none
+						transition: $primary-transition
+						padding: 5px 0px 0px 0px
+						display: inline-block
+						&:after
+							position: absolute
+							display: inline-block
+							content: "\f105"
+							top: 6px
+							right: -15px
+							font-weight: 900
+							font-family: "Font Awesome 5 Free"
+						&:hover
+							text-decoration: none
+							color: $corporate-accent-red
+	.user-block
+		background-color: $corporate-gainsboro
+		padding: 100px 0px
+		.main-container
+			.block-top-half
+				display: flex
+				flex-direction: row
+				align-items: flex-start
+				justify-content: space-between
+				padding: 0px 0px 60px
+				.flex-left
+					width: 100%
+					max-width: 390px
+					h4, p
+						padding: 0px
+					h4
+						text-transform: uppercase
+				.flex-right
+					width: 100%
+					max-width: 610px
+			.block-bottom-half
+				display: flex
+				flex-direction: row
+				align-items: stretch
+				justify-content: space-between
+				.flex-left, .flex-right
+					width: 100%
+					max-width: 480px
+					border-radius: $quinary-radius
+					background-color: $corporate-white
+					padding: 40px
+					background-position: bottom right
+					background-repeat: no-repeat
+					background-size: 240px 240px
+					transition: $primary-transition
+					&:hover
+						box-shadow: $primary-box-shadow
+					.headline
+						font-family: $primary-bold
+						font-weight: $bold-weight
+						font-size: 48px
+						line-height: 56px
+						color: $corporate-black
+						padding: 0px 0px 15px
+					p
+						line-height: 24px
+					.btn-wrapper
+						.connect-btn
+							color: $corporate-red
+							font-family: $primary-medium
+							font-weight: $medium-weight
+							font-size: 16px
+							line-height: 24px
+							position: relative
+							text-decoration: none
+							transition: $primary-transition
+							padding: 5px 0px 0px 0px
+							display: inline-block
+							&:after
+								position: absolute
+								display: inline-block
+								content: "\f105"
+								top: 6px
+								right: -15px
+								font-weight: 900
+								font-family: "Font Awesome 5 Free"
+							&:hover
+								text-decoration: none
+								color: $corporate-accent-red
+				.flex-left
+					background-image: url(../../assets/images/home-page/penalti.png)
+				.flex-right
+					background-image: url(../../assets/images/home-page/safe-deals.png)
+					.btn-wrapper
+						&:first-child
+							padding-bottom: 10px
+	.news-block
+		background-color: $corporate-gainsboro
+		padding: 80px 0px 100px
+		.main-container
+			h4
+				text-align: center
+				text-transform: uppercase
+			.btn-wrapper
+				display: flex
+				justify-content: center
+				align-items: center
+				.more-news-btn
+					background-color: $corporate-accent-black
+					color: $corporate-white
+					text-align: center
+					margin: 0px auto
+					display: inline-block
+					border-radius: $primary-radius
+					border: 2px solid $corporate-accent-black
+					transition: $primary-transition
+					padding: 14px 34px
+					font-size: 16px
+					line-height: 20px
+					font-family: $primary-bold
+					font-weight: $bold-weight
+					&:hover
+						background-color: $corporate-white
+						color: $corporate-accent-black
+			.news-list
+				display: flex
+				flex-direction: row
+				justify-content: flex-start
+				align-items: flex-start
+				flex-wrap: wrap
+				margin-left: -20px
+				margin-right: -20px
+				padding-top: 20px
+				.news-item
+					width: 100%
+					max-width: 220px
+					margin: 0px 20px 50px
+					padding: 0px
+					text-decoration: none
+					position: static
+					&:after
+						display: none
+					.news-date
+						font-size: 12px
+						line-height: 20px
+						color: $corporate-red
+						display: block
+						padding: 0px 0px 10px
+					h6
+						line-height: 24px
+						font-weight: $medium-weight
+						overflow: hidden
+						display: -webkit-box
+						-webkit-line-clamp: 2
+						max-height: 48px
+						padding: 0px
+					p
+						padding: 20px 0px 0px 0px
+						color: $corporate-dim-gray
+						overflow: hidden
+						display: -webkit-box
+						-webkit-line-clamp: 2
+						max-height: 110px

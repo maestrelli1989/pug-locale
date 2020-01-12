@@ -71,6 +71,15 @@
 		"developersBtn": "Details",
 		"joinNowBtn": "Join now"
 	},
+	"homePage": {
+		"metaTitle": "Ukrainian National Payment Service — UAPAY",
+		"metaDescription": "UAPAY is a universal payment service and modern solutions for your business.",
+		"canonical": "https://uapay.ua/en",
+
+		"bannerHeadline": "National Payment Service",
+		"bannerSubHeadline": "Increase your online business sales and customer loyalty with our solutions and expertise in financial technology",
+		"bannerBtn": "Start now"
+	},
 	"uapayCheckout": {
 		"pageHeadline": "UAPAY Checkout",
 		"metaTitle": "UAPAY Internet Acquiring: Accept Payments on Your Website",
@@ -275,5 +284,11 @@
 	},
 	"infoUapay": {
 		"pageHeadline": "Information about the financial institution. LLC «FC UAPAY»"
+	},
+	"fines": {
+		"pageHeadline": "Fines",
+		"metaTitle": "Pay Traffic Fines Online — UAPAY",
+		"metaDescription": "Pay traffic fines online with ease at the UAPAY.",
+		"canonical": "https://uapay.ua/en/fines"
 	}
 }

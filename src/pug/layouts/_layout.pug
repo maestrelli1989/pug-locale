@@ -48,8 +48,12 @@ html(lang='uk')
 						.col-xl-6.col-lg-6.col-md-8.col-sm-12.pre-menu-col.animated.fadeIn(data-id='1')
 							p.address 04205, Оболонський проспект, 35, Київ, Україна
 						.col-xl-3.col-lg-3.col-md-2.col-sm-6.pre-menu-col.animated.fadeIn(data-id='1')
-							a(href="/", class="site-logo-link")
-								img(src="../assets/images/logo/site-logo.png", alt="Logo")
+							.languages 
+								span.current-lang UA
+								.lang-items
+									a(href="javascript:void(0);", onclick="switchToUaLocale()") UA
+									a(href="javascript:void(0);", onclick="switchToRuLocale()") RU
+									a(href="javascript:void(0);", onclick="switchToEnLocale()") EN
 					.row.footer-menu
 						.col-xl-3.col-lg-6.col-md-6.footer-menu-col.animatedParent.animateOnce(data-sequence='200')
 							p.footer-menu-title.animated.fadeInDownShort(data-id='1') #{$i18n.footerMenu.col1Title}

@@ -10,20 +10,106 @@
 extends layouts/_layout.pug
 
 block meta-data
-	+meta-data(
-	'Website title', 
-	'Website description', 
-	'https://uapay.ua/'
-	)
-
-block header
-	+header('red-header')
+	title #{$i18n.homePage.metaTitle}
+	meta(name="description", content="#{$i18n.homePage.metaDescription}")
+	link(rel="canonical", href="#{$i18n.homePage.canonical}")
 
 block mobile-menu
 	+mobile-menu('mobile-menu-red')
 
 block main-content
-	+trust
-	+partners('extra-padding')
-	+preferences('red-background')
-	+developers('black-background')
+	.home-page
+		.first-screen
+			block home-page-header
+				+header('red-header')
+			.container.main-container
+				h1 #{$i18n.homePage.bannerHeadline}
+				p #{$i18n.homePage.bannerSubHeadline}
+				.btn-wrapper
+					a.btn-white(href="https://account.uapay.ua/auth/register", target="_blank") #{$i18n.homePage.bannerBtn}
+		.business-block
+			.container.main-container
+				.block-top-half
+					.flex-left
+						h4 Для бизнеса
+					.flex-right
+						p Наша команда разработала решения, которые подойдут для любого типа онлайн бизнеса и с помощью которых, вы сможете сфокусироваться на главном
+				.block-bottom-half.animatedParent.animateOnce(data-sequence='200')
+					.flex-left.animated.fadeIn(data-id='1')
+						.headline.animated.fadeInDownShort(data-id='2') UAPAY Checkout
+						p.animated.fadeInDownShort(data-id='3') Автоматизируйте процессы оплат и доставки для вашего онлайн бизнеса
+						.btn-wrapper.animated.fadeInDownShort(data-id='4'): a.connect-btn(href="uapay-checkout") Подробнее
+					.flex-right.animated.fadeIn(data-id='1')
+						.headline.animated.fadeInDownShort(data-id='2') Массовые выплаты
+						p.animated.fadeInDownShort(data-id='3') Совершайте прямые выплаты любому количеству получателей, на банковские карты
+						.btn-wrapper.animated.fadeInDownShort(data-id='4'): a.connect-btn(href="mass-payouts") Подробнее
+		.solutions-block
+			.container.main-container
+				.block-top-half
+					.flex-left
+						h5 Отраслевые решения
+					.flex-right
+						hr
+				.block-bottom-half
+					.flex-left
+						.content-wrapper#tab1C
+							include includes/svg/home-page/_marketplaces.pug
+						.content-wrapper#tab2C
+							include includes/svg/home-page/_online-retail.pug
+						.content-wrapper#tab3C
+							include includes/svg/home-page/_tourism.pug
+						.content-wrapper#tab4C
+							include includes/svg/home-page/_taxi.pug
+						.content-wrapper#tab5C
+							include includes/svg/home-page/_money.pug
+					.flex-right
+						#tabs
+							span#tab1 Маркетплейсы
+							span#tab2 Онлайн-ритейл
+							span#tab3 Туризм
+							span#tab4 Сервисы такси
+							span#tab5 Микрокредиты
+						a.connect-btn(href="industry-solutions") Подробнее
+		+trust
+		+partners('extra-padding')
+		+preferences('red-background')
+		.user-block
+			.container.main-container
+				.block-top-half
+					.flex-left
+						h4 Пользователю
+					.flex-right
+						p Осуществляйте платежи и переводы онлайн в любое удобное для вас время
+				.block-bottom-half.animatedParent.animateOnce(data-sequence='200')
+					.flex-left.animated.fadeIn(data-id='1')
+						.headline.animated.fadeInDownShort(data-id='2') Штрафы UAPAY
+						p.animated.fadeInDownShort(data-id='3') Погашайте штрафы ПДД онлайн по номеру постановления и не только
+						.btn-wrapper.animated.fadeInDownShort(data-id='4'): a.connect-btn(href="javascript:void(0);") Погасить штраф
+					.flex-right.animated.fadeIn(data-id='1')
+						.headline.animated.fadeInDownShort(data-id='2') Безопасная сделка
+						p.animated.fadeInDownShort(data-id='3') Максимальная защита для тех, кто покупает или продает через доски объявлений
+						.btn-wrapper.animated.fadeInDownShort(data-id='4'): a.connect-btn(href="javascript:void(0);") Оплатить сделку
+						.btn-wrapper.animated.fadeInDownShort(data-id='5'): a.connect-btn(href="javascript:void(0);") Создать сделку
+		+developers('black-background')
+		.news-block
+			.container.main-container
+				h4 Последние новости
+				.news-list.row.animatedParent.animateOnce(data-sequence='200')
+					a.news-item.col-xl-3.col-lg-4.col-md-6.col-sm-6.col-xs-12.animated.fadeIn(href="post", data-id='1')
+						span.news-date 12 грудня 2019
+						h6.news-title Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quasi, veritatis corporis obcaecati culpa, officia rerum ducimus aliquam voluptates dicta id, exercitationem modi. Accusamus possimus recusandae impedit fugit. Ut, quidem!
+						p.news-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsa neque inventore necessitatibus sed itaque veritatis fuga natus corrupti, officia similique recusandae quisquam ipsam id? Iure deleniti ea vel dolore.
+					a.news-item.col-xl-3.col-lg-4.col-md-6.col-sm-6.col-xs-12.animated.fadeIn(href="post", data-id='2')
+						span.news-date 12 грудня 2019
+						h6.news-title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla officiis totam nostrum enim necessitatibus? Deleniti veniam odio amet facilis. Error suscipit odio iste quia facilis ea dolorum sequi, at sunt!
+						p.news-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat recusandae vel dolore enim, eveniet qui nesciunt? Tenetur, nostrum voluptatum nulla blanditiis numquam ullam fugit quae expedita voluptatem dignissimos autem provident!
+					a.news-item.col-xl-3.col-lg-4.col-md-6.col-sm-6.col-xs-12.animated.fadeIn(href="post", data-id='3')
+						span.news-date 12 грудня 2019
+						h6.news-title Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi possimus ad quasi culpa exercitationem necessitatibus voluptatem fugiat ratione nulla, nesciunt at, neque eum sunt, asperiores iusto ducimus. Libero, cum earum.
+						p.news-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque non dolorem, laborum, incidunt molestiae omnis molestias cum quisquam voluptatum dolores deleniti quibusdam ipsum illum eius placeat ad architecto! Neque?
+					a.news-item.col-xl-3.col-lg-4.col-md-6.col-sm-6.col-xs-12.animated.fadeIn(href="post", data-id='4')
+						span.news-date 12 грудня 2019
+						h6.news-title Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae eligendi dolorum! Aperiam sit vitae soluta voluptates dignissimos, explicabo animi autem, recusandae ipsam, perspiciatis consectetur labore vel dolore. Natus, eligendi!
+						p.news-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolore repudiandae recusandae quia, consequuntur eaque amet voluptas in qui vitae deleniti, fuga minima. Perferendis, nisi dolorem officia quo voluptatibus vel.
+				.btn-wrapper
+					a.more-news-btn(href="news") Больше новостей

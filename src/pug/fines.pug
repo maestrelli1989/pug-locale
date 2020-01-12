@@ -10,11 +10,9 @@
 extends layouts/_layout.pug
 
 block meta-data
-	+meta-data(
-	'Оплата штрафів за порушення ПДР онлайн — UAPAY', 
-	'Легко сплачуйте штрафи поліції за порушення правил дорожнього руху на сайті UAPAY.', 
-	'https://uapay.ua/fines'
-	)
+	title #{$i18n.fines.metaTitle}
+	meta(name="description", content="#{$i18n.fines.metaDescription}")
+	link(rel="canonical", href="#{$i18n.fines.canonical}")
 
 block header
 	+header('red-header')
@@ -22,20 +20,97 @@ block header
 block mobile-menu
 	+mobile-menu('mobile-menu-red')
 
+block extra-js
+	script(src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js")
+	script.
+		$('#phone').inputmask("+38 (099) 999 99 99");
+
 block main-content
 	.inner-page-wrapper.fines-page
 		.intro-block.red-intro-block
 			.container.main-container
-				h1 Штрафи UAPAY
+				h1 #{$i18n.fines.pageHeadline}
 		.fines-content
 			.first-block
 				.container.main-container
-					h6 Hello
+					.flex-block
+						.flex-left
+							h3 Оплата штрафів за порушення ПДР
+							p Оплатіть штраф за порушення ПДР онлайн за допогою банківської карти VISA, MasterCard або ПРОСТІР
+						.flex-right
+							form(action="" method="POST")
+								.form-row
+									.form-group.col-md-6
+										label(for="serie") Серія протокола*
+										input(type="text", name="serie", class="form-control", id="serie", placeholder="***", required)
+									.form-group.col-md-6
+										label(for="number") Номер протокола*
+										input(type="text", name="number", class="form-control", id="number", placeholder="***", required)
+								.form-row
+									.form-group.col-md-12
+										label(for="full-name") ПІБ (з постанови)*
+										input(type="text", name="fullName", class="form-control", id="full-name", placeholder="***", required)
+								.form-row
+									.form-group.col-md-12
+										label(for="phone") Телефон*
+										input(type="text", name="phone", class="form-control", id="phone", placeholder="***", required)
+								.form-row
+									input(type="submit" value="Продовжити")
 			.last-block
 				.container.main-container
+					.flex-block.animatedParent.animateOnce(data-sequence='200')
+						.flex-item
+							img(src="../assets/images/fines/online.png", alt="Image").animated.fadeInDownShort(data-id='1')
+							h5.animated.fadeInDownShort(data-id='2') Онлайн оплата
+							p.animated.fadeInDownShort(data-id='3') Онлайн зарахування коштів на рахунок казначейства
+						.flex-item
+							img(src="../assets/images/fines/bill.png", alt="Image").animated.fadeInDownShort(data-id='1')
+							h5.animated.fadeInDownShort(data-id='2') Електронний чек
+							p.animated.fadeInDownShort(data-id='3') Електронний чек відразу після успішної оплати
+						.flex-item
+							img(src="../assets/images/fines/safe.png", alt="Image").animated.fadeInDownShort(data-id='1')
+							h5.animated.fadeInDownShort(data-id='2') Безпечні платежі
+							p.animated.fadeInDownShort(data-id='3') Платежі захіщені стандартами PCI DSS Level 1
 					.steps-block-desktop
+						.img-wrapper.animatedParent.animateOnce(data-sequence='200')
+							h3 Як оплатити штраф за порушення ПДР?
+							img(src="../assets/images/fines/how-to.svg", alt="How to").animated.fadeIn(data-id='1')
+							.num-wrapper.num-wrapper-1
+								.num.animated.fadeIn(data-id='2') 1
+								p.animated.fadeIn(data-id='3') Вкажіть номер, серію протокола, ПІБ та номер телефону
+							.num-wrapper.num-wrapper-2
+								.num.animated.fadeIn(data-id='4') 2
+								p.animated.fadeIn(data-id='5') Вкажіть сумму до оплати
+							.num-wrapper.num-wrapper-3
+								.num.animated.fadeIn(data-id='6') 3
+								p.animated.fadeIn(data-id='7') Введіть реквізити банківської карти та підтвердіть оплату
+								p.desc.animated.fadeIn(data-id='8') Грошові кошти перераховуються на рахунок казначейства у режимі онлайн, а у підтверждення ви отримуєте чек на електронну адресу
+					.steps-block-tablet
+						h3 Як оплатити штраф за порушення ПДР?
 						.img-wrapper
-							img(src="../assets/images/fines/how-to.svg", alt="How to")
-							.num-1 1
-							.num-2 2
-							.num-3 3
+							img(src="../assets/images/fines/how-to-tablet.svg", alt="How to")
+							.num-wrapper.num-wrapper-1
+								.num 1
+								p Вкажіть номер, серію протокола, ПІБ та номер телефону
+							.num-wrapper.num-wrapper-2
+								.num 2
+								p Вкажіть сумму до оплати
+							.num-wrapper.num-wrapper-3
+								.num 3
+								p Введіть реквізити банківської карти та підтвердіть оплату
+								p.desc Грошові кошти перераховуються на рахунок казначейства у режимі онлайн, а у підтверждення ви отримуєте чек на електронну адресу
+					.steps-block-mobile
+						h3 Як оплатити штраф за порушення ПДР?
+						.img-wrapper
+							img(src="../assets/images/fines/how-to-mobile.png", alt="How to")
+							.num-wrapper.num-wrapper-1
+								.num 1
+								p Вкажіть номер, серію протокола, ПІБ та номер телефону
+							.num-wrapper.num-wrapper-2
+								.num 2
+								p Вкажіть сумму до оплати
+							.num-wrapper.num-wrapper-3
+								.num 3
+								.flex-block
+									p Введіть реквізити банківської карти та підтвердіть оплату
+									p.desc Грошові кошти перераховуються на рахунок казначейства у режимі онлайн, а у підтверждення ви отримуєте чек на електронну адресу

@@ -71,6 +71,15 @@
 		"developersBtn": "Докладніше",
 		"joinNowBtn": "Підключитися зараз"
 	},
+	"homePage": {
+		"metaTitle": "Національний платіжний сервіс UAPAY",
+		"metaDescription": "UAPAY — це універсальний платіжний сервіс і сучасні рішення для вашого бізнесу.",
+		"canonical": "https://uapay.ua/ua",
+
+		"bannerHeadline": "Національний платіжний сервіс",
+		"bannerSubHeadline": "Збільшуйте оборот вашого онлайн-бізнесу і лояльність клієнтів за допомогою наших рішень та експертизи у фінансових технологіях",
+		"bannerBtn": "Підключитися зараз"
+	},
 	"uapayCheckout": {
 		"pageHeadline": "UAPAY Checkout",
 		"metaTitle": "Інтернет-еквайринг від UAPAY: приймайте платежі на вашому сайті",
@@ -275,5 +284,11 @@
 	},
 	"infoUapay": {
 		"pageHeadline": "Інформація про фінансову установу. ТОВ «ФК ЮАПЕЙ»"
+	},
+	"fines": {
+		"pageHeadline": "Штрафи UAPAY",
+		"metaTitle": "Оплата штрафів за порушення ПДР онлайн — UAPAY",
+		"metaDescription": "Легко сплачуйте штрафи поліції за порушення правил дорожнього руху на сайті UAPAY.",
+		"canonical": "https://uapay.ua/ua/fines"
 	}
 }

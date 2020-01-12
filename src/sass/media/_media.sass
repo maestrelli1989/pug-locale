@@ -45,16 +45,31 @@
 	.fines-page
 		.fines-content
 			.last-block
+				padding-top: 100px
+				.flex-block
+					.flex-item
+						max-width: 300px
 				.steps-block-desktop
 					.img-wrapper
-						.num-1
-							left: 483px
-						.num-2
-							top: 208px
-							left: 101px
-						.num-3
-							top: 208px
-							left: 558px
+						.num-wrapper
+							p
+								font-size: 16px
+								line-height: 24px
+								padding-top: 10px
+							.num
+								font-size: 28px
+								line-height: 28px
+								width: 54px
+							&.num-wrapper-1
+								left: 445px
+								p
+									max-width: 320px
+							&.num-wrapper-2
+								top: 213px
+								left: 95px
+							&.num-wrapper-3
+								top: 213px
+								left: 558px
 
 	.footer
 		.container
@@ -282,6 +297,38 @@
 							padding-bottom: 60px
 					.flex-right
 						max-width: 100%
+
+	.fines-page
+		.fines-content
+			.first-block
+				padding: 60px 0px 80px
+				.flex-block
+					flex-direction: column
+					padding: 0px
+					.flex-left
+						max-width: 100%
+						padding: 0px
+						p
+							padding-bottom: 20px
+					.flex-right
+						max-width: 100%
+			.last-block
+				padding: 60px 0px 80px
+				.steps-block-desktop
+					display: none
+				.steps-block-tablet
+					display: block
+				.flex-block
+					padding-bottom: 40px
+					.flex-item
+						max-width: 220px
+						h5
+							font-size: 18px
+							line-height: 24px
+							padding-bottom: 10px
+						p
+							font-size: 14px
+							line-height: 20px
 
 	.text-page
 		.text-page-content
@@ -628,6 +675,27 @@
 					.flex-right
 						input[type=submit]
 							margin-top: 10px
+
+	.fines-page
+		.fines-content
+			.first-block
+				padding: 40px 0px 60px
+			.last-block
+				.steps-block-desktop
+					display: none
+				.steps-block-tablet
+					display: none
+				.steps-block-mobile
+					display: block
+				.flex-block
+					flex-direction: column
+					align-items: center
+					.flex-item
+						padding-bottom: 20px
+						h5
+							padding-top: 10px
+						&:last-child
+							padding-bottom: 0px
 
 	.text-page
 		.text-page-content
