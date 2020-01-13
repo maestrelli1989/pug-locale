@@ -69,7 +69,8 @@
 	},
 	"buttonComponents": {
 		"developersBtn": "Подробнее",
-		"joinNowBtn": "Подключиться сейчас"
+		"joinNowBtn": "Подключиться сейчас",
+		"homePageBtn": "На главную"
 	},
 	"homePage": {
 		"metaTitle": "Национальный платёжный сервис UAPAY",

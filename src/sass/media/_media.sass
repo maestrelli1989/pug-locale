@@ -26,6 +26,8 @@
 				.news-list
 					margin-left: -15px
 					margin-right: -15px
+					.news-item
+						max-width: 200px
 
 	.uapay-checkout-page
 		.uapay-checkout-content
@@ -128,7 +130,6 @@
 	.home-page
 		.first-screen
 			background-position: right center
-			background-size: contain
 			.main-container
 				h1
 					padding-top: 40px
@@ -167,6 +168,10 @@
 					display: flex
 		.news-block
 			padding: 60px 0px 80px
+			.main-container
+				.news-list
+					.news-item
+						max-width: 320px
 
 	.uapay-checkout-page
 		.uapay-checkout-content
@@ -386,6 +391,12 @@
 							font-size: 14px
 							line-height: 20px
 
+	.page-404
+		.page-404-content
+			h1
+				font-size: 64px
+				line-height: 72px
+
 	.text-page
 		.text-page-content
 			padding: 60px 0px 80px
@@ -457,7 +468,6 @@
 						display: none
 
 	.mobile-menu
-		padding: 0px 20px
 		.mobile-menu-row
 			display: none
 		.accordion-wrapper
@@ -591,8 +601,9 @@
 			padding: 40px 0px 60px
 			.main-container
 				.news-list
+					padding-top: 0px
 					.news-item
-						max-width: 100%
+						max-width: 220px
 
 	.uapay-checkout-page
 		.uapay-checkout-content
@@ -791,6 +802,12 @@
 						&:last-child
 							padding-bottom: 0px
 
+	.page-404
+		.page-404-content
+			h1
+				font-size: 64px
+				line-height: 72px
+
 	.text-page
 		.text-page-content
 			padding: 40px 0px 60px
@@ -801,7 +818,7 @@
 		height: 60px
 
 	.mobile-menu
-		top: 60px
+		top: 0px
 
 	.footer
 		.container
@@ -817,6 +834,13 @@
 				.flex-item
 					max-width: 120px
 					height: auto
+
+	.home-page
+		.news-block
+			.main-container
+				.news-list
+					.news-item
+						max-width: 100%
 
 	.abous-us-page
 		.about-us-page-content
@@ -850,3 +874,9 @@
 					align-items: flex-start
 					span
 						padding: 0px 0px 15px 0px
+
+	.page-404
+		.page-404-content
+			h1
+				font-size: 64px
+				line-height: 72px

@@ -67,6 +67,7 @@ mixin header(className)
 
 mixin mobile-menu(className)
 	.mobile-menu(class=className)
+		+header
 		.mobile-menu-row
 			.mobile-menu-col
 				.mobile-menu-trigger #{$i18n.headerMenu.col1Title}
@@ -208,12 +209,12 @@ mixin trust
 
 //- Developers block mixin
 
-mixin developers(className)
+mixin developers(className, src)
 	.developers-block(class=className)
 		.container.main-container
 			.flex-block.animatedParent.animateOnce(data-sequence='500')
 				.flex-left.animated.fadeIn(data-id='1')
-					img(src="../assets/images/svg/api-cms-black.svg", alt="Image")
+					img(src=src, alt="Image")
 				.flex-right.animated.fadeIn(data-id='1')
 					h4 #{$i18n.developersBlock.blockHeadline}
 					p #{$i18n.developersBlock.blockContent}

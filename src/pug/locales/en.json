@@ -69,7 +69,8 @@
 	},
 	"buttonComponents": {
 		"developersBtn": "Details",
-		"joinNowBtn": "Join now"
+		"joinNowBtn": "Join now",
+		"homePageBtn": "Home page"
 	},
 	"homePage": {
 		"metaTitle": "Ukrainian National Payment Service — UAPAY",

@@ -22,9 +22,10 @@ block mobile-menu
 block main-content
 	.page-404
 		block header-404
-			+header('transparent-header')
+			+header('red-header')
 		.container.main-container
-			.page-404-content
-				h1 404
-				p #{$i18n.page404.p1}
-				p #{$i18n.page404.p2}
+			.page-404-content.animatedParent.animateOnce
+				h1.animated.fadeIn 404
+				p.animated.fadeIn #{$i18n.page404.p1}
+				p.animated.fadeIn #{$i18n.page404.p2}
+				include includes/components/_home-page-btn.pug

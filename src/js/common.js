@@ -136,7 +136,6 @@ $(() => {
 
 	$(hamburger).click(() => {
 		$(".mobile-menu").toggleClass("mobile-menu-active");
-		$(".home-page .first-screen .transparent-header").toggleClass("red-header")
 	});
 
 });

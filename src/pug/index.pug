@@ -21,7 +21,7 @@ block main-content
 	.home-page
 		.first-screen
 			block home-page-header
-				+header('transparent-header')
+				+header('red-header')
 			.container.main-container
 				h1 #{$i18n.homePage.bannerHeadline}
 				p #{$i18n.homePage.bannerSubHeadline}
@@ -106,7 +106,7 @@ block main-content
 						p.animated.fadeInDownShort(data-id='3') #{$i18n.homePage.forCustomersItem2Desc}
 						.btn-wrapper.animated.fadeInDownShort(data-id='4'): a.connect-btn(href="https://escrowbox.uapay.ua/ads", target="_blank") #{$i18n.homePage.payLink}
 						.btn-wrapper.animated.fadeInDownShort(data-id='5'): a.connect-btn(href="https://escrowbox.uapay.ua/ad", target="_blank") #{$i18n.homePage.createLink}
-		+developers('black-background')
+		+developers('black-background', '../assets/images/svg/api-cms-black.svg')
 		.news-block
 			.container.main-container
 				h4 #{$i18n.homePage.newsBlockHeadline}
