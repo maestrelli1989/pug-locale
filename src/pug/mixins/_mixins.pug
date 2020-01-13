@@ -24,38 +24,38 @@ mixin header(className)
 					a(href="index", class="site-logo-link")
 						img(src="../assets/images/logo/site-logo.png", alt="Logo")
 					.menu
-						.menu-item.animatedParent.animateOnce(data-sequence='100')
+						.menu-item
 							.menu-trigger#business-trigger #{$i18n.headerMenu.col1Title}
 							.sub-menu-wrapper#business-sub-menu
 								.triangle
-								.sub-menu.business-sub-menu.animatedParent.animateOnce(data-sequence='100')
-									a.animated.fadeIn(data-id='1', href="uapay-checkout") #{$i18n.headerMenu.col1Link1}
-									a.animated.fadeIn(data-id='1', href="mass-payouts") #{$i18n.headerMenu.col1Link2}
-									a.animated.fadeIn(data-id='1', href="industry-solutions") #{$i18n.headerMenu.col1Link3}
-						.menu-item.animatedParent.animateOnce(data-sequence='100')
+								.sub-menu.business-sub-menu
+									a(href="uapay-checkout") #{$i18n.headerMenu.col1Link1}
+									a(href="mass-payouts") #{$i18n.headerMenu.col1Link2}
+									a(href="industry-solutions") #{$i18n.headerMenu.col1Link3}
+						.menu-item
 							.menu-trigger#user-trigger #{$i18n.headerMenu.col2Title}
 							.sub-menu-wrapper#user-sub-menu
 								.triangle
-								.sub-menu.user-sub-menu.animatedParent.animateOnce(data-sequence='100')
-									a.animated.fadeIn(data-id='1', href="fines") #{$i18n.headerMenu.col2Link1}
-									a.animated.fadeIn(data-id='1', href="javascript:void(0);") #{$i18n.headerMenu.col2Link2}
-						.menu-item.animatedParent.animateOnce(data-sequence='100')
+								.sub-menu.user-sub-menu
+									a(href="fines") #{$i18n.headerMenu.col2Link1}
+									a(href="javascript:void(0);") #{$i18n.headerMenu.col2Link2}
+						.menu-item
 							.menu-trigger#company-trigger #{$i18n.headerMenu.col3Title}
 							.sub-menu-wrapper#company-sub-menu
 								.triangle
-								.sub-menu.company-sub-menu.animatedParent.animateOnce(data-sequence='100')
-									a.animated.fadeIn(data-id='1', href="about-us") #{$i18n.headerMenu.col3Link1}
-									a.animated.fadeIn(data-id='1', href="news") #{$i18n.headerMenu.col3Link2}
-									a.animated.fadeIn(data-id='1', href="faq") #{$i18n.headerMenu.col3Link3}
-									a.animated.fadeIn(data-id='1', href="javascript:void(0);") #{$i18n.headerMenu.col3Link4}
-									a.animated.fadeIn(data-id='1', href="legal-info") #{$i18n.headerMenu.col3Link5}
-						.menu-item.animatedParent.animateOnce(data-sequence='100')
+								.sub-menu.company-sub-menu
+									a(href="about-us") #{$i18n.headerMenu.col3Link1}
+									a(href="news") #{$i18n.headerMenu.col3Link2}
+									a(href="faq") #{$i18n.headerMenu.col3Link3}
+									a(href="javascript:void(0);") #{$i18n.headerMenu.col3Link4}
+									a(href="legal-info") #{$i18n.headerMenu.col3Link5}
+						.menu-item
 							.menu-trigger#developers-trigger #{$i18n.headerMenu.col4Title}
 							.sub-menu-wrapper#developers-sub-menu
 								.triangle
-								.sub-menu.developers-sub-menu.animatedParent.animateOnce(data-sequence='100')
-									a.animated.fadeIn(data-id='1', href="javascript:void(0);") #{$i18n.headerMenu.col4Link1}
-									a.animated.fadeIn(data-id='1', href="javascript:void(0);") #{$i18n.headerMenu.col4Link2}
+								.sub-menu.developers-sub-menu
+									a(href="javascript:void(0);") #{$i18n.headerMenu.col4Link1}
+									a(href="javascript:void(0);") #{$i18n.headerMenu.col4Link2}
 				.header-flex-right
 					a.feedback-link(href="feedback") #{$i18n.headerMenu.feedback}
 					a.btn-ghost-white(href="https://account.uapay.ua/auth/register", target="_blank") #{$i18n.headerMenu.userAccount}

@@ -17,14 +17,14 @@ $(() => {
 	const primaryTags = $("html, body");
 
 	// Header
-	const businessMenuItemTrigger = $("#business-trigger");
-	const businessSubMenu = $("#business-sub-menu");
-	const userMenuItemTrigger = $("#user-trigger");
-	const userSubMenu = $("#user-sub-menu");
-	const companyMenuItemTrigger = $("#company-trigger");
-	const companySubMenu = $("#company-sub-menu");
-	const developersMenuItemTrigger = $("#developers-trigger");
-	const developersSubMenu = $("#developers-sub-menu");
+	const businessMenuItemTrigger = $(".menu .menu-item #business-trigger");
+	const businessSubMenu = $(".menu .menu-item #business-sub-menu");
+	const userMenuItemTrigger = $(".menu .menu-item #user-trigger");
+	const userSubMenu = $(".menu .menu-item #user-sub-menu");
+	const companyMenuItemTrigger = $(".menu .menu-item #company-trigger");
+	const companySubMenu = $(".menu .menu-item #company-sub-menu");
+	const developersMenuItemTrigger = $(".menu .menu-item #developers-trigger");
+	const developersSubMenu = $(".menu .menu-item #developers-sub-menu");
 
 	// Scrolling block at the "Industry solutions" page
 	const firstTrigger = $("#first-trigger");
