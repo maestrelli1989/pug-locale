@@ -28,7 +28,7 @@ block main-content
 		.uapay-checkout-content
 			.first-block
 				.container.main-container
-					.flex-block.animatedParent.animateOnce(data-sequence='500')
+					.flex-block.animatedParent.animateOnce(data-sequence='100')
 						.flex-left.animated.fadeIn(data-id='1')
 							p #{$i18n.uapayCheckout.introPart1}
 							p #{$i18n.uapayCheckout.introPart2}
@@ -37,45 +37,45 @@ block main-content
 						.flex-right.animated.fadeIn(data-id='1')
 							img(src="../assets/images/svg/checkout.svg", alt="Image")
 			.second-block
-				.container.main-container.animatedParent.animateOnce(data-sequence='200')
-					h4.animated.fadeIn(data-id='1') #{$i18n.uapayCheckout.secondBlockTitle}
+				.container.main-container.animatedParent.animateOnce
+					h4.animated.fadeIn #{$i18n.uapayCheckout.secondBlockTitle}
 					.flex-block
 						.flex-left
-							.flex-item.animated.fadeIn(data-id='2')
-								img.animated.fadeInDownShort(data-id='3')(src="../assets/images/uapay-checkout/safe.png", alt="Image", style="width: 48px; height: 48px;")
-								h3.animated.fadeInDownShort(data-id='4') #{$i18n.uapayCheckout.item1Title}
-								p.animated.fadeInDownShort(data-id='5') #{$i18n.uapayCheckout.item1Content}
-							.flex-item.animated.fadeIn(data-id='6')
-								img.animated.fadeInDownShort(data-id='7')(src="../assets/images/uapay-checkout/qr.png", alt="Image", style="width: 48px; height: 48px;")
-								h3.animated.fadeInDownShort(data-id='8') #{$i18n.uapayCheckout.item2Title}
-								p.animated.fadeInDownShort(data-id='9') #{$i18n.uapayCheckout.item2Content}
-							.flex-item.animated.fadeIn(data-id='10')
-								img.animated.fadeInDownShort(data-id='11')(src="../assets/images/uapay-checkout/paperless.png", alt="Image", style="width: 48px; height: 48px;")
-								h3.animated.fadeInDownShort(data-id='12') #{$i18n.uapayCheckout.item3Title}
-								p.animated.fadeInDownShort(data-id='13') #{$i18n.uapayCheckout.item3Content}
-							.flex-item.animated.fadeIn(data-id='14')
-								img.animated.fadeInDownShort(data-id='15')(src="../assets/images/uapay-checkout/delivery.png", alt="Image", style="width: 48px; height: 48px;")
-								h3.animated.fadeInDownShort(data-id='16') #{$i18n.uapayCheckout.item4Title}
-								p.animated.fadeInDownShort(data-id='17') #{$i18n.uapayCheckout.item4Content}
+							.flex-item.animated.fadeInDownShort
+								img.animated.fadeInDownShort(src="../assets/images/uapay-checkout/safe.png", alt="Image", style="width: 48px; height: 48px;")
+								h3.animated.fadeInDownShort #{$i18n.uapayCheckout.item1Title}
+								p.animated.fadeInDownShort #{$i18n.uapayCheckout.item1Content}
+							.flex-item.animated.fadeInDownShort
+								img.animated.fadeInDownShort(src="../assets/images/uapay-checkout/qr.png", alt="Image", style="width: 48px; height: 48px;")
+								h3.animated.fadeInDownShort #{$i18n.uapayCheckout.item2Title}
+								p.animated.fadeInDownShort #{$i18n.uapayCheckout.item2Content}
+							.flex-item.animated.fadeInDownShort
+								img.animated.fadeInDownShort(src="../assets/images/uapay-checkout/paperless.png", alt="Image", style="width: 48px; height: 48px;")
+								h3.animated.fadeInDownShort #{$i18n.uapayCheckout.item3Title}
+								p.animated.fadeInDownShort #{$i18n.uapayCheckout.item3Content}
+							.flex-item.animated.fadeInDownShort
+								img.animated.fadeInDownShort(src="../assets/images/uapay-checkout/delivery.png", alt="Image", style="width: 48px; height: 48px;")
+								h3.animated.fadeInDownShort #{$i18n.uapayCheckout.item4Title}
+								p.animated.fadeInDownShort #{$i18n.uapayCheckout.item4Content}
 						.flex-right
-							.flex-item.animated.fadeIn(data-id='2')
-								img.animated.fadeInDownShort(data-id='3')(src="../assets/images/uapay-checkout/subscription.png", alt="Image", style="width: 48px; height: 48px;")
-								h3.animated.fadeInDownShort(data-id='4') #{$i18n.uapayCheckout.item5Title}
-								p.animated.fadeInDownShort(data-id='5') #{$i18n.uapayCheckout.item5Content}
-							.flex-item.animated.fadeIn(data-id='6')
-								img.animated.fadeInDownShort(data-id='7')(src="../assets/images/uapay-checkout/escrow.png", alt="Image", style="width: 48px; height: 48px;")
-								h3.animated.fadeInDownShort(data-id='8') #{$i18n.uapayCheckout.item6Title}
-								p.animated.fadeInDownShort(data-id='9') #{$i18n.uapayCheckout.item6Content}
-							.flex-item.animated.fadeIn(data-id='10')
-								img.animated.fadeInDownShort(data-id='11')(src="../assets/images/uapay-checkout/cart.png", alt="Image", style="width: 48px; height: 48px;")
-								h3.animated.fadeInDownShort(data-id='12') #{$i18n.uapayCheckout.item7Title}
-								p.animated.fadeInDownShort(data-id='13') #{$i18n.uapayCheckout.item7Content}
-							.flex-item.animated.fadeIn(data-id='14')
-								img.animated.fadeInDownShort(data-id='15')(src="../assets/images/uapay-checkout/comfort.png", alt="Image", style="width: 48px; height: 48px;")
-								h3.animated.fadeInDownShort(data-id='16') #{$i18n.uapayCheckout.item8Title}
-								p.animated.fadeInDownShort(data-id='17') #{$i18n.uapayCheckout.item8Content}
+							.flex-item.animated.fadeInDownShort
+								img.animated.fadeInDownShort(src="../assets/images/uapay-checkout/subscription.png", alt="Image", style="width: 48px; height: 48px;")
+								h3.animated.fadeInDownShort #{$i18n.uapayCheckout.item5Title}
+								p.animated.fadeInDownShort #{$i18n.uapayCheckout.item5Content}
+							.flex-item.animated.fadeInDownShort
+								img.animated.fadeInDownShort(src="../assets/images/uapay-checkout/escrow.png", alt="Image", style="width: 48px; height: 48px;")
+								h3.animated.fadeInDownShort #{$i18n.uapayCheckout.item6Title}
+								p.animated.fadeInDownShort #{$i18n.uapayCheckout.item6Content}
+							.flex-item.animated.fadeInDownShort
+								img.animated.fadeInDownShort(src="../assets/images/uapay-checkout/cart.png", alt="Image", style="width: 48px; height: 48px;")
+								h3.animated.fadeInDownShort #{$i18n.uapayCheckout.item7Title}
+								p.animated.fadeInDownShort #{$i18n.uapayCheckout.item7Content}
+							.flex-item.animated.fadeInDownShort
+								img.animated.fadeInDownShort(src="../assets/images/uapay-checkout/comfort.png", alt="Image", style="width: 48px; height: 48px;")
+								h3.animated.fadeInDownShort #{$i18n.uapayCheckout.item8Title}
+								p.animated.fadeInDownShort #{$i18n.uapayCheckout.item8Content}
 			.third-block
-				.container.main-container.animatedParent.animateOnce(data-sequence='200')
+				.container.main-container.animatedParent.animateOnce(data-sequence='100')
 					h4.animated.fadeIn(data-id='1') #{$i18n.uapayCheckout.tariffsTitle}
 					.flex-block
 						.flex-left.animated.fadeIn(data-id='2')

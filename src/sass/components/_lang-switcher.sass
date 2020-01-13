@@ -3,16 +3,18 @@
 	display: inline-block
 	padding-right: 20px
 	&:after
-		content: ""
 		position: absolute
+		content: ""
 		top: 11px
 		right: 25px
 		margin-left: -5px
-		border-top: 4px solid black
-		border-top-color: #ccc
+		border-top: 4px solid $corporate-black
+		border-top-color: $corporate-white
 		border-left: 4px solid transparent
 		border-right: 4px solid transparent
 		z-index: 1
+	&:hover
+		cursor: pointer
 	.current-lang
         display: inline-block
         padding: 0 20px 0 6px
@@ -22,7 +24,7 @@
         font-family: $primary-medium
         color: $corporate-white
 	.lang-items
-		background-color: $corporate-ghost-white
+		background-color: $corporate-white
 		display: none
 		margin: 0px
 		position: absolute

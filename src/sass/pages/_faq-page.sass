@@ -1,0 +1,56 @@
+.faq-page
+	.faq-page-content
+		padding: 0px 0px 60px
+		background-color: $corporate-black
+		.accordion
+			[data-toggle="collapse"]
+				.fas
+					font-size: 1.5em
+					&:before
+						content: "\f106"
+				&.collapsed
+					.fas
+						font-size: 1.5em
+						&:before
+							content: "\f107"
+			.accordion-item
+				border: 1px solid #343333
+				background-color: #343333
+				position: relative
+				border-radius: $quinary-radius
+				margin-bottom: 20px
+				&:last-child
+					margin-bottom: 0px
+				.accordion-headline-wrapper
+					padding: 0px
+					background-color: #343333
+					border: none
+					border-radius: $quinary-radius
+					.accordion-headline
+						padding: 40px
+						color: $corporate-white
+						font-family: $primary-bold
+						font-weight: $bold-weight
+						font-size: 24px
+						line-height: 36px
+						width: 100%
+						display: flex
+						flex-direction: row
+						justify-content: space-between
+						border-radius: $quinary-radius
+						&:hover
+							text-decoration: none
+						span
+							padding-right: 25px
+						i
+							color: $corporate-white
+							line-height: 24px
+							transition: $primary-transition
+							position: relative
+							top: 5px
+				.accordion-content-wrapper
+					padding: 0px 40px 35px
+					background-color: #343333
+					border-radius: $quinary-radius
+					p
+						color: $corporate-white

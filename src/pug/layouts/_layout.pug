@@ -35,48 +35,46 @@ html(lang='uk')
 			block main-content
 		footer.footer
 			.container.main-container
-				.top-footer-block.animatedParent.animateOnce(data-sequence='500')
-					h2.animated.fadeIn(data-id='1') Автоматизуйте ваші
-						br
-						| платежі вже сьогодні
+				.top-footer-block.animatedParent.animateOnce(data-sequence='100')
+					h2.animated.fadeIn(data-id='1') #{$i18n.footerIntro.footerHeadline}
 					include ../includes/components/_start-now-btn.pug
 				.bottom-footer-block
-					.row.pre-menu-block.animatedParent.animateOnce(data-sequence='500')
+					.row.pre-menu-block.animatedParent.animateOnce(data-sequence='100')
 						.col-xl-3.col-lg-3.col-md-2.col-sm-6.pre-menu-col.animated.fadeIn(data-id='1')
-							a(href="/", class="site-logo-link")
+							a(href="index", class="site-logo-link")
 								img(src="../assets/images/logo/site-logo.png", alt="Logo")
 						.col-xl-6.col-lg-6.col-md-8.col-sm-12.pre-menu-col.animated.fadeIn(data-id='1')
-							p.address 04205, Оболонський проспект, 35, Київ, Україна
+							p.address #{$i18n.footerIntro.footerAddress}
 						.col-xl-3.col-lg-3.col-md-2.col-sm-6.pre-menu-col.animated.fadeIn(data-id='1')
 							.languages 
-								span.current-lang UA
+								span.current-lang#current-lang UA
 								.lang-items
 									a(href="javascript:void(0);", onclick="switchToUaLocale()") UA
 									a(href="javascript:void(0);", onclick="switchToRuLocale()") RU
 									a(href="javascript:void(0);", onclick="switchToEnLocale()") EN
 					.row.footer-menu
-						.col-xl-3.col-lg-6.col-md-6.footer-menu-col.animatedParent.animateOnce(data-sequence='200')
+						.col-xl-3.col-lg-6.col-md-6.footer-menu-col.animatedParent.animateOnce(data-sequence='50')
 							p.footer-menu-title.animated.fadeInDownShort(data-id='1') #{$i18n.footerMenu.col1Title}
 							a(href="uapay-checkout", class="footer-menu-link animated fadeInDownShort", data-id='2') #{$i18n.footerMenu.col1Link1}
 							a(href="mass-payouts", class="footer-menu-link animated fadeInDownShort", data-id='3') #{$i18n.footerMenu.col1Link2}
 							a(href="industry-solutions", class="footer-menu-link animated fadeInDownShort", data-id='4') #{$i18n.footerMenu.col1Link3}
-						.col-xl-3.col-lg-6.col-md-6.footer-menu-col.animatedParent.animateOnce(data-sequence='200')
+						.col-xl-3.col-lg-6.col-md-6.footer-menu-col.animatedParent.animateOnce(data-sequence='50')
 							p.footer-menu-title.animated.fadeInDownShort(data-id='1') #{$i18n.footerMenu.col2Title}
 							a(href="fines", class="footer-menu-link animated fadeInDownShort", data-id='2') #{$i18n.footerMenu.col2Link1}
 							a(href="javascript:void(0);", class="footer-menu-link animated fadeInDownShort", data-id='5') #{$i18n.footerMenu.col2Link2}
-						.col-xl-3.col-lg-6.col-md-6.footer-menu-col.animatedParent.animateOnce(data-sequence='200')
+						.col-xl-3.col-lg-6.col-md-6.footer-menu-col.animatedParent.animateOnce(data-sequence='50')
 							p.footer-menu-title.animated.fadeInDownShort(data-id='1') #{$i18n.footerMenu.col3Title}
 							a(href="javascript:void(0);", class="footer-menu-link animated fadeInDownShort", data-id='2') #{$i18n.footerMenu.col3Link1}
 							a(href="javascript:void(0);", class="footer-menu-link animated fadeInDownShort", data-id='3') #{$i18n.footerMenu.col3Link2}
-						.col-xl-3.col-lg-6.col-md-6.footer-menu-col.animatedParent.animateOnce(data-sequence='200')
+						.col-xl-3.col-lg-6.col-md-6.footer-menu-col.animatedParent.animateOnce(data-sequence='50')
 							p.footer-menu-title.animated.fadeInDownShort(data-id='1') #{$i18n.footerMenu.col4Title}
 							a(href="about-us", class="footer-menu-link animated fadeInDownShort", data-id='2') #{$i18n.footerMenu.col4Link1}
 							a(href="news", class="footer-menu-link animated fadeInDownShort", data-id='3') #{$i18n.footerMenu.col4Link2}
-							a(href="javascript:void(0);", class="footer-menu-link animated fadeInDownShort", data-id='4') #{$i18n.footerMenu.col4Link3}
+							a(href="faq", class="footer-menu-link animated fadeInDownShort", data-id='4') #{$i18n.footerMenu.col4Link3}
 							a(href="javascript:void(0);", class="footer-menu-link animated fadeInDownShort", data-id='5') #{$i18n.footerMenu.col4Link4}
 							a(href="legal-info", class="footer-menu-link animated fadeInDownShort", data-id='6') #{$i18n.footerMenu.col4Link5}
 					.footer-menu-mobile
-						.accordion.animatedParent.animateOnce(data-sequence='200')#mobile-footer-accordion
+						.accordion.animatedParent.animateOnce(data-sequence='100')#mobile-footer-accordion
 							.mobile-footer-accordion-item.animated.fadeIn(data-id='1')
 								#mobile-footer-heading1
 									a(class="accordion-headline collapsed", href="javascript:void(0);", role="button", data-toggle="collapse", data-target="#mobile-footer-collapse1", aria-expanded="false", aria-controls="mobile-footer-collapse1")
@@ -114,18 +112,18 @@ html(lang='uk')
 									ul.links-wrapper
 										li: a(href="about-us") #{$i18n.footerMenu.col4Link1}
 										li: a(href="news") #{$i18n.footerMenu.col4Link2}
-										li: a(href="javascript:void(0);") #{$i18n.footerMenu.col4Link3}
+										li: a(href="faq") #{$i18n.footerMenu.col4Link3}
 										li: a(href="javascript:void(0);") #{$i18n.footerMenu.col4Link4}
 										li: a(href="legal-info") #{$i18n.footerMenu.col4Link5}
 		footer.copyright-block
 			.container
-				.copyright-block-content
+				.copyright-block-content.animatedParent.animateOnce
 					.flex-left
-						p &copy; Copyright 2020, UAPAY
+						p.animated.fadeIn &copy; Copyright 2020, UAPAY
 					.flex-right
-						a(href="terms-of-use") #{$i18n.bottomFooter.link1}
-						a(href="cookies-policy") #{$i18n.bottomFooter.link2}
-						a(href="privacy-policy") #{$i18n.bottomFooter.link3}
+						a.animated.fadeIn(href="terms-of-use") #{$i18n.bottomFooter.link1}
+						a.animated.fadeIn(href="cookies-policy") #{$i18n.bottomFooter.link2}
+						a.animated.fadeIn(href="privacy-policy") #{$i18n.bottomFooter.link3}
 		//- jQuery
 		script(src="https://code.jquery.com/jquery-3.3.1.min.js")
 		//- Popper

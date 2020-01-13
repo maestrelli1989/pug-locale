@@ -18,10 +18,10 @@ mixin meta-data(title, description, href)
 
 mixin header(className)
 	header.header(class=className)
-		.container.animatedParent.animateOnce(data-sequence='500')
+		.container.animatedParent.animateOnce(data-sequence='100')
 			.header-flex.animated.fadeInDown(data-id='1')
 				.header-flex-left
-					a(href="/", class="site-logo-link")
+					a(href="index", class="site-logo-link")
 						img(src="../assets/images/logo/site-logo.png", alt="Logo")
 					.menu
 						.menu-item.animatedParent.animateOnce(data-sequence='100')
@@ -46,7 +46,7 @@ mixin header(className)
 								.sub-menu.company-sub-menu.animatedParent.animateOnce(data-sequence='100')
 									a.animated.fadeIn(data-id='1', href="about-us") #{$i18n.headerMenu.col3Link1}
 									a.animated.fadeIn(data-id='1', href="news") #{$i18n.headerMenu.col3Link2}
-									a.animated.fadeIn(data-id='1', href="javascript:void(0);") #{$i18n.headerMenu.col3Link3}
+									a.animated.fadeIn(data-id='1', href="faq") #{$i18n.headerMenu.col3Link3}
 									a.animated.fadeIn(data-id='1', href="javascript:void(0);") #{$i18n.headerMenu.col3Link4}
 									a.animated.fadeIn(data-id='1', href="legal-info") #{$i18n.headerMenu.col3Link5}
 						.menu-item.animatedParent.animateOnce(data-sequence='100')
@@ -82,7 +82,7 @@ mixin mobile-menu(className)
 				.mobile-menu-trigger #{$i18n.headerMenu.col3Title}
 				a(class="mobile-menu-link", href="about-us") #{$i18n.headerMenu.col3Link1}
 				a(class="mobile-menu-link", href="news") #{$i18n.headerMenu.col3Link2}
-				a(class="mobile-menu-link", href="javascript:void(0);") #{$i18n.headerMenu.col3Link3}
+				a(class="mobile-menu-link", href="faq") #{$i18n.headerMenu.col3Link3}
 				a(class="mobile-menu-link", href="javascript:void(0);") #{$i18n.headerMenu.col3Link4}
 				a(class="mobile-menu-link", href="legal-info") #{$i18n.headerMenu.col3Link5}
 			.mobile-menu-col
@@ -119,7 +119,7 @@ mixin mobile-menu(className)
 						ul.links-wrapper
 							li: a(href="about-us") #{$i18n.headerMenu.col3Link1}
 							li: a(href="news") #{$i18n.headerMenu.col3Link2}
-							li: a(href="javascript:void(0);") #{$i18n.headerMenu.col3Link3}
+							li: a(href="faq") #{$i18n.headerMenu.col3Link3}
 							li: a(href="javascript:void(0);") #{$i18n.headerMenu.col3Link4}
 							li: a(href="legal-info") #{$i18n.headerMenu.col3Link5}
 				.mobile-menu-accordion-item
@@ -139,35 +139,29 @@ mixin mobile-menu(className)
 mixin preferences(className)
 	.preferences-block(class=className)
 		.container.main-container
-			.flex-block.animatedParent.animateOnce(data-sequence='300')
+			.flex-block.animatedParent.animateOnce(data-sequence='100')
 				.flex-item.animated.fadeIn(data-id='1')
-					figure
-						img(src="../assets/images/about-us/pci-dss.png", alt="Image")
+					figure: img(src="../assets/images/about-us/pci-dss.png", alt="Image")
 					p.title #{$i18n.preferencesBlock.preference1Title}
 					p.desc #{$i18n.preferencesBlock.preference1Desc}
 				.flex-item.animated.fadeIn(data-id='2')
-					figure
-						img(src="../assets/images/about-us/gdpr.png", alt="Image")
+					figure: img(src="../assets/images/about-us/gdpr.png", alt="Image")
 					p.title #{$i18n.preferencesBlock.preference2Title}
 					p.desc #{$i18n.preferencesBlock.preference2Desc}
 				.flex-item.animated.fadeIn(data-id='3')
-					figure
-						img(src="../assets/images/about-us/ukraine.png", alt="Image")
+					figure: img(src="../assets/images/about-us/ukraine.png", alt="Image")
 					p.title #{$i18n.preferencesBlock.preference3Title}
 					p.desc #{$i18n.preferencesBlock.preference3Desc}
 				.flex-item.animated.fadeIn(data-id='4')
-					figure
-						img(src="../assets/images/about-us/paperless.png", alt="Image")
+					figure: img(src="../assets/images/about-us/paperless.png", alt="Image")
 					p.title #{$i18n.preferencesBlock.preference4Title}
 					p.desc #{$i18n.preferencesBlock.preference4Desc}
 				.flex-item.animated.fadeIn(data-id='5')
-					figure
-						img(src="../assets/images/about-us/structure.png", alt="Image")
+					figure: img(src="../assets/images/about-us/structure.png", alt="Image")
 					p.title #{$i18n.preferencesBlock.preference5Title}
 					p.desc #{$i18n.preferencesBlock.preference5Desc}
 				.flex-item.animated.fadeIn(data-id='6')
-					figure
-						img(src="../assets/images/about-us/licence.png", alt="Image")
+					figure: img(src="../assets/images/about-us/licence.png", alt="Image")
 					p.title #{$i18n.preferencesBlock.preference6Title}
 					p.desc #{$i18n.preferencesBlock.preference6Desc}
 
@@ -178,41 +172,79 @@ mixin trust
 		.container.main-container.animatedParent.animateOnce(data-sequence='100')
 			h4.animated.fadeIn(data-id='1') #{$i18n.trustBlock.blockHeadline}
 			.flex-block.animatedParent.animateOnce(data-sequence='100')
-				.flex-item.animated.fadeIn(data-id='1')
-					include ../includes/svg/about-us/_1.pug
-				.flex-item.animated.fadeIn(data-id='2')
-					include ../includes/svg/about-us/_2.pug
-				.flex-item.animated.fadeIn(data-id='3')
-					include ../includes/svg/about-us/_3.pug
-				.flex-item.animated.fadeIn(data-id='4')
-					include ../includes/svg/about-us/_4.pug
-				.flex-item.animated.fadeIn(data-id='5')
-					include ../includes/svg/about-us/_5.pug
-				.flex-item.animated.fadeIn(data-id='6')
-					include ../includes/svg/about-us/_6.pug
-				.flex-item.animated.fadeIn(data-id='7')
-					include ../includes/svg/about-us/_7.pug
-				.flex-item.animated.fadeIn(data-id='8')
-					include ../includes/svg/about-us/_8.pug
-				.flex-item.animated.fadeIn(data-id='9')
-					include ../includes/svg/about-us/_14.pug
-				.flex-item.animated.fadeIn(data-id='10')
-					include ../includes/svg/about-us/_10.pug
-				.flex-item.animated.fadeIn(data-id='11')
-					include ../includes/svg/about-us/_9.pug
-				.flex-item.animated.fadeIn(data-id='12')
-					include ../includes/svg/about-us/_13.pug
-				.flex-item.animated.fadeIn(data-id='13')
-					include ../includes/svg/about-us/_12.pug
-				.flex-item.animated.fadeIn(data-id='14')
-					include ../includes/svg/about-us/_11.pug
+				.flex-block-row
+					.flex-item.animated.fadeIn(data-id='1')
+						include ../includes/svg/about-us/_1.pug
+					.flex-item.animated.fadeIn(data-id='2')
+						include ../includes/svg/about-us/_2.pug
+					.flex-item.animated.fadeIn(data-id='3')
+						include ../includes/svg/about-us/_3.pug
+					.flex-item.animated.fadeIn(data-id='4')
+						include ../includes/svg/about-us/_4.pug
+				.flex-block-row
+					.flex-item.animated.fadeIn(data-id='5')
+						include ../includes/svg/about-us/_5.pug
+					.flex-item.animated.fadeIn(data-id='6')
+						include ../includes/svg/about-us/_6.pug
+					.flex-item.animated.fadeIn(data-id='7')
+						include ../includes/svg/about-us/_7.pug
+				.flex-block-row
+					.flex-item.animated.fadeIn(data-id='8')
+						include ../includes/svg/about-us/_8.pug
+					.flex-item.animated.fadeIn(data-id='9')
+						include ../includes/svg/about-us/_14.pug
+					.flex-item.animated.fadeIn(data-id='10')
+						include ../includes/svg/about-us/_10.pug
+					.flex-item.animated.fadeIn(data-id='11')
+						include ../includes/svg/about-us/_9.pug
+				.flex-block-row
+					.flex-item.animated.fadeIn(data-id='12')
+						include ../includes/svg/about-us/_13.pug
+					.flex-item.animated.fadeIn(data-id='13')
+						include ../includes/svg/about-us/_12.pug
+					.flex-item.animated.fadeIn(data-id='14')
+						include ../includes/svg/about-us/_11.pug
+			.flex-block-mobile.animatedParent.animateOnce(data-sequence='100')
+				.flex-block-row
+					.flex-item.animated.fadeIn(data-id='1')
+						include ../includes/svg/about-us/_1.pug
+					.flex-item.animated.fadeIn(data-id='2')
+						include ../includes/svg/about-us/_2.pug
+					.flex-item.animated.fadeIn(data-id='3')
+						include ../includes/svg/about-us/_3.pug
+				.flex-block-row
+					.flex-item.animated.fadeIn(data-id='4')
+						include ../includes/svg/about-us/_4.pug
+					.flex-item.animated.fadeIn(data-id='5')
+						include ../includes/svg/about-us/_5.pug
+					.flex-item.animated.fadeIn(data-id='6')
+						include ../includes/svg/about-us/_6.pug
+				.flex-block-row
+					.flex-item.animated.fadeIn(data-id='7')
+						include ../includes/svg/about-us/_7.pug
+					.flex-item.animated.fadeIn(data-id='8')
+						include ../includes/svg/about-us/_8.pug
+					.flex-item.animated.fadeIn(data-id='9')
+						include ../includes/svg/about-us/_14.pug
+				.flex-block-row
+					.flex-item.animated.fadeIn(data-id='10')
+						include ../includes/svg/about-us/_10.pug
+					.flex-item.animated.fadeIn(data-id='11')
+						include ../includes/svg/about-us/_9.pug
+					.flex-item.animated.fadeIn(data-id='12')
+						include ../includes/svg/about-us/_13.pug
+				.flex-block-row
+					.flex-item.animated.fadeIn(data-id='13')
+						include ../includes/svg/about-us/_12.pug
+					.flex-item.animated.fadeIn(data-id='14')
+						include ../includes/svg/about-us/_11.pug
 
 //- Developers block mixin
 
 mixin developers(className, src)
 	.developers-block(class=className)
 		.container.main-container
-			.flex-block.animatedParent.animateOnce(data-sequence='500')
+			.flex-block.animatedParent.animateOnce(data-sequence='100')
 				.flex-left.animated.fadeIn(data-id='1')
 					img(src=src, alt="Image")
 				.flex-right.animated.fadeIn(data-id='1')
@@ -225,7 +257,7 @@ mixin developers(className, src)
 mixin partners(className)
 	.partners-block(class=className)
 		.container.main-container
-			.flex-block.animatedParent.animateOnce(data-sequence='500')
+			.flex-block.animatedParent.animateOnce(data-sequence='100')
 				.flex-left.animated.fadeIn(data-id='1')
 					img(src="../assets/images/svg/percent.svg", alt="Image")
 				.flex-right.animated.fadeIn(data-id='1')

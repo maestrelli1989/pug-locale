@@ -56,11 +56,19 @@
 						&::-ms-input-placeholder
 							color: $corporate-white
 					input[type="submit"]
-						color: $corporate-red
+						color: $corporate-white
 						font-family: $primary-bold
 						font-weight: $bold-weight
-						font-size: 20px
+						font-size: 16px
 						line-height: 20px
 						margin-top: 30px
+						padding: 14px 45px
+						background-color: $corporate-red
+						border-radius: $primary-radius
+						text-transform: uppercase
+						transition: $primary-transition
 						&:focus
 							outline: none
+						&:hover
+							color: $corporate-red
+							background-color: $corporate-white

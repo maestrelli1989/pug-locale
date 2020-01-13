@@ -1,0 +1,237 @@
+//-
+	FAQ page markup for the UaPay website project
+	Version: 1.0
+	Created: 10.12.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: UaPay
+	Website: https://uapay.ua/
+
+extends layouts/_layout.pug
+
+block meta-data
+	title #{$i18n.faq.metaTitle}
+	meta(name="description", content="#{$i18n.faq.metaDescription}")
+	link(rel="canonical", href="#{$i18n.faq.canonical}")
+
+block header
+	+header('black-header')
+
+block mobile-menu
+	+mobile-menu('mobile-menu-black')
+	
+block main-content
+	.inner-page-wrapper.faq-page
+		.intro-block.black-intro-block
+			.container.main-container
+				h3 #{$i18n.faq.pageHeadline}
+		.faq-page-content
+			.container.main-container
+				.accordion#faq-accordion
+					
+					.card.accordion-item
+						.card-header.accordion-headline-wrapper#heading1
+							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse1', aria-expanded='false', aria-controls='collapse1')
+								span #{$i18n.faq.item1Title}
+								i.fas
+						#collapse1.collapse(aria-labelledby='heading1', data-parent='#faq-accordion')
+							.card-body.accordion-content-wrapper
+								p #{$i18n.faq.item1Desc}
+					
+					.card.accordion-item
+						.card-header.accordion-headline-wrapper#heading2
+							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse2', aria-expanded='false', aria-controls='collapse2')
+								span #{$i18n.faq.item2Title}
+								i.fas
+						#collapse2.collapse(aria-labelledby='heading2', data-parent='#faq-accordion')
+							.card-body.accordion-content-wrapper
+								p #{$i18n.faq.item2Desc}
+
+					.card.accordion-item
+						.card-header.accordion-headline-wrapper#heading3
+							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse3', aria-expanded='false', aria-controls='collapse3')
+								span #{$i18n.faq.item3Title}
+								i.fas
+						#collapse3.collapse(aria-labelledby='heading3', data-parent='#faq-accordion')
+							.card-body.accordion-content-wrapper
+								p #{$i18n.faq.item3Desc}
+					
+					.card.accordion-item
+						.card-header.accordion-headline-wrapper#heading4
+							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse4', aria-expanded='false', aria-controls='collapse4')
+								span #{$i18n.faq.item4Title}
+								i.fas
+						#collapse4.collapse(aria-labelledby='heading4', data-parent='#faq-accordion')
+							.card-body.accordion-content-wrapper
+								p #{$i18n.faq.item4Desc}
+
+					.card.accordion-item
+						.card-header.accordion-headline-wrapper#heading5
+							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse5', aria-expanded='false', aria-controls='collapse5')
+								span #{$i18n.faq.item5Title}
+								i.fas
+						#collapse5.collapse(aria-labelledby='heading5', data-parent='#faq-accordion')
+							.card-body.accordion-content-wrapper
+								p #{$i18n.faq.item5Desc}
+
+					.card.accordion-item
+						.card-header.accordion-headline-wrapper#heading6
+							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse6', aria-expanded='false', aria-controls='collapse6')
+								span #{$i18n.faq.item6Title}
+								i.fas
+						#collapse6.collapse(aria-labelledby='heading6', data-parent='#faq-accordion')
+							.card-body.accordion-content-wrapper
+								p #{$i18n.faq.item6Desc}
+
+					.card.accordion-item
+						.card-header.accordion-headline-wrapper#heading7
+							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse7', aria-expanded='false', aria-controls='collapse7')
+								span #{$i18n.faq.item7Title}
+								i.fas
+						#collapse7.collapse(aria-labelledby='heading7', data-parent='#faq-accordion')
+							.card-body.accordion-content-wrapper
+								p #{$i18n.faq.item7Desc}
+
+					.card.accordion-item
+						.card-header.accordion-headline-wrapper#heading8
+							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse8', aria-expanded='false', aria-controls='collapse8')
+								span #{$i18n.faq.item8Title}
+								i.fas
+						#collapse8.collapse(aria-labelledby='heading8', data-parent='#faq-accordion')
+							.card-body.accordion-content-wrapper
+								p #{$i18n.faq.item8Desc}
+
+					.card.accordion-item
+						.card-header.accordion-headline-wrapper#heading9
+							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse9', aria-expanded='false', aria-controls='collapse9')
+								span #{$i18n.faq.item9Title}
+								i.fas
+						#collapse9.collapse(aria-labelledby='heading9', data-parent='#faq-accordion')
+							.card-body.accordion-content-wrapper
+								p #{$i18n.faq.item9Desc}
+
+					.card.accordion-item
+						.card-header.accordion-headline-wrapper#heading10
+							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse10', aria-expanded='false', aria-controls='collapse10')
+								span #{$i18n.faq.item10Title}
+								i.fas
+						#collapse10.collapse(aria-labelledby='heading10', data-parent='#faq-accordion')
+							.card-body.accordion-content-wrapper
+								p #{$i18n.faq.item10Desc}
+
+					.card.accordion-item
+						.card-header.accordion-headline-wrapper#heading11
+							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse11', aria-expanded='false', aria-controls='collapse11')
+								span #{$i18n.faq.item11Title}
+								i.fas
+						#collapse11.collapse(aria-labelledby='heading11', data-parent='#faq-accordion')
+							.card-body.accordion-content-wrapper
+								p #{$i18n.faq.item11Desc}
+
+					.card.accordion-item
+						.card-header.accordion-headline-wrapper#heading12
+							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse12', aria-expanded='false', aria-controls='collapse12')
+								span #{$i18n.faq.item12Title}
+								i.fas
+						#collapse12.collapse(aria-labelledby='heading12', data-parent='#faq-accordion')
+							.card-body.accordion-content-wrapper
+								p #{$i18n.faq.item12Desc}
+
+					.card.accordion-item
+						.card-header.accordion-headline-wrapper#heading13
+							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse13', aria-expanded='false', aria-controls='collapse13')
+								span #{$i18n.faq.item13Title}
+								i.fas
+						#collapse13.collapse(aria-labelledby='heading13', data-parent='#faq-accordion')
+							.card-body.accordion-content-wrapper
+								p #{$i18n.faq.item13Desc}
+
+					.card.accordion-item
+						.card-header.accordion-headline-wrapper#heading14
+							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse14', aria-expanded='false', aria-controls='collapse14')
+								span #{$i18n.faq.item14Title}
+								i.fas
+						#collapse14.collapse(aria-labelledby='heading14', data-parent='#faq-accordion')
+							.card-body.accordion-content-wrapper
+								p #{$i18n.faq.item14Desc}
+
+					.card.accordion-item
+						.card-header.accordion-headline-wrapper#heading15
+							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse15', aria-expanded='false', aria-controls='collapse15')
+								span #{$i18n.faq.item15Title}
+								i.fas
+						#collapse15.collapse(aria-labelledby='heading15', data-parent='#faq-accordion')
+							.card-body.accordion-content-wrapper
+								p #{$i18n.faq.item15Desc}
+
+					.card.accordion-item
+						.card-header.accordion-headline-wrapper#heading16
+							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse16', aria-expanded='false', aria-controls='collapse16')
+								span #{$i18n.faq.item16Title}
+								i.fas
+						#collapse16.collapse(aria-labelledby='heading16', data-parent='#faq-accordion')
+							.card-body.accordion-content-wrapper
+								p #{$i18n.faq.item16Desc}
+
+					.card.accordion-item
+						.card-header.accordion-headline-wrapper#heading17
+							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse17', aria-expanded='false', aria-controls='collapse17')
+								span #{$i18n.faq.item17Title}
+								i.fas
+						#collapse17.collapse(aria-labelledby='heading17', data-parent='#faq-accordion')
+							.card-body.accordion-content-wrapper
+								p #{$i18n.faq.item17Desc}
+
+					.card.accordion-item
+						.card-header.accordion-headline-wrapper#heading18
+							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse18', aria-expanded='false', aria-controls='collapse18')
+								span #{$i18n.faq.item18Title}
+								i.fas
+						#collapse18.collapse(aria-labelledby='heading18', data-parent='#faq-accordion')
+							.card-body.accordion-content-wrapper
+								p #{$i18n.faq.item18Desc}
+
+					.card.accordion-item
+						.card-header.accordion-headline-wrapper#heading19
+							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse19', aria-expanded='false', aria-controls='collapse19')
+								span #{$i18n.faq.item19Title}
+								i.fas
+						#collapse19.collapse(aria-labelledby='heading19', data-parent='#faq-accordion')
+							.card-body.accordion-content-wrapper
+								p #{$i18n.faq.item19Desc}
+
+					.card.accordion-item
+						.card-header.accordion-headline-wrapper#heading20
+							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse20', aria-expanded='false', aria-controls='collapse20')
+								span #{$i18n.faq.item20Title}
+								i.fas
+						#collapse20.collapse(aria-labelledby='heading20', data-parent='#faq-accordion')
+							.card-body.accordion-content-wrapper
+								p #{$i18n.faq.item20Desc}
+
+					.card.accordion-item
+						.card-header.accordion-headline-wrapper#heading21
+							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse21', aria-expanded='false', aria-controls='collapse21')
+								span #{$i18n.faq.item21Title}
+								i.fas
+						#collapse21.collapse(aria-labelledby='heading21', data-parent='#faq-accordion')
+							.card-body.accordion-content-wrapper
+								p #{$i18n.faq.item21Desc}
+
+					.card.accordion-item
+						.card-header.accordion-headline-wrapper#heading22
+							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse22', aria-expanded='false', aria-controls='collapse22')
+								span #{$i18n.faq.item22Title}
+								i.fas
+						#collapse22.collapse(aria-labelledby='heading22', data-parent='#faq-accordion')
+							.card-body.accordion-content-wrapper
+								p #{$i18n.faq.item22Desc}
+
+					.card.accordion-item
+						.card-header.accordion-headline-wrapper#heading23
+							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse23', aria-expanded='false', aria-controls='collapse23')
+								span #{$i18n.faq.item23Title}
+								i.fas
+						#collapse23.collapse(aria-labelledby='heading23', data-parent='#faq-accordion')
+							.card-body.accordion-content-wrapper
+								p #{$i18n.faq.item23Desc}

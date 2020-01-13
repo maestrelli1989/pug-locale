@@ -28,13 +28,13 @@ block main-content
 		.about-us-content
 			.first-block
 				.container.main-container
-					.flex-block.animatedParent.animateOnce(data-sequence='500')
+					.flex-block.animatedParent.animateOnce(data-sequence='100')
 						.flex-left.animated.fadeIn(data-id='1')
 							p
 								b #{$i18n.aboutUs.introLine1}
 							p #{$i18n.aboutUs.introLine2}
 							p #{$i18n.aboutUs.introLine3}
-						.flex-right.animated.fadeIn(data-id='2')
+						.flex-right.animated.fadeIn(data-id='1')
 							img(src="../assets/images/svg/uapay.svg", alt="Image", style="width: 340px")
 			block preferences-block
 				+preferences('black-background')
@@ -43,10 +43,10 @@ block main-content
 			block partners-block
 				+partners
 			.last-block
-				.container.main-container.animatedParent.animateOnce(data-sequence='500')
+				.container.main-container.animatedParent.animateOnce(data-sequence='100')
 					h5.animated.fadeIn(data-id='1') #{$i18n.aboutUs.finalBlockHeadline}
-					.media-block.animatedParent.animateOnce(data-sequence='500')
-						img(class="animated fadeIn", data-id='1', src="../assets/images/about-us/media/ain.png", alt="Logo")
-						img(class="animated fadeIn", data-id='2', src="../assets/images/about-us/media/minfin.png", alt="Logo")
-						img(class="animated fadeIn", data-id='3', src="../assets/images/about-us/media/mind.png", alt="Logo")
-						img(class="animated fadeIn", data-id='4', src="../assets/images/about-us/media/interfax.png", alt="Logo")
+					.media-block
+						img(class="animated fadeIn", data-id='2', src="../assets/images/about-us/media/ain.png", alt="Logo")
+						img(class="animated fadeIn", data-id='3', src="../assets/images/about-us/media/minfin.png", alt="Logo")
+						img(class="animated fadeIn", data-id='4', src="../assets/images/about-us/media/mind.png", alt="Logo")
+						img(class="animated fadeIn", data-id='5', src="../assets/images/about-us/media/interfax.png", alt="Logo")

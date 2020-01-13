@@ -114,6 +114,14 @@
 	.burger
 		display: block
 
+	.trust-block
+		.main-container
+			.flex-block
+				padding-top: 20px
+				.flex-item
+					max-width: 170px
+					margin-bottom: 20px
+
 	.copyright-block
 		.container
 			.copyright-block-content
@@ -134,6 +142,8 @@
 				h1
 					padding-top: 40px
 					padding-bottom: 20px
+				.btn-wrapper
+					padding-bottom: 180px
 		.business-block, .user-block
 			padding: 80px 0px 100px
 			.main-container
@@ -154,6 +164,8 @@
 						.headline
 							font-size: 28px
 							line-height: 36px
+		.business-block
+			padding: 0px
 		.solutions-block
 			padding: 60px 0px 80px
 			.main-container
@@ -312,6 +324,23 @@
 						font-size: 18px
 						line-height: 24px
 
+	.faq-page
+		.faq-page-content
+			.accordion
+				.accordion-item
+					.accordion-headline-wrapper
+						.accordion-headline
+							padding: 20px
+							span
+								font-size: 18px
+								line-height: 24px
+							i
+								font-size: 1em
+					.accordion-content-wrapper
+						padding: 0px 20px 20px
+						p
+							font-size: 14px
+
 	.aihama-info-page
 		.aihama-info-page-content
 			padding: 60px 0px 80px
@@ -358,6 +387,8 @@
 							padding-bottom: 60px
 					.flex-right
 						max-width: 100%
+						input[type=submit]
+							margin: 10px auto 0px
 
 	.fines-page
 		.fines-content
@@ -373,6 +404,8 @@
 							padding-bottom: 20px
 					.flex-right
 						max-width: 100%
+						input[type=submit]
+							margin: 10px auto 0px
 			.last-block
 				padding: 60px 0px 80px
 				.steps-block-desktop
@@ -478,6 +511,8 @@
 			.top-footer-block
 				padding-top: 0px
 				background-position: center right
+				h2
+					max-width: 320px
 			.bottom-footer-block
 				.footer-menu
 					display: none
@@ -537,8 +572,9 @@
 		padding: 30px 0px 20px
 		.main-container
 			.flex-block
-				.flex-item
-					margin-bottom: 20px
+				display: none
+			.flex-block-mobile
+				display: block
 
 	.partners-block
 		padding: 40px 0px 20px
@@ -567,6 +603,10 @@
 					max-width: 100%
 
 	.home-page
+		.first-block
+			.main-container
+				.btn-wrapper
+					padding-bottom: 160px
 		.business-block, .user-block
 			padding: 40px 0px 60px
 			.main-container
@@ -577,6 +617,8 @@
 						background-size: contain
 					.flex-left
 						margin-bottom: 20px
+		.business-block
+			padding: 0px 0px 60px
 		.solutions-block
 			padding: 20px 0px 60px
 			.main-container

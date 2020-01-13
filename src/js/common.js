@@ -138,29 +138,50 @@ $(() => {
 		$(".mobile-menu").toggleClass("mobile-menu-active");
 	});
 
-});
+	/*
+		Languages switcher
+	*/
 
-
-jQuery(document).ready(function($) {
-	$(".languages").click(function() {
+	$(".languages").click(() => {
 		$(".languages .lang-items").show();
-	})
-	$(".languages .lang-items").mouseleave(function() {
+	});
+
+	$(".languages .lang-items").mouseleave(() => {
 		$(".languages .lang-items").hide(); 
 	});
+
 	$(".languages a").click(function() {
 		$(".languages a").removeClass('sel');
 		$(this).addClass('sel');
-		var selectedValue = $(this).text();
-		var showLang = selectedValue.substring(0, 2);
+		let selectedValue = $(this).text();
+		let showLang = selectedValue.substring(0, 2);
 		$('.languages .current-lang').html(showLang);
 		$('.languages .current-lang').attr("title", selectedValue);
 	})
+
+	/*
+		Tabs at home page
+	*/
+
+	$('#tabs span:not(:first)').addClass('inactive');
+	$('.content-wrapper').hide();
+	$('.content-wrapper:first').show();
+		
+	$('#tabs span').click(function() {
+		let tab = $(this).attr('id');
+		if($(this).hasClass('inactive')){
+			$('#tabs span').addClass('inactive');           
+			$(this).removeClass('inactive');
+			$('.content-wrapper').hide();
+			$('#'+ tab + 'C').fadeIn('slow');
+		}
+	});
+
 });
 
 function switchToUaLocale() {
 	let path = window.location.pathname;
-	let ua_path = path.replace("/ru/", "/ua/").replace("/en/", "/ua/"); 
+	let ua_path = path.replace("/ru/", "/ua/").replace("/en/", "/ua/");
 	window.location.replace(ua_path);
 }
 
@@ -175,23 +196,3 @@ function switchToEnLocale() {
 	let en_path = path.replace("/ua/", "/en/").replace("/ru/", "/en/"); 
 	window.location.replace(en_path);
 }
-
-$(document).ready(function() {    
-
-	$('#tabs span:not(:first)').addClass('inactive');
-	$('.content-wrapper').hide();
-	$('.content-wrapper:first').show();
-		
-	$('#tabs span').click(function() {
-		var t = $(this).attr('id');
-		if($(this).hasClass('inactive')){
-			$('#tabs span').addClass('inactive');           
-			$(this).removeClass('inactive');
-			
-			$('.content-wrapper').hide();
-			$('#'+ t + 'C').fadeIn('slow');
-		}
-	});
-
-});
-	

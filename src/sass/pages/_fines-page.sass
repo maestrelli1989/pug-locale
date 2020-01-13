@@ -62,6 +62,9 @@
 						text-transform: uppercase
 						&:focus
 							outline: none
+						&:hover
+							color: $corporate-red
+							background-color: $corporate-white
 		.last-block
 			background-color: $corporate-gainsboro
 			padding: 130px 0px 120px
@@ -190,9 +193,11 @@
 						position: absolute
 						top: 15px
 						left: 18px
+						z-index: 0
 					.num-wrapper
 						position: absolute
 						display: flex
+						z-index: 1
 						.num
 							border-radius: 50%
 							background-color: $corporate-red

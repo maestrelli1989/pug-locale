@@ -12,8 +12,8 @@
 	.first-screen
 		background-image: url(../../assets/images/home-page/first-screen-background.svg)
 		background-repeat: no-repeat
-		background-position: top center
-		background-size: 100% 100%
+		background-position: top center 100px
+		background-size: 110% 110%
 		background-color: $corporate-red
 		.red-header
 			background-color: transparent!important
@@ -28,11 +28,12 @@
 				padding-bottom: 40px
 			.btn-wrapper
 				display: flex
+				padding-bottom: 200px
 				.btn-white
 					display: inline-block
 	.business-block
 		background-color: $corporate-red
-		padding: 100px 0px
+		padding: 0px 0px 100px
 		.main-container
 			.block-top-half
 				display: flex
@@ -150,8 +151,10 @@
 							font-size: 34px
 							line-height: 44px
 							transition: $primary-transition
-							color: #d3d6e0
+							color: $corporate-red
 							padding: 0px 0px 20px
+							&.inactive
+								color: #d3d6e0
 							&:hover
 								color: $corporate-red
 								cursor: pointer

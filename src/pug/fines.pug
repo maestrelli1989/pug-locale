@@ -33,11 +33,11 @@ block main-content
 		.fines-content
 			.first-block
 				.container.main-container
-					.flex-block
-						.flex-left
+					.flex-block.animatedParent.animateOnce(data-sequence='100')
+						.flex-left.animated.fadeIn(data-id='1')
 							h3 Оплата штрафів за порушення ПДР
 							p Оплатіть штраф за порушення ПДР онлайн за допогою банківської карти VISA, MasterCard або ПРОСТІР
-						.flex-right
+						.flex-right.animated.fadeIn(data-id='1')
 							form(action="" method="POST")
 								.form-row
 									.form-group.col-md-6
@@ -58,7 +58,7 @@ block main-content
 									input(type="submit" value="Продовжити")
 			.last-block
 				.container.main-container
-					.flex-block.animatedParent.animateOnce(data-sequence='200')
+					.flex-block.animatedParent.animateOnce(data-sequence='100')
 						.flex-item
 							img(src="../assets/images/fines/online.png", alt="Image").animated.fadeInDownShort(data-id='1')
 							h5.animated.fadeInDownShort(data-id='2') Онлайн оплата
@@ -72,45 +72,45 @@ block main-content
 							h5.animated.fadeInDownShort(data-id='2') Безпечні платежі
 							p.animated.fadeInDownShort(data-id='3') Платежі захіщені стандартами PCI DSS Level 1
 					.steps-block-desktop
-						.img-wrapper.animatedParent.animateOnce(data-sequence='200')
-							h3 Як оплатити штраф за порушення ПДР?
-							img(src="../assets/images/fines/how-to.svg", alt="How to").animated.fadeIn(data-id='1')
+						.img-wrapper.animatedParent.animateOnce(data-sequence='100')
+							h3.animated.fadeIn(data-id='1') Як оплатити штраф за порушення ПДР?
+							img(src="../assets/images/fines/how-to.svg", alt="How to").animated.fadeIn(data-id='2')
 							.num-wrapper.num-wrapper-1
-								.num.animated.fadeIn(data-id='2') 1
-								p.animated.fadeIn(data-id='3') Вкажіть номер, серію протокола, ПІБ та номер телефону
+								.num.animated.fadeIn(data-id='3') 1
+								p.animated.fadeIn(data-id='4') Вкажіть номер, серію протокола, ПІБ та номер телефону
 							.num-wrapper.num-wrapper-2
-								.num.animated.fadeIn(data-id='4') 2
-								p.animated.fadeIn(data-id='5') Вкажіть сумму до оплати
+								.num.animated.fadeIn(data-id='5') 2
+								p.animated.fadeIn(data-id='6') Вкажіть сумму до оплати
 							.num-wrapper.num-wrapper-3
-								.num.animated.fadeIn(data-id='6') 3
-								p.animated.fadeIn(data-id='7') Введіть реквізити банківської карти та підтвердіть оплату
-								p.desc.animated.fadeIn(data-id='8') Грошові кошти перераховуються на рахунок казначейства у режимі онлайн, а у підтверждення ви отримуєте чек на електронну адресу
-					.steps-block-tablet
-						h3 Як оплатити штраф за порушення ПДР?
+								.num.animated.fadeIn(data-id='7') 3
+								p.animated.fadeIn(data-id='8') Введіть реквізити банківської карти та підтвердіть оплату
+								p.desc.animated.fadeIn(data-id='9') Грошові кошти перераховуються на рахунок казначейства у режимі онлайн, а у підтверждення ви отримуєте чек на електронну адресу
+					.steps-block-tablet.animatedParent.animateOnce(data-sequence='100')
+						h3.animated.fadeIn(data-id='1') Як оплатити штраф за порушення ПДР?
 						.img-wrapper
-							img(src="../assets/images/fines/how-to-tablet.svg", alt="How to")
+							img.animated.fadeIn(data-id='2', src="../assets/images/fines/how-to-tablet.svg", alt="How to")
 							.num-wrapper.num-wrapper-1
+								.num.animated.fadeIn(data-id='3') 1
+								p.animated.fadeIn(data-id='4') Вкажіть номер, серію протокола, ПІБ та номер телефону
+							.num-wrapper.num-wrapper-2
+								.num.animated.fadeIn(data-id='5') 2
+								p.animated.fadeIn(data-id='6') Вкажіть сумму до оплати
+							.num-wrapper.num-wrapper-3
+								.num.animated.fadeIn(data-id='7') 3
+								p.animated.fadeIn(data-id='8') Введіть реквізити банківської карти та підтвердіть оплату
+								p.desc.animated.fadeIn(data-id='9') Грошові кошти перераховуються на рахунок казначейства у режимі онлайн, а у підтверждення ви отримуєте чек на електронну адресу
+					.steps-block-mobile.animatedParent.animateOnce(data-sequence='100')
+						h3.animated.fadeIn(data-id='1') Як оплатити штраф за порушення ПДР?
+						.img-wrapper
+							.num-wrapper.num-wrapper-1.animated.fadeIn(data-id='2')
 								.num 1
 								p Вкажіть номер, серію протокола, ПІБ та номер телефону
-							.num-wrapper.num-wrapper-2
+							.num-wrapper.num-wrapper-2.animated.fadeIn(data-id='3')
 								.num 2
 								p Вкажіть сумму до оплати
-							.num-wrapper.num-wrapper-3
-								.num 3
-								p Введіть реквізити банківської карти та підтвердіть оплату
-								p.desc Грошові кошти перераховуються на рахунок казначейства у режимі онлайн, а у підтверждення ви отримуєте чек на електронну адресу
-					.steps-block-mobile
-						h3 Як оплатити штраф за порушення ПДР?
-						.img-wrapper
-							img(src="../assets/images/fines/how-to-mobile.png", alt="How to")
-							.num-wrapper.num-wrapper-1
-								.num 1
-								p Вкажіть номер, серію протокола, ПІБ та номер телефону
-							.num-wrapper.num-wrapper-2
-								.num 2
-								p Вкажіть сумму до оплати
-							.num-wrapper.num-wrapper-3
+							.num-wrapper.num-wrapper-3.animated.fadeIn(data-id='4')
 								.num 3
 								.flex-block
 									p Введіть реквізити банківської карти та підтвердіть оплату
 									p.desc Грошові кошти перераховуються на рахунок казначейства у режимі онлайн, а у підтверждення ви отримуєте чек на електронну адресу
+							img.animated.fadeIn(data-id='5', src="../assets/images/fines/how-to-mobile.png", alt="How to")
