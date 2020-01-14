@@ -26,6 +26,7 @@ gulp.task('pugI18n', () => {
 	};
 	return gulp.src(['src/pug/**/*.pug', '!src/pug/**/_*.pug'])
 		.pipe(pugI18n(options))
+		.on("error", notify.onError())
 		.pipe(gulp.dest(options.i18n.dest));
 });
 

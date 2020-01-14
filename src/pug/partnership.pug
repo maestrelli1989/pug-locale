@@ -1,0 +1,158 @@
+//-
+	Partnership page markup for the UaPay website project
+	Version: 1.0
+	Created: 10.12.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: UaPay
+	Website: https://uapay.ua/
+
+extends layouts/_layout.pug
+
+block meta-data
+	+meta-data(
+	'Website title', 
+	'Website description', 
+	'https://uapay.ua/partnership'
+	)
+
+block header
+	+header('red-header')
+
+block mobile-menu
+	+mobile-menu('mobile-menu-red')
+
+block extra-js
+	script(src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js")
+	script.
+		$('#phone').inputmask("+38 (099) 999 99 99");
+
+block main-content
+	.inner-page-wrapper.partnership-page
+		.intro-block.red-intro-block
+			.container.main-container
+				h1 Партнерство
+		.partnership-page-content
+			.first-block.animatedParent.animateOnce(data-sequence='100')
+				.container.main-container
+					p.animated.fadeIn(data-id='1') Мы всегда открыты к новым сотрудничествам и предоставлению качественного сервиса широкому спектру клиентов.
+					p.animated.fadeIn(data-id='2') Поэтому, для всех кто связан с онлайн бизнесом, наша партнерская программа даёт возможность зарабатывать на подключенных клиентах.
+					.flex-block
+						.flex-item
+							figure
+								img.animated.rotateIn.slower(data-id='3', src="../assets/images/partnership/prices.png", alt="Image")
+								figcaption.description.animated.fadeIn(data-id='4') Вознаграждение 10% от комиссии
+						.flex-item
+							figure
+								img.animated.rotateIn.slower(data-id='5', src="../assets/images/partnership/settings.png", alt="Image")
+								figcaption.description.animated.fadeIn(data-id='6') Сопровождение и подключение за нами
+						.flex-item
+							figure
+								img.animated.rotateIn.slower(data-id='7', src="../assets/images/partnership/payments.png", alt="Image")
+								figcaption.description.animated.fadeIn(data-id='8') Регулярные выплаты на счет
+						.flex-item
+							figure
+								img.animated.rotateIn.slower(data-id='9', src="../assets/images/partnership/time.png", alt="Image")
+								figcaption.description.animated.fadeIn(data-id='10') Без ограничений сроков действия программы
+			.second-block
+				.container.main-container
+					.clients-block.animatedParent.animateOnce(data-sequence='100')
+						h4.animated.fadeIn(data-id='1') Кому это может быть интересно
+						.flex-block
+							.flex-left
+								.flex-item.animated.fadeIn(data-id='2')
+									img.animated.fadeIn(data-id='3', src="../assets/images/partnership/design.png", alt="Image")
+									h3.animated.fadeIn(data-id='4') Дизайн студии
+								.flex-item.animated.fadeIn(data-id='2')
+									img.animated.fadeIn(data-id='3', src="../assets/images/partnership/e-commerce.png", alt="Image")
+									h3.animated.fadeIn(data-id='4') Компании по разработке сайтов, интернет магазинов
+								.flex-item.animated.fadeIn(data-id='2')
+									img.animated.fadeIn(data-id='3', src="../assets/images/partnership/freelance.png", alt="Image")
+									h3.animated.fadeIn(data-id='4') Фрилансеры
+								.flex-item.animated.fadeIn(data-id='2')
+									img.animated.fadeIn(data-id='3', src="../assets/images/partnership/crm.png", alt="Image")
+									h3.animated.fadeIn(data-id='4') Компании по настройки CRM систем, систем продаж
+							.flex-right
+								.flex-item.animated.fadeIn(data-id='2')
+									img.animated.fadeIn(data-id='3', src="../assets/images/partnership/chat.png", alt="Image")
+									h3.animated.fadeIn(data-id='4') Разработчики чатботов
+								.flex-item.animated.fadeIn(data-id='2')
+									img.animated.fadeIn(data-id='3', src="../assets/images/partnership/calculator.png", alt="Image")
+									h3.animated.fadeIn(data-id='4') Компании по предоставлению бухгалтерских услуг
+								.flex-item.animated.fadeIn(data-id='2')
+									img.animated.fadeIn(data-id='3', src="../assets/images/partnership/builder.png", alt="Image")
+									h3.animated.fadeIn(data-id='4') Сайтбилдеры
+								.flex-item.animated.fadeIn(data-id='2')
+									img.animated.fadeIn(data-id='3', src="../assets/images/partnership/bloger.png", alt="Image")
+									h3.animated.fadeIn(data-id='4') Лидеры мнений, блогеры, инфлюенсеры
+					.steps-block-desktop
+						.img-wrapper.animatedParent.animateOnce(data-sequence='100')
+							h3.animated.fadeIn(data-id='1') Как подключить?
+							img(src="../assets/images/fines/how-to.svg", alt="How to", data-id='2').animated.fadeIn
+							.num-wrapper.num-wrapper-1
+								.num.animated.fadeIn(data-id='3') 1
+								p.animated.fadeIn(data-id='4') Заключите с нами контракт в электронном или бумажном виде
+							.num-wrapper.num-wrapper-2
+								.num.animated.fadeIn(data-id='5') 2
+								p.animated.fadeIn(data-id='6') Предлагайте нам контакты лидов на подключение
+							.num-wrapper.num-wrapper-3
+								.num.animated.fadeIn(data-id='7') 3
+								p.animated.fadeIn(data-id='8') Получайте ежемесячный доход
+					.steps-block-tablet.animatedParent.animateOnce(data-sequence='100')
+						h3.animated.fadeIn(data-id='1') Как подключить?
+						.img-wrapper
+							img.animated.fadeIn(data-id='2', src="../assets/images/fines/how-to-tablet.svg", alt="How to")
+							.num-wrapper.num-wrapper-1
+								.num.animated.fadeIn(data-id='3') 1
+								p.animated.fadeIn(data-id='4') Заключите с нами контракт в электронном или бумажном виде
+							.num-wrapper.num-wrapper-2
+								.num.animated.fadeIn(data-id='5') 2
+								p.animated.fadeIn(data-id='6') Предлагайте нам контакты лидов на подключение
+							.num-wrapper.num-wrapper-3
+								.num.animated.fadeIn(data-id='7') 3
+								p.animated.fadeIn(data-id='8') Получайте ежемесячный доход
+					.steps-block-mobile.animatedParent.animateOnce(data-sequence='100')
+						h3.animated.fadeIn(data-id='1') Как подключить?
+						.img-wrapper
+							.num-wrapper.num-wrapper-1.animated.fadeIn(data-id='2')
+								.num 1
+								p Заключите с нами контракт в электронном или бумажном виде
+							.num-wrapper.num-wrapper-2.animated.fadeIn(data-id='3')
+								.num 2
+								p Предлагайте нам контакты лидов на подключение
+							.num-wrapper.num-wrapper-3.animated.fadeIn(data-id='4')
+								.num 3
+								.flex-block
+									p Получайте ежемесячный доход
+							img.animated.fadeIn(data-id='5', src="../assets/images/fines/how-to-mobile.png", alt="How to")
+			.third-block
+				.container.main-container
+					.flex-block.animatedParent.animateOnce(data-sequence='100')
+						.flex-left.animated.fadeIn(data-id='1')
+							h1 Стать партнером
+						.flex-right.animated.fadeIn(data-id='1')
+							form(action="" method="POST")
+								.form-row
+									.form-group.col-md-6
+										label(for="first-name") Имя*
+										input(type="text", name="firstName", class="form-control", id="first-name", placeholder="***", required)
+									.form-group.col-md-6
+										label(for="last-name") Фамилия*
+										input(type="text", name="lastName", class="form-control", id="last-name", placeholder="***", required)
+								.form-row
+									.form-group.col-md-6
+										label(for="email") Email*
+										input(type="email", name="email", class="form-control", id="email", placeholder="***", required)
+									.form-group.col-md-6
+										label(for="phone") Телефон*
+										input(type="text", name="phone", class="form-control", id="phone", placeholder="***", required)
+								.form-row
+									.form-group.col-md-12
+										label(for="website") Вебсайт*
+										input(type="text", name="website", class="form-control", id="website", placeholder="***", required)
+								.form-row
+									.form-group.col-md-12
+										label(for="message") Сообщение*
+										textarea(name="message", class="form-control", id="message", placeholder="***", cols="30", rows="1")
+								.form-row
+									input(type="submit" value="Отправить")

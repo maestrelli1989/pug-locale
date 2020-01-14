@@ -22,15 +22,30 @@
 				color: $corporate-white
 				max-width: 740px
 				padding-top: 120px
+				opacity: 1
+				animation-name: fadeInOpacity
+				animation-iteration-count: 1
+				animation-timing-function: ease-in
+				animation-duration: 1000ms
 			p
 				color: $corporate-white
 				max-width: 480px
 				padding-bottom: 40px
+				opacity: 1
+				animation-name: fadeInOpacity
+				animation-iteration-count: 1
+				animation-timing-function: ease-in
+				animation-duration: 1000ms
 			.btn-wrapper
 				display: flex
 				padding-bottom: 200px
 				.btn-white
 					display: inline-block
+					opacity: 1
+					animation-name: fadeInOpacity
+					animation-iteration-count: 1
+					animation-timing-function: ease-in
+					animation-duration: 1000ms
 	.business-block
 		background-color: $corporate-red
 		padding: 0px 0px 100px
@@ -204,10 +219,6 @@
 						font-size: 24px
 						line-height: 32px
 						color: $corporate-white
-						transition: $primary-transition
-					&:hover
-						.text
-							color: $corporate-red
 	.user-block
 		background-color: $corporate-gainsboro
 		padding: 100px 0px

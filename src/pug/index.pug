@@ -28,30 +28,30 @@ block main-content
 				.btn-wrapper
 					a.btn-white(href="https://account.uapay.ua/auth/register", target="_blank") #{$i18n.homePage.bannerBtn}
 		.business-block
-			.container.main-container
+			.container.main-container.animatedParent.animateOnce(data-sequence='100')
 				.block-top-half
 					.flex-left
-						h4 #{$i18n.homePage.forBusinessBlockHeadline}
+						h4.animated.fadeIn(data-id='1') #{$i18n.homePage.forBusinessBlockHeadline}
 					.flex-right
-						p #{$i18n.homePage.forBusinessBlockDesc}
-				.block-bottom-half.animatedParent.animateOnce(data-sequence='100')
-					.flex-left.animated.fadeIn(data-id='1')
-						.headline.animated.fadeInDownShort(data-id='2') #{$i18n.homePage.forBusinessItem1Title}
-						p.animated.fadeInDownShort(data-id='3') #{$i18n.homePage.forBusinessItem1Desc}
-						.btn-wrapper.animated.fadeInDownShort(data-id='4'): a.connect-btn(href="uapay-checkout") #{$i18n.homePage.detailLink}
-					.flex-right.animated.fadeIn(data-id='1')
-						.headline.animated.fadeInDownShort(data-id='2') #{$i18n.homePage.forBusinessItem2Title}
-						p.animated.fadeInDownShort(data-id='3') #{$i18n.homePage.forBusinessItem2Desc}
-						.btn-wrapper.animated.fadeInDownShort(data-id='4'): a.connect-btn(href="mass-payouts") #{$i18n.homePage.detailLink}
+						p.animated.fadeIn(data-id='1') #{$i18n.homePage.forBusinessBlockDesc}
+				.block-bottom-half
+					.flex-left.animated.fadeIn(data-id='2')
+						.headline.animated.fadeIn(data-id='3') #{$i18n.homePage.forBusinessItem1Title}
+						p.animated.fadeIn(data-id='4') #{$i18n.homePage.forBusinessItem1Desc}
+						.btn-wrapper.animated.fadeIn(data-id='5'): a.connect-btn(href="uapay-checkout") #{$i18n.homePage.detailLink}
+					.flex-right.animated.fadeIn(data-id='2')
+						.headline.animated.fadeIn(data-id='3') #{$i18n.homePage.forBusinessItem2Title}
+						p.animated.fadeIn(data-id='4') #{$i18n.homePage.forBusinessItem2Desc}
+						.btn-wrapper.animated.fadeIn(data-id='5'): a.connect-btn(href="mass-payouts") #{$i18n.homePage.detailLink}
 		.solutions-block
-			.container.main-container
+			.container.main-container.animatedParent.animateOnce(data-sequence='100')
 				.block-top-half
 					.flex-left
-						h5 #{$i18n.homePage.industrySolutionsBlockHeadline}
+						h5.animated.fadeIn(data-id='1') #{$i18n.homePage.industrySolutionsBlockHeadline}
 					.flex-right
-						hr
-				.block-bottom-half.animatedParent.animateOnce(data-sequence='100')
-					.flex-left.animated.fadeIn(data-id='1')
+						hr.animated.fadeIn(data-id='1')
+				.block-bottom-half
+					.flex-left.animated.fadeIn(data-id='2')
 						.content-wrapper#tab1C
 							include includes/svg/home-page/_marketplaces.pug
 						.content-wrapper#tab2C
@@ -64,48 +64,48 @@ block main-content
 							include includes/svg/home-page/_money.pug
 					.flex-right
 						#tabs
-							span#tab1.animated.fadeInDownShort(data-id='2') #{$i18n.industrySolutions.block1Headline}
-							span#tab2.animated.fadeInDownShort(data-id='3') #{$i18n.industrySolutions.block2Headline}
-							span#tab3.animated.fadeInDownShort(data-id='4') #{$i18n.industrySolutions.block3Headline}
-							span#tab4.animated.fadeInDownShort(data-id='5') #{$i18n.industrySolutions.block4Headline}
-							span#tab5.animated.fadeInDownShort(data-id='6') #{$i18n.industrySolutions.block5Headline}
-						a.connect-btn.animated.fadeInDownShort(data-id='7', href="industry-solutions") #{$i18n.homePage.detailLink}
+							span#tab1.animated.fadeIn(data-id='3') #{$i18n.industrySolutions.block1Headline}
+							span#tab2.animated.fadeIn(data-id='4') #{$i18n.industrySolutions.block2Headline}
+							span#tab3.animated.fadeIn(data-id='5') #{$i18n.industrySolutions.block3Headline}
+							span#tab4.animated.fadeIn(data-id='6') #{$i18n.industrySolutions.block4Headline}
+							span#tab5.animated.fadeIn(data-id='7') #{$i18n.industrySolutions.block5Headline}
+						a.connect-btn.animated.fadeIn(data-id='8', href="industry-solutions") #{$i18n.homePage.detailLink}
 				.block-bottom-half-mobile
-					.svg-wrapper
+					.svg-wrapper.animated.fadeIn(data-id='2')
 						include includes/svg/home-page/_marketplaces.pug
 						.text #{$i18n.industrySolutions.block1Headline}
-					.svg-wrapper
+					.svg-wrapper.animated.fadeIn(data-id='3')
 						include includes/svg/home-page/_online-retail.pug
 						.text #{$i18n.industrySolutions.block2Headline}
-					.svg-wrapper
+					.svg-wrapper.animated.fadeIn(data-id='4')
 						include includes/svg/home-page/_tourism.pug
 						.text #{$i18n.industrySolutions.block3Headline}
-					.svg-wrapper
+					.svg-wrapper.animated.fadeIn(data-id='5')
 						include includes/svg/home-page/_taxi.pug
 						.text #{$i18n.industrySolutions.block4Headline}
-					.svg-wrapper
+					.svg-wrapper.animated.fadeIn(data-id='6')
 						include includes/svg/home-page/_money.pug
 						.text #{$i18n.industrySolutions.block5Headline}
 		+trust
 		+partners('extra-padding')
 		+preferences('red-background')
 		.user-block
-			.container.main-container
+			.container.main-container.animatedParent.animateOnce(data-sequence='100')
 				.block-top-half
 					.flex-left
-						h4 #{$i18n.homePage.forCustomersBlockHeadline}
+						h4.animated.fadeIn(data-id='1') #{$i18n.homePage.forCustomersBlockHeadline}
 					.flex-right
-						p #{$i18n.homePage.forCustomersBlockDesc}
-				.block-bottom-half.animatedParent.animateOnce(data-sequence='100')
-					.flex-left.animated.fadeIn(data-id='1')
-						.headline.animated.fadeInDownShort(data-id='2') #{$i18n.homePage.forCustomersItem1Title}
-						p.animated.fadeInDownShort(data-id='3') #{$i18n.homePage.forCustomersItem1Desc}
-						.btn-wrapper.animated.fadeInDownShort(data-id='4'): a.connect-btn(href="javascript:void(0);") #{$i18n.homePage.finesLink}
-					.flex-right.animated.fadeIn(data-id='1')
-						.headline.animated.fadeInDownShort(data-id='2') #{$i18n.homePage.forCustomersItem2Title}
-						p.animated.fadeInDownShort(data-id='3') #{$i18n.homePage.forCustomersItem2Desc}
-						.btn-wrapper.animated.fadeInDownShort(data-id='4'): a.connect-btn(href="https://escrowbox.uapay.ua/ads", target="_blank") #{$i18n.homePage.payLink}
-						.btn-wrapper.animated.fadeInDownShort(data-id='5'): a.connect-btn(href="https://escrowbox.uapay.ua/ad", target="_blank") #{$i18n.homePage.createLink}
+						p.animated.fadeIn(data-id='1') #{$i18n.homePage.forCustomersBlockDesc}
+				.block-bottom-half
+					.flex-left.animated.fadeIn(data-id='2')
+						.headline.animated.fadeIn(data-id='3') #{$i18n.homePage.forCustomersItem1Title}
+						p.animated.fadeIn(data-id='4') #{$i18n.homePage.forCustomersItem1Desc}
+						.btn-wrapper.animated.fadeIn(data-id='5'): a.connect-btn(href="javascript:void(0);") #{$i18n.homePage.finesLink}
+					.flex-right.animated.fadeIn(data-id='2')
+						.headline.animated.fadeIn(data-id='3') #{$i18n.homePage.forCustomersItem2Title}
+						p.animated.fadeIn(data-id='4') #{$i18n.homePage.forCustomersItem2Desc}
+						.btn-wrapper.animated.fadeIn(data-id='5'): a.connect-btn(href="https://escrowbox.uapay.ua/ads", target="_blank") #{$i18n.homePage.payLink}
+						.btn-wrapper.animated.fadeIn(data-id='6'): a.connect-btn(href="https://escrowbox.uapay.ua/ad", target="_blank") #{$i18n.homePage.createLink}
 		+developers('black-background', '../assets/images/svg/api-cms-black.svg')
 		.news-block
 			.container.main-container

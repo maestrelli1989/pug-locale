@@ -1,0 +1,136 @@
+/**
+	Mobile menu styles for the UaPay website project
+	Version: 1.0
+	Created: 10.12.2019
+	Author: Serhii Tiutin
+	Modified by: Serhii Tiutin
+	Owner: UaPay
+	Website: https://uapay.ua/
+	*/
+
+.mobile-menu
+	height: 0px
+	top: 0px
+	right: 0px
+	position: fixed
+	overflow: auto
+	width: 100%
+	max-width: 100%
+	transition: $primary-transition
+	z-index: 50000
+	padding: 0px
+	.mobile-menu-row
+		display: flex
+		flex-direction: row
+		align-items: flex-start
+		justify-content: space-between
+		flex-wrap: wrap
+		width: 100%
+		padding: 0px 55px
+		.mobile-menu-col
+			width: 50%
+			.mobile-menu-trigger
+				color: $corporate-white
+				font-size: 14px
+				line-height: 24px
+				font-weight: 700
+				font-family: $primary-bold
+				text-transform: uppercase
+				padding-bottom: 20px
+			.mobile-menu-link
+				color: $corporate-white
+				font-size: 14px
+				line-height: 24px
+				font-weight: 400
+				font-family: $primary-regular
+				text-transform: uppercase
+				text-decoration: none
+				display: block
+				padding-bottom: 20px
+				transition: $primary-transition
+				&:hover
+					opacity: 0.5
+	.accordion-wrapper
+		display: none
+		padding: 0px 20px
+		.btn-ghost-white
+			max-width: 300px
+			margin: 0px auto
+		.feedback-link
+			font-family: $primary-medium
+			font-weight: $medium-weight
+			font-size: 14px
+			line-height: 24px
+			color: $corporate-white
+			padding: 20px 0px 0px
+			transition: $primary-transition
+			margin: 0px auto
+			text-align: center
+			display: block
+			&:hover
+				opacity: 0.5
+		.accordion
+			padding: 0px 0px 25px
+			[data-toggle="collapse"]
+				.fas
+					font-size: 1.5em
+					&:before
+						content: "\f106"
+				&.collapsed
+					.fas
+						font-size: 1.5em
+						&:before
+							content: "\f107"
+			.accordion-headline
+				width: 100%
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				padding: 10px 0px
+				text-decoration: none
+				span
+					font-size: 14px
+					line-height: 24px
+					text-transform: uppercase
+					font-weight: $bold-weight
+					color: $corporate-white
+					font-family: $primary-bold
+				i
+					color: $corporate-white
+					line-height: 24px
+					transition: $primary-transition
+			.links-wrapper
+				li
+					a
+						font-size: 14px
+						line-height: 24px
+						font-weight: $regular-weight
+						text-transform: uppercase
+						color: $corporate-white
+						font-family: $primary-regular
+						transition: $primary-transition
+						text-decoration: none
+						padding: 0px 0px 15px
+						display: block
+						&:hover
+							opacity: 0.5
+					&:first-child
+						a
+							padding-top: 10px
+					&:last-child
+						a
+							padding: 0px 0px 10px
+	&.mobile-menu-red
+		background-color: $corporate-red
+		.accordion-wrapper
+			.btn-ghost-white
+				&:hover
+					color: $corporate-red
+	&.mobile-menu-black
+		background-color: $corporate-black
+		.accordion-wrapper
+			.btn-ghost-white
+				&:hover
+					color: $corporate-black
+	&.mobile-menu-active
+		height: 100%

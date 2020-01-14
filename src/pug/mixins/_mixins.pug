@@ -18,8 +18,8 @@ mixin meta-data(title, description, href)
 
 mixin header(className)
 	header.header(class=className)
-		.container.animatedParent.animateOnce(data-sequence='100')
-			.header-flex.animated.fadeInDown(data-id='1')
+		.container
+			.header-flex.fade-in-down-effect
 				.header-flex-left
 					a(href="index", class="site-logo-link")
 						img(src="../assets/images/logo/site-logo.png", alt="Logo")
@@ -47,7 +47,7 @@ mixin header(className)
 									a(href="about-us") #{$i18n.headerMenu.col3Link1}
 									a(href="news") #{$i18n.headerMenu.col3Link2}
 									a(href="faq") #{$i18n.headerMenu.col3Link3}
-									a(href="javascript:void(0);") #{$i18n.headerMenu.col3Link4}
+									a(href="partnership") #{$i18n.headerMenu.col3Link4}
 									a(href="legal-info") #{$i18n.headerMenu.col3Link5}
 						.menu-item
 							.menu-trigger#developers-trigger #{$i18n.headerMenu.col4Title}
@@ -83,7 +83,7 @@ mixin mobile-menu(className)
 				a(class="mobile-menu-link", href="about-us") #{$i18n.headerMenu.col3Link1}
 				a(class="mobile-menu-link", href="news") #{$i18n.headerMenu.col3Link2}
 				a(class="mobile-menu-link", href="faq") #{$i18n.headerMenu.col3Link3}
-				a(class="mobile-menu-link", href="javascript:void(0);") #{$i18n.headerMenu.col3Link4}
+				a(class="mobile-menu-link", href="partnership") #{$i18n.headerMenu.col3Link4}
 				a(class="mobile-menu-link", href="legal-info") #{$i18n.headerMenu.col3Link5}
 			.mobile-menu-col
 				.mobile-menu-trigger #{$i18n.headerMenu.col4Title}
@@ -169,74 +169,74 @@ mixin preferences(className)
 
 mixin trust
 	.trust-block
-		.container.main-container.animatedParent.animateOnce(data-sequence='100')
+		.container.main-container.animatedParent.animateOnce(data-sequence='50')
 			h4.animated.fadeIn(data-id='1') #{$i18n.trustBlock.blockHeadline}
-			.flex-block.animatedParent.animateOnce(data-sequence='100')
+			.flex-block
 				.flex-block-row
-					.flex-item.animated.fadeIn(data-id='1')
-						include ../includes/svg/about-us/_1.pug
 					.flex-item.animated.fadeIn(data-id='2')
-						include ../includes/svg/about-us/_2.pug
+						include ../includes/svg/about-us/_1.pug
 					.flex-item.animated.fadeIn(data-id='3')
-						include ../includes/svg/about-us/_3.pug
+						include ../includes/svg/about-us/_2.pug
 					.flex-item.animated.fadeIn(data-id='4')
+						include ../includes/svg/about-us/_3.pug
+					.flex-item.animated.fadeIn(data-id='5')
 						include ../includes/svg/about-us/_4.pug
 				.flex-block-row
-					.flex-item.animated.fadeIn(data-id='5')
-						include ../includes/svg/about-us/_5.pug
 					.flex-item.animated.fadeIn(data-id='6')
-						include ../includes/svg/about-us/_6.pug
+						include ../includes/svg/about-us/_5.pug
 					.flex-item.animated.fadeIn(data-id='7')
+						include ../includes/svg/about-us/_6.pug
+					.flex-item.animated.fadeIn(data-id='8')
 						include ../includes/svg/about-us/_7.pug
 				.flex-block-row
-					.flex-item.animated.fadeIn(data-id='8')
-						include ../includes/svg/about-us/_8.pug
 					.flex-item.animated.fadeIn(data-id='9')
-						include ../includes/svg/about-us/_14.pug
+						include ../includes/svg/about-us/_8.pug
 					.flex-item.animated.fadeIn(data-id='10')
-						include ../includes/svg/about-us/_10.pug
+						include ../includes/svg/about-us/_14.pug
 					.flex-item.animated.fadeIn(data-id='11')
+						include ../includes/svg/about-us/_10.pug
+					.flex-item.animated.fadeIn(data-id='12')
 						include ../includes/svg/about-us/_9.pug
 				.flex-block-row
-					.flex-item.animated.fadeIn(data-id='12')
-						include ../includes/svg/about-us/_13.pug
 					.flex-item.animated.fadeIn(data-id='13')
-						include ../includes/svg/about-us/_12.pug
+						include ../includes/svg/about-us/_13.pug
 					.flex-item.animated.fadeIn(data-id='14')
+						include ../includes/svg/about-us/_12.pug
+					.flex-item.animated.fadeIn(data-id='15')
 						include ../includes/svg/about-us/_11.pug
-			.flex-block-mobile.animatedParent.animateOnce(data-sequence='100')
+			.flex-block-mobile
 				.flex-block-row
-					.flex-item.animated.fadeIn(data-id='1')
-						include ../includes/svg/about-us/_1.pug
 					.flex-item.animated.fadeIn(data-id='2')
-						include ../includes/svg/about-us/_2.pug
+						include ../includes/svg/about-us/_1.pug
 					.flex-item.animated.fadeIn(data-id='3')
+						include ../includes/svg/about-us/_2.pug
+					.flex-item.animated.fadeIn(data-id='4')
 						include ../includes/svg/about-us/_3.pug
 				.flex-block-row
-					.flex-item.animated.fadeIn(data-id='4')
-						include ../includes/svg/about-us/_4.pug
 					.flex-item.animated.fadeIn(data-id='5')
-						include ../includes/svg/about-us/_5.pug
+						include ../includes/svg/about-us/_4.pug
 					.flex-item.animated.fadeIn(data-id='6')
+						include ../includes/svg/about-us/_5.pug
+					.flex-item.animated.fadeIn(data-id='7')
 						include ../includes/svg/about-us/_6.pug
 				.flex-block-row
-					.flex-item.animated.fadeIn(data-id='7')
-						include ../includes/svg/about-us/_7.pug
 					.flex-item.animated.fadeIn(data-id='8')
-						include ../includes/svg/about-us/_8.pug
+						include ../includes/svg/about-us/_7.pug
 					.flex-item.animated.fadeIn(data-id='9')
+						include ../includes/svg/about-us/_8.pug
+					.flex-item.animated.fadeIn(data-id='10')
 						include ../includes/svg/about-us/_14.pug
 				.flex-block-row
-					.flex-item.animated.fadeIn(data-id='10')
-						include ../includes/svg/about-us/_10.pug
 					.flex-item.animated.fadeIn(data-id='11')
-						include ../includes/svg/about-us/_9.pug
+						include ../includes/svg/about-us/_10.pug
 					.flex-item.animated.fadeIn(data-id='12')
+						include ../includes/svg/about-us/_9.pug
+					.flex-item.animated.fadeIn(data-id='13')
 						include ../includes/svg/about-us/_13.pug
 				.flex-block-row
-					.flex-item.animated.fadeIn(data-id='13')
-						include ../includes/svg/about-us/_12.pug
 					.flex-item.animated.fadeIn(data-id='14')
+						include ../includes/svg/about-us/_12.pug
+					.flex-item.animated.fadeIn(data-id='15')
 						include ../includes/svg/about-us/_11.pug
 
 //- Developers block mixin
