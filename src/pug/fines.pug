@@ -38,7 +38,7 @@ block main-content
 							h3 Оплата штрафів за порушення ПДР
 							p Оплатіть штраф за порушення ПДР онлайн за допогою банківської карти VISA, MasterCard або ПРОСТІР
 						.flex-right.animated.fadeIn(data-id='1')
-							form(action="" method="POST")
+							form(action="", method="POST")
 								.form-row
 									.form-group.col-md-6
 										label(for="serie") Серія протокола*
@@ -52,7 +52,7 @@ block main-content
 										input(type="text", name="fullName", class="form-control", id="full-name", placeholder="***", required)
 								.form-row
 									.form-group.col-md-12
-										label(for="phone") Телефон*
+										label(for="phone") #{$i18n.formFields.phone}*
 										input(type="text", name="phone", class="form-control", id="phone", placeholder="***", required)
 								.form-row
 									input(type="submit" value="Продовжити")

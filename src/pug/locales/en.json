@@ -397,5 +397,37 @@
 
 		"item23Title": "Are there any restrictions in terms of the amount of payment?",
 		"item23Desc": "UAPAY has restrictions related to the amount of payment, which depend on each service provider. Typically, minimum amount of payment is 1 UAH. You can see the minimum and maximum amount of payment on the payment page of each selected service provider."
+	},
+	"partnership": {
+		"pageHeadline": "Partnership",
+		"introLine1": "We are always open to new partnership and ready to provide quality service to a wide range of clients.",
+		"introLine2": "That's why our affiliate program gives the opportunity to make money with connecting clients for everyone involved in online business.",
+		"icon1Desc": "The fee is 10% of the commission",
+		"icon2Desc": "We help with connection and support",
+		"icon3Desc": "Regular payments to the account",
+		"icon4Desc": "No limits of the duration of the program",
+		"clientsBlockHeadline": "Who may be interested",
+		"clientType1": "Design studios",
+		"clientType2": "Chatbots developers",
+		"clientType3": "Website development companies, online stores",
+		"clientType4": "Accounting services companies",
+		"clientType5": "Freelancers",
+		"clientType6": "Site builders",
+		"clientType7": "Companies configuring CRM-systems, sales systems",
+		"clientType8": "Opinion leaders, bloggers, influencers",
+		"howToBlockHeadline": "How to connect?",
+		"step1": "Sign a contract with us in electronic or paper form",
+		"step2": "Offer us lead contacts for connection",
+		"step3": "Get monthly income",
+		"formBlockHeadline": "Become a partner"
+	},
+	"formFields": {
+		"firstName": "Name",
+		"lastName": "Surname",
+		"email": "E-mail",
+		"phone": "Telephone",
+		"website": "Web site",
+		"message": "Message",
+		"submit": "Submit"
 	}
 }

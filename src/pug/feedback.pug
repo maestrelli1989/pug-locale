@@ -36,24 +36,24 @@ block main-content
 						h1 Свяжитесь с нами!
 						p Если у вас возникли вопросы, пожалуйста, заполните следующую контактную форму
 					.flex-right
-						form(action="" method="POST")
+						form(action="", method="POST")
 							.form-row
 								.form-group.col-md-6
-									label(for="first-name") Имя*
+									label(for="first-name") #{$i18n.formFields.firstName}*
 									input(type="text", name="firstName", class="form-control", id="first-name", placeholder="***", required)
 								.form-group.col-md-6
-									label(for="last-name") Фамилия*
+									label(for="last-name") #{$i18n.formFields.lastName}*
 									input(type="text", name="lastName", class="form-control", id="last-name", placeholder="***", required)
 							.form-row
 								.form-group.col-md-6
-									label(for="email") Email*
+									label(for="email") #{$i18n.formFields.email}*
 									input(type="email", name="email", class="form-control", id="email", placeholder="***", required)
 								.form-group.col-md-6
-									label(for="phone") Телефон*
+									label(for="phone") #{$i18n.formFields.phone}*
 									input(type="text", name="phone", class="form-control", id="phone", placeholder="***", required)
 							.form-row
 								.form-group.col-md-6
-									label(for="website") Вебсайт*
+									label(for="website") #{$i18n.formFields.website}*
 									input(type="text", name="website", class="form-control", id="website", placeholder="***", required)
 								.form-group.col-md-6
 									label(for="turnover") Оборот в месяц*
@@ -65,7 +65,7 @@ block main-content
 										option(value="five") Five
 							.form-row
 								.form-group.col-md-12
-									label(for="message") Сообщение*
+									label(for="message") #{$i18n.formFields.message}**
 									textarea(name="message", class="form-control", id="message", placeholder="***", cols="30", rows="1")
 							.form-row
 								input(type="submit" value="Отправить")

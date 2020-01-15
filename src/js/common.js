@@ -160,7 +160,7 @@ $(() => {
 	})
 
 	/*
-		Tabs at home page
+		Tabs at the home page
 	*/
 
 	$('#tabs span:not(:first)').addClass('inactive');

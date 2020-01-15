@@ -62,14 +62,14 @@ block main-content
 							include includes/svg/home-page/_taxi.pug
 						.content-wrapper#tab5C
 							include includes/svg/home-page/_money.pug
-					.flex-right
+					.flex-right.animated.fadeIn#tab1(data-id='2')
 						#tabs
-							span#tab1.animated.fadeIn(data-id='3') #{$i18n.industrySolutions.block1Headline}
-							span#tab2.animated.fadeIn(data-id='4') #{$i18n.industrySolutions.block2Headline}
-							span#tab3.animated.fadeIn(data-id='5') #{$i18n.industrySolutions.block3Headline}
-							span#tab4.animated.fadeIn(data-id='6') #{$i18n.industrySolutions.block4Headline}
-							span#tab5.animated.fadeIn(data-id='7') #{$i18n.industrySolutions.block5Headline}
-						a.connect-btn.animated.fadeIn(data-id='8', href="industry-solutions") #{$i18n.homePage.detailLink}
+							span#tab1 #{$i18n.industrySolutions.block1Headline}
+							span#tab2 #{$i18n.industrySolutions.block2Headline}
+							span#tab3 #{$i18n.industrySolutions.block3Headline}
+							span#tab4 #{$i18n.industrySolutions.block4Headline}
+							span#tab5 #{$i18n.industrySolutions.block5Headline}
+						a.connect-btn(href="industry-solutions") #{$i18n.homePage.detailLink}
 				.block-bottom-half-mobile
 					.svg-wrapper.animated.fadeIn(data-id='2')
 						include includes/svg/home-page/_marketplaces.pug
