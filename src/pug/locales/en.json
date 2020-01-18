@@ -21,7 +21,8 @@
 	},
 	"footerIntro": {
 		"footerHeadline": "Автоматизуйте ваші платежі вже сьогодні",
-		"footerAddress": "04205, Оболонський проспект, 35, Київ, Україна"
+		"footerAddress": "04205, 35 Obolon Avenue, Kyiv, Ukraine",
+		"currentLang": "EN"
 	},
 	"footerMenu": {
 		"col1Title": "Business",

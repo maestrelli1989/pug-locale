@@ -4,27 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="format-detection" content="telephone=no">
     <title>Website title</title>
     <meta name="description" content="Website description"/>
     <link rel="canonical" href="https://uapay.ua/"/>
-    <link rel="shortcut icon" href="../assets/images/favicons/favicon.ico">
-    <link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="../assets/images/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="../assets/images/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../assets/images/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="../assets/images/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../assets/images/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../assets/images/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../assets/images/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="../assets/images/favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="../assets/images/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/main.min.css">
@@ -47,7 +30,7 @@
                 <div class="menu-trigger" id="user-trigger">Customers</div>
                 <div class="sub-menu-wrapper" id="user-sub-menu">
                   <div class="triangle"></div>
-                  <div class="sub-menu user-sub-menu"><a href="fines">Fines</a><a href="javascript:void(0);">Safe deal</a></div>
+                  <div class="sub-menu user-sub-menu"><a href="fines">Fines</a><a href="https://escrowbox.uapay.ua/ad" target="_blank">Safe deal</a></div>
                 </div>
               </div>
               <div class="menu-item">
@@ -61,12 +44,15 @@
                 <div class="menu-trigger" id="developers-trigger">Developers</div>
                 <div class="sub-menu-wrapper" id="developers-sub-menu">
                   <div class="triangle"></div>
-                  <div class="sub-menu developers-sub-menu"><a href="javascript:void(0);">API</a><a href="javascript:void(0);">CMS modules</a></div>
+                  <div class="sub-menu developers-sub-menu"><a href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086" target="_blank">API</a><a href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086" target="_blank">CMS modules</a></div>
                 </div>
               </div>
             </div>
           </div>
           <div class="header-flex-right"><a class="feedback-link" href="feedback">Feedback</a><a class="btn-ghost-white" href="https://account.uapay.ua/auth/register" target="_blank">User account</a>
+            <div class="languages"> <span class="current-lang" id="current-lang">EN</span>
+              <div class="lang-items"><a href="javascript:void(0);" onclick="switchToUaLocale()">UA</a><a href="javascript:void(0);" onclick="switchToRuLocale()">RU</a><a href="javascript:void(0);" onclick="switchToEnLocale()">EN</a></div>
+            </div>
             <div class="burger">
               <div class="burger-box">
                 <div class="burger-inner"></div>
@@ -93,7 +79,7 @@
                   <div class="menu-trigger" id="user-trigger">Customers</div>
                   <div class="sub-menu-wrapper" id="user-sub-menu">
                     <div class="triangle"></div>
-                    <div class="sub-menu user-sub-menu"><a href="fines">Fines</a><a href="javascript:void(0);">Safe deal</a></div>
+                    <div class="sub-menu user-sub-menu"><a href="fines">Fines</a><a href="https://escrowbox.uapay.ua/ad" target="_blank">Safe deal</a></div>
                   </div>
                 </div>
                 <div class="menu-item">
@@ -107,12 +93,15 @@
                   <div class="menu-trigger" id="developers-trigger">Developers</div>
                   <div class="sub-menu-wrapper" id="developers-sub-menu">
                     <div class="triangle"></div>
-                    <div class="sub-menu developers-sub-menu"><a href="javascript:void(0);">API</a><a href="javascript:void(0);">CMS modules</a></div>
+                    <div class="sub-menu developers-sub-menu"><a href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086" target="_blank">API</a><a href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086" target="_blank">CMS modules</a></div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="header-flex-right"><a class="feedback-link" href="feedback">Feedback</a><a class="btn-ghost-white" href="https://account.uapay.ua/auth/register" target="_blank">User account</a>
+              <div class="languages"> <span class="current-lang" id="current-lang">EN</span>
+                <div class="lang-items"><a href="javascript:void(0);" onclick="switchToUaLocale()">UA</a><a href="javascript:void(0);" onclick="switchToRuLocale()">RU</a><a href="javascript:void(0);" onclick="switchToEnLocale()">EN</a></div>
+              </div>
               <div class="burger">
                 <div class="burger-box">
                   <div class="burger-inner"></div>
@@ -127,13 +116,13 @@
           <div class="mobile-menu-trigger">Business</div><a class="mobile-menu-link" href="uapay-checkout">UAPAY Checkout</a><a class="mobile-menu-link" href="mass-payouts">Bulk payments</a><a class="mobile-menu-link" href="industry-solutions">Business solutions</a>
         </div>
         <div class="mobile-menu-col">
-          <div class="mobile-menu-trigger">Customers</div><a class="mobile-menu-link" href="fines">Fines</a><a class="mobile-menu-link" href="javascript:void(0);">Safe deal</a>
+          <div class="mobile-menu-trigger">Customers</div><a class="mobile-menu-link" href="fines">Fines</a><a class="mobile-menu-link" href="https://escrowbox.uapay.ua/ad" target="_blank">Safe deal</a>
         </div>
         <div class="mobile-menu-col">
           <div class="mobile-menu-trigger">Company</div><a class="mobile-menu-link" href="about-us">About us</a><a class="mobile-menu-link" href="news">News</a><a class="mobile-menu-link" href="faq">FAQ</a><a class="mobile-menu-link" href="partnership">Partnership</a><a class="mobile-menu-link" href="legal-info">Legal information</a>
         </div>
         <div class="mobile-menu-col">
-          <div class="mobile-menu-trigger">Developers</div><a class="mobile-menu-link" href="javascript:void(0);">API</a><a class="mobile-menu-link" href="javascript:void(0);">CMS modules</a>
+          <div class="mobile-menu-trigger">Developers</div><a class="mobile-menu-link" href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086" target="_blank">API</a><a class="mobile-menu-link" href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086" target="_blank">CMS modules</a>
         </div>
       </div>
       <div class="accordion-wrapper">
@@ -153,7 +142,7 @@
             <div class="collapse" id="mobile-menu-collapse2" aria-labelledby="mobile-menu-heading2" data-parent="#mobile-menu-accordion">
               <ul class="links-wrapper">
                 <li><a href="fines">Fines</a></li>
-                <li><a href="javascript:void(0);">Safe deal</a></li>
+                <li><a href="https://escrowbox.uapay.ua/ad" target="_blank">Safe deal</a></li>
               </ul>
             </div>
           </div>
@@ -173,8 +162,8 @@
             <div id="mobile-menu-heading4"><a class="accordion-headline collapsed" href="javascript:void(0);" role="button" data-toggle="collapse" data-target="#mobile-menu-collapse4" aria-expanded="false" aria-controls="mobile-menu-collapse4"><span>Developers</span><i class="fas"></i></a></div>
             <div class="collapse" id="mobile-menu-collapse4" aria-labelledby="mobile-menu-heading4" data-parent="#mobile-menu-accordion">
               <ul class="links-wrapper">
-                <li><a href="javascript:void(0);">API</a></li>
-                <li><a href="javascript:void(0);">CMS modules</a></li>
+                <li><a href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086" target="_blank">API</a></li>
+                <li><a href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086" target="_blank">CMS modules</a></li>
               </ul>
             </div>
           </div>
@@ -253,42 +242,38 @@
     </div>
     <footer class="footer">
       <div class="container main-container">
-        <div class="top-footer-block animatedParent animateOnce" data-sequence="100">
-          <h2 class="animated fadeIn" data-id="1">Автоматизуйте ваші платежі вже сьогодні</h2><a class="action-btn animated fadeIn" href="https://account.uapay.ua/auth/register" target="_blank" data-id="1"><span>Start now</span><i class="animatedParent">
+        <div class="top-footer-block">
+          <h2>Автоматизуйте ваші платежі вже сьогодні</h2><a class="action-btn" href="https://account.uapay.ua/auth/register" target="_blank" data-id="1"><span>Start now</span><i class="animatedParent">
               <svg class="animated pulse infinite slower" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path id="rounded-1" d="M1 20C1 9.50659 9.50659 1 20 1C30.4934 1 39 9.50659 39 20C39 30.4934 30.4934 39 20 39C9.50659 39 1 30.4934 1 20Z" stroke="#FF4544" stroke-width="2"></path>
                 <path id="rounded-2" fill-rule="evenodd" clip-rule="evenodd" d="M16.9107 13.5775C17.2362 13.2521 17.7638 13.2521 18.0893 13.5775L23.9818 19.4701C24.3072 19.7955 24.3072 20.3232 23.9818 20.6486L18.0893 26.5412C17.7638 26.8666 17.2362 26.8666 16.9107 26.5412C16.5853 26.2157 16.5853 25.6881 16.9107 25.3627L22.214 20.0593L16.9107 14.756C16.5853 14.4306 16.5853 13.903 16.9107 13.5775Z" fill="#FF4544"></path>
               </svg></i></a>
         </div>
         <div class="bottom-footer-block">
-          <div class="row pre-menu-block animatedParent animateOnce" data-sequence="100">
-            <div class="col-xl-3 col-lg-3 col-md-2 col-sm-6 pre-menu-col animated fadeIn" data-id="1"><a class="site-logo-link" href="index"><img src="../assets/images/logo/site-logo.png" alt="Logo"></a></div>
-            <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 pre-menu-col animated fadeIn" data-id="1">
-              <p class="address">04205, Оболонський проспект, 35, Київ, Україна</p>
+          <div class="row pre-menu-block">
+            <div class="col-xl-3 col-lg-3 col-md-2 col-sm-6 pre-menu-col"><a class="site-logo-link" href="index"><img src="../assets/images/logo/site-logo.png" alt="Logo"></a></div>
+            <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 pre-menu-col">
+              <p class="address">04205, 35 Obolon Avenue, Kyiv, Ukraine</p>
             </div>
-            <div class="col-xl-3 col-lg-3 col-md-2 col-sm-6 pre-menu-col animated fadeIn" data-id="1">
-              <div class="languages"> <span class="current-lang" id="current-lang">UA</span>
-                <div class="lang-items"><a href="javascript:void(0);" onclick="switchToUaLocale()">UA</a><a href="javascript:void(0);" onclick="switchToRuLocale()">RU</a><a href="javascript:void(0);" onclick="switchToEnLocale()">EN</a></div>
-              </div>
-            </div>
+            <div class="col-xl-3 col-lg-3 col-md-2 col-sm-6 pre-menu-col"></div>
           </div>
           <div class="row footer-menu">
-            <div class="col-xl-3 col-lg-6 col-md-6 footer-menu-col animatedParent animateOnce" data-sequence="50">
-              <p class="footer-menu-title animated fadeInDownShort" data-id="1">Business</p><a class="footer-menu-link animated fadeInDownShort" href="uapay-checkout" data-id="2">UAPAY Checkout</a><a class="footer-menu-link animated fadeInDownShort" href="mass-payouts" data-id="3">Bulk payments</a><a class="footer-menu-link animated fadeInDownShort" href="industry-solutions" data-id="4">Business solutions</a>
+            <div class="col-xl-3 col-lg-6 col-md-6 footer-menu-col">
+              <p class="footer-menu-title">Business</p><a class="footer-menu-link" href="uapay-checkout">UAPAY Checkout</a><a class="footer-menu-link" href="mass-payouts">Bulk payments</a><a class="footer-menu-link" href="industry-solutions">Business solutions</a>
             </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 footer-menu-col animatedParent animateOnce" data-sequence="50">
-              <p class="footer-menu-title animated fadeInDownShort" data-id="1">Customers</p><a class="footer-menu-link animated fadeInDownShort" href="fines" data-id="2">Fines</a><a class="footer-menu-link animated fadeInDownShort" href="javascript:void(0);" data-id="5">Safe deal</a>
+            <div class="col-xl-3 col-lg-6 col-md-6 footer-menu-col">
+              <p class="footer-menu-title">Customers</p><a class="footer-menu-link" href="fines">Fines</a><a class="footer-menu-link" href="https://escrowbox.uapay.ua/ad" target="_blank">Safe deal</a>
             </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 footer-menu-col animatedParent animateOnce" data-sequence="50">
-              <p class="footer-menu-title animated fadeInDownShort" data-id="1">Developers</p><a class="footer-menu-link animated fadeInDownShort" href="javascript:void(0);" data-id="2">API</a><a class="footer-menu-link animated fadeInDownShort" href="javascript:void(0);" data-id="3">CMS modules</a>
+            <div class="col-xl-3 col-lg-6 col-md-6 footer-menu-col">
+              <p class="footer-menu-title">Developers</p><a class="footer-menu-link" href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086" target="_blank">API</a><a class="footer-menu-link" href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086" target="_blank">CMS modules</a>
             </div>
-            <div class="col-xl-3 col-lg-6 col-md-6 footer-menu-col animatedParent animateOnce" data-sequence="50">
-              <p class="footer-menu-title animated fadeInDownShort" data-id="1">Company</p><a class="footer-menu-link animated fadeInDownShort" href="about-us" data-id="2">About us</a><a class="footer-menu-link animated fadeInDownShort" href="news" data-id="3">News</a><a class="footer-menu-link animated fadeInDownShort" href="faq" data-id="4">FAQ</a><a class="footer-menu-link animated fadeInDownShort" href="partnership" data-id="5">Partnership</a><a class="footer-menu-link animated fadeInDownShort" href="legal-info" data-id="6">Legal information</a>
+            <div class="col-xl-3 col-lg-6 col-md-6 footer-menu-col">
+              <p class="footer-menu-title">Company</p><a class="footer-menu-link" href="about-us">About us</a><a class="footer-menu-link" href="news">News</a><a class="footer-menu-link" href="faq">FAQ</a><a class="footer-menu-link" href="partnership">Partnership</a><a class="footer-menu-link" href="legal-info">Legal information</a>
             </div>
           </div>
           <div class="footer-menu-mobile">
-            <div class="accordion animatedParent animateOnce" data-sequence="100" id="mobile-footer-accordion">
-              <div class="mobile-footer-accordion-item animated fadeIn" data-id="1">
+            <div class="accordion" id="mobile-footer-accordion">
+              <div class="mobile-footer-accordion-item">
                 <div id="mobile-footer-heading1"><a class="accordion-headline collapsed" href="javascript:void(0);" role="button" data-toggle="collapse" data-target="#mobile-footer-collapse1" aria-expanded="false" aria-controls="mobile-footer-collapse1"><span>Business</span><i class="fas"></i></a></div>
                 <div class="collapse" id="mobile-footer-collapse1" aria-labelledby="mobile-footer-heading1" data-parent="#mobile-footer-accordion">
                   <ul class="links-wrapper">
@@ -298,25 +283,25 @@
                   </ul>
                 </div>
               </div>
-              <div class="mobile-footer-accordion-item animated fadeIn" data-id="2">
+              <div class="mobile-footer-accordion-item">
                 <div id="mobile-footer-heading2"><a class="accordion-headline collapsed" href="javascript:void(0);" role="button" data-toggle="collapse" data-target="#mobile-footer-collapse2" aria-expanded="false" aria-controls="mobile-footer-collapse2"><span>Customers</span><i class="fas"></i></a></div>
                 <div class="collapse" id="mobile-footer-collapse2" aria-labelledby="mobile-footer-heading2" data-parent="#mobile-footer-accordion">
                   <ul class="links-wrapper">
                     <li><a href="fines">Fines</a></li>
-                    <li><a href="javascript:void(0);">Safe deal</a></li>
+                    <li><a href="https://escrowbox.uapay.ua/ad" target="_blank">Safe deal</a></li>
                   </ul>
                 </div>
               </div>
-              <div class="mobile-footer-accordion-item animated fadeIn" data-id="3">
+              <div class="mobile-footer-accordion-item">
                 <div id="mobile-footer-heading3"><a class="accordion-headline collapsed" href="javascript:void(0);" role="button" data-toggle="collapse" data-target="#mobile-footer-collapse3" aria-expanded="false" aria-controls="mobile-footer-collapse3"><span>Developers</span><i class="fas"></i></a></div>
                 <div class="collapse" id="mobile-footer-collapse3" aria-labelledby="mobile-footer-heading3" data-parent="#mobile-footer-accordion">
                   <ul class="links-wrapper">
-                    <li><a href="javascript:void(0);">API</a></li>
-                    <li><a href="javascript:void(0);">CMS modules</a></li>
+                    <li><a href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086" target="_blank">API</a></li>
+                    <li><a href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086" target="_blank">CMS modules</a></li>
                   </ul>
                 </div>
               </div>
-              <div class="mobile-footer-accordion-item animated fadeIn" data-id="4">
+              <div class="mobile-footer-accordion-item">
                 <div id="mobile-footer-heading4"><a class="accordion-headline collapsed" href="javascript:void(0);" role="button" data-toggle="collapse" data-target="#mobile-footer-collapse4" aria-expanded="false" aria-controls="mobile-footer-collapse4"><span>Company</span><i class="fas"></i></a></div>
                 <div class="collapse" id="mobile-footer-collapse4" aria-labelledby="mobile-footer-heading4" data-parent="#mobile-footer-accordion">
                   <ul class="links-wrapper">
@@ -335,11 +320,11 @@
     </footer>
     <footer class="copyright-block">
       <div class="container">
-        <div class="copyright-block-content animatedParent animateOnce">
+        <div class="copyright-block-content">
           <div class="flex-left">
-            <p class="animated fadeIn">&copy; Copyright 2020, UAPAY</p>
+            <p>&copy; Copyright 2020, UAPAY</p>
           </div>
-          <div class="flex-right"><a class="animated fadeIn" href="terms-of-use">Terms of Service</a><a class="animated fadeIn" href="cookies-policy">Cookies Policy</a><a class="animated fadeIn" href="privacy-policy">Privacy Policy</a></div>
+          <div class="flex-right"><a href="terms-of-use">Terms of Service</a><a href="cookies-policy">Cookies Policy</a><a href="privacy-policy">Privacy Policy</a></div>
         </div>
       </div>
     </footer>

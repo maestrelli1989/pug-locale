@@ -38,7 +38,7 @@ mixin header(className)
 								.triangle
 								.sub-menu.user-sub-menu
 									a(href="fines") #{$i18n.headerMenu.col2Link1}
-									a(href="javascript:void(0);") #{$i18n.headerMenu.col2Link2}
+									a(href="https://escrowbox.uapay.ua/ad", target="_blank") #{$i18n.headerMenu.col2Link2}
 						.menu-item
 							.menu-trigger#company-trigger #{$i18n.headerMenu.col3Title}
 							.sub-menu-wrapper#company-sub-menu
@@ -54,11 +54,17 @@ mixin header(className)
 							.sub-menu-wrapper#developers-sub-menu
 								.triangle
 								.sub-menu.developers-sub-menu
-									a(href="javascript:void(0);") #{$i18n.headerMenu.col4Link1}
-									a(href="javascript:void(0);") #{$i18n.headerMenu.col4Link2}
+									a(href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086", target="_blank") #{$i18n.headerMenu.col4Link1}
+									a(href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086", target="_blank") #{$i18n.headerMenu.col4Link2}
 				.header-flex-right
 					a.feedback-link(href="feedback") #{$i18n.headerMenu.feedback}
 					a.btn-ghost-white(href="https://account.uapay.ua/auth/register", target="_blank") #{$i18n.headerMenu.userAccount}
+					.languages 
+						span.current-lang#current-lang #{$i18n.footerIntro.currentLang}
+						.lang-items
+							a(href="javascript:void(0);", onclick="switchToUaLocale()") UA
+							a(href="javascript:void(0);", onclick="switchToRuLocale()") RU
+							a(href="javascript:void(0);", onclick="switchToEnLocale()") EN
 					.burger
 						.burger-box
 							.burger-inner
@@ -77,7 +83,7 @@ mixin mobile-menu(className)
 			.mobile-menu-col
 				.mobile-menu-trigger #{$i18n.headerMenu.col2Title}
 				a(class="mobile-menu-link", href="fines") #{$i18n.headerMenu.col2Link1}
-				a(class="mobile-menu-link", href="javascript:void(0);") #{$i18n.headerMenu.col2Link2}
+				a(class="mobile-menu-link", href="https://escrowbox.uapay.ua/ad", target="_blank") #{$i18n.headerMenu.col2Link2}
 			.mobile-menu-col
 				.mobile-menu-trigger #{$i18n.headerMenu.col3Title}
 				a(class="mobile-menu-link", href="about-us") #{$i18n.headerMenu.col3Link1}
@@ -87,8 +93,8 @@ mixin mobile-menu(className)
 				a(class="mobile-menu-link", href="legal-info") #{$i18n.headerMenu.col3Link5}
 			.mobile-menu-col
 				.mobile-menu-trigger #{$i18n.headerMenu.col4Title}
-				a(class="mobile-menu-link", href="javascript:void(0);") #{$i18n.headerMenu.col4Link1}
-				a(class="mobile-menu-link", href="javascript:void(0);") #{$i18n.headerMenu.col4Link2}
+				a(class="mobile-menu-link", href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086", target="_blank") #{$i18n.headerMenu.col4Link1}
+				a(class="mobile-menu-link", href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086", target="_blank") #{$i18n.headerMenu.col4Link2}
 		.accordion-wrapper
 			.accordion#mobile-menu-accordion
 				.mobile-menu-accordion-item
@@ -109,7 +115,7 @@ mixin mobile-menu(className)
 					.collapse#mobile-menu-collapse2(aria-labelledby="mobile-menu-heading2", data-parent="#mobile-menu-accordion")
 						ul.links-wrapper
 							li: a(href="fines") #{$i18n.headerMenu.col2Link1}
-							li: a(href="javascript:void(0);") #{$i18n.headerMenu.col2Link2}
+							li: a(href="https://escrowbox.uapay.ua/ad", target="_blank") #{$i18n.headerMenu.col2Link2}
 				.mobile-menu-accordion-item
 					#mobile-menu-heading3
 						a(class="accordion-headline collapsed", href="javascript:void(0);", role="button", data-toggle="collapse", data-target="#mobile-menu-collapse3", aria-expanded="false", aria-controls="mobile-menu-collapse3")
@@ -129,8 +135,8 @@ mixin mobile-menu(className)
 							i.fas
 					.collapse#mobile-menu-collapse4(aria-labelledby="mobile-menu-heading4", data-parent="#mobile-menu-accordion")
 						ul.links-wrapper
-							li: a(href="javascript:void(0);") #{$i18n.headerMenu.col4Link1}
-							li: a(href="javascript:void(0);") #{$i18n.headerMenu.col4Link2}
+							li: a(href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086", target="_blank") #{$i18n.headerMenu.col4Link1}
+							li: a(href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086", target="_blank") #{$i18n.headerMenu.col4Link2}
 			a.btn-ghost-white(href="https://account.uapay.ua/auth/register", target="_blank") #{$i18n.headerMenu.userAccount}
 			a.feedback-link(href="feedback") #{$i18n.headerMenu.feedback}
 
