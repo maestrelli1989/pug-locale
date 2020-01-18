@@ -55,10 +55,10 @@
 		"preference3Desc": "Статус внутригосударственной платежной системы",
 		"preference4Title": "Paperless company",
 		"preference4Desc": "Максимальная поддержка электронного документооборота",
-		"preference5Title": "",
-		"preference5Desc": "",
-		"preference6Title": "",
-		"preference6Desc": ""
+		"preference5Title": "ОПИ",
+		"preference5Desc": "Лицензия оператора платежной инфраструктуры",
+		"preference6Title": "Лицензия НБУ",
+		"preference6Desc": "Перевод средств в национальной валюте, без открытия счетов"
 	},
 	"trustBlock": {
 		"blockHeadline": "Нам доверяют"

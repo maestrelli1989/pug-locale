@@ -55,10 +55,10 @@
 		"preference3Desc": "Status of the internal payment system",
 		"preference4Title": "Paperless company",
 		"preference4Desc": "Maximum support for electronic document management",
-		"preference5Title": "",
-		"preference5Desc": "",
-		"preference6Title": "",
-		"preference6Desc": ""
+		"preference5Title": "PIO",
+		"preference5Desc": "Payment Infrastructure Operator License",
+		"preference6Title": "NBU License",
+		"preference6Desc": "Transfer of funds in national currency without opening accounts"
 	},
 	"trustBlock": {
 		"blockHeadline": ""
