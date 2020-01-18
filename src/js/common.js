@@ -44,53 +44,53 @@ $(() => {
 		Toggle effect at the Header sub menu
 	*/
 
-	$(businessMenuItemTrigger).click(() => {
+	$(businessMenuItemTrigger).on("click mouseover", () => {
 		$(userSubMenu).slideUp(100);
 		$(companySubMenu).slideUp(100);
 		$(developersSubMenu).slideUp(100);
 		$(businessSubMenu).slideToggle(500);
 	});
 
-	$(userMenuItemTrigger).click(() => {
+	$(userMenuItemTrigger).on("click mouseover", () => {
 		$(businessSubMenu).slideUp(100);
 		$(companySubMenu).slideUp(100);
 		$(developersSubMenu).slideUp(100);
 		$(userSubMenu).slideToggle(500);
 	});
 
-	$(companyMenuItemTrigger).click(() => {
+	$(companyMenuItemTrigger).on("click mouseover", () => {
 		$(businessSubMenu).slideUp(100);
 		$(userSubMenu).slideUp(100);
 		$(developersSubMenu).slideUp(100);
 		$(companySubMenu).slideToggle(500);
 	});
 	
-	$(developersMenuItemTrigger).click(() => {
+	$(developersMenuItemTrigger).on("click mouseover", () => {
 		$(businessSubMenu).slideUp(100);
 		$(userSubMenu).slideUp(100);
 		$(companySubMenu).slideUp(100);
 		$(developersSubMenu).slideToggle(500);
 	});
 
-	$(window).click(({target}) => {
+	$(window).on("click mouseover", ({target}) => {
 		if($(target).is(":not(#business-sub-menu, #business-sub-menu *, #business-trigger)")) {
 			$(businessSubMenu).slideUp(500);
 		}
 	});
 
-	$(window).click(({target}) => {
+	$(window).on("click mouseover", ({target}) => {
 		if($(target).is(":not(#user-sub-menu, #user-sub-menu *, #user-trigger)")) {
 			$(userSubMenu).slideUp(500);
 		}
 	});
 
-	$(window).click(({target}) => {
+	$(window).on("click mouseover", ({target}) => {
 		if($(target).is(":not(#company-sub-menu, #company-sub-menu *, #company-trigger)")) {
 			$(companySubMenu).slideUp(500);
 		}
 	});
 
-	$(window).click(({target}) => {
+	$(window).on("click mouseover", ({target}) => {
 		if($(target).is(":not(#developers-sub-menu, #developers-sub-menu *, #developers-trigger)")) {
 			$(developersSubMenu).slideUp(500);
 		}
