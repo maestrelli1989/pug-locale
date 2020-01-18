@@ -142,13 +142,13 @@ $(() => {
 		Languages switcher
 	*/
 
-	$(".languages").click(() => {
-		$(".languages .lang-items").show();
+	$(".current-lang").click(() => {
+		$(".lang-items").slideToggle(500);
 	});
 
-	$(".languages .lang-items").mouseleave(() => {
-		$(".languages .lang-items").hide(); 
-	});
+	// $(".languages").mouseleave(() => {
+	// 	$(".lang-items").slideUp(100); 
+	// });
 
 	$(".languages a").click(function() {
 		$(".languages a").removeClass('sel');
@@ -169,7 +169,7 @@ $(() => {
 		
 	$('#tabs span').click(function() {
 		let tab = $(this).attr('id');
-		if($(this).hasClass('inactive')){
+		if($(this).hasClass('inactive')) {
 			$('#tabs span').addClass('inactive');           
 			$(this).removeClass('inactive');
 			$('.content-wrapper').hide();

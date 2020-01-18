@@ -62,9 +62,10 @@ mixin header(className)
 					.languages 
 						span.current-lang#current-lang #{$i18n.footerIntro.currentLang}
 						.lang-items
-							a(href="javascript:void(0);", onclick="switchToUaLocale()") UA
-							a(href="javascript:void(0);", onclick="switchToRuLocale()") RU
-							a(href="javascript:void(0);", onclick="switchToEnLocale()") EN
+							.sub-menu
+								a(href="javascript:void(0);", onclick="switchToUaLocale()") UA
+								a(href="javascript:void(0);", onclick="switchToRuLocale()") RU
+								a(href="javascript:void(0);", onclick="switchToEnLocale()") EN
 					.burger
 						.burger-box
 							.burger-inner
