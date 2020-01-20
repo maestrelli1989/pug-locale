@@ -8,6 +8,30 @@
     <title>Website title</title>
     <meta name="description" content="Website description"/>
     <link rel="canonical" href="https://uapay.ua/info-uapay"/>
+    <meta property="og:title" content="API Укрпошти | Портал для розробників">
+    <meta property="og:description" content="Вітаємо на порталі для розробників! Дізнайтесь більше про інтеграцію з Укрпоштою та слідкуйте за оновленнями.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dev.ukrposhta.ua/">
+    <meta property="og:site_name" content="Ukrposhta">
+    <meta property="og:image" content="https://dev.ukrposhta.ua/images/og-logo.png">
+    <link rel="shortcut icon" href="../assets/images/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../assets/images/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../assets/images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/main.min.css">
@@ -37,7 +61,9 @@
                 <div class="menu-trigger" id="company-trigger">Компанія</div>
                 <div class="sub-menu-wrapper" id="company-sub-menu">
                   <div class="triangle"></div>
-                  <div class="sub-menu company-sub-menu"><a href="about-us">Про нас</a><a href="news">Новини</a><a href="faq">FAQ</a><a href="partnership">Партнерство</a><a href="legal-info">Правова інформація</a></div>
+                  <div class="sub-menu company-sub-menu"><a href="about-us">Про нас</a>
+                    <!--a(href="news") #{$i18n.headerMenu.col3Link2}--><a href="faq">FAQ</a><a href="partnership">Партнерство</a><a href="legal-info">Правова інформація</a>
+                  </div>
                 </div>
               </div>
               <div class="menu-item">
@@ -88,7 +114,9 @@
                   <div class="menu-trigger" id="company-trigger">Компанія</div>
                   <div class="sub-menu-wrapper" id="company-sub-menu">
                     <div class="triangle"></div>
-                    <div class="sub-menu company-sub-menu"><a href="about-us">Про нас</a><a href="news">Новини</a><a href="faq">FAQ</a><a href="partnership">Партнерство</a><a href="legal-info">Правова інформація</a></div>
+                    <div class="sub-menu company-sub-menu"><a href="about-us">Про нас</a>
+                      <!--a(href="news") #{$i18n.headerMenu.col3Link2}--><a href="faq">FAQ</a><a href="partnership">Партнерство</a><a href="legal-info">Правова інформація</a>
+                    </div>
                   </div>
                 </div>
                 <div class="menu-item">
@@ -123,7 +151,8 @@
           <div class="mobile-menu-trigger">Користувачу</div><a class="mobile-menu-link" href="fines">Штрафи</a><a class="mobile-menu-link" href="https://escrowbox.uapay.ua/ad" target="_blank">Безпечна угода</a>
         </div>
         <div class="mobile-menu-col">
-          <div class="mobile-menu-trigger">Компанія</div><a class="mobile-menu-link" href="about-us">Про нас</a><a class="mobile-menu-link" href="news">Новини</a><a class="mobile-menu-link" href="faq">FAQ</a><a class="mobile-menu-link" href="partnership">Партнерство</a><a class="mobile-menu-link" href="legal-info">Правова інформація</a>
+          <div class="mobile-menu-trigger">Компанія</div><a class="mobile-menu-link" href="about-us">Про нас</a>
+          <!--a(class="mobile-menu-link", href="news") #{$i18n.headerMenu.col3Link2}--><a class="mobile-menu-link" href="faq">FAQ</a><a class="mobile-menu-link" href="partnership">Партнерство</a><a class="mobile-menu-link" href="legal-info">Правова інформація</a>
         </div>
         <div class="mobile-menu-col">
           <div class="mobile-menu-trigger">Розробникам</div><a class="mobile-menu-link" href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086" target="_blank">API</a><a class="mobile-menu-link" href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086" target="_blank">Модулі CMS</a>
@@ -155,7 +184,7 @@
             <div class="collapse" id="mobile-menu-collapse3" aria-labelledby="mobile-menu-heading3" data-parent="#mobile-menu-accordion">
               <ul class="links-wrapper">
                 <li><a href="about-us">Про нас</a></li>
-                <li><a href="news">Новини</a></li>
+                <!--li: a(href="news") #{$i18n.headerMenu.col3Link2}-->
                 <li><a href="faq">FAQ</a></li>
                 <li><a href="javascript:void(0);">Партнерство</a></li>
                 <li><a href="legal-info">Правова інформація</a></li>
@@ -364,7 +393,8 @@
               <p class="footer-menu-title">Розробникам</p><a class="footer-menu-link" href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086" target="_blank">API</a><a class="footer-menu-link" href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086" target="_blank">Модулі CMS</a>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6 footer-menu-col">
-              <p class="footer-menu-title">Компанія</p><a class="footer-menu-link" href="about-us">Про нас</a><a class="footer-menu-link" href="news">Новини</a><a class="footer-menu-link" href="faq">FAQ</a><a class="footer-menu-link" href="partnership">Партнерство</a><a class="footer-menu-link" href="legal-info">Правова інформація</a>
+              <p class="footer-menu-title">Компанія</p><a class="footer-menu-link" href="about-us">Про нас</a>
+              <!--a(href="news", class="footer-menu-link") #{$i18n.footerMenu.col4Link2}--><a class="footer-menu-link" href="faq">FAQ</a><a class="footer-menu-link" href="partnership">Партнерство</a><a class="footer-menu-link" href="legal-info">Правова інформація</a>
             </div>
           </div>
           <div class="footer-menu-mobile">
@@ -402,7 +432,7 @@
                 <div class="collapse" id="mobile-footer-collapse4" aria-labelledby="mobile-footer-heading4" data-parent="#mobile-footer-accordion">
                   <ul class="links-wrapper">
                     <li><a href="about-us">Про нас</a></li>
-                    <li><a href="news">Новини</a></li>
+                    <!--li: a(href="news") #{$i18n.footerMenu.col4Link2}-->
                     <li><a href="faq">FAQ</a></li>
                     <li><a href="partnership">Партнерство</a></li>
                     <li><a href="legal-info">Правова інформація</a></li>

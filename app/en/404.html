@@ -5,9 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <title>Website title</title>
-    <meta name="description" content="Website description"/>
+    <title>404</title>
+    <meta name="description" content="404"/>
     <link rel="canonical" href="https://uapay.ua/404"/>
+    <meta property="og:title" content="API Укрпошти | Портал для розробників">
+    <meta property="og:description" content="Вітаємо на порталі для розробників! Дізнайтесь більше про інтеграцію з Укрпоштою та слідкуйте за оновленнями.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dev.ukrposhta.ua/">
+    <meta property="og:site_name" content="Ukrposhta">
+    <meta property="og:image" content="https://dev.ukrposhta.ua/images/og-logo.png">
+    <link rel="shortcut icon" href="../assets/images/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../assets/images/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../assets/images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/main.min.css">
@@ -38,7 +62,9 @@
                   <div class="menu-trigger" id="company-trigger">Company</div>
                   <div class="sub-menu-wrapper" id="company-sub-menu">
                     <div class="triangle"></div>
-                    <div class="sub-menu company-sub-menu"><a href="about-us">About us</a><a href="news">News</a><a href="faq">FAQ</a><a href="partnership">Partnership</a><a href="legal-info">Legal information</a></div>
+                    <div class="sub-menu company-sub-menu"><a href="about-us">About us</a>
+                      <!--a(href="news") #{$i18n.headerMenu.col3Link2}--><a href="faq">FAQ</a><a href="partnership">Partnership</a><a href="legal-info">Legal information</a>
+                    </div>
                   </div>
                 </div>
                 <div class="menu-item">
@@ -73,7 +99,8 @@
           <div class="mobile-menu-trigger">Customers</div><a class="mobile-menu-link" href="fines">Fines</a><a class="mobile-menu-link" href="https://escrowbox.uapay.ua/ad" target="_blank">Safe deal</a>
         </div>
         <div class="mobile-menu-col">
-          <div class="mobile-menu-trigger">Company</div><a class="mobile-menu-link" href="about-us">About us</a><a class="mobile-menu-link" href="news">News</a><a class="mobile-menu-link" href="faq">FAQ</a><a class="mobile-menu-link" href="partnership">Partnership</a><a class="mobile-menu-link" href="legal-info">Legal information</a>
+          <div class="mobile-menu-trigger">Company</div><a class="mobile-menu-link" href="about-us">About us</a>
+          <!--a(class="mobile-menu-link", href="news") #{$i18n.headerMenu.col3Link2}--><a class="mobile-menu-link" href="faq">FAQ</a><a class="mobile-menu-link" href="partnership">Partnership</a><a class="mobile-menu-link" href="legal-info">Legal information</a>
         </div>
         <div class="mobile-menu-col">
           <div class="mobile-menu-trigger">Developers</div><a class="mobile-menu-link" href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086" target="_blank">API</a><a class="mobile-menu-link" href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086" target="_blank">CMS modules</a>
@@ -105,7 +132,7 @@
             <div class="collapse" id="mobile-menu-collapse3" aria-labelledby="mobile-menu-heading3" data-parent="#mobile-menu-accordion">
               <ul class="links-wrapper">
                 <li><a href="about-us">About us</a></li>
-                <li><a href="news">News</a></li>
+                <!--li: a(href="news") #{$i18n.headerMenu.col3Link2}-->
                 <li><a href="faq">FAQ</a></li>
                 <li><a href="javascript:void(0);">Partnership</a></li>
                 <li><a href="legal-info">Legal information</a></li>
@@ -149,7 +176,9 @@
                     <div class="menu-trigger" id="company-trigger">Company</div>
                     <div class="sub-menu-wrapper" id="company-sub-menu">
                       <div class="triangle"></div>
-                      <div class="sub-menu company-sub-menu"><a href="about-us">About us</a><a href="news">News</a><a href="faq">FAQ</a><a href="partnership">Partnership</a><a href="legal-info">Legal information</a></div>
+                      <div class="sub-menu company-sub-menu"><a href="about-us">About us</a>
+                        <!--a(href="news") #{$i18n.headerMenu.col3Link2}--><a href="faq">FAQ</a><a href="partnership">Partnership</a><a href="legal-info">Legal information</a>
+                      </div>
                     </div>
                   </div>
                   <div class="menu-item">
@@ -192,7 +221,7 @@
     <footer class="footer">
       <div class="container main-container">
         <div class="top-footer-block">
-          <h2>Автоматизуйте ваші платежі вже сьогодні</h2><a class="action-btn" href="https://account.uapay.ua/auth/register" target="_blank" data-id="1"><span>Start now</span><i class="animatedParent">
+          <h2>Automate your payments today</h2><a class="action-btn" href="https://account.uapay.ua/auth/register" target="_blank" data-id="1"><span>Start now</span><i class="animatedParent">
               <svg class="animated pulse infinite slower" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path id="rounded-1" d="M1 20C1 9.50659 9.50659 1 20 1C30.4934 1 39 9.50659 39 20C39 30.4934 30.4934 39 20 39C9.50659 39 1 30.4934 1 20Z" stroke="#FF4544" stroke-width="2"></path>
                 <path id="rounded-2" fill-rule="evenodd" clip-rule="evenodd" d="M16.9107 13.5775C17.2362 13.2521 17.7638 13.2521 18.0893 13.5775L23.9818 19.4701C24.3072 19.7955 24.3072 20.3232 23.9818 20.6486L18.0893 26.5412C17.7638 26.8666 17.2362 26.8666 16.9107 26.5412C16.5853 26.2157 16.5853 25.6881 16.9107 25.3627L22.214 20.0593L16.9107 14.756C16.5853 14.4306 16.5853 13.903 16.9107 13.5775Z" fill="#FF4544"></path>
@@ -216,7 +245,8 @@
               <p class="footer-menu-title">Developers</p><a class="footer-menu-link" href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086" target="_blank">API</a><a class="footer-menu-link" href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086" target="_blank">CMS modules</a>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6 footer-menu-col">
-              <p class="footer-menu-title">Company</p><a class="footer-menu-link" href="about-us">About us</a><a class="footer-menu-link" href="news">News</a><a class="footer-menu-link" href="faq">FAQ</a><a class="footer-menu-link" href="partnership">Partnership</a><a class="footer-menu-link" href="legal-info">Legal information</a>
+              <p class="footer-menu-title">Company</p><a class="footer-menu-link" href="about-us">About us</a>
+              <!--a(href="news", class="footer-menu-link") #{$i18n.footerMenu.col4Link2}--><a class="footer-menu-link" href="faq">FAQ</a><a class="footer-menu-link" href="partnership">Partnership</a><a class="footer-menu-link" href="legal-info">Legal information</a>
             </div>
           </div>
           <div class="footer-menu-mobile">
@@ -254,7 +284,7 @@
                 <div class="collapse" id="mobile-footer-collapse4" aria-labelledby="mobile-footer-heading4" data-parent="#mobile-footer-accordion">
                   <ul class="links-wrapper">
                     <li><a href="about-us">About us</a></li>
-                    <li><a href="news">News</a></li>
+                    <!--li: a(href="news") #{$i18n.footerMenu.col4Link2}-->
                     <li><a href="faq">FAQ</a></li>
                     <li><a href="partnership">Partnership</a></li>
                     <li><a href="legal-info">Legal information</a></li>

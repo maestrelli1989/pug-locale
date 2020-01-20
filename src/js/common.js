@@ -44,53 +44,53 @@ $(() => {
 		Toggle effect at the Header sub menu
 	*/
 
-	$(businessMenuItemTrigger).on("click mouseover", () => {
+	$(businessMenuItemTrigger).click(() => {
 		$(userSubMenu).slideUp(100);
 		$(companySubMenu).slideUp(100);
 		$(developersSubMenu).slideUp(100);
 		$(businessSubMenu).slideToggle(500);
 	});
 
-	$(userMenuItemTrigger).on("click mouseover", () => {
+	$(userMenuItemTrigger).click(() => {
 		$(businessSubMenu).slideUp(100);
 		$(companySubMenu).slideUp(100);
 		$(developersSubMenu).slideUp(100);
 		$(userSubMenu).slideToggle(500);
 	});
 
-	$(companyMenuItemTrigger).on("click mouseover", () => {
+	$(companyMenuItemTrigger).click(() => {
 		$(businessSubMenu).slideUp(100);
 		$(userSubMenu).slideUp(100);
 		$(developersSubMenu).slideUp(100);
 		$(companySubMenu).slideToggle(500);
 	});
 	
-	$(developersMenuItemTrigger).on("click mouseover", () => {
+	$(developersMenuItemTrigger).click(() => {
 		$(businessSubMenu).slideUp(100);
 		$(userSubMenu).slideUp(100);
 		$(companySubMenu).slideUp(100);
 		$(developersSubMenu).slideToggle(500);
 	});
 
-	$(window).on("click mouseover", ({target}) => {
+	$(window).click(({target}) => {
 		if($(target).is(":not(#business-sub-menu, #business-sub-menu *, #business-trigger)")) {
 			$(businessSubMenu).slideUp(500);
 		}
 	});
 
-	$(window).on("click mouseover", ({target}) => {
+	$(window).click(({target}) => {
 		if($(target).is(":not(#user-sub-menu, #user-sub-menu *, #user-trigger)")) {
 			$(userSubMenu).slideUp(500);
 		}
 	});
 
-	$(window).on("click mouseover", ({target}) => {
+	$(window).click(({target}) => {
 		if($(target).is(":not(#company-sub-menu, #company-sub-menu *, #company-trigger)")) {
 			$(companySubMenu).slideUp(500);
 		}
 	});
 
-	$(window).on("click mouseover", ({target}) => {
+	$(window).click(({target}) => {
 		if($(target).is(":not(#developers-sub-menu, #developers-sub-menu *, #developers-trigger)")) {
 			$(developersSubMenu).slideUp(500);
 		}
@@ -145,10 +145,6 @@ $(() => {
 	$(".current-lang").click(() => {
 		$(".lang-items").slideToggle(500);
 	});
-
-	// $(".languages").mouseleave(() => {
-	// 	$(".lang-items").slideUp(100); 
-	// });
 
 	$(".languages a").click(function() {
 		$(".languages a").removeClass('sel');

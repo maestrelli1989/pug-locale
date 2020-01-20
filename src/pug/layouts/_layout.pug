@@ -17,8 +17,14 @@ html(lang='uk')
 		meta(name="format-detection", content="telephone=no")
 		//- Meta data mixin
 		block meta-data
+		meta(property="og:title" content="API Укрпошти | Портал для розробників")
+		meta(property="og:description" content="Вітаємо на порталі для розробників! Дізнайтесь більше про інтеграцію з Укрпоштою та слідкуйте за оновленнями.")
+		meta(property="og:type" content="website")
+		meta(property="og:url" content="https://dev.ukrposhta.ua/")
+		meta(property="og:site_name" content="Ukrposhta")
+		meta(property="og:image" content="https://dev.ukrposhta.ua/images/og-logo.png")
 		//- Favicons
-		//- include ../includes/_favicons
+		include ../includes/_favicons
 		//- Font Awesome
 		link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.3.1/css/all.css")
 		//- Bootstrap
@@ -63,7 +69,7 @@ html(lang='uk')
 						.col-xl-3.col-lg-6.col-md-6.footer-menu-col
 							p.footer-menu-title #{$i18n.footerMenu.col4Title}
 							a(href="about-us", class="footer-menu-link") #{$i18n.footerMenu.col4Link1}
-							a(href="news", class="footer-menu-link") #{$i18n.footerMenu.col4Link2}
+							//a(href="news", class="footer-menu-link") #{$i18n.footerMenu.col4Link2}
 							a(href="faq", class="footer-menu-link") #{$i18n.footerMenu.col4Link3}
 							a(href="partnership", class="footer-menu-link") #{$i18n.footerMenu.col4Link4}
 							a(href="legal-info", class="footer-menu-link") #{$i18n.footerMenu.col4Link5}
@@ -105,7 +111,7 @@ html(lang='uk')
 								.collapse#mobile-footer-collapse4(aria-labelledby="mobile-footer-heading4", data-parent="#mobile-footer-accordion")
 									ul.links-wrapper
 										li: a(href="about-us") #{$i18n.footerMenu.col4Link1}
-										li: a(href="news") #{$i18n.footerMenu.col4Link2}
+										//li: a(href="news") #{$i18n.footerMenu.col4Link2}
 										li: a(href="faq") #{$i18n.footerMenu.col4Link3}
 										li: a(href="partnership") #{$i18n.footerMenu.col4Link4}
 										li: a(href="legal-info") #{$i18n.footerMenu.col4Link5}

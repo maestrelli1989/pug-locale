@@ -20,7 +20,7 @@
 		"userAccount": "User account"
 	},
 	"footerIntro": {
-		"footerHeadline": "Автоматизуйте ваші платежі вже сьогодні",
+		"footerHeadline": "Automate your payments today",
 		"footerAddress": "04205, 35 Obolon Avenue, Kyiv, Ukraine",
 		"currentLang": "EN"
 	},
@@ -89,7 +89,7 @@
 		"bannerBtn": "Start now",
 
 		"detailLink": "Details",
-		"finesLink": "Pay traffic fines",
+		"finesLink": "Soon",
 		"payLink": "Pay the deal",
 		"createLink": "Create a deal",
 
@@ -234,8 +234,8 @@
 	"aboutUs": {
 		"pageHeadline": "About us",
 		"metaTitle": "About Us — UAPAY",
-		"metaDescription": "UAPAY enables businesses to be more flexible, save time and costs. Find out how.",
-		"canonical": "https://uapay.ua/en/about-us",
+		"metaDescription": "name=\"description\" content=\"UAPAY enables businesses to be more flexible, save time and costs. Find out how.\"",
+		"canonical": "rel=\"canonical\" href=\"https://uapay.ua/en/about-us\"",
 		"introLine1": "UAPAY is a national payment service that provides financial and technical solutions for any type of online business. Our team of professionals will help you automate payments and speed up business processes.",
 		"introLine2": "The company, founded in 2013, offers competitive rates and guarantees reliability. We care about the security and speed of online payment, so we try to use the latest technologies that provide the required level of payments.",
 		"introLine3": "A high level of service, transparency and reliability of transactions, prompt and qualified work of a support service - all this allowed us to gain the trust of our customers and secure the image of an honest and stable company.",
@@ -297,11 +297,11 @@
 		"p11": "All pages that are related to the sale of goods or services on the website of the online store must be under a single domain name.",
 		"p12": "There must be Information about the payment procedure and delivery.",
 		"p13": "If any requirements will not be complied within 30 days from the date of signing the service contract, the payment provider may unilaterally disable payment acceptance.",
-		"p14": "",
-		"li9": "",
-		"li10": "",
-		"li11": "",
-		"li12": ""
+		"p14": "The rules of the international payment systems VISA and MasterCard prohibit online trading:",
+		"li9": "Pornography",
+		"li10": "Tobacco products",
+		"li11": "Prescription Medicines",
+		"li12": "Goods that violate copyright and / or intellectual property"
 	},
 	"financialStatements": {
 		"pageHeadline": "Financial statements"

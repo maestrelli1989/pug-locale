@@ -17,10 +17,10 @@ block meta-data
 	)
 
 block header
-	+header('black-header')
+	+header('red-header')
 
 block mobile-menu
-	+mobile-menu('mobile-menu-black')
+	+mobile-menu('mobile-menu-red')
 	
 block extra-js
 	script(src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js")
@@ -36,7 +36,7 @@ block main-content
 						h1 Свяжитесь с нами!
 						p Если у вас возникли вопросы, пожалуйста, заполните следующую контактную форму
 					.flex-right
-						form(action="", method="POST")
+						form(action="../php/feedback-form-mailer.php", method="POST")
 							.form-row
 								.form-group.col-md-6
 									label(for="first-name") #{$i18n.formFields.firstName}*
@@ -68,4 +68,4 @@ block main-content
 									label(for="message") #{$i18n.formFields.message}**
 									textarea(name="message", class="form-control", id="message", placeholder="***", cols="30", rows="1")
 							.form-row
-								input(type="submit" value="Отправить")
+								input(type="submit" value="Отправить", class="btn-ghost-white")

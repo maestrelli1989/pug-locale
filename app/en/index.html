@@ -8,6 +8,30 @@
     <title>Ukrainian National Payment Service — UAPAY</title>
     <meta name="description" content="#{$i18n.homePage.metaDescription}">
     <link rel="canonical" href="#{$i18n.homePage.canonical}">
+    <meta property="og:title" content="API Укрпошти | Портал для розробників">
+    <meta property="og:description" content="Вітаємо на порталі для розробників! Дізнайтесь більше про інтеграцію з Укрпоштою та слідкуйте за оновленнями.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dev.ukrposhta.ua/">
+    <meta property="og:site_name" content="Ukrposhta">
+    <meta property="og:image" content="https://dev.ukrposhta.ua/images/og-logo.png">
+    <link rel="shortcut icon" href="../assets/images/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../assets/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../assets/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../assets/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../assets/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../assets/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../assets/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../assets/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="../assets/images/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../assets/images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/main.min.css">
@@ -38,7 +62,9 @@
                   <div class="menu-trigger" id="company-trigger">Company</div>
                   <div class="sub-menu-wrapper" id="company-sub-menu">
                     <div class="triangle"></div>
-                    <div class="sub-menu company-sub-menu"><a href="about-us">About us</a><a href="news">News</a><a href="faq">FAQ</a><a href="partnership">Partnership</a><a href="legal-info">Legal information</a></div>
+                    <div class="sub-menu company-sub-menu"><a href="about-us">About us</a>
+                      <!--a(href="news") #{$i18n.headerMenu.col3Link2}--><a href="faq">FAQ</a><a href="partnership">Partnership</a><a href="legal-info">Legal information</a>
+                    </div>
                   </div>
                 </div>
                 <div class="menu-item">
@@ -73,7 +99,8 @@
           <div class="mobile-menu-trigger">Customers</div><a class="mobile-menu-link" href="fines">Fines</a><a class="mobile-menu-link" href="https://escrowbox.uapay.ua/ad" target="_blank">Safe deal</a>
         </div>
         <div class="mobile-menu-col">
-          <div class="mobile-menu-trigger">Company</div><a class="mobile-menu-link" href="about-us">About us</a><a class="mobile-menu-link" href="news">News</a><a class="mobile-menu-link" href="faq">FAQ</a><a class="mobile-menu-link" href="partnership">Partnership</a><a class="mobile-menu-link" href="legal-info">Legal information</a>
+          <div class="mobile-menu-trigger">Company</div><a class="mobile-menu-link" href="about-us">About us</a>
+          <!--a(class="mobile-menu-link", href="news") #{$i18n.headerMenu.col3Link2}--><a class="mobile-menu-link" href="faq">FAQ</a><a class="mobile-menu-link" href="partnership">Partnership</a><a class="mobile-menu-link" href="legal-info">Legal information</a>
         </div>
         <div class="mobile-menu-col">
           <div class="mobile-menu-trigger">Developers</div><a class="mobile-menu-link" href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086" target="_blank">API</a><a class="mobile-menu-link" href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086" target="_blank">CMS modules</a>
@@ -105,7 +132,7 @@
             <div class="collapse" id="mobile-menu-collapse3" aria-labelledby="mobile-menu-heading3" data-parent="#mobile-menu-accordion">
               <ul class="links-wrapper">
                 <li><a href="about-us">About us</a></li>
-                <li><a href="news">News</a></li>
+                <!--li: a(href="news") #{$i18n.headerMenu.col3Link2}-->
                 <li><a href="faq">FAQ</a></li>
                 <li><a href="javascript:void(0);">Partnership</a></li>
                 <li><a href="legal-info">Legal information</a></li>
@@ -150,7 +177,9 @@
                       <div class="menu-trigger" id="company-trigger">Company</div>
                       <div class="sub-menu-wrapper" id="company-sub-menu">
                         <div class="triangle"></div>
-                        <div class="sub-menu company-sub-menu"><a href="about-us">About us</a><a href="news">News</a><a href="faq">FAQ</a><a href="partnership">Partnership</a><a href="legal-info">Legal information</a></div>
+                        <div class="sub-menu company-sub-menu"><a href="about-us">About us</a>
+                          <!--a(href="news") #{$i18n.headerMenu.col3Link2}--><a href="faq">FAQ</a><a href="partnership">Partnership</a><a href="legal-info">Legal information</a>
+                        </div>
                       </div>
                     </div>
                     <div class="menu-item">
@@ -1093,7 +1122,7 @@
               <div class="flex-left animated fadeIn" data-id="2">
                 <div class="headline animated fadeIn" data-id="3">Traffic fines UAPAY</div>
                 <p class="animated fadeIn" data-id="4">Pay traffic fines online by order number and more</p>
-                <div class="btn-wrapper animated fadeIn" data-id="5"><a class="connect-btn" href="javascript:void(0);">Pay traffic fines</a></div>
+                <div class="btn-wrapper animated fadeIn" data-id="5"><a class="connect-btn" href="javascript:void(0);">Soon</a></div>
               </div>
               <div class="flex-right animated fadeIn" data-id="2">
                 <div class="headline animated fadeIn" data-id="3">Safe deal</div>
@@ -1119,27 +1148,35 @@
             </div>
           </div>
         </div>
-        <div class="news-block">
-          <div class="container main-container">
-            <h4>News</h4>
-            <div class="news-list row animatedParent animateOnce" data-sequence="100"><a class="news-item col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12 animated fadeIn" href="post" data-id="1"><span class="news-date">12 грудня 2019</span>
-                <h6 class="news-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quasi, veritatis corporis obcaecati culpa, officia rerum ducimus aliquam voluptates dicta id, exercitationem modi. Accusamus possimus recusandae impedit fugit. Ut, quidem!</h6>
-                <p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsa neque inventore necessitatibus sed itaque veritatis fuga natus corrupti, officia similique recusandae quisquam ipsam id? Iure deleniti ea vel dolore.</p></a><a class="news-item col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12 animated fadeIn" href="post" data-id="2"><span class="news-date">12 грудня 2019</span>
-                <h6 class="news-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla officiis totam nostrum enim necessitatibus? Deleniti veniam odio amet facilis. Error suscipit odio iste quia facilis ea dolorum sequi, at sunt!</h6>
-                <p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat recusandae vel dolore enim, eveniet qui nesciunt? Tenetur, nostrum voluptatum nulla blanditiis numquam ullam fugit quae expedita voluptatem dignissimos autem provident!</p></a><a class="news-item col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12 animated fadeIn" href="post" data-id="3"><span class="news-date">12 грудня 2019</span>
-                <h6 class="news-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi possimus ad quasi culpa exercitationem necessitatibus voluptatem fugiat ratione nulla, nesciunt at, neque eum sunt, asperiores iusto ducimus. Libero, cum earum.</h6>
-                <p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque non dolorem, laborum, incidunt molestiae omnis molestias cum quisquam voluptatum dolores deleniti quibusdam ipsum illum eius placeat ad architecto! Neque?</p></a><a class="news-item col-xl-3 col-lg-6 col-md-6 col-sm-6 col-xs-12 animated fadeIn" href="post" data-id="4"><span class="news-date">12 грудня 2019</span>
-                <h6 class="news-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae eligendi dolorum! Aperiam sit vitae soluta voluptates dignissimos, explicabo animi autem, recusandae ipsam, perspiciatis consectetur labore vel dolore. Natus, eligendi!</h6>
-                <p class="news-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolore repudiandae recusandae quia, consequuntur eaque amet voluptas in qui vitae deleniti, fuga minima. Perferendis, nisi dolorem officia quo voluptatibus vel.</p></a></div>
-            <div class="btn-wrapper"><a class="more-news-btn" href="news">More news</a></div>
-          </div>
-        </div>
+        <!--.news-block
+        .container.main-container
+        	h4 News
+        	.news-list.row.animatedParent.animateOnce(data-sequence='100')
+        		a.news-item.col-xl-3.col-lg-6.col-md-6.col-sm-6.col-xs-12.animated.fadeIn(href="post", data-id='1')
+        			span.news-date 12 грудня 2019
+        			h6.news-title Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quasi, veritatis corporis obcaecati culpa, officia rerum ducimus aliquam voluptates dicta id, exercitationem modi. Accusamus possimus recusandae impedit fugit. Ut, quidem!
+        			p.news-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsa neque inventore necessitatibus sed itaque veritatis fuga natus corrupti, officia similique recusandae quisquam ipsam id? Iure deleniti ea vel dolore.
+        		a.news-item.col-xl-3.col-lg-6.col-md-6.col-sm-6.col-xs-12.animated.fadeIn(href="post", data-id='2')
+        			span.news-date 12 грудня 2019
+        			h6.news-title Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla officiis totam nostrum enim necessitatibus? Deleniti veniam odio amet facilis. Error suscipit odio iste quia facilis ea dolorum sequi, at sunt!
+        			p.news-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat recusandae vel dolore enim, eveniet qui nesciunt? Tenetur, nostrum voluptatum nulla blanditiis numquam ullam fugit quae expedita voluptatem dignissimos autem provident!
+        		a.news-item.col-xl-3.col-lg-6.col-md-6.col-sm-6.col-xs-12.animated.fadeIn(href="post", data-id='3')
+        			span.news-date 12 грудня 2019
+        			h6.news-title Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi possimus ad quasi culpa exercitationem necessitatibus voluptatem fugiat ratione nulla, nesciunt at, neque eum sunt, asperiores iusto ducimus. Libero, cum earum.
+        			p.news-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque non dolorem, laborum, incidunt molestiae omnis molestias cum quisquam voluptatum dolores deleniti quibusdam ipsum illum eius placeat ad architecto! Neque?
+        		a.news-item.col-xl-3.col-lg-6.col-md-6.col-sm-6.col-xs-12.animated.fadeIn(href="post", data-id='4')
+        			span.news-date 12 грудня 2019
+        			h6.news-title Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus recusandae eligendi dolorum! Aperiam sit vitae soluta voluptates dignissimos, explicabo animi autem, recusandae ipsam, perspiciatis consectetur labore vel dolore. Natus, eligendi!
+        			p.news-description Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolore repudiandae recusandae quia, consequuntur eaque amet voluptas in qui vitae deleniti, fuga minima. Perferendis, nisi dolorem officia quo voluptatibus vel.
+        	.btn-wrapper
+        		a.more-news-btn(href="news") More news
+        -->
       </div>
     </div>
     <footer class="footer">
       <div class="container main-container">
         <div class="top-footer-block">
-          <h2>Автоматизуйте ваші платежі вже сьогодні</h2><a class="action-btn" href="https://account.uapay.ua/auth/register" target="_blank" data-id="1"><span>Start now</span><i class="animatedParent">
+          <h2>Automate your payments today</h2><a class="action-btn" href="https://account.uapay.ua/auth/register" target="_blank" data-id="1"><span>Start now</span><i class="animatedParent">
               <svg class="animated pulse infinite slower" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path id="rounded-1" d="M1 20C1 9.50659 9.50659 1 20 1C30.4934 1 39 9.50659 39 20C39 30.4934 30.4934 39 20 39C9.50659 39 1 30.4934 1 20Z" stroke="#FF4544" stroke-width="2"></path>
                 <path id="rounded-2" fill-rule="evenodd" clip-rule="evenodd" d="M16.9107 13.5775C17.2362 13.2521 17.7638 13.2521 18.0893 13.5775L23.9818 19.4701C24.3072 19.7955 24.3072 20.3232 23.9818 20.6486L18.0893 26.5412C17.7638 26.8666 17.2362 26.8666 16.9107 26.5412C16.5853 26.2157 16.5853 25.6881 16.9107 25.3627L22.214 20.0593L16.9107 14.756C16.5853 14.4306 16.5853 13.903 16.9107 13.5775Z" fill="#FF4544"></path>
@@ -1163,7 +1200,8 @@
               <p class="footer-menu-title">Developers</p><a class="footer-menu-link" href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086" target="_blank">API</a><a class="footer-menu-link" href="https://uapayua.atlassian.net/wiki/spaces/AC/pages/753795086" target="_blank">CMS modules</a>
             </div>
             <div class="col-xl-3 col-lg-6 col-md-6 footer-menu-col">
-              <p class="footer-menu-title">Company</p><a class="footer-menu-link" href="about-us">About us</a><a class="footer-menu-link" href="news">News</a><a class="footer-menu-link" href="faq">FAQ</a><a class="footer-menu-link" href="partnership">Partnership</a><a class="footer-menu-link" href="legal-info">Legal information</a>
+              <p class="footer-menu-title">Company</p><a class="footer-menu-link" href="about-us">About us</a>
+              <!--a(href="news", class="footer-menu-link") #{$i18n.footerMenu.col4Link2}--><a class="footer-menu-link" href="faq">FAQ</a><a class="footer-menu-link" href="partnership">Partnership</a><a class="footer-menu-link" href="legal-info">Legal information</a>
             </div>
           </div>
           <div class="footer-menu-mobile">
@@ -1201,7 +1239,7 @@
                 <div class="collapse" id="mobile-footer-collapse4" aria-labelledby="mobile-footer-heading4" data-parent="#mobile-footer-accordion">
                   <ul class="links-wrapper">
                     <li><a href="about-us">About us</a></li>
-                    <li><a href="news">News</a></li>
+                    <!--li: a(href="news") #{$i18n.footerMenu.col4Link2}-->
                     <li><a href="faq">FAQ</a></li>
                     <li><a href="partnership">Partnership</a></li>
                     <li><a href="legal-info">Legal information</a></li>
