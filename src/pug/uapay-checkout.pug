@@ -11,8 +11,15 @@ extends layouts/_layout.pug
 
 block meta-data
 	title #{$i18n.uapayCheckout.metaTitle}
-	meta(name="description", content="#{$i18n.uapayCheckout.metaDescription}")
-	link(rel="canonical", href="#{$i18n.uapayCheckout.canonical}")
+	meta(name="description", lang="uk", content="Підключіть еквайринг і приймайте онлайн-платежі у вашому інтернет-магазині або на будь-якому іншому сайті!")
+	meta(name="description", lang="ru", content="Подключите эквайринг и принимайте онлайн-платежи в вашем интернет-магазине или на любом другом сайте!")
+	meta(name="description", lang="en", content="Set up acquiring and accept online payments at your online store or at any other website!")
+	meta(property="og:title", lang="uk", content="Інтернет-еквайринг від UAPAY: приймайте платежі на вашому сайті")
+	meta(property="og:title", lang="ru", content="Интернет-эквайринг от UAPAY: принимайте платежи на вашем сайте")
+	meta(property="og:title", lang="en", content="UAPAY Internet Acquiring: Accept Payments on Your Website")
+	meta(property="og:description", lang="uk", content="Підключіть еквайринг і приймайте онлайн-платежі у вашому інтернет-магазині або на будь-якому іншому сайті!")
+	meta(property="og:description", lang="ru", content="Подключите эквайринг и принимайте онлайн-платежи в вашем интернет-магазине или на любом другом сайте!")
+	meta(property="og:description", lang="en", content="Set up acquiring and accept online payments at your online store or at any other website!")
 
 block header
 	+header('red-header')

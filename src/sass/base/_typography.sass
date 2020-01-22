@@ -128,7 +128,7 @@ samp
 	color: $corporate-dark-gray	
 
 .inner-page-wrapper
-	a:not(.btn-white):not(.btn-ghost-white):not(.btn-gainsboro):not(.btn-black):not(.btn-red):not(.special-link):not(.action-btn):not(.news-item):not(.page-link):not(.financial-report-link):not(.connect-btn):not(.download-file-link):not(.accordion-headline)
+	a:not(.btn-white):not(.btn-ghost-white):not(.btn-gainsboro):not(.btn-black):not(.btn-red):not(.special-link):not(.action-btn):not(.news-item):not(.page-link):not(.financial-report-link):not(.custom-link):not(.download-file-link):not(.accordion-headline)
 		font-size: 16px
 		font-family: $primary-regular
 		font-weight: $regular-weight
@@ -283,3 +283,26 @@ input[type=number]:focus:-ms-input-placeholder,
 input[type=search]:focus:-ms-input-placeholder,
 textarea:focus:-ms-input-placeholder
 	color: transparent!important
+
+.custom-link
+	color: $corporate-red
+	font-family: $primary-medium
+	font-weight: $medium-weight
+	font-size: 16px
+	line-height: 24px
+	position: relative
+	text-decoration: none
+	transition: $primary-transition
+	padding: 5px 0px 0px 0px
+	display: inline-block
+	&:after
+		position: absolute
+		display: inline-block
+		content: "\f105"
+		top: 6px
+		right: -15px
+		font-weight: 900
+		font-family: "Font Awesome 5 Free"
+	&:hover
+		text-decoration: none
+		color: $corporate-accent-red

@@ -11,8 +11,15 @@ extends layouts/_layout.pug
 
 block meta-data
 	title #{$i18n.faq.metaTitle}
-	meta(name="description", content="#{$i18n.faq.metaDescription}")
-	link(rel="canonical", href="#{$i18n.faq.canonical}")
+	meta(name="description", lang="uk", content="")
+	meta(name="description", lang="ru", content="")
+	meta(name="description", lang="en", content="")
+	meta(property="og:title", lang="uk", content="")
+	meta(property="og:title", lang="ru", content="")
+	meta(property="og:title", lang="en", content="")
+	meta(property="og:description", lang="uk", content="")
+	meta(property="og:description", lang="ru", content="")
+	meta(property="og:description", lang="en", content="")
 
 block header
 	+header('black-header')
@@ -27,9 +34,9 @@ block main-content
 				h3 #{$i18n.faq.pageHeadline}
 		.faq-page-content
 			.container.main-container
-				.accordion#faq-accordion
+				.accordion.animatedParent.animateOnce(data-sequence='100')#faq-accordion
 					
-					.card.accordion-item
+					.card.accordion-item.animated.fadeIn(data-id='1')
 						.card-header.accordion-headline-wrapper#heading1
 							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse1', aria-expanded='false', aria-controls='collapse1')
 								span #{$i18n.faq.item1Title}
@@ -38,7 +45,7 @@ block main-content
 							.card-body.accordion-content-wrapper
 								p #{$i18n.faq.item1Desc}
 					
-					.card.accordion-item
+					.card.accordion-item.animated.fadeIn(data-id='2')
 						.card-header.accordion-headline-wrapper#heading2
 							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse2', aria-expanded='false', aria-controls='collapse2')
 								span #{$i18n.faq.item2Title}
@@ -47,7 +54,7 @@ block main-content
 							.card-body.accordion-content-wrapper
 								p #{$i18n.faq.item2Desc}
 
-					.card.accordion-item
+					.card.accordion-item.animated.fadeIn(data-id='3')
 						.card-header.accordion-headline-wrapper#heading3
 							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse3', aria-expanded='false', aria-controls='collapse3')
 								span #{$i18n.faq.item3Title}
@@ -56,7 +63,7 @@ block main-content
 							.card-body.accordion-content-wrapper
 								p #{$i18n.faq.item3Desc}
 					
-					.card.accordion-item
+					.card.accordion-item.animated.fadeIn(data-id='4')
 						.card-header.accordion-headline-wrapper#heading4
 							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse4', aria-expanded='false', aria-controls='collapse4')
 								span #{$i18n.faq.item4Title}
@@ -65,7 +72,7 @@ block main-content
 							.card-body.accordion-content-wrapper
 								p #{$i18n.faq.item4Desc}
 
-					.card.accordion-item
+					.card.accordion-item.animated.fadeIn(data-id='5')
 						.card-header.accordion-headline-wrapper#heading5
 							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse5', aria-expanded='false', aria-controls='collapse5')
 								span #{$i18n.faq.item5Title}
@@ -74,7 +81,7 @@ block main-content
 							.card-body.accordion-content-wrapper
 								p #{$i18n.faq.item5Desc}
 
-					.card.accordion-item
+					.card.accordion-item.animated.fadeIn(data-id='6')
 						.card-header.accordion-headline-wrapper#heading6
 							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse6', aria-expanded='false', aria-controls='collapse6')
 								span #{$i18n.faq.item6Title}
@@ -83,7 +90,7 @@ block main-content
 							.card-body.accordion-content-wrapper
 								p #{$i18n.faq.item6Desc}
 
-					.card.accordion-item
+					.card.accordion-item.animated.fadeIn(data-id='7')
 						.card-header.accordion-headline-wrapper#heading7
 							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse7', aria-expanded='false', aria-controls='collapse7')
 								span #{$i18n.faq.item7Title}
@@ -92,7 +99,7 @@ block main-content
 							.card-body.accordion-content-wrapper
 								p #{$i18n.faq.item7Desc}
 
-					.card.accordion-item
+					.card.accordion-item.animated.fadeIn(data-id='8')
 						.card-header.accordion-headline-wrapper#heading8
 							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse8', aria-expanded='false', aria-controls='collapse8')
 								span #{$i18n.faq.item8Title}
@@ -101,7 +108,7 @@ block main-content
 							.card-body.accordion-content-wrapper
 								p #{$i18n.faq.item8Desc}
 
-					.card.accordion-item
+					.card.accordion-item.animated.fadeIn(data-id='9')
 						.card-header.accordion-headline-wrapper#heading9
 							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse9', aria-expanded='false', aria-controls='collapse9')
 								span #{$i18n.faq.item9Title}
@@ -110,7 +117,7 @@ block main-content
 							.card-body.accordion-content-wrapper
 								p #{$i18n.faq.item9Desc}
 
-					.card.accordion-item
+					.card.accordion-item.animated.fadeIn(data-id='10')
 						.card-header.accordion-headline-wrapper#heading10
 							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse10', aria-expanded='false', aria-controls='collapse10')
 								span #{$i18n.faq.item10Title}
@@ -119,7 +126,7 @@ block main-content
 							.card-body.accordion-content-wrapper
 								p #{$i18n.faq.item10Desc}
 
-					.card.accordion-item
+					.card.accordion-item.animated.fadeIn(data-id='11')
 						.card-header.accordion-headline-wrapper#heading11
 							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse11', aria-expanded='false', aria-controls='collapse11')
 								span #{$i18n.faq.item11Title}
@@ -128,7 +135,7 @@ block main-content
 							.card-body.accordion-content-wrapper
 								p #{$i18n.faq.item11Desc}
 
-					.card.accordion-item
+					.card.accordion-item.animated.fadeIn(data-id='12')
 						.card-header.accordion-headline-wrapper#heading12
 							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse12', aria-expanded='false', aria-controls='collapse12')
 								span #{$i18n.faq.item12Title}
@@ -137,7 +144,7 @@ block main-content
 							.card-body.accordion-content-wrapper
 								p #{$i18n.faq.item12Desc}
 
-					.card.accordion-item
+					.card.accordion-item.animated.fadeIn(data-id='13')
 						.card-header.accordion-headline-wrapper#heading13
 							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse13', aria-expanded='false', aria-controls='collapse13')
 								span #{$i18n.faq.item13Title}
@@ -146,7 +153,7 @@ block main-content
 							.card-body.accordion-content-wrapper
 								p #{$i18n.faq.item13Desc}
 
-					.card.accordion-item
+					.card.accordion-item.animated.fadeIn(data-id='14')
 						.card-header.accordion-headline-wrapper#heading14
 							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse14', aria-expanded='false', aria-controls='collapse14')
 								span #{$i18n.faq.item14Title}
@@ -155,7 +162,7 @@ block main-content
 							.card-body.accordion-content-wrapper
 								p #{$i18n.faq.item14Desc}
 
-					.card.accordion-item
+					.card.accordion-item.animated.fadeIn(data-id='15')
 						.card-header.accordion-headline-wrapper#heading15
 							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse15', aria-expanded='false', aria-controls='collapse15')
 								span #{$i18n.faq.item15Title}
@@ -164,7 +171,7 @@ block main-content
 							.card-body.accordion-content-wrapper
 								p #{$i18n.faq.item15Desc}
 
-					.card.accordion-item
+					.card.accordion-item.animated.fadeIn(data-id='16')
 						.card-header.accordion-headline-wrapper#heading16
 							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse16', aria-expanded='false', aria-controls='collapse16')
 								span #{$i18n.faq.item16Title}
@@ -173,7 +180,7 @@ block main-content
 							.card-body.accordion-content-wrapper
 								p #{$i18n.faq.item16Desc}
 
-					.card.accordion-item
+					.card.accordion-item.animated.fadeIn(data-id='17')
 						.card-header.accordion-headline-wrapper#heading17
 							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse17', aria-expanded='false', aria-controls='collapse17')
 								span #{$i18n.faq.item17Title}
@@ -182,7 +189,7 @@ block main-content
 							.card-body.accordion-content-wrapper
 								p #{$i18n.faq.item17Desc}
 
-					.card.accordion-item
+					.card.accordion-item.animated.fadeIn(data-id='18')
 						.card-header.accordion-headline-wrapper#heading18
 							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse18', aria-expanded='false', aria-controls='collapse18')
 								span #{$i18n.faq.item18Title}
@@ -191,7 +198,7 @@ block main-content
 							.card-body.accordion-content-wrapper
 								p #{$i18n.faq.item18Desc}
 
-					.card.accordion-item
+					.card.accordion-item.animated.fadeIn(data-id='19')
 						.card-header.accordion-headline-wrapper#heading19
 							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse19', aria-expanded='false', aria-controls='collapse19')
 								span #{$i18n.faq.item19Title}
@@ -200,7 +207,7 @@ block main-content
 							.card-body.accordion-content-wrapper
 								p #{$i18n.faq.item19Desc}
 
-					.card.accordion-item
+					.card.accordion-item.animated.fadeIn(data-id='20')
 						.card-header.accordion-headline-wrapper#heading20
 							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse20', aria-expanded='false', aria-controls='collapse20')
 								span #{$i18n.faq.item20Title}
@@ -209,7 +216,7 @@ block main-content
 							.card-body.accordion-content-wrapper
 								p #{$i18n.faq.item20Desc}
 
-					.card.accordion-item
+					.card.accordion-item.animated.fadeIn(data-id='21')
 						.card-header.accordion-headline-wrapper#heading21
 							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse21', aria-expanded='false', aria-controls='collapse21')
 								span #{$i18n.faq.item21Title}
@@ -218,7 +225,7 @@ block main-content
 							.card-body.accordion-content-wrapper
 								p #{$i18n.faq.item21Desc}
 
-					.card.accordion-item
+					.card.accordion-item.animated.fadeIn(data-id='22')
 						.card-header.accordion-headline-wrapper#heading22
 							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse22', aria-expanded='false', aria-controls='collapse22')
 								span #{$i18n.faq.item22Title}
@@ -227,7 +234,7 @@ block main-content
 							.card-body.accordion-content-wrapper
 								p #{$i18n.faq.item22Desc}
 
-					.card.accordion-item
+					.card.accordion-item.animated.fadeIn(data-id='23')
 						.card-header.accordion-headline-wrapper#heading23
 							a.collapsed.accordion-headline(href='javascript:void(0);', role='button', data-toggle='collapse', data-target='#collapse23', aria-expanded='false', aria-controls='collapse23')
 								span #{$i18n.faq.item23Title}

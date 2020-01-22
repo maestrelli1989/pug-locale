@@ -11,8 +11,15 @@ extends layouts/_layout.pug
 
 block meta-data
 	title #{$i18n.homePage.metaTitle}
-	meta(name="description", content="#{$i18n.homePage.metaDescription}")
-	link(rel="canonical", href="#{$i18n.homePage.canonical}")
+	meta(name="description", lang="uk", content="UAPAY — це універсальний платіжний сервіс і сучасні рішення для вашого бізнесу.")
+	meta(name="description", lang="ru", content="UAPAY — это универсальный платёжный сервис и современные решения для вашего бизнеса.")
+	meta(name="description", lang="en", content="UAPAY is a universal payment service and modern solutions for your business.")
+	meta(property="og:title", lang="uk", content="Національний платіжний сервіс — UAPAY")
+	meta(property="og:title", lang="ru", content="Национальный платёжный сервис — UAPAY")
+	meta(property="og:title", lang="en", content="Ukrainian National Payment Service — UAPAY")
+	meta(property="og:description", lang="uk", content="UAPAY — це універсальний платіжний сервіс і сучасні рішення для вашого бізнесу.")
+	meta(property="og:description", lang="ru", content="UAPAY — это универсальный платёжный сервис и современные решения для вашего бизнеса.")
+	meta(property="og:description", lang="en", content="UAPAY is a universal payment service and modern solutions for your business.")
 
 block mobile-menu
 	+mobile-menu('mobile-menu-red')
@@ -38,11 +45,11 @@ block main-content
 					.flex-left.animated.fadeIn(data-id='2')
 						.headline.animated.fadeIn(data-id='3') #{$i18n.homePage.forBusinessItem1Title}
 						p.animated.fadeIn(data-id='4') #{$i18n.homePage.forBusinessItem1Desc}
-						.btn-wrapper.animated.fadeIn(data-id='5'): a.connect-btn(href="uapay-checkout") #{$i18n.homePage.detailLink}
+						.btn-wrapper.animated.fadeIn(data-id='5'): a.custom-link(href="uapay-checkout") #{$i18n.homePage.detailLink}
 					.flex-right.animated.fadeIn(data-id='2')
 						.headline.animated.fadeIn(data-id='3') #{$i18n.homePage.forBusinessItem2Title}
 						p.animated.fadeIn(data-id='4') #{$i18n.homePage.forBusinessItem2Desc}
-						.btn-wrapper.animated.fadeIn(data-id='5'): a.connect-btn(href="mass-payouts") #{$i18n.homePage.detailLink}
+						.btn-wrapper.animated.fadeIn(data-id='5'): a.custom-link(href="mass-payouts") #{$i18n.homePage.detailLink}
 		.solutions-block
 			.container.main-container.animatedParent.animateOnce(data-sequence='100')
 				.block-top-half
@@ -69,7 +76,7 @@ block main-content
 							span#tab3 #{$i18n.industrySolutions.block3Headline}
 							span#tab4 #{$i18n.industrySolutions.block4Headline}
 							span#tab5 #{$i18n.industrySolutions.block5Headline}
-						a.connect-btn(href="industry-solutions") #{$i18n.homePage.detailLink}
+						a.custom-link(href="industry-solutions") #{$i18n.homePage.detailLink}
 				.block-bottom-half-mobile
 					.svg-wrapper.animated.fadeIn(data-id='2')
 						include includes/svg/home-page/_marketplaces.pug
@@ -100,14 +107,14 @@ block main-content
 					.flex-left.animated.fadeIn(data-id='2')
 						.headline.animated.fadeIn(data-id='3') #{$i18n.homePage.forCustomersItem1Title}
 						p.animated.fadeIn(data-id='4') #{$i18n.homePage.forCustomersItem1Desc}
-						.btn-wrapper.animated.fadeIn(data-id='5'): a.connect-btn(href="javascript:void(0);") #{$i18n.homePage.finesLink}
+						.btn-wrapper.animated.fadeIn(data-id='5'): a.custom-link(href="javascript:void(0);") #{$i18n.homePage.finesLink}
 					.flex-right.animated.fadeIn(data-id='2')
 						.headline.animated.fadeIn(data-id='3') #{$i18n.homePage.forCustomersItem2Title}
 						p.animated.fadeIn(data-id='4') #{$i18n.homePage.forCustomersItem2Desc}
-						.btn-wrapper.animated.fadeIn(data-id='5'): a.connect-btn(href="https://escrowbox.uapay.ua/ads", target="_blank") #{$i18n.homePage.payLink}
-						.btn-wrapper.animated.fadeIn(data-id='6'): a.connect-btn(href="https://escrowbox.uapay.ua/ad", target="_blank") #{$i18n.homePage.createLink}
+						.btn-wrapper.animated.fadeIn(data-id='5'): a.custom-link(href="https://escrowbox.uapay.ua/ads", target="_blank") #{$i18n.homePage.payLink}
+						.btn-wrapper.animated.fadeIn(data-id='6'): a.custom-link(href="https://escrowbox.uapay.ua/ad", target="_blank") #{$i18n.homePage.createLink}
 		+developers('black-background', '../assets/images/svg/api-cms-black.svg')
-		//.news-block
+		//-.news-block
 			.container.main-container
 				h4 #{$i18n.homePage.newsBlockHeadline}
 				.news-list.row.animatedParent.animateOnce(data-sequence='100')

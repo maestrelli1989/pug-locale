@@ -11,8 +11,15 @@ extends layouts/_layout.pug
 
 block meta-data
 	title #{$i18n.aboutUs.metaTitle}
-	meta(name="description", content='#{$i18n.aboutUs.metaDescription}')
-	link(rel="canonical", href='#{$i18n.aboutUs.canonical}')
+	meta(name="description", lang="uk", content="UAPAY надає можливість бізнесам бути більш гнучкими, економити час і витрати. Дізнайтесь, як саме.")
+	meta(name="description", lang="ru", content="UAPAY предоставляет возможность бизнесам быть более гибкими, экономить время и расходы. Узнайте, как именно.")
+	meta(name="description", lang="en", content="UAPAY enables businesses to be more flexible, save time and costs. Find out how.")
+	meta(property="og:title", lang="uk", content="Про нас — UAPAY")
+	meta(property="og:title", lang="ru", content="О нас — UAPAY")
+	meta(property="og:title", lang="en", content="About Us — UAPAY")
+	meta(property="og:description", lang="uk", content="UAPAY надає можливість бізнесам бути більш гнучкими, економити час і витрати. Дізнайтесь, як саме.")
+	meta(property="og:description", lang="ru", content="UAPAY предоставляет возможность бизнесам быть более гибкими, экономить время и расходы. Узнайте, как именно.")
+	meta(property="og:description", lang="en", content="UAPAY enables businesses to be more flexible, save time and costs. Find out how.")
 
 block header
 	+header('red-header')

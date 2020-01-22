@@ -10,11 +10,16 @@
 extends layouts/_layout.pug
 
 block meta-data
-	+meta-data(
-	'Website title', 
-	'Website description', 
-	'https://uapay.ua/'
-	)
+	title #{$i18n.news.metaTitle}
+	meta(name="description", lang="uk", content="")
+	meta(name="description", lang="ru", content="")
+	meta(name="description", lang="en", content="")
+	meta(property="og:title", lang="uk", content="")
+	meta(property="og:title", lang="ru", content="")
+	meta(property="og:title", lang="en", content="")
+	meta(property="og:description", lang="uk", content="")
+	meta(property="og:description", lang="ru", content="")
+	meta(property="og:description", lang="en", content="")
 
 block header
 	+header('red-header')

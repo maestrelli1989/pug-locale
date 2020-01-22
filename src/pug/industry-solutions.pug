@@ -11,8 +11,15 @@ extends layouts/_layout.pug
 
 block meta-data
 	title #{$i18n.industrySolutions.metaTitle}
-	meta(name="description", content="#{$i18n.industrySolutions.metaDescription}")
-	link(rel="canonical", href="#{$i18n.industrySolutions.canonical}")
+	meta(name="description", lang="uk", content="Сучасні фінтех-рішення для стрімкого розвитку вашого бізнесу!")
+	meta(name="description", lang="ru", content="Современные финтех-решения для стремительного развития вашего бизнеса!")
+	meta(name="description", lang="en", content="Modern fintech solutions for rapid business development!")
+	meta(property="og:title", lang="uk", content="Рішення для бізнесу — UAPAY")
+	meta(property="og:title", lang="ru", content="Решения для бизнеса — UAPAY")
+	meta(property="og:title", lang="en", content="Business Solutions — UAPAY")
+	meta(property="og:description", lang="uk", content="Сучасні фінтех-рішення для стрімкого розвитку вашого бізнесу!")
+	meta(property="og:description", lang="ru", content="Современные финтех-решения для стремительного развития вашего бизнеса!")
+	meta(property="og:description", lang="en", content="Modern fintech solutions for rapid business development!")
 
 block header
 	+header('red-header')
@@ -36,64 +43,64 @@ block main-content
 			.first-block
 				.container.main-container
 					.solution-item.animatedParent.animateOnce(data-sequence='100')#first-block
-						.flex-left.animated.fadeInDownShort(data-id='1')
+						.flex-left.animated.fadeIn(data-id='1')
 							h4 #{$i18n.industrySolutions.block1Headline}
 							include includes/svg/industry-solutions/_marketplaces.pug
-						.flex-right.animated.fadeInDownShort(data-id='2')
+						.flex-right.animated.fadeIn(data-id='2')
 							p #{$i18n.industrySolutions.block1Desc1}
 							dl
 								dt #{$i18n.industrySolutions.block1SubHeadline1}
 								dd #{$i18n.industrySolutions.block1Desc2}
 								dt #{$i18n.industrySolutions.block1SubHeadline2}
 								dd #{$i18n.industrySolutions.block1Desc3}
-							a.connect-btn.animated.pulse.infinite(href="https://account.uapay.ua/auth/register", target="_blank") #{$i18n.industrySolutions.connect}
+							a.custom-link.animated.pulse.infinite(href="https://account.uapay.ua/auth/register", target="_blank") #{$i18n.industrySolutions.connect}
 					.solution-item.animatedParent.animateOnce(data-sequence='100')#second-block
-						.flex-left.animated.fadeInDownShort(data-id='3')
+						.flex-left.animated.fadeIn(data-id='3')
 							h4 #{$i18n.industrySolutions.block2Headline}
 							include includes/svg/industry-solutions/_online-retail.pug
-						.flex-right.animated.fadeInDownShort(data-id='4')
+						.flex-right.animated.fadeIn(data-id='4')
 							p #{$i18n.industrySolutions.block2Desc1}
 							dl
 								dt #{$i18n.industrySolutions.block2SubHeadline1}
 								dd #{$i18n.industrySolutions.block2Desc2}
 								dt #{$i18n.industrySolutions.block2SubHeadline2}
 								dd #{$i18n.industrySolutions.block2Desc3}
-							a.connect-btn.animated.pulse.infinite(href="https://account.uapay.ua/auth/register", target="_blank") #{$i18n.industrySolutions.connect}
+							a.custom-link.animated.pulse.infinite(href="https://account.uapay.ua/auth/register", target="_blank") #{$i18n.industrySolutions.connect}
 					.solution-item.animatedParent.animateOnce(data-sequence='100')#third-block
-						.flex-left.animated.fadeInDownShort(data-id='5')
+						.flex-left.animated.fadeIn(data-id='5')
 							h4 #{$i18n.industrySolutions.block3Headline}
 							include includes/svg/industry-solutions/_tourism.pug
-						.flex-right.animated.fadeInDownShort(data-id='6')
+						.flex-right.animated.fadeIn(data-id='6')
 							p #{$i18n.industrySolutions.block3Desc1}
 							dl
 								dt #{$i18n.industrySolutions.block3SubHeadline1}
 								dd #{$i18n.industrySolutions.block3Desc2}
 								dt #{$i18n.industrySolutions.block3SubHeadline2}
 								dd #{$i18n.industrySolutions.block3Desc3}
-							a.connect-btn.animated.pulse.infinite(href="https://account.uapay.ua/auth/register", target="_blank") #{$i18n.industrySolutions.connect}
+							a.custom-link.animated.pulse.infinite(href="https://account.uapay.ua/auth/register", target="_blank") #{$i18n.industrySolutions.connect}
 					.solution-item.animatedParent.animateOnce(data-sequence='100')#fourth-block
-						.flex-left.animated.fadeInDownShort(data-id='7')
+						.flex-left.animated.fadeIn(data-id='7')
 							h4 #{$i18n.industrySolutions.block4Headline}
 							include includes/svg/industry-solutions/_taxi.pug
-						.flex-right.animated.fadeInDownShort(data-id='8')
+						.flex-right.animated.fadeIn(data-id='8')
 							p #{$i18n.industrySolutions.block4Desc1}
 							dl
 								dt #{$i18n.industrySolutions.block4SubHeadline1}
 								dd #{$i18n.industrySolutions.block4Desc2}
 								dt #{$i18n.industrySolutions.block4SubHeadline2}
 								dd #{$i18n.industrySolutions.block4Desc3}
-							a.connect-btn.animated.pulse.infinite(href="https://account.uapay.ua/auth/register", target="_blank") #{$i18n.industrySolutions.connect}
+							a.custom-link.animated.pulse.infinite(href="https://account.uapay.ua/auth/register", target="_blank") #{$i18n.industrySolutions.connect}
 					.solution-item.animatedParent.animateOnce(data-sequence='100')#fifth-block
-						.flex-left.animated.fadeInDownShort(data-id='9')
+						.flex-left.animated.fadeIn(data-id='9')
 							h4 #{$i18n.industrySolutions.block5Headline}
 							include includes/svg/industry-solutions/_money.pug
-						.flex-right.animated.fadeInDownShort(data-id='10')
+						.flex-right.animated.fadeIn(data-id='10')
 							p #{$i18n.industrySolutions.block5Desc1}
 							dl
 								dt #{$i18n.industrySolutions.block5SubHeadline1}
 								dd #{$i18n.industrySolutions.block5Desc2}
 								dt #{$i18n.industrySolutions.block5SubHeadline2}
 								dd #{$i18n.industrySolutions.block5Desc3}
-							a.connect-btn.animated.pulse.infinite(href="https://account.uapay.ua/auth/register", target="_blank") #{$i18n.industrySolutions.connect}
+							a.custom-link.animated.pulse.infinite(href="https://account.uapay.ua/auth/register", target="_blank") #{$i18n.industrySolutions.connect}
 			block developers-block
 				+developers('gray-background', '../assets/images/svg/api-cms.svg')

@@ -10,11 +10,16 @@
 extends layouts/_layout.pug
 
 block meta-data
-	+meta-data(
-	'404', 
-	'404', 
-	'https://uapay.ua/404'
-	)
+	title #{$i18n.page404.metaTitle}
+	meta(name="description", lang="uk", content="404")
+	meta(name="description", lang="ru", content="404")
+	meta(name="description", lang="en", content="404")
+	meta(property="og:title", lang="uk", content="404")
+	meta(property="og:title", lang="ru", content="404")
+	meta(property="og:title", lang="en", content="404")
+	meta(property="og:description", lang="uk", content="404")
+	meta(property="og:description", lang="ru", content="404")
+	meta(property="og:description", lang="en", content="404")
 
 block mobile-menu
 	+mobile-menu('mobile-menu-red')

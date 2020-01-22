@@ -2,9 +2,9 @@
 	* { margin: 0; padding: 0; }
 	body { text-align: center; }
 	.fa-check { font-size: 300px!important; line-height: 300px; color: #7ed321; padding-top: 150px; }
-	.text { color: #0e2f4b; font-family: "Rubik", sans-serif; font-weight: 400; text-align: center; font-size: 16px; line-height: 24px; }
+	.text { color: #292828; font-weight: 500; text-align: center; font-size: 16px; line-height: 24px; }
 	.link {
-		color: #0e2f4b;
+		color: #292828;
 		font-size: 1.15em;
 		font-weight: 700;
 		-webkit-transition: all 500ms;
@@ -20,7 +20,7 @@
 		content: '';
 		width: 100%;
 		height: 1px;
-		background-color: #0e2f4b;
+		background-color: #292828;
 		top: 19px;
 		left: 0;
 		opacity: 1;
@@ -55,7 +55,7 @@
 		
 		date_default_timezone_set('UTC');
 		
-		$from = "ukrposhta@ukrposhta.ua";
+		$from = $_POST['email'];
 		$encoding = "utf-8";
 
 		$headers = "Content-type: text/html; charset=".$encoding." \r\n";
@@ -125,29 +125,27 @@
 			<meta charset="UTF-8">
 			<meta http-equiv="X-UA-Compatible" content="IE=edge">
 			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-			<link rel="shortcut icon" href="../images/favicons/favicon.ico"/>
-			<link rel="apple-touch-icon" sizes="57x57" href="../images/favicons/apple-icon-57x57.png"/>
-			<link rel="apple-touch-icon" sizes="60x60" href="../images/favicons/apple-icon-60x60.png"/>
-			<link rel="apple-touch-icon" sizes="72x72" href="../images/favicons/apple-icon-72x72.png"/>
-			<link rel="apple-touch-icon" sizes="76x76" href="../images/favicons/apple-icon-76x76.png"/>
-			<link rel="apple-touch-icon" sizes="114x114" href="../images/favicons/apple-icon-114x114.png"/>
-			<link rel="apple-touch-icon" sizes="120x120" href="../images/favicons/apple-icon-120x120.png"/>
-			<link rel="apple-touch-icon" sizes="144x144" href="../images/favicons/apple-icon-144x144.png"/>
-			<link rel="apple-touch-icon" sizes="152x152" href="../images/favicons/apple-icon-152x152.png"/>
-			<link rel="apple-touch-icon" sizes="180x180" href="../images/favicons/apple-icon-180x180.png"/>
-			<link rel="icon" type="image/png" sizes="192x192" href="../images/favicons/android-icon-192x192.png"/>
-			<link rel="icon" type="image/png" sizes="32x32" href="../images/favicons/favicon-32x32.png"/>
-			<link rel="icon" type="image/png" sizes="96x96" href="../images/favicons/favicon-96x96.png"/>
-			<link rel="icon" type="image/png" sizes="16x16" href="../images/favicons/favicon-16x16.png"/>
-			<link rel="manifest" href="../images/favicons/manifest.json"/>
-			<meta name="msapplication-TileColor" content="#ffffff"/>
-			<meta name="msapplication-TileImage" content="../images/favicons/ms-icon-144x144.png"/>
-			<meta name="theme-color" content="#ffffff"/>
+			<link rel="shortcut icon" href="../assets/images/favicons/favicon.ico">
+			<link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicons/apple-icon-57x57.png">
+			<link rel="apple-touch-icon" sizes="60x60" href="../assets/images/favicons/apple-icon-60x60.png">
+			<link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicons/apple-icon-72x72.png">
+			<link rel="apple-touch-icon" sizes="76x76" href="../assets/images/favicons/apple-icon-76x76.png">
+			<link rel="apple-touch-icon" sizes="114x114" href="../assets/images/favicons/apple-icon-114x114.png">
+			<link rel="apple-touch-icon" sizes="120x120" href="../assets/images/favicons/apple-icon-120x120.png">
+			<link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicons/apple-icon-144x144.png">
+			<link rel="apple-touch-icon" sizes="152x152" href="../assets/images/favicons/apple-icon-152x152.png">
+			<link rel="apple-touch-icon" sizes="180x180" href="../assets/images/favicons/apple-icon-180x180.png">
+			<link rel="icon" type="image/png" sizes="192x192" href="../assets/images/favicons/android-icon-192x192.png">
+			<link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicons/favicon-32x32.png">
+			<link rel="icon" type="image/png" sizes="96x96" href="../assets/images/favicons/favicon-96x96.png">
+			<link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicons/favicon-16x16.png">
+			<link rel="manifest" href="../assets/images/favicons/manifest.json">
+			<meta name="msapplication-TileColor" content="#ffffff">
+			<meta name="msapplication-TileImage" content="../assets/images/favicons/ms-icon-144x144.png">
+			<meta name="theme-color" content="#ffffff">
 			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-			<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&amp;subset=cyrillic">
 			<i class="fas fa-check" aria-hidden="true"></i>
-			<p class="text">Повернутися на попередню <a href="http://dev.ukrposhta.ua/faq" class="link">сторінку</a>.</p>
-			<p class="text">Перейти на <a href="http://dev.ukrposhta.ua/" class="link">головну</a>.</p>
+			<p class="text">Повернутися на попередню <a href="/ua/feedback" class="link">сторінку</a>.</p>
 		';
 
 	}

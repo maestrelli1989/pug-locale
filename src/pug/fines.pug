@@ -11,8 +11,15 @@ extends layouts/_layout.pug
 
 block meta-data
 	title #{$i18n.fines.metaTitle}
-	meta(name="description", content="#{$i18n.fines.metaDescription}")
-	link(rel="canonical", href="#{$i18n.fines.canonical}")
+	meta(name="description", lang="uk", content="Легко сплачуйте штрафи поліції за порушення правил дорожнього руху на сайті UAPAY.")
+	meta(name="description", lang="ru", content="Легко оплачивайте штрафы полиции за нарушение ПДД на сайте UAPAY.")
+	meta(name="description", lang="en", content="Pay traffic fines online with ease at the UAPAY.")
+	meta(property="og:title", lang="uk", content="Оплата штрафів за порушення ПДР онлайн — UAPAY")
+	meta(property="og:title", lang="ru", content="Оплатить штраф за нарушение ПДД онлайн — UAPAY")
+	meta(property="og:title", lang="en", content="Pay Traffic Fines Online — UAPAY")
+	meta(property="og:description", lang="uk", content="Легко сплачуйте штрафи поліції за порушення правил дорожнього руху на сайті UAPAY.")
+	meta(property="og:description", lang="ru", content="Легко оплачивайте штрафы полиции за нарушение ПДД на сайте UAPAY.")
+	meta(property="og:description", lang="en", content="Pay traffic fines online with ease at the UAPAY.")
 
 block header
 	+header('red-header')
@@ -55,7 +62,7 @@ block main-content
 										label(for="phone") #{$i18n.formFields.phone}*
 										input(type="text", name="phone", class="form-control", id="phone", placeholder="***", required)
 								.form-row
-									input(type="submit" value="Продовжити")
+									button(type="submit", name="submit") #{$i18n.formFields.submit}
 			.last-block
 				.container.main-container
 					.flex-block.animatedParent.animateOnce(data-sequence='100')

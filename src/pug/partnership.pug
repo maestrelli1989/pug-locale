@@ -10,11 +10,16 @@
 extends layouts/_layout.pug
 
 block meta-data
-	+meta-data(
-	'Website title', 
-	'Website description', 
-	'https://uapay.ua/partnership'
-	)
+	title #{$i18n.partnership.metaTitle}
+	meta(name="description", lang="uk", content="")
+	meta(name="description", lang="ru", content="")
+	meta(name="description", lang="en", content="")
+	meta(property="og:title", lang="uk", content="")
+	meta(property="og:title", lang="ru", content="")
+	meta(property="og:title", lang="en", content="")
+	meta(property="og:description", lang="uk", content="")
+	meta(property="og:description", lang="ru", content="")
+	meta(property="og:description", lang="en", content="")
 
 block header
 	+header('red-header')
@@ -25,7 +30,10 @@ block mobile-menu
 block extra-js
 	script(src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js")
 	script.
-		$('#phone').inputmask("+38 (099) 999 99 99");
+		$('#phone').inputmask({
+			mask: '+38 (099) 999 99 99', 
+			showMaskOnHover: false
+		});
 
 block main-content
 	.inner-page-wrapper.partnership-page
@@ -155,4 +163,4 @@ block main-content
 										label(for="message") #{$i18n.formFields.message}*
 										textarea(name="message", class="form-control", id="message", placeholder="***", cols="30", rows="1")
 								.form-row
-									input(type="submit" value="Отправить")
+									button(type="submit", name="submit") #{$i18n.formFields.submit}

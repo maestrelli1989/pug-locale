@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="format-detection" content="telephone=no">
     <title></title>
-    <meta name="description" content=""/>
-    <link rel="canonical" href="https://uapay.ua/feedback"/>
-    <meta property="og:title" content="API Укрпошти | Портал для розробників">
-    <meta property="og:description" content="Вітаємо на порталі для розробників! Дізнайтесь більше про інтеграцію з Укрпоштою та слідкуйте за оновленнями.">
+    <meta name="description" lang="uk" content="">
+    <meta name="description" lang="ru" content="">
+    <meta name="description" lang="en" content="">
+    <meta property="og:title" lang="uk" content="">
+    <meta property="og:title" lang="ru" content="">
+    <meta property="og:title" lang="en" content="">
+    <meta property="og:description" lang="uk" content="">
+    <meta property="og:description" lang="ru" content="">
+    <meta property="og:description" lang="en" content="">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dev.ukrposhta.ua/">
-    <meta property="og:site_name" content="Ukrposhta">
-    <meta property="og:image" content="https://dev.ukrposhta.ua/images/og-logo.png">
+    <meta property="og:site_name" content="UAPAY">
+    <meta property="og:image" content="../assets/images/logo/site-logo.png">
     <link rel="shortcut icon" href="../assets/images/favicons/favicon.ico">
     <link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="../assets/images/favicons/apple-icon-60x60.png">
@@ -237,16 +241,17 @@
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label for="website">Веб-сайт*</label>
-                      <input class="form-control" type="text" name="website" id="website" placeholder="***" required>
+                      <input class="form-control" type="text" name="website" id="website" placeholder="***">
                     </div>
                     <div class="form-group col-md-6">
                       <label for="turnover">Оборот в месяц*</label>
-                      <select class="form-control" name="turnover" id="turnover" required>
-                        <option value="one">One</option>
-                        <option value="two">Two</option>
-                        <option value="three">Three</option>
-                        <option value="four">Four</option>
-                        <option value="five">Five</option>
+                      <select class="form-control" name="turnover" id="turnover">
+                        <option value="one">У меня</option>
+                        <option value="two">нет</option>
+                        <option value="three">контента</option>
+                        <option value="four">для</option>
+                        <option value="five">этого</option>
+                        <option value="six">селекта</option>
                       </select>
                     </div>
                   </div>
@@ -257,7 +262,7 @@
                     </div>
                   </div>
                   <div class="form-row">
-                    <input class="btn-ghost-white" type="submit" value="Отправить">
+                    <button class="btn-ghost-white" type="submit" name="submit">Отправить</button>
                   </div>
                 </form>
               </div>
@@ -361,7 +366,10 @@
     <script src="../assets/js/common.js"></script>
     <script src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
     <script>
-      $('#phone').inputmask("+38 (099) 999 99 99");
+      $('#phone').inputmask({
+      	mask: '+38 (099) 999 99 99', 
+      	showMaskOnHover: false
+      });
       
     </script>
   </body>

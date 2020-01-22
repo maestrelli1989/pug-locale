@@ -10,11 +10,16 @@
 extends layouts/_layout.pug
 
 block meta-data
-	+meta-data(
-	'Website title', 
-	'Website description', 
-	'https://uapay.ua/info-aihama'
-	)
+	title #{$i18n.infoIgama.metaTitle}
+	meta(name="description", lang="uk", content="")
+	meta(name="description", lang="ru", content="")
+	meta(name="description", lang="en", content="")
+	meta(property="og:title", lang="uk", content="")
+	meta(property="og:title", lang="ru", content="")
+	meta(property="og:title", lang="en", content="")
+	meta(property="og:description", lang="uk", content="")
+	meta(property="og:description", lang="ru", content="")
+	meta(property="og:description", lang="en", content="")
 
 block header
 	+header('black-header')
@@ -29,44 +34,52 @@ block main-content
 				h3 #{$i18n.infoIgama.pageHeadline}
 		.aihama-info-page-content
 			.container.main-container
-				.content-line
-					.flex-left
-						p
-							b Повне найменування юридичної особи
-					.flex-right
-						p ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ 
-							q АЙГАМА
-							|  (ТОВ 
-							q АЙГАМА
-							| )
-				.content-line
-					.flex-left
-						p
-							b Ідентифікаційний код юридичної особи
-					.flex-right
-						p 35624403
-				.content-line
-					.flex-left
-						p
-							b Місцезнаходження юридичної особи
-					.flex-right
-						p 04205, м. Київ, пр. Оболонський, буд. 35
-				.content-line
-					.flex-left
-						p
-							b Оператор платіжної інфраструктури
-					.flex-right
-						p У відповідності до Повідомлення Національного банку України від 19.12.2016р. за № 57-0009/102595 ТОВ 
-							q АЙГАМА
-							|  внесено до Реєстру платіжних систем, учасників платіжних систем та операторів послуг платіжної інфраструктури у якості Оператора послуг платіжної інфраструктури, що має право надавати наступні послуги:
-						ul
-							li кліринг;
-							li процесинг;
-							li операційні, інформаційні та інші технологічні функції щодо переказу коштів.
-						p ТОВ 
-							q АЙГАМА
-							|  у якості Оператора послуг платіжної інфраструктури надає вищевказані послуги на користь наступних юридичних осіб: ТОВ 
-							q ФК ЮАПЕЙ
-							|  (код за ЄДРПОУ 39407959), що є Платіжною організацією Внутрішньодержавної платіжної системи переказу коштів 
-							q ЮАПЕЙ
-							| .
+				- var isUkrainian = $i18n.infoIgama.isUkrainian
+				- var isRussian = $i18n.infoIgama.isRussian
+				- var isEnglish = $i18n.infoIgama.isEnglish
+				if isRussian
+					a.custom-link(href="/ua/info-aihama") #{$i18n.switchTo.toUkrainian}
+				if isEnglish
+					a.custom-link(href="/ua/info-aihama") #{$i18n.switchTo.toUkrainian}
+				if isUkrainian
+					.content-line
+						.flex-left
+							p
+								b Повне найменування юридичної особи
+						.flex-right
+							p ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ 
+								q АЙГАМА
+								|  (ТОВ 
+								q АЙГАМА
+								| )
+					.content-line
+						.flex-left
+							p
+								b Ідентифікаційний код юридичної особи
+						.flex-right
+							p 35624403
+					.content-line
+						.flex-left
+							p
+								b Місцезнаходження юридичної особи
+						.flex-right
+							p 04205, м. Київ, пр. Оболонський, буд. 35
+					.content-line
+						.flex-left
+							p
+								b Оператор платіжної інфраструктури
+						.flex-right
+							p У відповідності до Повідомлення Національного банку України від 19.12.2016р. за № 57-0009/102595 ТОВ 
+								q АЙГАМА
+								|  внесено до Реєстру платіжних систем, учасників платіжних систем та операторів послуг платіжної інфраструктури у якості Оператора послуг платіжної інфраструктури, що має право надавати наступні послуги:
+							ul
+								li кліринг;
+								li процесинг;
+								li операційні, інформаційні та інші технологічні функції щодо переказу коштів.
+							p ТОВ 
+								q АЙГАМА
+								|  у якості Оператора послуг платіжної інфраструктури надає вищевказані послуги на користь наступних юридичних осіб: ТОВ 
+								q ФК ЮАПЕЙ
+								|  (код за ЄДРПОУ 39407959), що є Платіжною організацією Внутрішньодержавної платіжної системи переказу коштів 
+								q ЮАПЕЙ
+								| .

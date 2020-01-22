@@ -11,8 +11,15 @@ extends layouts/_layout.pug
 
 block meta-data
 	title #{$i18n.bulkPayments.metaTitle}
-	meta(name="description", content="#{$i18n.bulkPayments.metaDescription}")
-	link(rel="canonical", href="#{$i18n.bulkPayments.canonical}")
+	meta(name="description", lang="uk", content="Масові виплати на декілька карт або рахунків у пару кліків!")
+	meta(name="description", lang="ru", content="Массовые выплаты на несколько счетов или карт в пару кликов!")
+	meta(name="description", lang="en", content="Mass payments to multiple accounts or cards in a few clicks!")
+	meta(property="og:title", lang="uk", content="Реєстрові поповнення — масові виплати з UAPAY")
+	meta(property="og:title", lang="ru", content="Реестровые пополнения — массовые выплаты с UAPAY")
+	meta(property="og:title", lang="en", content="Bulk Payment System — UAPAY")
+	meta(property="og:description", lang="uk", content="Масові виплати на декілька карт або рахунків у пару кліків!")
+	meta(property="og:description", lang="ru", content="Массовые выплаты на несколько счетов или карт в пару кликов!")
+	meta(property="og:description", lang="en", content="Mass payments to multiple accounts or cards in a few clicks!")
 
 block header
 	+header('red-header')
@@ -35,18 +42,18 @@ block main-content
 						.flex-item.animatedParent.animateOnce
 							figure.animated.rotateIn.slower(data-id='1')
 								img(src="../assets/images/mass-payouts/settings.png", alt="Image")
-							h5.animated.fadeInDownShort(data-id='2') #{$i18n.bulkPayments.block1Title1}
-							p.animated.fadeInDownShort(data-id='3') #{$i18n.bulkPayments.block1Desc1}
+							h5.animated.fadeIn(data-id='2') #{$i18n.bulkPayments.block1Title1}
+							p.animated.fadeIn(data-id='3') #{$i18n.bulkPayments.block1Desc1}
 						.flex-item
 							figure.animated.rotateIn.slower(data-id='1')
 								img(src="../assets/images/mass-payouts/profile.png", alt="Image")
-							h5.animated.fadeInDownShort(data-id='2') #{$i18n.bulkPayments.block1Title2}
-							p.animated.fadeInDownShort(data-id='3') #{$i18n.bulkPayments.block1Desc2}
+							h5.animated.fadeIn(data-id='2') #{$i18n.bulkPayments.block1Title2}
+							p.animated.fadeIn(data-id='3') #{$i18n.bulkPayments.block1Desc2}
 						.flex-item
 							figure.animated.rotateIn.slower(data-id='1')
 								img(src="../assets/images/mass-payouts/prices.png", alt="Image")
-							h5.animated.fadeInDownShort(data-id='2') #{$i18n.bulkPayments.block1Title3}
-							p.animated.fadeInDownShort(data-id='3') #{$i18n.bulkPayments.block1Desc3}
+							h5.animated.fadeIn(data-id='2') #{$i18n.bulkPayments.block1Title3}
+							p.animated.fadeIn(data-id='3') #{$i18n.bulkPayments.block1Desc3}
 					h4.text-center #{$i18n.bulkPayments.perfectBlockHeadline}
 					.preferences-block.animatedParent.animateOnce(data-sequence='100')
 						.preference-col.animated.fadeIn(data-id='1')

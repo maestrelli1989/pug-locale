@@ -6,4 +6,4 @@ RewriteRule ^ /%1 [NC,L,R]
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
-ErrorDocument 404 /ua/404
+ErrorDocument 404 /en/404

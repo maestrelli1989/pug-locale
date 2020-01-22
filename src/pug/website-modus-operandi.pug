@@ -11,8 +11,15 @@ extends layouts/_layout.pug
 
 block meta-data
 	title #{$i18n.modusOperandi.metaTitle}
-	meta(name="description", content="#{$i18n.modusOperandi.metaDescription}")
-	link(rel="canonical", href="#{$i18n.modusOperandi.canonical}")
+	meta(name="description", lang="uk", content="Будь ласка, ознайомтеся з вимогами та політикою UAPAY щодо співпраці з веб-сайтами.")
+	meta(name="description", lang="ru", content="Пожалуйста, ознакомьтесь с требованиями и политикой UAPAY по сотрудничеству с веб-сайтами.")
+	meta(name="description", lang="en", content="Please see the requirements and policy of collaboration between UAPAY and websites.")
+	meta(property="og:title", lang="uk", content="Загальні вимоги до сайту — UAPAY")
+	meta(property="og:title", lang="ru", content="Общие требования к сайту — UAPAY")
+	meta(property="og:title", lang="en", content="General Website Requirements — UAPAY")
+	meta(property="og:description", lang="uk", content="Будь ласка, ознайомтеся з вимогами та політикою UAPAY щодо співпраці з веб-сайтами.")
+	meta(property="og:description", lang="ru", content="Пожалуйста, ознакомьтесь с требованиями и политикой UAPAY по сотрудничеству с веб-сайтами.")
+	meta(property="og:description", lang="en", content="Please see the requirements and policy of collaboration between UAPAY and websites.")
 
 block header
 	+header('black-header')

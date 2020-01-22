@@ -10,11 +10,16 @@
 extends layouts/_layout.pug
 
 block meta-data
-	+meta-data(
-	'Website title', 
-	'Website description', 
-	'https://uapay.ua/financial-statements'
-	)
+	title #{$i18n.financialStatements.metaTitle}
+	meta(name="description", lang="uk", content="")
+	meta(name="description", lang="ru", content="")
+	meta(name="description", lang="en", content="")
+	meta(property="og:title", lang="uk", content="")
+	meta(property="og:title", lang="ru", content="")
+	meta(property="og:title", lang="en", content="")
+	meta(property="og:description", lang="uk", content="")
+	meta(property="og:description", lang="ru", content="")
+	meta(property="og:description", lang="en", content="")
 
 block header
 	+header('black-header')
@@ -29,62 +34,70 @@ block main-content
 				h3 #{$i18n.financialStatements.pageHeadline}
 		.financial-report-content
 			.container.main-container
-				h5 #{$i18n.financialStatements.pageHeadline} 2018
-				a.financial-report-link(href="javascript:void(0);", target="_blank")
-					img(src="../assets/images/download-black.png", alt="Image")
-					span Звіт про власний капітал
-				a.financial-report-link(href="javascript:void(0);", target="_blank")
-					img(src="../assets/images/download-black.png", alt="Image")
-					span Звіт про рух грошових коштів
-				a.financial-report-link(href="javascript:void(0);", target="_blank")
-					img(src="../assets/images/download-black.png", alt="Image")
-					span Звіт про фінансові результати
-				a.financial-report-link(href="javascript:void(0);", target="_blank")
-					img(src="../assets/images/download-black.png", alt="Image")
-					span Баланс
-				a.financial-report-link(href="javascript:void(0);", target="_blank")
-					img(src="../assets/images/download-black.png", alt="Image")
-					span Примітки
-				a.financial-report-link(href="javascript:void(0);", target="_blank")
-					img(src="../assets/images/download-black.png", alt="Image")
-					span Звіт незалежного аудитора
-				hr
-				h5 #{$i18n.financialStatements.pageHeadline} 2017
-				a.financial-report-link(href="javascript:void(0);", target="_blank")
-					img(src="../assets/images/download-black.png", alt="Image")
-					span Звіт про власний капітал
-				a.financial-report-link(href="javascript:void(0);", target="_blank")
-					img(src="../assets/images/download-black.png", alt="Image")
-					span Звіт про рух грошових коштів
-				a.financial-report-link(href="javascript:void(0);", target="_blank")
-					img(src="../assets/images/download-black.png", alt="Image")
-					span Звіт про фінансові результати
-				a.financial-report-link(href="javascript:void(0);", target="_blank")
-					img(src="../assets/images/download-black.png", alt="Image")
-					span Баланс
-				a.financial-report-link(href="javascript:void(0);", target="_blank")
-					img(src="../assets/images/download-black.png", alt="Image")
-					span Примітки
-				a.financial-report-link(href="javascript:void(0);", target="_blank")
-					img(src="../assets/images/download-black.png", alt="Image")
-					span Звіт незалежного аудитора
-				hr
-				h5 #{$i18n.financialStatements.pageHeadline} 2016
-				a.financial-report-link(href="javascript:void(0);", target="_blank")
-					img(src="../assets/images/download-black.png", alt="Image")
-					span Звіт про власний капітал
-				a.financial-report-link(href="javascript:void(0);", target="_blank")
-					img(src="../assets/images/download-black.png", alt="Image")
-					span Звіт про рух грошових коштів
-				a.financial-report-link(href="javascript:void(0);", target="_blank")
-					img(src="../assets/images/download-black.png", alt="Image")
-					span Звіт про фінансові результати
-				a.financial-report-link(href="javascript:void(0);", target="_blank")
-					img(src="../assets/images/download-black.png", alt="Image")
-					span Баланс
-				a.financial-report-link(href="javascript:void(0);", target="_blank")
-					img(src="../assets/images/download-black.png", alt="Image")
-					span Примітки
-				a.financial-report-link(href="javascript:void(0);", target="_blank")
-					img(src="../assets/images/download-black.png", alt="Image")
-					span Звіт незалежного аудитора
+				- var isUkrainian = $i18n.financialStatements.isUkrainian
+				- var isRussian = $i18n.financialStatements.isRussian
+				- var isEnglish = $i18n.financialStatements.isEnglish
+				if isRussian
+					a.custom-link(href="/ua/financial-statements") #{$i18n.switchTo.toUkrainian}
+				if isEnglish
+					a.custom-link(href="/ua/financial-statements") #{$i18n.switchTo.toUkrainian}
+				if isUkrainian
+					h5 #{$i18n.financialStatements.pageHeadline} 2018
+					a.financial-report-link(href="javascript:void(0);", target="_blank")
+						img(src="../assets/images/download-black.png", alt="Image")
+						span Звіт про власний капітал
+					a.financial-report-link(href="javascript:void(0);", target="_blank")
+						img(src="../assets/images/download-black.png", alt="Image")
+						span Звіт про рух грошових коштів
+					a.financial-report-link(href="javascript:void(0);", target="_blank")
+						img(src="../assets/images/download-black.png", alt="Image")
+						span Звіт про фінансові результати
+					a.financial-report-link(href="javascript:void(0);", target="_blank")
+						img(src="../assets/images/download-black.png", alt="Image")
+						span Баланс
+					a.financial-report-link(href="javascript:void(0);", target="_blank")
+						img(src="../assets/images/download-black.png", alt="Image")
+						span Примітки
+					a.financial-report-link(href="javascript:void(0);", target="_blank")
+						img(src="../assets/images/download-black.png", alt="Image")
+						span Звіт незалежного аудитора
+					hr
+					h5 #{$i18n.financialStatements.pageHeadline} 2017
+					a.financial-report-link(href="javascript:void(0);", target="_blank")
+						img(src="../assets/images/download-black.png", alt="Image")
+						span Звіт про власний капітал
+					a.financial-report-link(href="javascript:void(0);", target="_blank")
+						img(src="../assets/images/download-black.png", alt="Image")
+						span Звіт про рух грошових коштів
+					a.financial-report-link(href="javascript:void(0);", target="_blank")
+						img(src="../assets/images/download-black.png", alt="Image")
+						span Звіт про фінансові результати
+					a.financial-report-link(href="javascript:void(0);", target="_blank")
+						img(src="../assets/images/download-black.png", alt="Image")
+						span Баланс
+					a.financial-report-link(href="javascript:void(0);", target="_blank")
+						img(src="../assets/images/download-black.png", alt="Image")
+						span Примітки
+					a.financial-report-link(href="javascript:void(0);", target="_blank")
+						img(src="../assets/images/download-black.png", alt="Image")
+						span Звіт незалежного аудитора
+					hr
+					h5 #{$i18n.financialStatements.pageHeadline} 2016
+					a.financial-report-link(href="javascript:void(0);", target="_blank")
+						img(src="../assets/images/download-black.png", alt="Image")
+						span Звіт про власний капітал
+					a.financial-report-link(href="javascript:void(0);", target="_blank")
+						img(src="../assets/images/download-black.png", alt="Image")
+						span Звіт про рух грошових коштів
+					a.financial-report-link(href="javascript:void(0);", target="_blank")
+						img(src="../assets/images/download-black.png", alt="Image")
+						span Звіт про фінансові результати
+					a.financial-report-link(href="javascript:void(0);", target="_blank")
+						img(src="../assets/images/download-black.png", alt="Image")
+						span Баланс
+					a.financial-report-link(href="javascript:void(0);", target="_blank")
+						img(src="../assets/images/download-black.png", alt="Image")
+						span Примітки
+					a.financial-report-link(href="javascript:void(0);", target="_blank")
+						img(src="../assets/images/download-black.png", alt="Image")
+						span Звіт незалежного аудитора

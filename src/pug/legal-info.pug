@@ -11,8 +11,15 @@ extends layouts/_layout.pug
 
 block meta-data
 	title #{$i18n.legalInfo.metaTitle}
-	meta(name="description", content="#{$i18n.legalInfo.metaDescription}")
-	link(rel="canonical", href="#{$i18n.legalInfo.canonical}")
+	meta(name="description", lang="uk", content="Тут ви знайдете всю необхідну правову інформацію про компанію UAPAY.")
+	meta(name="description", lang="ru", content="Здесь вы найдёте всю необходимую правовую информацию о компании UAPAY.")
+	meta(name="description", lang="en", content="Here you will find all the legal information about UAPAY.")
+	meta(property="og:title", lang="uk", content="Правова інформація — UAPAY")
+	meta(property="og:title", lang="ru", content="Правовая информация — UAPAY")
+	meta(property="og:title", lang="en", content="Legal Information — UAPAY")
+	meta(property="og:description", lang="uk", content="Тут ви знайдете всю необхідну правову інформацію про компанію UAPAY.")
+	meta(property="og:description", lang="ru", content="Здесь вы найдёте всю необходимую правовую информацию о компании UAPAY.")
+	meta(property="og:description", lang="en", content="Here you will find all the legal information about UAPAY.")
 
 block header
 	+header('black-header')
@@ -27,27 +34,27 @@ block main-content
 				h3 #{$i18n.legalInfo.pageHeadline}
 		.legal-page-content.black-page-content
 			.container.main-container.animatedParent.animateOnce(data-sequence='100')
-				a.special-link.animated.fadeInDownShort(href="terms-of-use", data-id='1')
+				a.special-link.animated.fadeIn(href="terms-of-use", data-id='1')
 					span #{$i18n.legalInfo.link1}
 					include includes/svg/_arrow-right.pug
-				a.special-link.animated.fadeInDownShort(href="transfer-supply-conditions", data-id='2')
+				a.special-link.animated.fadeIn(href="transfer-supply-conditions", data-id='2')
 					span #{$i18n.legalInfo.link2}
 					include includes/svg/_arrow-right.pug
-				a.special-link.animated.fadeInDownShort(href="info-uapay", data-id='3')
+				a.special-link.animated.fadeIn(href="info-uapay", data-id='3')
 					span #{$i18n.legalInfo.link3}
 					include includes/svg/_arrow-right.pug
-				a.special-link.animated.fadeInDownShort(href="financial-statements", data-id='4')
+				a.special-link.animated.fadeIn(href="financial-statements", data-id='4')
 					span #{$i18n.legalInfo.link4}
 					include includes/svg/_arrow-right.pug
-				a.special-link.animated.fadeInDownShort(href="info-aihama", data-id='5')
+				a.special-link.animated.fadeIn(href="info-aihama", data-id='5')
 					span #{$i18n.legalInfo.link5}
 					include includes/svg/_arrow-right.pug
-				a.special-link.animated.fadeInDownShort(href="privacy-policy", data-id='6')
+				a.special-link.animated.fadeIn(href="privacy-policy", data-id='6')
 					span #{$i18n.legalInfo.link6}
 					include includes/svg/_arrow-right.pug
-				a.special-link.animated.fadeInDownShort(href="website-modus-operandi", data-id='7')
+				a.special-link.animated.fadeIn(href="website-modus-operandi", data-id='7')
 					span #{$i18n.legalInfo.link7}
 					include includes/svg/_arrow-right.pug
-				a.special-link.animated.fadeInDownShort(href="cookies-policy", data-id='8')
+				a.special-link.animated.fadeIn(href="cookies-policy", data-id='8')
 					span #{$i18n.legalInfo.link8}
 					include includes/svg/_arrow-right.pug

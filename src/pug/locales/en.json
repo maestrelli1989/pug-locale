@@ -77,12 +77,15 @@
 		"joinNowBtn": "Join now",
 		"homePageBtn": "Home page",
 		"startNowBtn": "Start now",
-		"partnershipBtn": "Became a partner"
+		"partnershipBtn": "Become a partner"
+	},
+	"switchTo": {
+		"toUkrainian": "Sorry, this page is only available in Ukrainian",
+		"toRussian": "Sorry, this page is only available in Russian",
+		"toEnglish": "Sorry, this page is only available in English"
 	},
 	"homePage": {
 		"metaTitle": "Ukrainian National Payment Service — UAPAY",
-		"metaDescription": "UAPAY is a universal payment service and modern solutions for your business.",
-		"canonical": "https://uapay.ua/en",
 
 		"bannerHeadline": "National Payment Service",
 		"bannerSubHeadline": "Increase your online business sales and customer loyalty with our solutions and expertise in financial technology",
@@ -116,8 +119,6 @@
 	"uapayCheckout": {
 		"pageHeadline": "UAPAY Checkout",
 		"metaTitle": "UAPAY Internet Acquiring: Accept Payments on Your Website",
-		"metaDescription": "Set up acquiring and accept online payments at your online store or at any other website!",
-		"canonical": "https://uapay.ua/en/uapay-checkout",
 
 		"introPart1": "Adds value to your online business through the usage of a range of solutions aimed at automating payments for goods and services using bank cards, as well as the delivery of purchased goods to your customers in Ukraine.",
 		"introPart2": "UAPAY Checkout is based on complex technological and business processes that are built on the principles of transparency, security and ease of use for both you and your customers.",
@@ -164,8 +165,6 @@
 	"industrySolutions": {
 		"pageHeadline": "Business solutions",
 		"metaTitle": "Business Solutions — UAPAY",
-		"metaDescription": "Modern fintech solutions for rapid business development!",
-		"canonical": "https://uapay.ua/en/industry-solutions",
 		"connect": "Connect",
 		
 		"block1Headline": "Marketplaces",
@@ -206,8 +205,6 @@
 	"bulkPayments": {
 		"pageHeadline": "Bulk payments",
 		"metaTitle": "Bulk Payment System — UAPAY",
-		"metaDescription": "Mass payments to multiple accounts or cards in a few clicks!",
-		"canonical": "https://uapay.ua/en/mass-payouts",
 		"pageIntro": "Created for those who need to pay fees or give out loans on bank cards of any number of recipients. All payments go online.",
 		"block1Title1": "Automation",
 		"block1Desc1": "Upload a pre-made file in your account or make payments using our API",
@@ -234,25 +231,23 @@
 	"aboutUs": {
 		"pageHeadline": "About us",
 		"metaTitle": "About Us — UAPAY",
-		"metaDescription": "name=\"description\" content=\"UAPAY enables businesses to be more flexible, save time and costs. Find out how.\"",
-		"canonical": "rel=\"canonical\" href=\"https://uapay.ua/en/about-us\"",
 		"introLine1": "UAPAY is a national payment service that provides financial and technical solutions for any type of online business. Our team of professionals will help you automate payments and speed up business processes.",
 		"introLine2": "The company, founded in 2013, offers competitive rates and guarantees reliability. We care about the security and speed of online payment, so we try to use the latest technologies that provide the required level of payments.",
 		"introLine3": "A high level of service, transparency and reliability of transactions, prompt and qualified work of a support service - all this allowed us to gain the trust of our customers and secure the image of an honest and stable company.",
 		"finalBlockHeadline": ""
 	},
 	"news": {
-		"pageHeadline": "News"
+		"pageHeadline": "News",
+		"metaTitle": ""
 	},
 	"page404": {
+		"metaTitle": "404",
 		"p1": "The page you want to go to is not found.",
 		"p2": "The address you entered may be incorrect or the page has been deleted..."
 	},
 	"legalInfo": {
 		"pageHeadline": "Legal information",
 		"metaTitle": "Legal information — UAPAY",
-		"metaDescription": "Here you will find all the legal information about UAPAY.",
-		"canonical": "https://uapay.ua/en/legal-info",
 		"link1": "Terms of service",
 		"link2": "Terms of money transfers",
 		"link3": "Information about the financial institution. LLC «FC UAPAY»",
@@ -265,17 +260,20 @@
 	"cookiesPolicy": {
 		"pageHeadline": "Cookies policy",
 		"metaTitle": "Cookie policy — UAPAY",
-		"metaDescription": "Here is a description of the UAPAY cookie policy.",
-		"canonical": "https://uapay.ua/en/cookies-policy"
+		"isUkrainian": false,
+		"isRussian": false,
+		"isEnglish": true
 	},
 	"privacyPolicy": {
-		"pageHeadline": "EU / EEA Privacy policy"
+		"pageHeadline": "EU / EEA Privacy policy",
+		"metaTitle": "",
+		"isUkrainian": false,
+		"isRussian": false,
+		"isEnglish": true
 	},
 	"modusOperandi": {
 		"pageHeadline": "Conditions of work with websites",
 		"metaTitle": "General Website Requirements — UAPAY",
-		"metaDescription": "Please see the requirements and policy of collaboration between UAPAY and websites.",
-		"canonical": "https://uapay.ua/en/cookies-policy",
 		"p1": "The site must have an SSL security certificate.",
 		"p2": "There must be symbols of the IPS VISA and MasterCard.",
 		"p3": "It should be clear what payment is accepted for, what is sold on the merchant's website.",
@@ -304,31 +302,47 @@
 		"li12": "Goods that violate copyright and / or intellectual property"
 	},
 	"financialStatements": {
-		"pageHeadline": "Financial statements"
+		"pageHeadline": "Financial statements",
+		"metaTitle": "",
+		"isUkrainian": false,
+		"isRussian": false,
+		"isEnglish": true
 	},
 	"termsOfUse": {
-		"pageHeadline": "Terms of service"
+		"pageHeadline": "Terms of service",
+		"metaTitle": "",
+		"isUkrainian": false,
+		"isRussian": false,
+		"isEnglish": true
 	},
 	"transferSupplyConditions": {
-		"pageHeadline": "Terms of money transfers"
+		"pageHeadline": "Terms of money transfers",
+		"metaTitle": "",
+		"isUkrainian": false,
+		"isRussian": false,
+		"isEnglish": true
 	},
 	"infoIgama": {
-		"pageHeadline": "Information about the financial institution. LLC «IGAMA»"
+		"pageHeadline": "Information about the financial institution. LLC «IGAMA»",
+		"metaTitle": "",
+		"isUkrainian": false,
+		"isRussian": false,
+		"isEnglish": true
 	},
 	"infoUapay": {
-		"pageHeadline": "Information about the financial institution. LLC «FC UAPAY»"
+		"pageHeadline": "Information about the financial institution. LLC «FC UAPAY»",
+		"metaTitle": "",
+		"isUkrainian": false,
+		"isRussian": false,
+		"isEnglish": true
 	},
 	"fines": {
 		"pageHeadline": "Fines",
-		"metaTitle": "Pay Traffic Fines Online — UAPAY",
-		"metaDescription": "Pay traffic fines online with ease at the UAPAY.",
-		"canonical": "https://uapay.ua/en/fines"
+		"metaTitle": "Pay Traffic Fines Online — UAPAY"
 	},
 	"faq": {
 		"pageHeadline": "Need help?",
 		"metaTitle": "",
-		"metaDescription": "",
-		"canonical": "https://uapay.ua/en/faq",
 
 		"item1Title": "What is UAPAY?",
 		"item1Desc": "UAPAY is the national transfer service that allows you to transfer money by card number, phone number or e-mail.",
@@ -401,6 +415,7 @@
 	},
 	"partnership": {
 		"pageHeadline": "Partnership",
+		"metaTitle": "",
 		"introLine1": "We are always open to new partnership and ready to provide quality service to a wide range of clients.",
 		"introLine2": "That's why our affiliate program gives the opportunity to make money with connecting clients for everyone involved in online business.",
 		"icon1Desc": "The fee is 10% of the commission",
@@ -430,5 +445,8 @@
 		"website": "Web site",
 		"message": "Message",
 		"submit": "Submit"
+	},
+	"feedbackPage": {
+		"metaTitle": ""
 	}
 }

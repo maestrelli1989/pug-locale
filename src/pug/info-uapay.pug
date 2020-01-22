@@ -10,11 +10,16 @@
 extends layouts/_layout.pug
 
 block meta-data
-	+meta-data(
-	'Website title', 
-	'Website description', 
-	'https://uapay.ua/info-uapay'
-	)
+	title #{$i18n.infoUapay.metaTitle}
+	meta(name="description", lang="uk", content="")
+	meta(name="description", lang="ru", content="")
+	meta(name="description", lang="en", content="")
+	meta(property="og:title", lang="uk", content="")
+	meta(property="og:title", lang="ru", content="")
+	meta(property="og:title", lang="en", content="")
+	meta(property="og:description", lang="uk", content="")
+	meta(property="og:description", lang="ru", content="")
+	meta(property="og:description", lang="en", content="")
 
 block header
 	+header('black-header')
@@ -29,136 +34,144 @@ block main-content
 				h3 #{$i18n.infoUapay.pageHeadline}
 		.uapay-info-page-content
 			.container.main-container
-				.content-line
-					.flex-left
-						p
-							b Повне найменування юридичної особи
-					.flex-right
-						p ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ "ФІНАНСОВА КОМПАНІЯ ЮАПЕЙ"
-				.content-line
-					.flex-left
-						p
-							b Код за ЄДРПОУ
-					.flex-right
-						p 39407959
-				.content-line
-					.flex-left
-						p
-							b Інформація про місцезнаходження:
-					.flex-right
-						p Код території за КОАТУУ 8038000000
-						p 04205
-						p КИЇВ
-						p Оболонський Проспект
-						p Будинок 35
-						p Поштова адреса відповідає місцезнаходженню
-						p Контактний телефон: 
-							a(href="tel:(044) 364 11 44") (044) 364 11 44
-						p Адреса електронної пошти: 
-							a(href="mailto:info@uapay.ua") info@uapay.ua
-				h6 Види фінансових послуг
-				ul
-					li Надання гарантій та поручительств.
-					li Надання послуг з факторингу.
-					li Переказ коштів у національній валюті без відкриття рахунків.
-				h6 Переказ коштів у національній валюті без відкриття рахунків
-				ul
-					li Внутрішньодержавна платіжна система переказу коштів «ЮАПЕЙ», Платіжна організація: ТОВ «ФК ЮАПЕЙ», місцезнаходження: 04205, м. Київ, пр. Оболонський, буд. 35.
-					li Внутрішньодержавна платіжна система переказу коштів «FLASHPAY», Платіжна організація: ПАТ «БАНК ФАМІЛЬНИЙ», місцезнаходження: 03039, м. Київ, Голосіївський проспект, будинок 26а.
-				h6 Відомості про власників істотної участі
-				p (відомості про учасників які володіють часткою, що становить не менш як 10 відсотків статутного капіталу)
-				.table-responsive
-					table
-						thead
-							tr
-								th(width="33%") Повне найменування юридичних осіб – учасників фінансової компанії
-								th(width="33%") Код за ЄДРПОУ юридичних осіб – учасників фінансової компанії
-								th(width="33%") Частка учасників заявника в статутному капіталі заявника, %
-						tbody
-							tr
-								td ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ "СОФТІНВЕСТ ХОЛДИНГ"
-								td 39397815
-								td 85
-							tr
-								td ЗІНЧЕНКО ОЛЕКСАНДР ВІКТОРОВИЧ
-								td -
-								td 15
-				h6 Інформація про юридичних або фізичних осіб, які здійснюють контроль за юридичними особами – учасниками юридичної особи
-				p (які володіють часткою, що становить не менш як 10 відсотків статутного капіталу заявника)
-				.table-responsive
-					table
-						thead
-							tr
-								th(width="10%") № з/п
-								th(width="35%") Повне найменування юридичних осіб – учасників фінансової компанії
-								th(width="35%") Повне найменування юридичної особи або прізвище, ім’я, по батькові фізичної особи, що здійснює контроль за учасником
-								th(width="20%") Частка у статутному капіталі учасника, %
-						tbody
-							tr
-								td 1
-								td ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ "СОФТІНВЕСТ ХОЛДИНГ"
-								td Зарахович Анатолій Йосипович
-								td 38
-							tr
-								td 2
-								td ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ "СОФТІНВЕСТ ХОЛДИНГ"
-								td Зарахович Дмитро Анатолійович
-								td 62
-				h6 Відомості про керівника юридичної особи
-				p Директор: Зарахович Анатолій Йосипович
-				h6 Відомості про ліцензії та дозволи, видані фінансовій установі
-				ul
-					li
-						p Національним банком України видано ліцензію на переказ коштів у національній валюті без відкриття рахунків
-						p Дата видачі та початку дії ліцензії: 09.12.2015
-						p Номер ліцензії: 30
-						p Статус ліцензії: діюча
-					li
-						p Національною комісією, що здійснює державне регулювання у сфері ринків фінансових послуг видано Ліцензію для здійснення діяльності з надання гарантій та поручительств
-						p Дата видачі та початку дії ліцензії: 27.04.2017
-						p Номер ліцензії: б/н
-						p Статус ліцензії: діюча
-					li
-						p Національною комісією, що здійснює державне регулювання у сфері ринків фінансових послуг видано Ліцензію для здійснення діяльності з надання послуг з факторингу
-						p Дата видачі та початку дії ліцензії: 01.06.2017
-						p Номер ліцензії: б/н
-						p Статус ліцензії: діюча
-				.documents-block
-					.documents-item
+				- var isUkrainian = $i18n.infoIgama.isUkrainian
+				- var isRussian = $i18n.infoIgama.isRussian
+				- var isEnglish = $i18n.infoIgama.isEnglish
+				if isRussian
+					a.custom-link(href="/ua/info-uapay") #{$i18n.switchTo.toUkrainian}
+				if isEnglish
+					a.custom-link(href="/ua/info-uapay") #{$i18n.switchTo.toUkrainian}
+				if isUkrainian
+					.content-line
 						.flex-left
-							h6 Ліцензія на переказ коштів
-							a.download-file-link(href="javascript:void(0);", target="_blank")
-								img(src="../assets/images/download-red.png", alt="Icon")
-								span Завантажити
+							p
+								b Повне найменування юридичної особи
 						.flex-right
-							img(src="../assets/images/documents/1.png", alt="License")
-					.documents-item
+							p ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ "ФІНАНСОВА КОМПАНІЯ ЮАПЕЙ"
+					.content-line
 						.flex-left
-							h6 Свідоцтво про реєстрацію фінансової установи
-							a.download-file-link(href="javascript:void(0);", target="_blank")
-								img(src="../assets/images/download-red.png", alt="Icon")
-								span Завантажити
+							p
+								b Код за ЄДРПОУ
 						.flex-right
-							img(src="../assets/images/documents/2.png", alt="License")
-					.documents-item
+							p 39407959
+					.content-line
 						.flex-left
-							h6 Свідоцтво про узгодження правил внутрішньодержавної платіжної системи "ЮАПЕЙ"
-							a.download-file-link(href="javascript:void(0);", target="_blank")
-								img(src="../assets/images/download-red.png", alt="Icon")
-								span Завантажити
+							p
+								b Інформація про місцезнаходження:
 						.flex-right
-							img(src="../assets/images/documents/3.png", alt="License")
-					.documents-item
-						.flex-left
-							h6 Інформація для кліента
-							a.download-file-link(href="javascript:void(0);", target="_blank")
-								img(src="../assets/images/download-red.png", alt="Icon")
-								span Завантажити
-						.flex-right
-					.documents-item
-						.flex-left
-							h6 Інформація про внутрішньодержавну платіжну систему "ЮАПЕЙ"
-							a.download-file-link(href="javascript:void(0);", target="_blank")
-								img(src="../assets/images/download-red.png", alt="Icon")
-								span Завантажити
-						.flex-right
+							p Код території за КОАТУУ 8038000000
+							p 04205
+							p КИЇВ
+							p Оболонський Проспект
+							p Будинок 35
+							p Поштова адреса відповідає місцезнаходженню
+							p Контактний телефон: 
+								a(href="tel:(044) 364 11 44") (044) 364 11 44
+							p Адреса електронної пошти: 
+								a(href="mailto:info@uapay.ua") info@uapay.ua
+					h6 Види фінансових послуг
+					ul
+						li Надання гарантій та поручительств.
+						li Надання послуг з факторингу.
+						li Переказ коштів у національній валюті без відкриття рахунків.
+					h6 Переказ коштів у національній валюті без відкриття рахунків
+					ul
+						li Внутрішньодержавна платіжна система переказу коштів «ЮАПЕЙ», Платіжна організація: ТОВ «ФК ЮАПЕЙ», місцезнаходження: 04205, м. Київ, пр. Оболонський, буд. 35.
+						li Внутрішньодержавна платіжна система переказу коштів «FLASHPAY», Платіжна організація: ПАТ «БАНК ФАМІЛЬНИЙ», місцезнаходження: 03039, м. Київ, Голосіївський проспект, будинок 26а.
+					h6 Відомості про власників істотної участі
+					p (відомості про учасників які володіють часткою, що становить не менш як 10 відсотків статутного капіталу)
+					.table-responsive
+						table
+							thead
+								tr
+									th(width="33%") Повне найменування юридичних осіб – учасників фінансової компанії
+									th(width="33%") Код за ЄДРПОУ юридичних осіб – учасників фінансової компанії
+									th(width="33%") Частка учасників заявника в статутному капіталі заявника, %
+							tbody
+								tr
+									td ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ "СОФТІНВЕСТ ХОЛДИНГ"
+									td 39397815
+									td 85
+								tr
+									td ЗІНЧЕНКО ОЛЕКСАНДР ВІКТОРОВИЧ
+									td -
+									td 15
+					h6 Інформація про юридичних або фізичних осіб, які здійснюють контроль за юридичними особами – учасниками юридичної особи
+					p (які володіють часткою, що становить не менш як 10 відсотків статутного капіталу заявника)
+					.table-responsive
+						table
+							thead
+								tr
+									th(width="10%") № з/п
+									th(width="35%") Повне найменування юридичних осіб – учасників фінансової компанії
+									th(width="35%") Повне найменування юридичної особи або прізвище, ім’я, по батькові фізичної особи, що здійснює контроль за учасником
+									th(width="20%") Частка у статутному капіталі учасника, %
+							tbody
+								tr
+									td 1
+									td ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ "СОФТІНВЕСТ ХОЛДИНГ"
+									td Зарахович Анатолій Йосипович
+									td 38
+								tr
+									td 2
+									td ТОВАРИСТВО З ОБМЕЖЕНОЮ ВІДПОВІДАЛЬНІСТЮ "СОФТІНВЕСТ ХОЛДИНГ"
+									td Зарахович Дмитро Анатолійович
+									td 62
+					h6 Відомості про керівника юридичної особи
+					p Директор: Зарахович Анатолій Йосипович
+					h6 Відомості про ліцензії та дозволи, видані фінансовій установі
+					ul
+						li
+							p Національним банком України видано ліцензію на переказ коштів у національній валюті без відкриття рахунків
+							p Дата видачі та початку дії ліцензії: 09.12.2015
+							p Номер ліцензії: 30
+							p Статус ліцензії: діюча
+						li
+							p Національною комісією, що здійснює державне регулювання у сфері ринків фінансових послуг видано Ліцензію для здійснення діяльності з надання гарантій та поручительств
+							p Дата видачі та початку дії ліцензії: 27.04.2017
+							p Номер ліцензії: б/н
+							p Статус ліцензії: діюча
+						li
+							p Національною комісією, що здійснює державне регулювання у сфері ринків фінансових послуг видано Ліцензію для здійснення діяльності з надання послуг з факторингу
+							p Дата видачі та початку дії ліцензії: 01.06.2017
+							p Номер ліцензії: б/н
+							p Статус ліцензії: діюча
+					.documents-block
+						.documents-item
+							.flex-left
+								h6 Ліцензія на переказ коштів
+								a.download-file-link(href="javascript:void(0);", target="_blank")
+									img(src="../assets/images/download-red.png", alt="Icon")
+									span Завантажити
+							.flex-right
+								img(src="../assets/images/documents/1.png", alt="License")
+						.documents-item
+							.flex-left
+								h6 Свідоцтво про реєстрацію фінансової установи
+								a.download-file-link(href="javascript:void(0);", target="_blank")
+									img(src="../assets/images/download-red.png", alt="Icon")
+									span Завантажити
+							.flex-right
+								img(src="../assets/images/documents/2.png", alt="License")
+						.documents-item
+							.flex-left
+								h6 Свідоцтво про узгодження правил внутрішньодержавної платіжної системи "ЮАПЕЙ"
+								a.download-file-link(href="javascript:void(0);", target="_blank")
+									img(src="../assets/images/download-red.png", alt="Icon")
+									span Завантажити
+							.flex-right
+								img(src="../assets/images/documents/3.png", alt="License")
+						.documents-item
+							.flex-left
+								h6 Інформація для кліента
+								a.download-file-link(href="javascript:void(0);", target="_blank")
+									img(src="../assets/images/download-red.png", alt="Icon")
+									span Завантажити
+							.flex-right
+						.documents-item
+							.flex-left
+								h6 Інформація про внутрішньодержавну платіжну систему "ЮАПЕЙ"
+								a.download-file-link(href="javascript:void(0);", target="_blank")
+									img(src="../assets/images/download-red.png", alt="Icon")
+									span Завантажити
+							.flex-right
