@@ -42,6 +42,12 @@
     <link rel="stylesheet" href="../assets/css/animations.css">
   </head>
   <body>
+    <div class="user-account-sidebar" id="user-account-sidebar">
+      <div class="close-user-account-sidebar" onclick="hideUserAccountSidebar()">&times;</div>
+      <div class="block">
+        <h3>Sign in</h3><a class="btn-red" href="javascript:void(0);">For customer</a><a class="btn-red" href="https://account.uapay.ua/auth/register">For business</a>
+      </div>
+    </div>
     <header class="header red-header">
       <div class="container">
         <div class="header-flex fade-in-down-effect">
@@ -79,7 +85,7 @@
               </div>
             </div>
           </div>
-          <div class="header-flex-right"><a class="feedback-link" href="feedback">Feedback</a><a class="btn-ghost-white" href="https://account.uapay.ua/auth/register" target="_blank">User account</a>
+          <div class="header-flex-right"><a class="feedback-link" href="feedback">Feedback</a><span class="btn-ghost-white" onclick="showUserAccountSidebar()">User account</span>
             <div class="languages"> <span class="current-lang" id="current-lang">EN</span>
               <div class="lang-items">
                 <div class="sub-menu"><a href="javascript:void(0);" onclick="switchToUaLocale()">UA</a><a href="javascript:void(0);" onclick="switchToRuLocale()">RU</a><a href="javascript:void(0);" onclick="switchToEnLocale()">EN</a></div>
@@ -132,7 +138,7 @@
                 </div>
               </div>
             </div>
-            <div class="header-flex-right"><a class="feedback-link" href="feedback">Feedback</a><a class="btn-ghost-white" href="https://account.uapay.ua/auth/register" target="_blank">User account</a>
+            <div class="header-flex-right"><a class="feedback-link" href="feedback">Feedback</a><span class="btn-ghost-white" onclick="showUserAccountSidebar()">User account</span>
               <div class="languages"> <span class="current-lang" id="current-lang">EN</span>
                 <div class="lang-items">
                   <div class="sub-menu"><a href="javascript:void(0);" onclick="switchToUaLocale()">UA</a><a href="javascript:void(0);" onclick="switchToRuLocale()">RU</a><a href="javascript:void(0);" onclick="switchToEnLocale()">EN</a></div>
@@ -204,7 +210,7 @@
               </ul>
             </div>
           </div>
-        </div><a class="btn-ghost-white" href="https://account.uapay.ua/auth/register" target="_blank">User account</a><a class="feedback-link" href="feedback">Feedback</a>
+        </div><span class="btn-ghost-white" onclick="showUserAccountSidebar()">User account</span><a class="feedback-link" href="feedback">Feedback</a>
       </div>
     </div>
     <div id="main">
@@ -241,23 +247,22 @@
                   <div class="form-row">
                     <div class="form-group col-md-6">
                       <label for="website">Web site*</label>
-                      <input class="form-control" type="text" name="website" id="website" placeholder="***">
+                      <input class="form-control" type="text" name="website" id="website" placeholder="***" required>
                     </div>
                     <div class="form-group col-md-6">
-                      <label for="turnover">Оборот в месяц*</label>
+                      <label for="turnover">Monthly Turnover*</label>
                       <select class="form-control" name="turnover" id="turnover">
-                        <option value="one">У меня</option>
-                        <option value="two">нет</option>
-                        <option value="three">контента</option>
-                        <option value="four">для</option>
-                        <option value="five">этого</option>
-                        <option value="six">селекта</option>
+                        <option value="Від 2 500 000 грн">From 2 500 000 UAH</option>
+                        <option value="Від 2 500 001 грн до 5 000 000 грн">From 2 500 001 UAH to 5 000 000 UAH</option>
+                        <option value="Від 5 000 001 грн до 10 000 000 грн">From 5 000 001 UAH to 10 000 000 UAH</option>
+                        <option value="Від 10 000 001 грн до 20 000 000 грн">From 10 000 001 грн to 20 000 000 UAH</option>
+                        <option value="Більше 20 000 000 грн">More than 20 000 000 UAH</option>
                       </select>
                     </div>
                   </div>
                   <div class="form-row">
                     <div class="form-group col-md-12">
-                      <label for="message">Message**</label>
+                      <label for="message">Message*</label>
                       <textarea class="form-control" name="message" id="message" placeholder="***" cols="30" rows="1"></textarea>
                     </div>
                   </div>

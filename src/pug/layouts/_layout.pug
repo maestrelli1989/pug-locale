@@ -33,6 +33,12 @@ html(lang='uk')
 		//- Additional style sheets
 		block extra-css
 	body
+		.user-account-sidebar#user-account-sidebar
+			.close-user-account-sidebar(onclick="hideUserAccountSidebar()") &times;
+			.block
+				h3 #{$i18n.userAccountSidebar.blockHeadline}
+				a(href="javascript:void(0);", class="btn-red") #{$i18n.userAccountSidebar.btn1}
+				a(href="https://account.uapay.ua/auth/register", class="btn-red") #{$i18n.userAccountSidebar.btn2}
 		block header
 		block mobile-menu
 		#main

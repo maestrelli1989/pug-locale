@@ -444,9 +444,20 @@
 		"phone": "Телефон",
 		"website": "Веб-сайт",
 		"message": "Повідомлення",
-		"submit": "Відправити"
+		"submit": "Відправити",
+		"turnover": "Оборот в місяць",
+		"turnoverOption1": "Від 2 500 000 грн",
+		"turnoverOption2": "Від 2 500 001 грн до 5 000 000 грн",
+		"turnoverOption3": "Від 5 000 001 грн до 10 000 000 грн",
+		"turnoverOption4": "Від 10 000 001 грн до 20 000 000 грн",
+		"turnoverOption5": "Більше 20 000 000 грн"
 	},
 	"feedbackPage": {
 		"metaTitle": ""
+	},
+	"userAccountSidebar": {
+		"blockHeadline": "Вхід",
+		"btn1": "Для користувача",
+		"btn2": "Для бізнесу"
 	}
 }

@@ -42,6 +42,12 @@
     <link rel="stylesheet" href="../assets/css/animations.css">
   </head>
   <body>
+    <div class="user-account-sidebar" id="user-account-sidebar">
+      <div class="close-user-account-sidebar" onclick="hideUserAccountSidebar()">&times;</div>
+      <div class="block">
+        <h3>Вхід</h3><a class="btn-red" href="javascript:void(0);">Для користувача</a><a class="btn-red" href="https://account.uapay.ua/auth/register">Для бізнесу</a>
+      </div>
+    </div>
     <header class="header black-header">
       <div class="container">
         <div class="header-flex fade-in-down-effect">
@@ -79,7 +85,7 @@
               </div>
             </div>
           </div>
-          <div class="header-flex-right"><a class="feedback-link" href="feedback">Зворотний зв'язок</a><a class="btn-ghost-white" href="https://account.uapay.ua/auth/register" target="_blank">Особистий кабінет</a>
+          <div class="header-flex-right"><a class="feedback-link" href="feedback">Зворотний зв'язок</a><span class="btn-ghost-white" onclick="showUserAccountSidebar()">Особистий кабінет</span>
             <div class="languages"> <span class="current-lang" id="current-lang">UA</span>
               <div class="lang-items">
                 <div class="sub-menu"><a href="javascript:void(0);" onclick="switchToUaLocale()">UA</a><a href="javascript:void(0);" onclick="switchToRuLocale()">RU</a><a href="javascript:void(0);" onclick="switchToEnLocale()">EN</a></div>
@@ -132,7 +138,7 @@
                 </div>
               </div>
             </div>
-            <div class="header-flex-right"><a class="feedback-link" href="feedback">Зворотний зв'язок</a><a class="btn-ghost-white" href="https://account.uapay.ua/auth/register" target="_blank">Особистий кабінет</a>
+            <div class="header-flex-right"><a class="feedback-link" href="feedback">Зворотний зв'язок</a><span class="btn-ghost-white" onclick="showUserAccountSidebar()">Особистий кабінет</span>
               <div class="languages"> <span class="current-lang" id="current-lang">UA</span>
                 <div class="lang-items">
                   <div class="sub-menu"><a href="javascript:void(0);" onclick="switchToUaLocale()">UA</a><a href="javascript:void(0);" onclick="switchToRuLocale()">RU</a><a href="javascript:void(0);" onclick="switchToEnLocale()">EN</a></div>
@@ -204,7 +210,7 @@
               </ul>
             </div>
           </div>
-        </div><a class="btn-ghost-white" href="https://account.uapay.ua/auth/register" target="_blank">Особистий кабінет</a><a class="feedback-link" href="feedback">Зворотний зв'язок</a>
+        </div><span class="btn-ghost-white" onclick="showUserAccountSidebar()">Особистий кабінет</span><a class="feedback-link" href="feedback">Зворотний зв'язок</a>
       </div>
     </div>
     <div id="main">

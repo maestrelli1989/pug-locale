@@ -62,19 +62,18 @@ block main-content
 							.form-row
 								.form-group.col-md-6
 									label(for="website") #{$i18n.formFields.website}*
-									input(type="text", name="website", class="form-control", id="website", placeholder="***")
+									input(type="text", name="website", class="form-control", id="website", placeholder="***", required)
 								.form-group.col-md-6
-									label(for="turnover") Оборот в месяц*
+									label(for="turnover") #{$i18n.formFields.turnover}*
 									select(name="turnover", class="form-control", id="turnover")
-										option(value="one") У меня
-										option(value="two") нет
-										option(value="three") контента
-										option(value="four") для
-										option(value="five") этого
-										option(value="six") селекта
+										option(value="Від 2 500 000 грн") #{$i18n.formFields.turnoverOption1}
+										option(value="Від 2 500 001 грн до 5 000 000 грн") #{$i18n.formFields.turnoverOption2}
+										option(value="Від 5 000 001 грн до 10 000 000 грн") #{$i18n.formFields.turnoverOption3}
+										option(value="Від 10 000 001 грн до 20 000 000 грн") #{$i18n.formFields.turnoverOption4}
+										option(value="Більше 20 000 000 грн") #{$i18n.formFields.turnoverOption5}
 							.form-row
 								.form-group.col-md-12
-									label(for="message") #{$i18n.formFields.message}**
+									label(for="message") #{$i18n.formFields.message}*
 									textarea(name="message", class="form-control", id="message", placeholder="***", cols="30", rows="1")
 							.form-row
 								button(type="submit", name="submit", class="btn-ghost-white") #{$i18n.formFields.submit}

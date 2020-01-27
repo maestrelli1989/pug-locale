@@ -192,3 +192,11 @@ function switchToEnLocale() {
 	let en_path = path.replace("/ua/", "/en/").replace("/ru/", "/en/"); 
 	window.location.replace(en_path);
 }
+
+function showUserAccountSidebar() {
+	$("#user-account-sidebar").show();
+}
+
+function hideUserAccountSidebar() {
+	$("#user-account-sidebar").hide();
+}
