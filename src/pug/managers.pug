@@ -22,10 +22,10 @@ block meta-data
 	meta(property="og:description", lang="en", content="")
 
 block header
-	+header('red-header')
+	+header('black-header')
 
 block mobile-menu
-	+mobile-menu('mobile-menu-red')
+	+mobile-menu('mobile-menu-black')
 	
 block extra-js
 	script(src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js")
@@ -36,7 +36,7 @@ block extra-js
 		});
 
 block main-content
-	.inner-page-wrapper.feedback-page
+	.inner-page-wrapper.managers-page
 		.feedback-page-content
 			.container.main-container
 				.flex-block
@@ -44,11 +44,14 @@ block main-content
 						h1 Свяжитесь с нами!
 						p Если у вас возникли вопросы, пожалуйста, заполните следующую контактную форму
 					.flex-right
-						form(action="../php/feedback-form-mailer.php", method="POST")
+						form(action="../php/managers-form-mailer.php", method="POST")
 							.form-row
-								.form-group.col-md-12
+								.form-group.col-md-6
 									label(for="first-name") #{$i18n.formFields.firstName}*
 									input(type="text", name="firstName", class="form-control", id="first-name", placeholder="***", required)
+								.form-group.col-md-6
+									label(for="last-name") #{$i18n.formFields.lastName}*
+									input(type="text", name="lastName", class="form-control", id="last-name", placeholder="***", required)
 							.form-row
 								.form-group.col-md-6
 									label(for="email") #{$i18n.formFields.email}*
@@ -56,6 +59,18 @@ block main-content
 								.form-group.col-md-6
 									label(for="phone") #{$i18n.formFields.phone}*
 									input(type="text", name="phone", class="form-control", id="phone", placeholder="***", required)
+							.form-row
+								.form-group.col-md-6
+									label(for="website") #{$i18n.formFields.website}*
+									input(type="text", name="website", class="form-control", id="website", placeholder="***", required)
+								.form-group.col-md-6
+									label(for="turnover") #{$i18n.formFields.turnover}*
+									select(name="turnover", class="form-control", id="turnover")
+										option(value="Від 2 500 000 грн") #{$i18n.formFields.turnoverOption1}
+										option(value="Від 2 500 001 грн до 5 000 000 грн") #{$i18n.formFields.turnoverOption2}
+										option(value="Від 5 000 001 грн до 10 000 000 грн") #{$i18n.formFields.turnoverOption3}
+										option(value="Від 10 000 001 грн до 20 000 000 грн") #{$i18n.formFields.turnoverOption4}
+										option(value="Більше 20 000 000 грн") #{$i18n.formFields.turnoverOption5}
 							.form-row
 								.form-group.col-md-12
 									label(for="message") #{$i18n.formFields.message}*

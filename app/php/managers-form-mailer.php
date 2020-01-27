@@ -2,8 +2,11 @@
 
     $mess = '
 	Ім\'я: ' . $_POST['firstName'] . '
+	Прізвище: ' . $_POST['lastName'] . '
     E-mail:' . $_POST['email'] . '
     Телефон:' . $_POST['phone'] . '
+	Вебсайт: ' . $_POST['website'] . '
+	Оборот: ' . $_POST['turnover'] . '
     Повідомлення: ' . $_POST['message'];
 
     $headers = "From: $email\r\nReply-To: $email" . "\r\n" . "MIME-Version: 1.0\r\nContent-type: text/plain; charset=utf-8";
