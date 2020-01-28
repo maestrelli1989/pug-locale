@@ -1,14 +1,14 @@
 .user-account-sidebar
-    display: none
     background-color: $corporate-white
     position: fixed
     top: 0px
     right: 0px
-    width: 100%
-    max-width: 600px
+    width: 0px
     height: 100vh
-    padding: 100px 80px 0px
+    padding: 100px 0px 0px
     z-index: 99999
+    overflow-x: hidden
+    transition: all 500ms ease-in
     .close-user-account-sidebar
         position: absolute
         top: 30px
@@ -18,7 +18,10 @@
         font-size: 45px
         cursor: pointer
     .block
+        padding: 0px 80px
         h3
             padding: 0px 0px 60px
         .btn-red
             margin-bottom: 30px
+    &.user-account-sidebar-active
+        width: 600px

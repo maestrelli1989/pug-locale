@@ -194,9 +194,9 @@ function switchToEnLocale() {
 }
 
 function showUserAccountSidebar() {
-	$("#user-account-sidebar").show();
+	$("#user-account-sidebar").addClass('user-account-sidebar-active');
 }
 
 function hideUserAccountSidebar() {
-	$("#user-account-sidebar").hide();
+	$("#user-account-sidebar").removeClass('user-account-sidebar-active');
 }
