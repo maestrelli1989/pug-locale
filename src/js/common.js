@@ -16,16 +16,6 @@ $(() => {
 	
 	const primaryTags = $("html, body");
 
-	// Header
-	const businessMenuItemTrigger = $(".menu #business-trigger");
-	const businessSubMenu = $("#business-sub-menu");
-	const userMenuItemTrigger = $(".menu #user-trigger");
-	const userSubMenu = $("#user-sub-menu");
-	const companyMenuItemTrigger = $(".menu #company-trigger");
-	const companySubMenu = $("#company-sub-menu");
-	const developersMenuItemTrigger = $(".menu #developers-trigger");
-	const developersSubMenu = $("#developers-sub-menu");
-
 	// Scrolling block at the "Industry solutions" page
 	const firstTrigger = $("#first-trigger");
 	const firstBlock = $("#first-block");
@@ -39,78 +29,6 @@ $(() => {
 	const fifthBlock = $("#fifth-block");
 	
 	const hamburger = $(".burger");
-
-	/*
-		Toggle effect at the Header sub menu
-	*/
-
-	$(businessMenuItemTrigger).mouseover(() => {
-		$(userSubMenu).removeClass('active-menu');
-		$(companySubMenu).removeClass('active-menu');
-		$(developersSubMenu).removeClass('active-menu');
-		$(businessSubMenu).addClass('active-menu');
-	});
-
-	$(businessMenuItemTrigger).mouseleave(() => {
-		$(businessSubMenu).removeClass('active-menu');
-	});
-
-	$(userMenuItemTrigger).mouseover(() => {
-		$(businessSubMenu).removeClass('active-menu');
-		$(companySubMenu).removeClass('active-menu');
-		$(developersSubMenu).removeClass('active-menu');
-		$(userSubMenu).addClass('active-menu');
-	});
-
-	$(userMenuItemTrigger).mouseleave(() => {
-		$(businessSubMenu).removeClass('active-menu');
-	});
-
-	$(companyMenuItemTrigger).mouseover(() => {
-		$(businessSubMenu).removeClass('active-menu');
-		$(userSubMenu).removeClass('active-menu');
-		$(developersSubMenu).removeClass('active-menu');
-		$(companySubMenu).addClass('active-menu');
-	});
-
-	$(companyMenuItemTrigger).mouseleave(() => {
-		$(businessSubMenu).removeClass('active-menu');
-	});
-	
-	$(developersMenuItemTrigger).mouseover(() => {
-		$(businessSubMenu).removeClass('active-menu');
-		$(userSubMenu).removeClass('active-menu');
-		$(companySubMenu).removeClass('active-menu');
-		$(developersSubMenu).addClass('active-menu');
-	});
-
-	$(developersMenuItemTrigger).mouseleave(() => {
-		$(businessSubMenu).removeClass('active-menu');
-	});
-
-	$(window).click(({target}) => {
-		if($(target).is(":not(#business-sub-menu, #business-sub-menu *, #business-trigger)")) {
-			$(businessSubMenu).removeClass('active-menu');
-		}
-	});
-
-	$(window).click(({target}) => {
-		if($(target).is(":not(#user-sub-menu, #user-sub-menu *, #user-trigger)")) {
-			$(userSubMenu).removeClass('active-menu');
-		}
-	});
-
-	$(window).click(({target}) => {
-		if($(target).is(":not(#company-sub-menu, #company-sub-menu *, #company-trigger)")) {
-			$(companySubMenu).removeClass('active-menu');
-		}
-	});
-
-	$(window).click(({target}) => {
-		if($(target).is(":not(#developers-sub-menu, #developers-sub-menu *, #developers-trigger)")) {
-			$(developersSubMenu).removeClass('active-menu');
-		}
-	});
 
 	/*
 		Smooth scroll effect at the "Industry solutions" page
