@@ -24,23 +24,23 @@ mixin header(className)
 					a(href="index", class="site-logo-link")
 						img(src="../assets/images/logo/site-logo.png", alt="Logo")
 					.menu
-						.menu-item
-							.menu-trigger#business-trigger #{$i18n.headerMenu.col1Title}
+						.menu-item#business-trigger
+							.menu-trigger #{$i18n.headerMenu.col1Title}
 							.sub-menu-wrapper#business-sub-menu
 								.triangle
 								.sub-menu.business-sub-menu
 									a(href="uapay-checkout") #{$i18n.headerMenu.col1Link1}
 									a(href="mass-payouts") #{$i18n.headerMenu.col1Link2}
 									a(href="industry-solutions") #{$i18n.headerMenu.col1Link3}
-						.menu-item
-							.menu-trigger#user-trigger #{$i18n.headerMenu.col2Title}
+						.menu-item#user-trigger
+							.menu-trigger #{$i18n.headerMenu.col2Title}
 							.sub-menu-wrapper#user-sub-menu
 								.triangle
 								.sub-menu.user-sub-menu
 									a(href="fines") #{$i18n.headerMenu.col2Link1}
 									a(href="https://escrowbox.uapay.ua/ad", target="_blank") #{$i18n.headerMenu.col2Link2}
-						.menu-item
-							.menu-trigger#company-trigger #{$i18n.headerMenu.col3Title}
+						.menu-item#company-trigger
+							.menu-trigger #{$i18n.headerMenu.col3Title}
 							.sub-menu-wrapper#company-sub-menu
 								.triangle
 								.sub-menu.company-sub-menu
@@ -49,8 +49,8 @@ mixin header(className)
 									a(href="faq") #{$i18n.headerMenu.col3Link3}
 									a(href="partnership") #{$i18n.headerMenu.col3Link4}
 									a(href="legal-info") #{$i18n.headerMenu.col3Link5}
-						.menu-item
-							.menu-trigger#developers-trigger #{$i18n.headerMenu.col4Title}
+						.menu-item#developers-trigger
+							.menu-trigger #{$i18n.headerMenu.col4Title}
 							.sub-menu-wrapper#developers-sub-menu
 								.triangle
 								.sub-menu.developers-sub-menu

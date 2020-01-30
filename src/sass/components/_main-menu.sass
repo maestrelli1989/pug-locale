@@ -18,11 +18,7 @@
 		justify-content: center
 		position: relative
 		margin-left: 24px
-		opacity: 1
-		animation-name: fadeInOpacity
-		animation-iteration-count: 1
-		animation-timing-function: ease-in
-		animation-duration: 1000ms
+		perspective: 2000px
 		.menu-trigger
 			font-size: 14px
 			line-height: 24px
@@ -36,10 +32,15 @@
 				opacity: 0.5
 				cursor: pointer
 		.sub-menu-wrapper
-			display: none
 			position: absolute
 			top: 30px
 			z-index: 150
+			opacity: 0px
+			transition: $primary-transition
+			transform: rotateX(0) translateZ(0)
+			&.active-menu
+				opacity: 1
+				z-index: 151
 			.triangle
 				margin: 0px auto
 				width: 30px

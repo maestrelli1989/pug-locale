@@ -17,14 +17,14 @@ $(() => {
 	const primaryTags = $("html, body");
 
 	// Header
-	const businessMenuItemTrigger = $(".menu .menu-item #business-trigger");
-	const businessSubMenu = $(".menu .menu-item #business-sub-menu");
-	const userMenuItemTrigger = $(".menu .menu-item #user-trigger");
-	const userSubMenu = $(".menu .menu-item #user-sub-menu");
-	const companyMenuItemTrigger = $(".menu .menu-item #company-trigger");
-	const companySubMenu = $(".menu .menu-item #company-sub-menu");
-	const developersMenuItemTrigger = $(".menu .menu-item #developers-trigger");
-	const developersSubMenu = $(".menu .menu-item #developers-sub-menu");
+	const businessMenuItemTrigger = $(".menu #business-trigger");
+	const businessSubMenu = $("#business-sub-menu");
+	const userMenuItemTrigger = $(".menu #user-trigger");
+	const userSubMenu = $("#user-sub-menu");
+	const companyMenuItemTrigger = $(".menu #company-trigger");
+	const companySubMenu = $("#company-sub-menu");
+	const developersMenuItemTrigger = $(".menu #developers-trigger");
+	const developersSubMenu = $("#developers-sub-menu");
 
 	// Scrolling block at the "Industry solutions" page
 	const firstTrigger = $("#first-trigger");
@@ -44,55 +44,71 @@ $(() => {
 		Toggle effect at the Header sub menu
 	*/
 
-	$(businessMenuItemTrigger).click(() => {
-		$(userSubMenu).slideUp(100);
-		$(companySubMenu).slideUp(100);
-		$(developersSubMenu).slideUp(100);
-		$(businessSubMenu).slideToggle(500);
+	$(businessMenuItemTrigger).mouseover(() => {
+		$(userSubMenu).removeClass('active-menu');
+		$(companySubMenu).removeClass('active-menu');
+		$(developersSubMenu).removeClass('active-menu');
+		$(businessSubMenu).addClass('active-menu');
 	});
 
-	$(userMenuItemTrigger).click(() => {
-		$(businessSubMenu).slideUp(100);
-		$(companySubMenu).slideUp(100);
-		$(developersSubMenu).slideUp(100);
-		$(userSubMenu).slideToggle(500);
+	$(businessMenuItemTrigger).mouseleave(() => {
+		$(businessSubMenu).removeClass('active-menu');
 	});
 
-	$(companyMenuItemTrigger).click(() => {
-		$(businessSubMenu).slideUp(100);
-		$(userSubMenu).slideUp(100);
-		$(developersSubMenu).slideUp(100);
-		$(companySubMenu).slideToggle(500);
+	$(userMenuItemTrigger).mouseover(() => {
+		$(businessSubMenu).removeClass('active-menu');
+		$(companySubMenu).removeClass('active-menu');
+		$(developersSubMenu).removeClass('active-menu');
+		$(userSubMenu).addClass('active-menu');
+	});
+
+	$(userMenuItemTrigger).mouseleave(() => {
+		$(businessSubMenu).removeClass('active-menu');
+	});
+
+	$(companyMenuItemTrigger).mouseover(() => {
+		$(businessSubMenu).removeClass('active-menu');
+		$(userSubMenu).removeClass('active-menu');
+		$(developersSubMenu).removeClass('active-menu');
+		$(companySubMenu).addClass('active-menu');
+	});
+
+	$(companyMenuItemTrigger).mouseleave(() => {
+		$(businessSubMenu).removeClass('active-menu');
 	});
 	
-	$(developersMenuItemTrigger).click(() => {
-		$(businessSubMenu).slideUp(100);
-		$(userSubMenu).slideUp(100);
-		$(companySubMenu).slideUp(100);
-		$(developersSubMenu).slideToggle(500);
+	$(developersMenuItemTrigger).mouseover(() => {
+		$(businessSubMenu).removeClass('active-menu');
+		$(userSubMenu).removeClass('active-menu');
+		$(companySubMenu).removeClass('active-menu');
+		$(developersSubMenu).addClass('active-menu');
+	});
+
+	$(developersMenuItemTrigger).mouseleave(() => {
+		$(businessSubMenu).removeClass('active-menu');
 	});
 
 	$(window).click(({target}) => {
 		if($(target).is(":not(#business-sub-menu, #business-sub-menu *, #business-trigger)")) {
-			$(businessSubMenu).slideUp(500);
+			$(businessSubMenu).removeClass('active-menu');
 		}
 	});
 
 	$(window).click(({target}) => {
 		if($(target).is(":not(#user-sub-menu, #user-sub-menu *, #user-trigger)")) {
-			$(userSubMenu).slideUp(500);
+			$(userSubMenu).removeClass('active-menu');
 		}
 	});
 
 	$(window).click(({target}) => {
 		if($(target).is(":not(#company-sub-menu, #company-sub-menu *, #company-trigger)")) {
-			$(companySubMenu).slideUp(500);
+			$(companySubMenu).removeClass('active-menu');
 		}
 	});
 
 	$(window).click(({target}) => {
 		if($(target).is(":not(#developers-sub-menu, #developers-sub-menu *, #developers-trigger)")) {
-			$(developersSubMenu).slideUp(500);
+			$(developersSubMenu).removeClass('active-menu');
 		}
 	});
 
